@@ -7,13 +7,13 @@
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
   border-radius: $card-border-radius;
-  padding: $card-padding;
+  // padding: $card-padding;
   border: 1px solid rgb(0 0 0 / 9%);
 
-  &:hover {
-    box-shadow: $card-hover-box-shadow;
-    transition: all 0.3s ease;
-  }
+  // &:hover {
+  //   box-shadow: $card-hover-box-shadow;
+  //   transition: all 0.3s ease;
+  // }
 
   .card-header {
     background-color: $card-header-bg-color;

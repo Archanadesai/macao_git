@@ -1,4 +1,5 @@
 (function ($) {
+  // Dashboard-1
   $(document).ready(function () {
     $("product-list").DataTable();
     $("#basic-3").DataTable({

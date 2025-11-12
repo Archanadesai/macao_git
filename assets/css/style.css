@@ -8179,12 +8179,7 @@ button.button-primary:hover {
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
   border-radius: 12px;
-  padding: 16px;
   border: 1px solid rgba(0, 0, 0, 0.09);
-}
-.card:hover {
-  box-shadow: 0 0 40px rgba(8, 21, 66, 0.05);
-  transition: all 0.3s ease;
 }
 .card .card-header {
   background-color: #fff;
