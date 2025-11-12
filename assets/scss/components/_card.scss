@@ -4,11 +4,11 @@
 //Card css
 .card {
   margin-bottom: $card-margin-bottom;
-  border: none;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
   border-radius: $card-border-radius;
-  box-shadow: $card-box-shadow;
+  padding: $card-padding;
+  border: 1px solid rgb(0 0 0 / 9%);
 
   &:hover {
     box-shadow: $card-hover-box-shadow;

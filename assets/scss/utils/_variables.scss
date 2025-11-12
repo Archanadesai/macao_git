@@ -190,11 +190,14 @@ $btn-xs-font-size: 11px;
 $btn-xs-padding: 0.05rem 0.4rem;
 
 //Card settings
-$card-padding: 20px;
+// $card-padding: 20px;
+$card-padding: 16px;
 $card-margin-bottom: 20px;
-$card-border-color: 1px solid $light-gray;
-$card-border-radius: 15px;
-$common-shadow-color: rgba($info-color, 0.08);
+// $card-border-color: 1px solid $light-gray;
+$card-border-color: 1px solid rgb(0 0 0 / 9%);
+// $card-border-radius: 15px;
+$card-border-radius: 12px;
+// $common-shadow-color: rgba($info-color, 0.08);
 $card-box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
 $card-header-bg-color: $white;
 $card-header-font-transform: capitalize;

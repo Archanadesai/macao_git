@@ -37,46 +37,77 @@
 
 // cart js
 
-document.addEventListener('DOMContentLoaded', function () {
-    const qtyBox = document.querySelector('.qty-box');
-    const minusBtn = qtyBox.querySelector('.quantity-left-minus');
-    const plusBtn = qtyBox.querySelector('.quantity-right-plus');
-    const qtyInput = qtyBox.querySelector('.input-number');
-    const priceDisplay = qtyBox.querySelector('.font-primary');
+document.addEventListener("DOMContentLoaded", function () {
+  const badge = document.querySelector(".cart-box .badge");
+  const cartList = document.querySelector(".cart-list");
 
-    const unitPrice = 75; // Base price per item
-
-    function updatePrice(qty) {
-      const totalPrice = unitPrice * qty;
-      priceDisplay.textContent = `$${totalPrice}`;
+  // Update cart badge count
+  function updateUnreadCount() {
+    const totalItems = cartList.querySelectorAll("li").length;
+    if (badge) {
+      badge.textContent = totalItems;
+      badge.style.display = totalItems === 0 ? "none" : "inline-block";
     }
+  }
 
-    // Decrease quantity
-    minusBtn.addEventListener('click', function () {
-      let qty = parseInt(qtyInput.value) || 1;
-      if (qty > 1) {
-        qty--;
-        qtyInput.value = qty;
-        updatePrice(qty);
+  // Format price as $xx.xx
+  function formatPrice(value) {
+    return "$" + value.toFixed(2);
+  }
+
+  if (cartList) {
+    cartList.addEventListener("click", function (e) {
+      // Remove item
+      const closeBtn = e.target.closest(".close-circle");
+      if (closeBtn) {
+        e.preventDefault();
+        const li = closeBtn.closest("li");
+        if (li) {
+          li.remove();
+          updateUnreadCount();
+        }
+      }
+
+      // Quantity minus
+      const minusBtn = e.target.closest(".quantity-left-minus");
+      if (minusBtn) {
+        const input = minusBtn.closest(".input-group").querySelector(".input-number");
+        let value = parseInt(input.value);
+        if (value > 1) input.value = value - 1;
+        updateItemPrice(minusBtn.closest("li"));
+      }
+
+      // Quantity plus
+      const plusBtn = e.target.closest(".quantity-right-plus");
+      if (plusBtn) {
+        const input = plusBtn.closest(".input-group").querySelector(".input-number");
+        let value = parseInt(input.value);
+        input.value = value + 1;
+        updateItemPrice(plusBtn.closest("li"));
       }
     });
+  }
 
-    // Increase quantity
-    plusBtn.addEventListener('click', function () {
-      let qty = parseInt(qtyInput.value) || 1;
-      qty++;
-      qtyInput.value = qty;
-      updatePrice(qty);
-    });
+  // Update the price for a single cart item
+  function updateItemPrice(li) {
+    if (!li) return;
+    const quantityInput = li.querySelector(".input-number");
+    const priceElement = li.querySelector(".qty-box h6");
+    const originalPrice = parseFloat(priceElement.dataset.price); // store original price in data-price
+    const quantity = parseInt(quantityInput.value);
+    priceElement.textContent = formatPrice(originalPrice * quantity);
+  }
 
-    // Optional: Update price when user types manually
-    qtyInput.addEventListener('input', function () {
-      let qty = parseInt(qtyInput.value);
-      if (!isNaN(qty) && qty >= 1) {
-        updatePrice(qty);
-      }
-    });
+  // Initialize original prices in data-price attribute
+  cartList.querySelectorAll(".cart-list li").forEach((li) => {
+    const priceElement = li.querySelector(".qty-box h6");
+    const price = parseFloat(priceElement.textContent.replace("$", ""));
+    priceElement.dataset.price = price; // save original price
   });
+
+  // Initial count on page load
+  updateUnreadCount();
+});
 
 // cart close icon js
 
