@@ -220,6 +220,7 @@
 .dark-only {
   --light-background: rgba(31, 32, 40, 0.65);
   --recent-chart-bg: #262932;
+  --theme-secondary: #797979;
   --light-bg: #1d1e26;
   --white: #262932;
   --sidebar-border: rgba(255, 255, 255, 0.1);
@@ -4908,7 +4909,6 @@ table tbody tr {
 }
 .default-according .card .card-header {
   padding: 0.75rem 1.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.09);
 }
 .default-according .card .card-header i {
   position: absolute;
@@ -4920,7 +4920,6 @@ table tbody tr {
   margin-top: 2px;
 }
 .default-according .card .card-body {
-  border: 1px solid rgba(0, 0, 0, 0.09);
   border-top: none;
 }
 
@@ -5168,6 +5167,7 @@ table tbody tr {
 .alert {
   border-radius: 0.15rem;
   padding: 15px;
+  margin-bottom: 16px;
 }
 .alert svg {
   vertical-align: middle;
@@ -5234,9 +5234,6 @@ table tbody tr {
 
 .card-body button:focus {
   outline: none;
-}
-.card-body .alert:last-child {
-  margin-bottom: 0;
 }
 .card-body .alert svg {
   width: 16px;
@@ -8178,15 +8175,15 @@ button.button-primary:hover {
   margin-bottom: 20px;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
-  border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 26px;
+  background-color: #f8f8f8;
+  border: none;
 }
 .card .card-header {
-  background-color: #fff;
   padding: 16px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  background-color: #f8f8f8;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
   position: relative;
 }
 .card .card-header.card-no-border {
@@ -8211,7 +8208,7 @@ button.button-primary:hover {
   float: right;
   padding: 8px 0;
   position: absolute;
-  background-color: var(--white);
+  background-color: #f8f8f8;
   z-index: 1;
 }
 .card .card-header .card-header-right .card-option {
@@ -8253,11 +8250,10 @@ button.button-primary:hover {
   font-size: calc(15px + 3 * (100vw - 320px) / 1600);
 }
 .card .card-footer {
-  background-color: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  background-color: #f8f8f8;
   padding: 16px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
 }
 .card.card-load .card-loader {
   position: absolute;
@@ -15192,7 +15188,7 @@ btn-group .dropdown-wrapper .input-group .input-group-text {
 .svg-modal {
   width: 15px;
   height: 15px;
-  stroke: #000000;
+  stroke: #838383 !important;
   vertical-align: middle;
 }
 [dir=rtl] .svg-modal {
@@ -28918,7 +28914,6 @@ select.crypto-select.primary {
   gap: 10px;
   padding: 10px;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -54072,7 +54067,7 @@ div:where(.swal2-container) button:where(.swal2-close):hover {
     5.1 Footer CSS Start
 ==========================**/
 .footer {
-  background-color: #fff;
+  background-color: #f8f8f8;
   box-shadow: 0 0 20px rgba(89, 102, 122, 0.1);
   padding: 15px;
   bottom: 0;
@@ -55340,8 +55335,7 @@ table.table-bordered thead tr th p {
   position: relative;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0px 4px 40px rgba(39, 32, 120, 0.1);
+  background-color: #f8f8f8;
 }
 @media (max-width: 1399px) {
   .page-wrapper .page-header .header-wrapper {
@@ -55415,6 +55409,11 @@ table.table-bordered thead tr th p {
 }
 @media (max-width: 578px) {
   .page-wrapper .page-header .header-wrapper .nav-right ul li:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 417px) {
+  .page-wrapper .page-header .header-wrapper .nav-right ul li.language-nav {
     display: none;
   }
 }
@@ -55876,7 +55875,7 @@ table.table-bordered thead tr th p {
   stroke: #1e1e1e;
 }
 .page-wrapper .page-body-wrapper {
-  background-color: #f7f8f9;
+  background-color: #fff;
 }
 .page-wrapper .page-body-wrapper .page-body {
   min-height: calc(100vh - 136px);
@@ -56309,6 +56308,11 @@ table.table-bordered thead tr th p {
   width: calc(100% - 265px);
   padding: 0 calc(15px + 0.7rem);
 }
+@media (max-width: 575px) {
+  .page-wrapper.compact-wrapper .page-header {
+    padding: 0;
+  }
+}
 .page-wrapper.compact-wrapper .page-header.close_icon {
   margin-left: 80px;
   width: calc(100% - 80px);
@@ -56322,11 +56326,10 @@ table.table-bordered thead tr th p {
   z-index: 9;
   height: auto;
   line-height: inherit;
-  background: #fff;
+  background: #f8f8f8;
   width: 265px;
   text-align: left;
   transition: 0.3s;
-  box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
 }
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-wrapper,
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-icon-wrapper {
@@ -58488,7 +58491,7 @@ html[dir=rtl] .page-header .header-wrapper .nav-right.right-header ul li .profil
   margin-left: unset;
 }
 html[dir=rtl] .page-header .header-wrapper .toggle-sidebar {
-  margin-left: 2px;
+  margin-left: 15px;
   margin-right: unset;
 }
 html[dir=rtl] .page-wrapper .page-header .header-wrapper .nav-right .notification-dropdown {
@@ -65870,10 +65873,9 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   .box-layout .page-wrapper.compact-wrapper .page-body-wrapper .page-body, .box-layout.page-wrapper.compact-wrapper .page-body-wrapper .page-body {
     min-height: calc(100vh - 130px);
     margin-top: 0;
-    top: 80px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     max-height: calc(100vh - 220px);
-    padding-bottom: 80px;
     margin-left: 230px;
   }
   .box-layout .page-wrapper.compact-wrapper .page-body-wrapper .page-body::-webkit-scrollbar-track, .box-layout.page-wrapper.compact-wrapper .page-body-wrapper .page-body::-webkit-scrollbar-track {
@@ -69042,9 +69044,6 @@ body.dark-only .page-wrapper .page-body-wrapper .sidebar-main .sidebar-links .si
 }
 body.dark-only .page-wrapper .page-body-wrapper .sidebar-main .sidebar-links .sidebar-list ul.sidebar-submenu li a.active {
   color: var(--theme-default);
-}
-body.dark-only .page-wrapper .page-header {
-  box-shadow: 0px 3px 28px rgb(50, 56, 70);
 }
 body.dark-only .page-wrapper .badge-b-light {
   border-color: rgba(255, 255, 255, 0.4);

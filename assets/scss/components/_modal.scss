@@ -79,7 +79,7 @@
 
 .svg-modal {
     @include pixelstrap-size(15px, 15px);
-    stroke: $secondary-color;
+    stroke: #838383 !important;
     vertical-align: middle;
 
     [dir="rtl"] & {

@@ -2370,10 +2370,11 @@
           .page-body {
             min-height: calc(100vh - 130px);
             margin-top: 0;
-            top: 80px;
-            overflow: scroll;
+            // top: 80px;
+            overflow-y: scroll;
+            overflow-x: hidden;
             max-height: calc(100vh - 220px);
-            padding-bottom: 80px;
+            // padding-bottom: 80px;
             margin-left: 230px;
 
             &::-webkit-scrollbar-track {

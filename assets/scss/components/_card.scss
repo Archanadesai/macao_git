@@ -7,8 +7,8 @@
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
   border-radius: $card-border-radius;
-  // padding: $card-padding;
-  border: 1px solid rgb(0 0 0 / 9%);
+  background-color: $light-card-background;
+  border: none;
 
   // &:hover {
   //   box-shadow: $card-hover-box-shadow;
@@ -16,9 +16,10 @@
   // }
 
   .card-header {
-    background-color: $card-header-bg-color;
+    // background-color: $card-header-bg-color;
     padding: $card-padding;
-    border-bottom: $card-border-color;
+    background-color: $light-card-background;
+    // border-bottom: $card-border-color;
     border-top-left-radius: $card-border-radius;
     border-top-right-radius: $card-border-radius;
     position: relative;
@@ -51,7 +52,7 @@
       float: right;
       padding: 8px 0;
       position: absolute;
-      background-color: var(--white);
+      background-color: $light-card-background;
       z-index: 1;
 
       .card-option {
@@ -108,8 +109,9 @@
   }
 
   .card-footer {
-    background-color: $card-footer-bg-color;
-    border-top: $card-border-color;
+    // background-color: $card-footer-bg-color;
+    background-color: $light-card-background;
+    // border-top: $card-border-color;
     padding: $card-padding;
     border-bottom-left-radius: $card-border-radius;
     border-bottom-right-radius: $card-border-radius;

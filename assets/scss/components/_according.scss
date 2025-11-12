@@ -30,7 +30,7 @@
 
         .card-header {
             padding: $according-card-header-padding;
-            border: $card-border-color;
+            // border: $card-border-color;
 
             i {
                 position: absolute;
@@ -45,7 +45,7 @@
         }
 
         .card-body {
-            border: $card-border-color;
+            // border: $card-border-color;
             border-top: none;
         }
     }
