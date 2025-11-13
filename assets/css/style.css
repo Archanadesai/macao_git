@@ -138,7 +138,7 @@
 
  */
 :root {
-  --theme-default: #e16349;
+  --theme-default: #e16350;
   --theme-secondary: #000000;
   --light-background: rgba(242, 243, 247, 0.7);
   --body-font-color: #212121;
@@ -8178,15 +8178,15 @@ button.button-primary:hover {
   margin-bottom: 20px;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
-  border-radius: 26px;
+  border-radius: 28px;
   background-color: #f8f8f8;
   border: none;
 }
 .card .card-header {
-  padding: 16px;
+  padding: 32px;
   background-color: #f8f8f8;
-  border-top-left-radius: 26px;
-  border-top-right-radius: 26px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
   position: relative;
 }
 .card .card-header.card-no-border {
@@ -8242,7 +8242,7 @@ button.button-primary:hover {
   font-size: 13px;
 }
 .card .card-body {
-  padding: 16px;
+  padding: 32px;
   background-color: transparent;
 }
 .card .card-body p:last-child {
@@ -8254,9 +8254,9 @@ button.button-primary:hover {
 }
 .card .card-footer {
   background-color: #f8f8f8;
-  padding: 16px;
-  border-bottom-left-radius: 26px;
-  border-bottom-right-radius: 26px;
+  padding: 32px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
 }
 .card.card-load .card-loader {
   position: absolute;
@@ -58524,6 +58524,8 @@ html[dir=rtl] .page-header .header-wrapper .nav-right.right-header ul li .profil
 html[dir=rtl] .page-header .header-wrapper .toggle-sidebar {
   margin-left: 15px;
   margin-right: unset;
+  border-left: 1px solid #ddd;
+  border-right: unset;
 }
 html[dir=rtl] .page-wrapper .page-header .header-wrapper .nav-right .notification-dropdown {
   left: -20px !important;
@@ -60080,9 +60082,6 @@ html[dir=rtl] .form-builder .component .form-group .input-group #buttondropdown 
 }
 html[dir=rtl] .page-wrapper .page-body-wrapper .logo-wrapper {
   box-shadow: 9px 0 20px rgba(89, 102, 122, 0.1) !important;
-}
-html[dir=rtl] .page-wrapper .page-body-wrapper .logo-wrapper a {
-  transform: translate(-64px);
 }
 html[dir=rtl] .search-page .nav i {
   display: inline-block;

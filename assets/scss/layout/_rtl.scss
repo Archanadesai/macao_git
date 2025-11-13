@@ -1117,6 +1117,8 @@ html[dir="rtl"] {
       .toggle-sidebar {
         margin-left: 15px;
         margin-right: unset;
+        border-left: 1px solid $ps-light-border;
+        border-right: unset;
       }
     }
   }
@@ -3648,7 +3650,7 @@ html[dir="rtl"] {
         box-shadow: 9px 0 20px rgba($semi-dark , 0.1) !important;
 
         a {
-          transform: translate(-64px);
+          // transform: translate(-64px);
         }
       }
     }
