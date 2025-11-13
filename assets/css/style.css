@@ -138,7 +138,7 @@
 
  */
 :root {
-  --theme-default: #e16350;
+  --theme-default: #e16349;
   --theme-secondary: #000000;
   --light-background: rgba(242, 243, 247, 0.7);
   --body-font-color: #212121;
@@ -54197,6 +54197,10 @@ table.table-bordered thead tr th p {
   border: none;
   outline: none;
 }
+[dir=rtl] .left-header .searchBar #searchQuerySubmit {
+  margin-right: -56px;
+  margin-left: unset;
+}
 .left-header .searchBar #searchQuerySubmit:hover {
   cursor: pointer;
 }
@@ -55446,11 +55450,6 @@ table.table-bordered thead tr th p {
 .page-wrapper .page-header .header-wrapper .nav-right.right-header ul li .header-search {
   cursor: pointer;
 }
-@media (min-width: 769px) {
-  .page-wrapper .page-header .header-wrapper .nav-right.right-header ul li .header-search {
-    display: none;
-  }
-}
 .page-wrapper .page-header .header-wrapper .nav-right.right-header ul li .profile-media .flex-grow-1 {
   margin-left: 15px;
 }
@@ -55461,6 +55460,11 @@ table.table-bordered thead tr th p {
   font-size: 12px;
   line-height: 1;
   color: rgba(64, 64, 64, 0.7);
+}
+@media (min-width: 769px) {
+  .page-wrapper .page-header .header-wrapper .nav-right.right-header ul li.header-search {
+    display: none;
+  }
 }
 .page-wrapper .page-header .header-wrapper .nav-right > ul {
   display: flex;
@@ -56247,22 +56251,7 @@ table.table-bordered thead tr th p {
   width: auto !important;
 }
 .page-wrapper.horizontal-wrapper .page-header .header-wrapper .left-header {
-  width: 30%;
-}
-@media (max-width: 1428px) and (min-width: 1324px) {
-  .page-wrapper.horizontal-wrapper .page-header .header-wrapper .left-header {
-    width: 32%;
-  }
-}
-@media (max-width: 1323px) and (min-width: 1200px) {
-  .page-wrapper.horizontal-wrapper .page-header .header-wrapper .left-header {
-    width: 37%;
-  }
-}
-@media (max-width: 1199px) and (min-width: 992px) {
-  .page-wrapper.horizontal-wrapper .page-header .header-wrapper .left-header {
-    width: 32%;
-  }
+  width: auto;
 }
 @media (max-width: 1428px) and (min-width: 1324px) {
   .page-wrapper.horizontal-wrapper .page-header .header-wrapper .nav-right {
@@ -56361,7 +56350,7 @@ table.table-bordered thead tr th p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 22px 24px;
+  padding: 18px 24px;
   box-shadow: -9px 0 20px rgba(89, 102, 122, 0.1);
 }
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-icon-wrapper {
