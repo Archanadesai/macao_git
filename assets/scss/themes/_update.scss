@@ -52,7 +52,8 @@
   }
 
   .tooltip-inner {
-    background-color: $theme-medium-color;
+    // background-color: $theme-medium-color;
+    background-color: #e163491a;
     color: $primary-color;
   }
 
@@ -1549,7 +1550,13 @@
     }
   }
 }
-
+.card-body{
+  button{
+    &:focus{
+      box-shadow: unset;
+    }
+  }
+}
 /**=====================
     4.3 Update CSS Ends
 ==========================**/

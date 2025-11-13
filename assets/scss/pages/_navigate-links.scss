@@ -4,7 +4,7 @@
 
 .border-opacity-wrapper {
     .border {
-        --theme-default: 115, 102, 255;
+        --theme-default: 225, 99, 73;
         border-color: rgba(var(--theme-default), var(--bs-border-opacity)) !important;
 
         a {
@@ -15,7 +15,7 @@
 
 .bg-opacity-wrapper {
     >div {
-        --theme-default: 115, 102, 255;
+        --theme-default: 225, 99, 73;
         background-color: rgba(var(--theme-default), var(--bs-bg-opacity)) !important;
     }
 }
@@ -24,7 +24,7 @@
     p {
         a {
             text-decoration: underline;
-            --theme-default: 115, 102, 255;
+            --theme-default: 225, 99, 73;
             color: $primary-color;
             text-decoration-color: rgba(var(--theme-default), var(--bs-link-underline-opacity, 1)) !important;
         }
@@ -34,7 +34,7 @@
 .link-opacity-wrapper {
     p {
         a {
-            --theme-default: 115, 102, 255;
+            --theme-default: 225, 99, 73;
             color: rgba(var(--theme-default), var(--bs-link-opacity, 1));
 
             &:hover {

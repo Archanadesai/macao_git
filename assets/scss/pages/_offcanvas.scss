@@ -18,6 +18,17 @@
               }
           }
       }
+      .common-offcanvas{
+        .offcanvas{
+            .offcanvas-header{
+                .btn-close{
+                    &:focus{
+                        box-shadow: unset;
+                    }
+                }
+            }
+        }
+      }
   }
 
   .common-offcanvas {

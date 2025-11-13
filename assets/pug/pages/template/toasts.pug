@@ -67,7 +67,7 @@ html(lang='en')
                   .card-body.common-flex.common-toasts
                     button#liveToastBtn6.btn.btn-success(type='button') Success Toast
                     .toast-container.position-fixed.top-0.end-0.p-3.toast-index.toast-rtl
-                      #liveToast6.toast(role='alert' aria-live='polite' aria-atomic='true')
+                      #liveToast6.toast(role='alert' aria-live='polite' aria-atomic='false')
                         .common-space.alert-light-success
                           .toast-body
                             i(data-feather='check-square').close-search.stroke-success
@@ -75,7 +75,7 @@ html(lang='en')
                           button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
                     button#liveToastBtn5.btn.btn-warning(type='button') Warning Toast
                     .toast-container.position-fixed.top-50.end-0.p-3.toast-index.toast-rtl
-                      #liveToast5.toast(role='alert' aria-live='polite' aria-atomic='true')
+                      #liveToast5.toast(role='alert' aria-live='polite' aria-atomic='false')
                         .common-space.alert-light-warning
                           .toast-body
                             i(data-feather='alert-triangle').close-search.stroke-warning
@@ -83,7 +83,7 @@ html(lang='en')
                           button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
                     button#liveToastBtn4.btn.btn-danger(type='button') Error Toast
                     .toast-container.position-fixed.bottom-0.end-0.p-3.toast-index.toast-rtl
-                      #liveToast4.toast(role='alert' aria-live='polite' aria-atomic='true')
+                      #liveToast4.toast(role='alert' aria-live='polite' aria-atomic='false')
                         .common-space.alert-light-danger
                           .toast-body
                             i(data-feather='x-circle').close-search.stroke-danger
@@ -97,7 +97,7 @@ html(lang='en')
                           |&lt;div class="card-body common-flex common-toasts"&gt;
                           |  &lt;button class="btn btn-success" id="liveToastBtn6" type="button"&gt;Success Toast&lt;/button&gt;
                           |  &lt;div class="toast-container position-fixed top-0 end-0 p-3 toast-index toast-rtl"&gt;
-                          |    &lt;div class="toast" id="liveToast6" role="alert" aria-live="polite" aria-atomic="true"&gt;
+                          |    &lt;div class="toast" id="liveToast6" role="alert" aria-live="polite" aria-atomic="false"&gt;
                           |      &lt;div class="common-space alert-light-success"&gt;
                           |        &lt;div class="toast-body"&gt;
                           |          &lt;i class="close-search stroke-success" data-feather="check-square"&gt;&lt;/i&gt;Success: We've updated your info
@@ -108,7 +108,7 @@ html(lang='en')
                           |  &lt;/div&gt;
                           |  &lt;button class="btn btn-warning" id="liveToastBtn5" type="button"&gt;Warning Toast&lt;/button&gt;
                           |  &lt;div class="toast-container position-fixed top-50 end-0 p-3 toast-index toast-rtl"&gt;
-                          |    &lt;div class="toast" id="liveToast5" role="alert" aria-live="polite" aria-atomic="true"&gt;
+                          |    &lt;div class="toast" id="liveToast5" role="alert" aria-live="polite" aria-atomic="false"&gt;
                           |      &lt;div class="common-space alert-light-warning"&gt;
                           |        &lt;div class="toast-body"&gt;
                           |          &lt;i class="close-search stroke-warning" data-feather="alert-triangle"&gt;&lt;/i&gt;Software drivers needed to be updated in advance
@@ -119,7 +119,7 @@ html(lang='en')
                           |  &lt;/div&gt;
                           |  &lt;button class="btn btn-danger" id="liveToastBtn4" type="button"&gt;Error Toast&lt;/button&gt;
                           |  &lt;div class="toast-container position-fixed bottom-0 end-0 p-3 toast-index toast-rtl"&gt;
-                          |    &lt;div class="toast" id="liveToast4" role="alert" aria-live="polite" aria-atomic="true"&gt;
+                          |    &lt;div class="toast" id="liveToast4" role="alert" aria-live="polite" aria-atomic="false"&gt;
                           |      &lt;div class="common-space alert-light-danger"&gt;
                           |        &lt;div class="toast-body"&gt;
                           |          &lt;i class="close-search stroke-danger" data-feather="x-circle"&gt;&lt;/i&gt;A database connection error has occurred
@@ -157,7 +157,7 @@ html(lang='en')
                   .card-body.position-relative.common-flex.live-toast
                     button#liveToastBtn.btn.btn-primary(type='button') Top-right Toast
                     .toast-container.position-fixed.top-0.end-0.p-3.toast-index.toast-rtl
-                      #liveToast.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='true')
+                      #liveToast.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='false')
                         .toast-header.toast-img
                           img.rounded.me-2(src='../assets/images/dashboard-5/profile.png' alt='profile')
                           strong.me-auto Yuri Theme
@@ -167,14 +167,14 @@ html(lang='en')
                           | Hello, I'm a web-designer.
                     button#liveToastBtn1.btn.btn-secondary(type='button') Bottom-right Toast
                     .toast-container.position-fixed.bottom-0.end-0.p-3.toast-index.toast-rtl
-                      #liveToast1.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='true')
+                      #liveToast1.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='false')
                         .d-flex.justify-content-between.alert-secondary
                           .toast-body
                             | Your time over after 5 minute.
                           button.btn-close.btn-close-white.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')
                     button#liveToastBtn2.btn.btn-warning(type='button') Top-left Toast
                     .toast-container.position-fixed.start-0.top-0.p-3.toast-index.toast-rtl
-                      #liveToast2.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='true')
+                      #liveToast2.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='false')
                         .toast-header.toast-img
                           img.rounded.me-2(src='../assets/images/dashboard-5/profile.png' alt='profile')
                           strong.me-auto Riho Theme
@@ -185,7 +185,7 @@ html(lang='en')
                           |  You successfully read this important message.
                     button#liveToastBtn3.btn.btn-success(type='button') Bottom-left Toast
                     .toast-container.position-fixed.start-0.bottom-0.p-3.toast-index.toast-rtl
-                      #liveToast3.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='true')
+                      #liveToast3.toast.hide.toast.fade(role='alert' aria-live='assertive' aria-atomic='false')
                         .toast-header.toast-img
                           img.rounded.me-2(src='../assets/images/dashboard-5/profile.png' alt='profile')
                           strong.me-auto Mofi Theme
@@ -204,7 +204,7 @@ html(lang='en')
                           |&lt;div class="card-body position-relative common-flex"&gt;
                           |  &lt;button class="btn btn-primary" id="liveToastBtn" type="button"&gt;Top-right Toast&lt;/button&gt;
                           |  &lt;div class="toast-container position-fixed top-0 end-0 p-3 toast-index toast-rtl"&gt;
-                          |    &lt;div class="toast hide toast fade" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true"&gt;
+                          |    &lt;div class="toast hide toast fade" id="liveToast" role="alert" aria-live="assertive" aria-atomic="false"&gt;
                           |      &lt;div class="toast-header toast-img"&gt;
                           |        &lt;img class="rounded me-2" src="../assets/images/dashboard-5/profile.png" alt="profile"&gt;
                           |        &lt;strong class="me-auto"&gt;Yuri Theme&lt;/strong&gt;
@@ -216,7 +216,7 @@ html(lang='en')
                           |  &lt;/div&gt;
                           |  &lt;button class="btn btn-secondary" id="liveToastBtn1" type="button"&gt;Bottom-right Toast&lt;/button&gt;
                           |  &lt;div class="toast-container position-fixed bottom-0 end-0 p-3 toast-index toast-rtl"&gt;
-                          |    &lt;div class="toast hide toast fade" id="liveToast1" role="alert" aria-live="assertive" aria-atomic="true"&gt;
+                          |    &lt;div class="toast hide toast fade" id="liveToast1" role="alert" aria-live="assertive" aria-atomic="false"&gt;
                           |      &lt;div class="d-flex justify-content-between alert-secondary"&gt;
                           |        &lt;div class="toast-body"&gt;Your time over after 5 minute.&lt;/div&gt;
                           |        &lt;button class="btn-close btn-close-white me-2 m-auto" type="button" data-bs-dismiss="toast" aria-label="Close"&gt;&lt;/button&gt;
@@ -225,7 +225,7 @@ html(lang='en')
                           |  &lt;/div&gt;
                           |  &lt;button class="btn btn-warning" id="liveToastBtn2" type="button"&gt;Top-left Toast&lt;/button&gt;
                           |  &lt;div class="toast-container position-fixed start-0 top-0 p-3 toast-index toast-rtl"&gt;
-                          |    &lt;div class="toast hide toast fade" id="liveToast2" role="alert" aria-live="assertive" aria-atomic="true"&gt;
+                          |    &lt;div class="toast hide toast fade" id="liveToast2" role="alert" aria-live="assertive" aria-atomic="false"&gt;
                           |      &lt;div class="toast-header toast-img"&gt;
                           |        &lt;img class="rounded me-2" src="../assets/images/dashboard-5/profile.png" alt="profile"&gt;
                           |        &lt;strong class="me-auto"&gt;Riho Theme&lt;/strong&gt;&lt;small class="d-sm-block d-none"&gt;10 min ago&lt;/small&gt;
@@ -238,7 +238,7 @@ html(lang='en')
                           |  &lt;/div&gt;
                           |  &lt;button class="btn btn-success" id="liveToastBtn3" type="button"&gt;Bottom-left Toast&lt;/button&gt;
                           |  &lt;div class="toast-container position-fixed start-0 bottom-0 p-3 toast-index toast-rtl"&gt;
-                          |    &lt;div class="toast hide toast fade" id="liveToast3" role="alert" aria-live="assertive" aria-atomic="true"&gt;
+                          |    &lt;div class="toast hide toast fade" id="liveToast3" role="alert" aria-live="assertive" aria-atomic="false"&gt;
                           |      &lt;div class="toast-header toast-img"&gt;
                           |        &lt;img class="rounded me-2" src="../assets/images/dashboard-5/profile.png" alt="profile"&gt;
                           |        &lt;strong class="me-auto"&gt;Mofi Theme&lt;/strong&gt;
@@ -280,7 +280,7 @@ html(lang='en')
                         li
                           i.icofont.icofont-error.close-card
                   .card-body.toast-rtl
-                    .toast.default-show-toast.align-items-center.text-light.bg-warning.border-0.fade.show(role='alert' aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
+                    .toast.default-show-toast.align-items-center.text-light.bg-warning.border-0.fade.show(role='alert' aria-live='assertive' aria-atomic='false' data-bs-autohide='false')
                       .d-flex.justify-content-between
                         .toast-body
                           | Your time over after 5 minute.
@@ -291,7 +291,7 @@ html(lang='en')
                       pre.custom-scrollbar
                         code.language-html#color-toast-copy
                           |&lt;div class="card-body toast-rtl"&gt;
-                          |  &lt;div class="toast default-show-toast align-items-center text-light bg-warning border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"&gt;
+                          |  &lt;div class="toast default-show-toast align-items-center text-light bg-warning border-0 fade show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-autohide="false"&gt;
                           |    &lt;div class="d-flex justify-content-between"&gt;
                           |      &lt;div class="toast-body"&gt;Your time over after 5 minute.&lt;/div&gt;
                           |      &lt;button class="btn-close btn-close-white me-2 m-auto" type="button" data-bs-dismiss="toast" aria-label="Close"&gt;&lt;/button&gt;
@@ -322,7 +322,7 @@ html(lang='en')
                           i.icofont.icofont-error.close-card
                   .card-body.toast-rtl
                     .toast-container.position-static
-                      .toast.show(role='alert' aria-live='assertive' aria-atomic='true'  data-bs-autohide='false')
+                      .toast.show(role='alert' aria-live='assertive' aria-atomic='false'  data-bs-autohide='false')
                         .toast-header
                           i.toast-icons.toast-primary(data-feather='bell')
                           strong.me-auto Yuri Theme
@@ -330,7 +330,7 @@ html(lang='en')
                           button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
                         .toast-body.toast-dark
                           | Hello, I'm a web-designer.
-                      .toast.show(role='alert' aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
+                      .toast.show(role='alert' aria-live='assertive' aria-atomic='false' data-bs-autohide='false')
                         .toast-header
                           i.toast-icons.toast-warning(data-feather='bell')
                           strong.me-auto Roxo Theme
@@ -338,7 +338,7 @@ html(lang='en')
                           button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
                         .toast-body.toast-dark
                           | Hello, I'm a UX-designer.
-                      .toast.show(role='alert' aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
+                      .toast.show(role='alert' aria-live='assertive' aria-atomic='false' data-bs-autohide='false')
                         .toast-header
                           i.toast-icons.toast-danger(data-feather='bell')
                           strong.me-auto Zeta Theme
@@ -346,7 +346,7 @@ html(lang='en')
                           button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
                         .toast-body.toast-dark
                           | Hello, I'm a Software developer.
-                      .toast.show(role='alert' aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
+                      .toast.show(role='alert' aria-live='assertive' aria-atomic='false' data-bs-autohide='false')
                         .toast-header
                           i.toast-icons.toast-success(data-feather='bell')
                           strong.me-auto Voxo Theme
@@ -361,7 +361,7 @@ html(lang='en')
                         code.language-html#stacking-toast-copy 
                           |&lt;div class="card-body toast-rtl"&gt;
                           |  &lt;div class="toast-container position-static"&gt;
-                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"&gt;
+                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-autohide="false"&gt;
                           |      &lt;div class="toast-header"&gt;
                           |        &lt;i class="toast-icons toast-primary" data-feather="bell"&gt;&lt;/i&gt;
                           |        &lt;strong class="me-auto"&gt;Yuri Theme&lt;/strong&gt;
@@ -370,7 +370,7 @@ html(lang='en')
                           |      &lt;/div&gt;
                           |      &lt;div class="toast-body toast-dark"&gt;Hello, I'm a web-designer.&lt;/div&gt;
                           |    &lt;/div&gt;
-                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"&gt;
+                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-autohide="false"&gt;
                           |      &lt;div class="toast-header"&gt;
                           |        &lt;i class="toast-icons toast-warning" data-feather="bell"&gt;&lt;/i&gt;
                           |        &lt;strong class="me-auto"&gt;Roxo Theme&lt;/strong&gt;
@@ -379,7 +379,7 @@ html(lang='en')
                           |      &lt;/div&gt;
                           |      &lt;div class="toast-body toast-dark"&gt;Hello, I'm a UX-designer.&lt;/div&gt;
                           |    &lt;/div&gt;
-                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"&gt;
+                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-autohide="false"&gt;
                           |      &lt;div class="toast-header"&gt;
                           |        &lt;i class="toast-icons toast-danger" data-feather="bell"&gt;&lt;/i&gt;
                           |        &lt;strong class="me-auto"&gt;Zeta Theme&lt;/strong&gt;
@@ -388,7 +388,7 @@ html(lang='en')
                           |      &lt;/div&gt;
                           |      &lt;div class="toast-body toast-dark"&gt;Hello, I'm a Software developer.&lt;/div&gt;
                           |    &lt;/div&gt;
-                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"&gt;
+                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-autohide="false"&gt;
                           |      &lt;div class="toast-header"&gt;
                           |        &lt;i class="toast-icons toast-success" data-feather="bell"&gt;&lt;/i&gt;
                           |        &lt;strong class="me-auto"&gt;Voxo Theme&lt;/strong&gt;
@@ -427,7 +427,7 @@ html(lang='en')
                           i.icofont.icofont-error.close-card
                   .card-body.toast-rtl.bg-dark
                     .toast-container
-                      .toast.show(role='alert' aria-live='assertive' aria-atomic='true' data-bs-delay='80000')
+                      .toast.show(role='alert' aria-live='assertive' aria-atomic='false' data-bs-delay='80000')
                         .toast-header
                           i.toast-icons.toast-info(data-feather='disc')
                           strong.me-auto Edmin Theme
@@ -435,7 +435,7 @@ html(lang='en')
                           button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
                         .toast-body.toast-dark
                           |  Hello, I'm a web-designer.
-                      .toast.show(role='alert' aria-live='assertive' aria-atomic='true' data-bs-delay='80000')
+                      .toast.show(role='alert' aria-live='assertive' aria-atomic='false' data-bs-delay='80000')
                         .toast-header
                           i.toast-icons.toast-dark(data-feather='disc')
                           strong.me-auto Koho Theme
@@ -443,7 +443,7 @@ html(lang='en')
                           button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
                         .toast-body.toast-dark
                           |  Hello, I'm a full-stack developer.
-                      .toast.show(role='alert' aria-live='assertive' aria-atomic='true' data-bs-delay='80000')
+                      .toast.show(role='alert' aria-live='assertive' aria-atomic='false' data-bs-delay='80000')
                         .toast-header
                           i.toast-icons.toast-secondary(data-feather='disc')
                           strong.me-auto Fastkart Theme
@@ -451,7 +451,7 @@ html(lang='en')
                           button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
                         .toast-body.toast-dark
                           |  Hello, I'm a UX-designer.
-                      .toast.show(role='alert' aria-live='assertive' aria-atomic='true' data-bs-delay='80000')
+                      .toast.show(role='alert' aria-live='assertive' aria-atomic='false' data-bs-delay='80000')
                         .toast-header
                           i.toast-icons.toast-success(data-feather='disc')
                           strong.me-auto Oslo Theme
@@ -466,7 +466,7 @@ html(lang='en')
                         code.language-html#stacking-toast 
                           |&lt;div class="card-body toast-rtl bg-dark"&gt;
                           |  &lt;div class="toast-container"&gt;
-                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="80000"&gt;
+                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-delay="80000"&gt;
                           |      &lt;div class="toast-header"&gt;
                           |        &lt;i class="toast-icons toast-info" data-feather="disc"&gt;&lt;/i&gt;
                           |        &lt;strong class="me-auto"&gt;Edmin Theme&lt;/strong&gt;
@@ -475,7 +475,7 @@ html(lang='en')
                           |      &lt;/div&gt;
                           |      &lt;div class="toast-body toast-dark"&gt; Hello, I'm a web-designer.&lt;/div&gt;
                           |    &lt;/div&gt;
-                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="80000"&gt;
+                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-delay="80000"&gt;
                           |      &lt;div class="toast-header"&gt;
                           |        &lt;i class="toast-icons toast-dark" data-feather="disc"&gt;&lt;/i&gt;
                           |        &lt;strong class="me-auto"&gt;Koho Theme&lt;/strong&gt;
@@ -484,7 +484,7 @@ html(lang='en')
                           |      &lt;/div&gt;
                           |      &lt;div class="toast-body toast-dark"&gt; Hello, I'm a full-stack developer.&lt;/div&gt;
                           |    &lt;/div&gt;
-                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="80000"&gt;
+                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-delay="80000"&gt;
                           |      &lt;div class="toast-header"&gt;
                           |        &lt;i class="toast-icons toast-secondary" data-feather="disc"&gt;&lt;/i&gt;
                           |        &lt;strong class="me-auto"&gt;Fastkart Theme&lt;/strong&gt;
@@ -493,7 +493,7 @@ html(lang='en')
                           |      &lt;/div&gt;
                           |      &lt;div class="toast-body toast-dark"&gt; Hello, I'm a UX-designer.&lt;/div&gt;
                           |    &lt;/div&gt;
-                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="80000"&gt;
+                          |    &lt;div class="toast show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-delay="80000"&gt;
                           |      &lt;div class="toast-header"&gt;
                           |        &lt;i class="toast-icons toast-success" data-feather="disc"&gt;&lt;/i&gt;
                           |        &lt;strong class="me-auto"&gt;Oslo Theme&lt;/strong&gt;
@@ -529,7 +529,7 @@ html(lang='en')
                         li
                           i.icofont.icofont-error.close-card
                   .card-body.toast-rtl
-                    .toast.default-show-toast.toast.show(role='alert' aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
+                    .toast.default-show-toast.toast.show(role='alert' aria-live='assertive' aria-atomic='false' data-bs-autohide='false')
                       .toast-header.toast-img
                         img.rounded.me-2(src='../assets/images/dashboard-5/profile.png' alt='profile')
                         strong.me-auto Oliva Theme
@@ -544,7 +544,7 @@ html(lang='en')
                       pre.custom-scrollbar
                         code.language-html#default-toast-copy 
                           |&lt;div class="card-body toast-rtl"&gt;
-                          |  &lt;div class="toast default-show-toast toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"&gt;
+                          |  &lt;div class="toast default-show-toast toast show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-autohide="false"&gt;
                           |    &lt;div class="toast-header toast-img"&gt;
                           |      &lt;img class="rounded me-2" src="../assets/images/dashboard-5/profile.png" alt="profile"&gt;
                           |      &lt;strong class="me-auto"&gt;Oliva Theme&lt;/strong&gt;&lt;small class="d-sm-block d-none"&gt;10 min ago&lt;/small&gt;
@@ -580,7 +580,7 @@ html(lang='en')
                         li
                           i.icofont.icofont-error.close-card
                   .card-body.toast-rtl
-                    .toast.fade.show(role='alert' aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
+                    .toast.fade.show(role='alert' aria-live='assertive' aria-atomic='false' data-bs-autohide='false')
                       .toast-header.toast-img
                         img.rounded.me-2(src='../assets/images/dashboard-5/profile.png' alt='profile')
                         strong.me-auto Poco Theme
@@ -597,7 +597,7 @@ html(lang='en')
                       pre.custom-scrollbar
                         code.language-html#unique-toast-copy 
                           |&lt;div class="card-body toast-rtl"&gt;
-                          |  &lt;div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"&gt;
+                          |  &lt;div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="false" data-bs-autohide="false"&gt;
                           |    &lt;div class="toast-header toast-img"&gt;
                           |      &lt;img class="rounded me-2" src="../assets/images/dashboard-5/profile.png" alt="profile"&gt;
                           |      &lt;strong class="me-auto"&gt;Poco Theme&lt;/strong&gt;
@@ -653,9 +653,9 @@ html(lang='en')
                           option(value='bottom-0 start-0') Bottom left
                           option(value='bottom-0 start-50 translate-middle-x') Bottom center
                           option(value='bottom-0 end-0') Bottom right
-                    .bg-light.position-relative.bd-example-toasts(aria-live='polite' aria-atomic='true' data-bs-autohide='true')
+                    .bg-light.position-relative.bd-example-toasts(aria-live='polite' aria-atomic='false' data-bs-autohide='false')
                       #toastPlacement.toast-container.p-3.position-absolute
-                        .toast.toast-fade.show
+                        .toast.toast-fade.show(data-bs-autohide="false")
                           .toast-header.toast-img
                             img.rounded.me-2(src='../assets/images/dashboard-5/profile.png' alt='profile')
                             strong.me-auto Zono Theme
@@ -686,9 +686,9 @@ html(lang='en')
                           |      &lt;/select&gt;
                           |    &lt;/div&gt;
                           |  &lt;/form&gt;
-                          |  &lt;div class="bg-light position-relative bd-example-toasts" aria-live="polite" aria-atomic="true" data-bs-autohide="true"&gt;
+                          |  &lt;div class="bg-light position-relative bd-example-toasts" aria-live="polite" aria-atomic="flase" data-bs-autohide="false"&gt;
                           |    &lt;div class="toast-container p-3 position-absolute" id="toastPlacement"&gt;
-                          |      &lt;div class="toast toast-fade show"&gt;
+                          |      &lt;div class="toast toast-fade show" data-bs-autohide="false"&gt;
                           |        &lt;div class="toast-header toast-img"&gt;
                           |          &lt;img class="rounded me-2" src="../assets/images/dashboard-5/profile.png" alt="profile"&gt;
                           |          &lt;strong class="me-auto"&gt;Zono Theme&lt;/strong&gt;

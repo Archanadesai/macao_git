@@ -290,10 +290,13 @@
             padding: 6px 10px;
             display: inline-block;
             position: relative;
-
-            @media (max-width:1220px) {
-              padding: 6px 9px;
+            @media (max-width:1246px) {
+              padding: 6px 7px;
             }
+
+            // @media (max-width:1220px) {
+            //   padding: 6px 7px;
+            // }
 
             &.fullscreen-body {
               cursor: pointer;
@@ -998,9 +1001,9 @@
     .header-logo-wrapper {
       width: 150px;
 
-      // .toggle-sidebar {
-      //   display: none;
-      // }
+      .toggle-sidebar {
+        display: none;
+      }
     }
 
     .sidebar-list {
@@ -1038,7 +1041,7 @@
         overflow-y: visible;
         position: fixed;
         width: 100vw;
-        border-top: 1px solid $light-semi-gray;
+        // border-top: 1px solid $light-semi-gray;
         z-index: 3;
 
         .simplebar-content {
@@ -1066,6 +1069,10 @@
                 top: 10px;
                 right: 40px;
                 z-index: 1;
+                [dir="rtl"] & {
+                  right: unset;
+                  left: 40px;
+                }
               }
             }
           }
@@ -1256,6 +1263,10 @@
                           float: none;
                           position: relative;
                           display: block;
+                          [dir="rtl"] & {
+                            display: flex;
+                            flex-direction: row-reverse;
+                          }
 
                           a {
                             background: transparent;
@@ -1266,12 +1277,16 @@
                             color: rgba(43, 43, 43, 0.6);
                             letter-spacing: 0.06em;
                             font-weight: 500;
-                            font-family: Roboto;
+                            // font-family: Roboto;
                             transition: all 0.3s ease;
 
                             &:after {
                               left: 20px;
                               @extend %horizontal-after;
+                              [dir="rtl"] & {
+                                right: 20px;
+                                left: unset;
+                              }
                             }
 
                             &:hover {
@@ -1978,6 +1993,10 @@
                             right: 20px;
                             position: absolute;
                             top: 10px;
+                            [dir="rtl"] & {
+                              right: unset;
+                              left: 20px;
+                            }
 
                             i {
                               display: none;
@@ -2214,6 +2233,9 @@
         padding-top: 90px;
         margin-top: 0;
         margin-left: $sidebar-compact-width;
+        @media (max-width:375px) {
+          padding: 0 !important;
+        }
       }
     }
 

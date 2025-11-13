@@ -505,7 +505,8 @@ $ribbon-color in (primary, $primary-color),
 
     .triangular-ribbon-box {
       @include pixelstrap-size(100px, 100px);
-      background: $light-primary;
+      // background: $light-primary;
+      background: #e163491a;
       position: absolute;
       top: -50px;
       left: -50px;

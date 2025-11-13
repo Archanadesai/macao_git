@@ -233,6 +233,11 @@ $nav-color: var(--theme-default),
   @media (max-width:576px) {
     justify-content: center;
   }
+  &.contact-profile{
+    @media (max-width:375px) {
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .tab-img {

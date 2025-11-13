@@ -274,6 +274,17 @@ $accordion-light-color: $primary-color,
                 }
             }
         }
+        &.accordion-flush{
+            &.dark-accordion{
+                .accordion-item{
+                    .accordion-header{
+                        .accordion-button{
+                            background-color: rgb(34 37 45 / 0%);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

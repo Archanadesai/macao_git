@@ -218,7 +218,7 @@
 				width: 75px;
 				margin: 0 auto;
 				border-radius: 4px;
-				padding: 2px 4px;
+				padding: 2px 3px;
 
 				p {
 					-webkit-line-clamp: 3;
@@ -284,9 +284,6 @@
 }
 
 .list-group {
-	&.main-lists-content {
-		padding-top: 20px;
-	}
 
 	.list-group-item {
 		.timeline-icon {
