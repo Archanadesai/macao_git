@@ -56160,6 +56160,10 @@ table.table-bordered thead tr th p {
   vertical-align: sub;
   margin-right: 10px;
 }
+[dir=rtl] .page-wrapper.horizontal-wrapper .page-body-wrapper .sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li > a svg {
+  margin-right: unset;
+  margin-left: 10px;
+}
 .page-wrapper.horizontal-wrapper .page-body-wrapper .sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu {
   position: fixed;
   z-index: 4;
@@ -57695,6 +57699,10 @@ table.table-bordered thead tr th p {
     font-size: 15px;
     top: 5px;
   }
+  [dir=rtl] .page-wrapper.horizontal-wrapper .page-body-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu a .sub-arrow {
+    right: unset;
+    left: 20px;
+  }
   .page-wrapper.horizontal-wrapper .page-body-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu li .sidebar-submenu {
     display: none;
     border-radius: 4px;
@@ -57707,6 +57715,10 @@ table.table-bordered thead tr th p {
     top: -10px;
     padding: 15px 0px 15px 0px;
     box-shadow: 0 0 1px 0 #898989;
+  }
+  [dir=rtl] .page-wrapper.horizontal-wrapper .page-body-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu li:hover .sidebar-submenu {
+    right: 200px;
+    left: unset;
   }
   .page-wrapper.horizontal-wrapper .page-body-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu li a:hover .sub-arrow {
     right: 16px;
