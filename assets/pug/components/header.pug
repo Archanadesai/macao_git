@@ -9,33 +9,14 @@
           img.img-fluid.for-light(src='../assets/images/logo/logo.png', alt='')
           img.img-fluid.for-dark(src='../assets/images/logo/logo_dark.png', alt='')
       .toggle-sidebar
-        i.status_toggle.middle(data-feather='align-center').sidebar-toggle
+        //- i.status_toggle.middle(data-feather='align-center').sidebar-toggle
+        svg
+          use(href='../assets/svg/icon-sprite.svg#bar')
 
-    .left-header.col-xxl-3.col-xl-5.col-lg-4.col-md-4.col-sm-3
-      .searchBar
-        input#searchQueryInput(type='text' name='searchQueryInput' placeholder='Type to Search' value='')
-        button#searchQuerySubmit(type='submit' name='searchQuerySubmit')
-          svg
-            use(href='../assets/svg/icon-sprite.svg#search')
-      //- .notification-slider
-      //-   div.d-flex.h-100 
-      //-     img(src="../assets/images/giftools.gif" alt="gif")
-      //-     h6.mb-0.f-w-400
-      //-       span.font-primary Don't Miss Out! 
-      //-       span.f-light  Our new update has been released.
-      //-     i.icon-arrow-top-right.f-light
-      //-   div.d-flex.h-100
-      //-     img(src="../assets/images/giftools.gif" alt="gif")
-      //-     h6.mb-0.f-w-400
-      //-       span.f-light Something you love is now on sale! 
-      //-     a.ms-1(href="https://1.envato.market/3GVzd" target="_blank") Buy now !
+    
 
     .nav-right.col-xxl-8.col-xl-6.col-md-7.col-8.pull-right.right-header.ms-auto
       ul.nav-menus
-        li.header-search                          
-          span
-            svg
-              use(href='../assets/svg/icon-sprite.svg#search')
         form(action='#', method='get').form-inline.search-full.col
           .form-group.w-100
             .Typeahead.Typeahead--twitterUsers
@@ -50,7 +31,6 @@
             .current_lang
               .lang
                 i.flag-icon.flag-icon-us
-                span.lang-txt EN  
                 //- svg
                 //-   use(href='../assets/svg/icon-sprite.svg#language')                             
             .more_lang
@@ -81,52 +61,7 @@
                 span.lang-txt
                   | لعربية 
                   span  (ae)
-        li.fullscreen-body                        
-          span
-            svg#maximize-screen
-              use(href='../assets/svg/icon-sprite.svg#full-screen')
         
-        li.onhover-dropdown
-          svg
-            use(href='../assets/svg/icon-sprite.svg#star')
-          .onhover-show-div.bookmark-flip
-            .flip-card
-              .flip-card-inner
-                .front
-                  h6.f-18.mb-0.dropdown-title Bookmark
-                  ul.bookmark-dropdown
-                    li
-                      .row
-                        .col-4.text-center
-                          .bookmark-content
-                            .bookmark-icon
-                              i(data-feather='file-text')
-                            span Forms
-                        .col-4.text-center
-                          .bookmark-content
-                            .bookmark-icon
-                              i(data-feather='user')
-                            span Profile
-                        .col-4.text-center
-                          .bookmark-content
-                            .bookmark-icon
-                              i(data-feather='server')
-                            span Tables
-                    li.text-center
-                      a.flip-btn#flip-btn.f-w-700.btn.btn-primary.w-100(href="#!") Add Bookmark
-                .back
-                  ul
-                    li
-                      .bookmark-dropdown.flip-back-content
-                        input(type='text' placeholder='Search...')
-                    li
-                      a.f-w-700.d-block.flip-back#flip-back.btn.btn-primary.w-100(href="#!")
-                        | Back
-
-        li
-          .mode
-            svg
-              use(href='../assets/svg/icon-sprite.svg#moon')
         li.cart-nav.onhover-dropdown
           .cart-box
             svg
@@ -192,7 +127,7 @@
               .text-center.m-2
                 a.btn.btn-primary.view-checkout.btn.btn-primary.w-100.f-w-700(href='checkout.html')
                   | Proceed to checkout 
-        li.onhover-dropdown
+        li.onhover-dropdown.notification-body
           .notification-box
             svg
               use(href='../assets/svg/icon-sprite.svg#notification')
@@ -238,6 +173,66 @@
                   .close-circle
                     a.close-notification(href='#')
                       i(data-feather='x')
+        li.onhover-dropdown.bookmark-body
+          svg
+            use(href='../assets/svg/icon-sprite.svg#star')
+          .onhover-show-div.bookmark-flip
+            .flip-card
+              .flip-card-inner
+                .front
+                  h6.f-18.mb-0.dropdown-title Bookmark
+                  ul.bookmark-dropdown
+                    li
+                      .row
+                        .col-4.text-center
+                          .bookmark-content
+                            .bookmark-icon
+                              i(data-feather='file-text')
+                            span Forms
+                        .col-4.text-center
+                          .bookmark-content
+                            .bookmark-icon
+                              i(data-feather='user')
+                            span Profile
+                        .col-4.text-center
+                          .bookmark-content
+                            .bookmark-icon
+                              i(data-feather='server')
+                            span Tables
+                    li.text-center
+                      a.flip-btn#flip-btn.f-w-700.btn.btn-primary.w-100(href="#!") Add Bookmark
+                .back
+                  ul
+                    li
+                      .bookmark-dropdown.flip-back-content
+                        input(type='text' placeholder='Search...')
+                    li
+                      a.f-w-700.d-block.flip-back#flip-back.btn.btn-primary.w-100(href="#!")
+                        | Back
+        li#small-header-toggle
+          .plus-icon
+            svg
+              use(href='../assets/svg/icon-sprite.svg#add')
+        li.header-search                          
+          span
+            svg
+              use(href='../assets/svg/icon-sprite.svg#search')
+        .left-header.col-xxl-3.col-xl-5.col-lg-4.col-md-4.col-sm-3
+          .searchBar
+            input#searchQueryInput(type='text' name='searchQueryInput' placeholder='Type to Search' value='')
+            button#searchQuerySubmit(type='submit' name='searchQuerySubmit')
+              svg
+                use(href='../assets/svg/icon-sprite.svg#search')
+        li.fullscreen-body                        
+          span
+            svg#maximize-screen
+              use(href='../assets/svg/icon-sprite.svg#full-screen')
+        li
+          .mode
+            svg
+              use(href='../assets/svg/icon-sprite.svg#moon')
+        
+        
               //- li.b-l-success.border-4.toast.default-show-toast.align-items-center.text-light.border-0.fade.show(aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
               //-   .d-flex.justify-content-between
               //-     .toast-body
@@ -259,8 +254,6 @@
         li.profile-nav.onhover-dropdown.pe-0.py-0
           .d-flex.align-items-center.profile-media
             img.b-r-10(src='../assets/images/dashboard/profile.png', alt='')
-            .flex-grow-1
-              span Emay Walter
               //- p.mb-0 Admin 
               //-   i.middle.fa-solid.fa-angle-down
           ul.profile-dropdown.onhover-show-div

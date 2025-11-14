@@ -289,11 +289,36 @@
 
           >li {
             padding: 6px 10px;
+            background: #f0f0f0;
             display: inline-block;
             position: relative;
-            @media (max-width:1246px) {
-              padding: 6px 7px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width:600px) {
+              padding: 6px 8px;
+              width: 35px;
+              height: 35px;
             }
+            @media (max-width:399px) {
+              padding: 6px;
+              width: 30px;
+              height: 30px;
+            }
+            @media (max-width:340px) {
+              padding: 5px;
+              width: 28px;
+              height: 28px;
+            }
+            &:last-child{
+              background: transparent;
+            }
+            // @media (max-width:1246px) {
+            //   padding: 6px 7px;
+            // }
 
             // @media (max-width:1220px) {
             //   padding: 6px 7px;
@@ -475,9 +500,15 @@
         .onhover-show-div {
           width: 330px;
           top: 50px;
-          right: 0;
+          // right: 0;
+          right: -64px;
           left: unset;
-
+          @media (max-width:782px) {
+            right: -98px;
+          }
+          @media (max-width:658px) and (min-width:575px) {
+            right: -142px;
+          }
           .notification-header {
             padding: 18px;
             border-bottom: 1px solid rgba($dropdown-border-color, 0.3);
@@ -1519,6 +1550,40 @@
         // .toggle-sidebar {
         //   display: none;
         // }
+        .nav-right{
+          .nav-menus{
+            gap: 10px;
+            @media (max-width:600px) {
+              gap: 8px; 
+            }
+            @media (max-width:399px) {
+              gap: 5px; 
+            }
+            @media (max-width:340px) {
+              gap: 3px; 
+            }
+            .language-nav,
+            .bookmark-body,
+            .cart-nav,
+            .notification-body{
+              opacity: 0;
+              transform: scale(0.6);
+              pointer-events: none;
+              transition: all 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+              &.show-icons{
+                display: inline-flex !important;
+                opacity: 1 !important;
+                transform: scale(1) !important;
+                pointer-events: auto;
+              }
+            }
+            .fullscreen-body{
+              @media (max-width:460px) {
+                display: none;
+              }
+            }
+          }
+        }
       }
     }
 
@@ -3515,19 +3580,19 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .page-wrapper {
-    .page-header {
-      .header-wrapper {
-        .nav-right {
-          >ul {
-            >li {
-              padding: 8px;
-            }
-          }
-        }
-      }
-    }
-  }
+  // .page-wrapper {
+  //   .page-header {
+  //     .header-wrapper {
+  //       .nav-right {
+  //         >ul {
+  //           >li {
+  //             padding: 8px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
   .mobile-title {
     &.d-none {
@@ -3549,21 +3614,21 @@
   }
 }
 
-@media (max-width:1039px) and (min-width:992px) {
-  .page-wrapper {
-    .page-header {
-      .header-wrapper {
-        .nav-right {
-          >ul {
-            >li {
-              padding: 6px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// @media (max-width:1039px) and (min-width:992px) {
+//   .page-wrapper {
+//     .page-header {
+//       .header-wrapper {
+//         .nav-right {
+//           >ul {
+//             >li {
+//               padding: 6px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media screen and (min-width: 992px) {
   .page-header {
@@ -3853,21 +3918,21 @@
   }
 }
 
-@media only screen and (max-width:992px) {
-  .page-wrapper {
-    .page-header {
-      .header-wrapper {
-        .nav-right {
-          >ul {
-            >li {
-              padding: 6px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// @media only screen and (max-width:992px) {
+//   .page-wrapper {
+//     .page-header {
+//       .header-wrapper {
+//         .nav-right {
+//           >ul {
+//             >li {
+//               padding: 6px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media screen and (max-width: 767px) {
   .sidebar-wrapper {

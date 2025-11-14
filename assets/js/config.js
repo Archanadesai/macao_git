@@ -1,7 +1,7 @@
 (function () {
-  var primary = localStorage.getItem("primary") || "#7366FF";
-  var secondary = localStorage.getItem("secondary") || "#838383";
-  var success = localStorage.getItem("success") || "#65c15c";
+  var primary = localStorage.getItem("primary") || "#e16349";
+  var secondary = localStorage.getItem("secondary") || "#000000";
+  var success = localStorage.getItem("success") || "#4caf50";
 
   window.MacaoAdminConfig = {
     // Theme Primary Color

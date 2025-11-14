@@ -254,8 +254,8 @@
           ],
           ["Copper", 10, "#a927f9"],
           ["Silver", 12, "#ffb829"],
-          ["Gold", 14, "#838383"],
-          ["Platinum", 16, "color: #7366ff"],
+          ["Gold", 14, "#000000"],
+          ["Platinum", 16, "color: #e16349"],
         ]),
         d = new google.visualization.DataView(a);
       d.setColumns([

@@ -22,6 +22,7 @@
     // border-bottom: $card-border-color;
     border-top-left-radius: $card-border-radius;
     border-top-right-radius: $card-border-radius;
+    border-bottom: none;
     position: relative;
 
     &.card-no-border {

@@ -13,7 +13,6 @@ body {
 			--bs-card-color: var(--body-font-color);
 			--bs-body-color: var(--body-font-color);
 		}
-
 		.breadcrumb {
 			--bs-breadcrumb-bg: transparent;
 		}
@@ -3063,7 +3062,7 @@ body {
 
 						.card-header {
 							background-color: $transparent-color;
-							border-bottom: 1px solid $dark-card-border;
+							// border-bottom: 1px solid $dark-card-border;
 
 							>span {
 								color: $dark-all-font-color;

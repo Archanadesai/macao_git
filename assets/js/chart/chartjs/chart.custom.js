@@ -44,9 +44,9 @@
     datasets: [
       {
         label: "My First dataset",
-        fillColor: "rgba(115, 102 ,255, 0.4)",
+        fillColor: "rgba(225, 99 ,73, 0.4)",
         strokeColor: MacaoAdminConfig.primary,
-        highlightFill: "rgba(115, 102 ,255, 0.6)",
+        highlightFill: "rgba(225, 99 ,73, 0.6)",
         highlightStroke: MacaoAdminConfig.primary,
         data: [35, 59, 80, 81, 56, 55, 40],
       },
@@ -129,7 +129,7 @@
     datasets: [
       {
         label: "My First dataset",
-        fillColor: "rgba(115, 102 ,255, 0.3)",
+        fillColor: "rgba(225, 99 ,73, 0.3)",
         strokeColor: MacaoAdminConfig.primary,
         pointColor: MacaoAdminConfig.primary,
         pointStrokeColor: "#fff",
@@ -173,12 +173,12 @@
     datasets: [
       {
         label: "My First dataset",
-        fillColor: "rgba(115, 102 ,255, 0.4)",
+        fillColor: "rgba(225, 99 ,73, 0.4)",
         strokeColor: MacaoAdminConfig.primary,
         pointColor: MacaoAdminConfig.primary,
         pointStrokeColor: MacaoAdminConfig.primary,
         pointHighlightFill: MacaoAdminConfig.primary,
-        pointHighlightStroke: "rgba(115, 102 ,255, 0.4)",
+        pointHighlightStroke: "rgba(225, 99 ,73, 0.4)",
         data: [12, 3, 5, 18, 7],
       },
     ],
@@ -283,7 +283,7 @@
         data: [20, 40, 10, 20, 40, 30, 40, 10, 20],
       },
       {
-        fillColor: "rgba(115, 102 ,255, 0.2)",
+        fillColor: "rgba(225, 99 ,73, 0.2)",
         strokeColor: MacaoAdminConfig.primary,
         pointColor: MacaoAdminConfig.primary,
         data: [60, 10, 40, 30, 80, 30, 20, 90, 0],

@@ -173,4 +173,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Set initial count on page load
   updateUnreadCount();
+  document.getElementById("small-header-toggle").addEventListener("click", function () {
+    document.querySelector(".bookmark-body").classList.toggle("show-icons");
+    document.querySelector(".language-nav").classList.toggle("show-icons");
+    document.querySelector(".cart-nav").classList.toggle("show-icons");
+    document.querySelector(".notification-body").classList.toggle("show-icons");
+  });
 });

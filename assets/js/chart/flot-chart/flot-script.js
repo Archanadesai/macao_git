@@ -605,7 +605,7 @@ $(function () {
   }
 
   var data = [
-    { color: "#838383", points: data1_points, data: data1, label: "data1" },
+    { color: "#000000", points: data1_points, data: data1, label: "data1" },
     { color: "#a927f9", points: data2_points, data: data2, label: "data2" },
     {
       color: "#ffb829",
@@ -615,7 +615,7 @@ $(function () {
       label: "data3",
     },
     {
-      color: "#7366ff",
+      color: "#e16349",
       bars: { show: true, align: "center", barWidth: 0.25 },
       data: data4,
       label: "data4",

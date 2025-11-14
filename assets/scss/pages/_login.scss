@@ -91,7 +91,7 @@
       }
 
       input {
-        background-color: #f3f3ff;
+        background-color: $light-primary;
         transition: all 0.3s ease;
 
         &::-webkit-input-placeholder {

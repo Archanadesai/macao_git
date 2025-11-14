@@ -58,24 +58,14 @@
         <div class="header-wrapper row g-0">
           <div class="header-logo-wrapper col-auto">
             <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a></div>
-            <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
-          </div>
-          <div class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
-            <div class="searchBar">
-              <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
-              <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
-                <svg>
-                  <use href="../assets/svg/icon-sprite.svg#search"></use>
-                </svg>
-              </button>
+            <div class="toggle-sidebar">
+              <svg>
+                <use href="../assets/svg/icon-sprite.svg#bar"></use>
+              </svg>
             </div>
           </div>
           <div class="nav-right col-xxl-8 col-xl-6 col-md-7 col-8 pull-right right-header ms-auto">
             <ul class="nav-menus">
-              <li class="header-search">                         <span>
-                  <svg>
-                    <use href="../assets/svg/icon-sprite.svg#search"></use>
-                  </svg></span></li>
               <form class="form-inline search-full col" action="#" method="get">
                 <div class="form-group w-100">
                   <div class="Typeahead Typeahead--twitterUsers">
@@ -90,7 +80,7 @@
               <li class="language-nav">
                 <div class="translate_wrapper">
                   <div class="current_lang">
-                    <div class="lang"><i class="flag-icon flag-icon-us"></i><span class="lang-txt">EN  </span></div>
+                    <div class="lang"><i class="flag-icon flag-icon-us"></i></div>
                   </div>
                   <div class="more_lang">
                     <div class="lang selected" data-value="en"><i class="flag-icon flag-icon-us"></i><span class="lang-txt">English<span> (US)</span></span></div>
@@ -101,63 +91,6 @@
                     <div class="lang" data-value="cn"><i class="flag-icon flag-icon-cn"></i><span class="lang-txt">简体中文</span></div>
                     <div class="lang" data-value="ae"><i class="flag-icon flag-icon-ae"></i><span class="lang-txt">لعربية <span> (ae)</span></span></div>
                   </div>
-                </div>
-              </li>
-              <li class="fullscreen-body">                       <span>
-                  <svg id="maximize-screen">
-                    <use href="../assets/svg/icon-sprite.svg#full-screen"></use>
-                  </svg></span></li>
-              <li class="onhover-dropdown">
-                <svg>
-                  <use href="../assets/svg/icon-sprite.svg#star"></use>
-                </svg>
-                <div class="onhover-show-div bookmark-flip">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="front">
-                        <h6 class="f-18 mb-0 dropdown-title">Bookmark</h6>
-                        <ul class="bookmark-dropdown">
-                          <li>
-                            <div class="row">
-                              <div class="col-4 text-center">
-                                <div class="bookmark-content">
-                                  <div class="bookmark-icon"><i data-feather="file-text"></i></div><span>Forms</span>
-                                </div>
-                              </div>
-                              <div class="col-4 text-center">
-                                <div class="bookmark-content">
-                                  <div class="bookmark-icon"><i data-feather="user"></i></div><span>Profile</span>
-                                </div>
-                              </div>
-                              <div class="col-4 text-center">
-                                <div class="bookmark-content">
-                                  <div class="bookmark-icon"><i data-feather="server"></i></div><span>Tables</span>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="text-center"><a class="flip-btn f-w-700 btn btn-primary w-100" id="flip-btn" href="#!">Add Bookmark</a></li>
-                        </ul>
-                      </div>
-                      <div class="back">
-                        <ul>
-                          <li>
-                            <div class="bookmark-dropdown flip-back-content">
-                              <input type="text" placeholder="Search...">
-                            </div>
-                          </li>
-                          <li><a class="f-w-700 d-block flip-back btn btn-primary w-100" id="flip-back" href="#!">Back</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="mode">
-                  <svg>
-                    <use href="../assets/svg/icon-sprite.svg#moon"></use>
-                  </svg>
                 </div>
               </li>
               <li class="cart-nav onhover-dropdown">
@@ -218,7 +151,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="onhover-dropdown">
+              <li class="onhover-dropdown notification-body">
                 <div class="notification-box">
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#notification"></use>
@@ -264,10 +197,86 @@
                   </ul>
                 </div>
               </li>
-              <li class="profile-nav onhover-dropdown pe-0 py-0">
-                <div class="d-flex align-items-center profile-media"><img class="b-r-10" src="../assets/images/dashboard/profile.png" alt="">
-                  <div class="flex-grow-1"><span>Emay Walter</span></div>
+              <li class="onhover-dropdown bookmark-body">
+                <svg>
+                  <use href="../assets/svg/icon-sprite.svg#star"></use>
+                </svg>
+                <div class="onhover-show-div bookmark-flip">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="front">
+                        <h6 class="f-18 mb-0 dropdown-title">Bookmark</h6>
+                        <ul class="bookmark-dropdown">
+                          <li>
+                            <div class="row">
+                              <div class="col-4 text-center">
+                                <div class="bookmark-content">
+                                  <div class="bookmark-icon"><i data-feather="file-text"></i></div><span>Forms</span>
+                                </div>
+                              </div>
+                              <div class="col-4 text-center">
+                                <div class="bookmark-content">
+                                  <div class="bookmark-icon"><i data-feather="user"></i></div><span>Profile</span>
+                                </div>
+                              </div>
+                              <div class="col-4 text-center">
+                                <div class="bookmark-content">
+                                  <div class="bookmark-icon"><i data-feather="server"></i></div><span>Tables</span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="text-center"><a class="flip-btn f-w-700 btn btn-primary w-100" id="flip-btn" href="#!">Add Bookmark</a></li>
+                        </ul>
+                      </div>
+                      <div class="back">
+                        <ul>
+                          <li>
+                            <div class="bookmark-dropdown flip-back-content">
+                              <input type="text" placeholder="Search...">
+                            </div>
+                          </li>
+                          <li><a class="f-w-700 d-block flip-back btn btn-primary w-100" id="flip-back" href="#!">Back</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </li>
+              <li id="small-header-toggle">
+                <div class="plus-icon">
+                  <svg>
+                    <use href="../assets/svg/icon-sprite.svg#add"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="header-search">                         <span>
+                  <svg>
+                    <use href="../assets/svg/icon-sprite.svg#search"></use>
+                  </svg></span></li>
+              <div class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
+                <div class="searchBar">
+                  <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
+                  <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                    <svg>
+                      <use href="../assets/svg/icon-sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <li class="fullscreen-body">                       <span>
+                  <svg id="maximize-screen">
+                    <use href="../assets/svg/icon-sprite.svg#full-screen"></use>
+                  </svg></span></li>
+              <li>
+                <div class="mode">
+                  <svg>
+                    <use href="../assets/svg/icon-sprite.svg#moon"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="profile-nav onhover-dropdown pe-0 py-0">
+                <div class="d-flex align-items-center profile-media"><img class="b-r-10" src="../assets/images/dashboard/profile.png" alt=""></div>
                 <ul class="profile-dropdown onhover-show-div">
                   <li><a href="sign-up.html"><i data-feather="user"></i><span>Account </span></a></li>
                   <li><a href="mail-box.html"><i data-feather="mail"></i><span>Inbox</span></a></li>
