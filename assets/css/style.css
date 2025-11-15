@@ -8923,7 +8923,7 @@ button.button-primary:hover {
 .subscribed-user div.dt-container .dt-layout-row .dt-length {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 33px;
 }
 .default-dashboard div.dt-container .dt-layout-row .dt-length .dt-input,
 .dashboard-2 div.dt-container .dt-layout-row .dt-length .dt-input,
@@ -40389,6 +40389,9 @@ footer.blockquote-footer {
 .my-gallery.gallery-with-description .pswp__caption__center ul {
   display: none;
 }
+.my-gallery .gallery figure.img-hover.hover-12 a > div {
+  background: var(--theme-default) !important;
+}
 
 .gallery-description-skeleton {
   padding: 20px;
@@ -46343,31 +46346,22 @@ ul.dot-group li {
   margin-bottom: 24px;
   font-weight: 400;
 }
+.pricing-simple .btn-block {
+  width: calc(150px + 100 * (100vw - 320px) / 1600);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -15px;
+}
 
 .pricingtable {
-  text-align: center;
-  padding-block: 20px;
-  border-radius: 10px;
+  padding: 32px;
+  border-radius: 12px;
   box-shadow: 0 0 40px rgba(8, 21, 66, 0.05);
   overflow: hidden;
   position: relative;
   z-index: 1;
   height: 100%;
-}
-.pricingtable:before, .pricingtable:after {
-  content: "";
-  background-color: var(--theme-default);
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  position: absolute;
-  right: -213px;
-  z-index: -1;
-  opacity: 0.1;
-}
-[dir=rtl] .pricingtable:before, [dir=rtl] .pricingtable:after {
-  right: unset;
-  left: -213px;
 }
 
 .pricing-simple .pricing-content li {
@@ -46375,9 +46369,6 @@ ul.dot-group li {
   margin-bottom: calc(12px + 6 * (100vw - 320px) / 1600);
   text-transform: capitalize;
   color: #52526c;
-}
-.pricing-simple .pricing-content li:last-child {
-  margin-bottom: 0;
 }
 .pricing-simple .pricing-content li i {
   padding-right: 8px;
@@ -46391,47 +46382,44 @@ ul.dot-group li {
   padding-left: 8px;
 }
 
-.pricingtable:after {
-  background-color: var(--theme-default);
-  width: 300px;
-  height: 300px;
-  top: auto;
-  bottom: -210px;
-  right: auto;
-  left: -160px;
-  opacity: 0.1;
+.pricingtable {
+  background: linear-gradient(215deg, rgba(225, 99, 73, 0.14) 0%, rgba(225, 99, 73, 0.06) 50%, rgba(225, 99, 73, 0) 100%);
+  border-top: 2px solid var(--theme-default);
 }
-[dir=rtl] .pricingtable:after {
-  right: -160px;
-  left: auto;
+.pricingtable::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: 0.6s;
+}
+.pricingtable:hover::before {
+  top: 100%;
 }
 .pricingtable .title {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 .pricingtable .price-value {
-  color: #fff;
-  background-color: var(--theme-default);
-  width: 130px;
-  height: 130px;
-  padding: 45px 0 0;
-  margin: 0 auto 25px;
-  border-radius: 50%;
+  color: #000;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 18px;
 }
 .pricingtable .price-value .duration {
   margin: 0 0 0 -5px;
+  font-size: 20px;
+  color: #6c757d;
 }
 [dir=rtl] .pricingtable .price-value .duration {
   margin: 0 -5px 0 0;
 }
-.pricingtable .price-value .amount {
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 45px;
-  display: inline-block;
-}
-.pricingtable .price-value .currency {
-  vertical-align: top;
+.pricingtable .price-value::before {
+  border-bottom: 1px solid gray;
 }
 .pricingtable .pricing-content {
   margin: 0 0 25px;
@@ -63932,7 +63920,7 @@ html[dir=rtl] .overall-budget div.dt-container .dt-layout-row .dt-layout-cell .d
   html[dir=rtl] .main-tasks div.dt-container .dt-layout-row .dt-layout-cell .dt-search,
   html[dir=rtl] .subscribed-user div.dt-container .dt-layout-row .dt-layout-cell .dt-search,
   html[dir=rtl] .overall-budget div.dt-container .dt-layout-row .dt-layout-cell .dt-search {
-    right: 20px;
+    right: 20px !important;
     left: unset;
   }
 }
@@ -67300,7 +67288,6 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   width: 100%;
   text-align: left;
   letter-spacing: 0.7px;
-  font-family: Roboto;
   border: 1px solid #efefef;
   border-radius: 0;
   border-top-left-radius: 5px;
@@ -68051,6 +68038,10 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   top: 33px;
   right: 158px;
 }
+[dir=rtl] .api-management .recent-table div.dt-container .dt-layout-row .dt-search {
+  right: unset !important;
+  left: 158px !important;
+}
 @media (max-width: 640px) and (min-width: 576px) {
   .api-management .recent-table div.dt-container .dt-layout-row .dt-search {
     position: absolute;
@@ -68068,7 +68059,7 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   border-radius: 6px;
 }
 .api-management .recent-table div.dt-container .dt-layout-row .dt-length {
-  top: 23px;
+  top: 33px;
 }
 .api-management .recent-table table thead tr th,
 .api-management .recent-table table thead tr td,
@@ -68359,9 +68350,6 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   }
 }
 
-.subscribed-user .card-header {
-  padding: 27px 20px;
-}
 .subscribed-user .subscribed-user-wrapper .dt-container .dt-layout-row:first-child {
   position: absolute;
   display: flex;

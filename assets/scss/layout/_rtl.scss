@@ -8630,7 +8630,7 @@ html[dir="rtl"] {
     div.dt-container {
       .dt-layout-row {
         .dt-length {
-          right: 20px;
+          right: 20px; 
           left: unset;
         }
 
@@ -8705,7 +8705,7 @@ html[dir="rtl"] {
             right: unset;
 
             @media (max-width:640px) {
-              right: 20px;
+              right: 20px !important;
               left: unset;
             }
 

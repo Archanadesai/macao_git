@@ -581,6 +581,17 @@
       }
     }
   }
+  .gallery {
+    figure{
+      &.img-hover{
+        &.hover-12 {
+          a>div{
+            background: var(--theme-default) !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 .gallery-description-skeleton {

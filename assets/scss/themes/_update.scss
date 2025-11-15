@@ -139,7 +139,6 @@
         width: 100%;
         text-align: left;
         letter-spacing: 0.7px;
-        font-family: $font-roboto;
         border: 1px solid $light-semi-gray;
         border-radius: 0;
         border-top-left-radius: 5px;
@@ -1161,6 +1160,10 @@
         .dt-search {
           top: 33px;
           right: 158px;
+          [dir="rtl"] & {
+            right: unset !important;
+            left: 158px !important;
+          }
 
           @media (max-width: 640px) and (min-width: 576px) {
             position: absolute;
@@ -1177,7 +1180,7 @@
         }
 
         .dt-length {
-          top: 23px;
+          top: 33px;
         }
       }
     }
@@ -1454,7 +1457,7 @@
 // Subscribed Users
 .subscribed-user {
   .card-header {
-    padding: 27px 20px;
+    // padding: 27px 20px;
   }
 
   .subscribed-user-wrapper {
