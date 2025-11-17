@@ -82,7 +82,7 @@
                 align-items: center;
                 gap: 12px;
                 padding: 8px 0;
-                background-color: var(--white);
+                background-color: transparent;
 
                 &.active,
                 &:active {
@@ -521,8 +521,8 @@
         div.dt-container {
             .dt-layout-row {
                 .dt-search {
-                    top: 26px;
-                    right: 214px;
+                    top: 35px;
+                    right: 237px;
 
                     @media (max-width:640px) {
                         top: 4px;
@@ -1322,8 +1322,9 @@
             div.dt-container {
                 .dt-layout-row {
                     .dt-search {
-                        top: 26px;
-                        right: 214px;
+                        top: 38px;
+                        right: 232px;
+
 
                         @media (max-width:640px) {
                             top: 4px;

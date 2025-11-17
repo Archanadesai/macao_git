@@ -644,7 +644,9 @@
     display: none;
   }
 }
-
+.my-gallery.gallery figure.img-hover.hover-12 a>div{
+  background: var(--theme-default) !important;
+}
 /**=====================
     3.30 Gallery CSS Ends
 ==========================**/

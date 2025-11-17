@@ -51,7 +51,7 @@
         },
       },
     },
-    colors: ["#7366FF", "#54BA4A", "#ffb829"],
+    colors: ["#e16349", "#4caf50", "#ffc107"],
     labels: ["Pending", "In Progress", "Completed"],
     legend: {
       show: false,
@@ -186,7 +186,7 @@
         {
           seriesIndex: 0,
           dataPointIndex: 3,
-          fillColor: "#7064F5",
+          fillColor: "#e16349",
           strokeColor: "var(--white)",
           size: 5,
           sizeOffset: 6,
@@ -647,7 +647,7 @@
         height: 8,
       },
     },
-    colors: ["#7366FF", "#838383", "#ffb829", "#65c15c"],
+    colors: ["#e16349", "#838383", "#ffc107", "#4caf50"],
     labels: ["Design", "Product", "Development", "Marketing"],
   };
 

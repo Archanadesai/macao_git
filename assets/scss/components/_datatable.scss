@@ -55,8 +55,12 @@
 
       .dt-length {
         position: absolute;
-        top: 20px;
+        top: 33px;
         left: 33px;
+        [dir="rtl"] & {
+					right: 33px;
+					left: unset;
+				}
 
         .dt-input {
           border-color: var(--recent-dashed-border);

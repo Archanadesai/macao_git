@@ -221,7 +221,7 @@
    .seller-box {
       border-radius: 15px;
       padding: 20px;
-      background: var(--white);
+      background: $light-card-background;
 
       >div {
          display: flex;
@@ -251,7 +251,7 @@
                }
 
                span {
-                  background-color: var(--white);
+                  // background-color: var(--white);
 
                   &:first-child {
                      padding-right: 6px;

@@ -348,7 +348,7 @@ html[dir="rtl"] {
                               padding-left: unset !important;
 
                               &:after {
-                                right: 26px;
+                                right: 28px;
                                 left: unset;
                               }
                             }
@@ -948,7 +948,7 @@ html[dir="rtl"] {
             padding: 12px 8px 12px 0;
 
             &.active {
-              background: linear-gradient(-90deg, #7366FF -175.57%, rgba(115, 102, 255, 0) 65.16%);
+              background: linear-gradient(-90deg, #e16349 -175.57%, rgba(225, 99, 73, 0) 65.16%);
 
               .absolute-border {
                 &::before {
@@ -5998,7 +5998,7 @@ html[dir="rtl"] {
           .dt-layout-row {
             .dt-search {
               right: unset;
-              left: 214px;
+              left: 229px;
             }
           }
         }
@@ -6065,7 +6065,7 @@ html[dir="rtl"] {
           .dt-layout-row {
             .dt-search {
               right: unset;
-              left: 214px;
+              left: 237px;
 
               @media (max-width:640px) {
                 right: 20px;
@@ -9061,7 +9061,7 @@ html[dir="rtl"] {
 
               @media (max-width:640px) and (min-width:400px) {
                 left: 20px;
-                right: unset;
+                right: unset !important;
               }
 
               @media (max-width:399px) {

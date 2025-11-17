@@ -8922,8 +8922,42 @@ button.button-primary:hover {
 .customer-order-wrapper div.dt-container .dt-layout-row .dt-length,
 .subscribed-user div.dt-container .dt-layout-row .dt-length {
   position: absolute;
-  top: 20px;
+  top: 33px;
   left: 33px;
+}
+[dir=rtl] .default-dashboard div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-2 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-3 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-4 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-5 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-6 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-7 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-09 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-10 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-11 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-12 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .dashboard-13 div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .main-scope-project div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .e-category div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .list-product-view div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .seller-details-wrapper div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .common-order-history div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .datatable-init div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .common-cart div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .role-permission-wrapper div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .user-list-wrapper div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .main-tasks div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .project-status div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .api-manage div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .manage-review-wrapper div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .candidate-wrapper div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .product-report-wrapper div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .sale-report-wrapper div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .sale-return-wrapper div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .customer-order-wrapper div.dt-container .dt-layout-row .dt-length,
+[dir=rtl] .subscribed-user div.dt-container .dt-layout-row .dt-length {
+  right: 33px;
+  left: unset;
 }
 .default-dashboard div.dt-container .dt-layout-row .dt-length .dt-input,
 .dashboard-2 div.dt-container .dt-layout-row .dt-length .dt-input,
@@ -19723,7 +19757,7 @@ input[type=number] {
   align-items: center;
   gap: 12px;
   padding: 8px 0;
-  background-color: var(--white);
+  background-color: transparent;
 }
 .sidebar-left-wrapper .sidebar-left-icons .nav-item .nav-link.active, .sidebar-left-wrapper .sidebar-left-icons .nav-item .nav-link:active {
   color: unset;
@@ -20041,8 +20075,8 @@ input[type=number] {
   height: 16px;
 }
 .list-product.list-category div.dt-container .dt-layout-row .dt-search {
-  top: 26px;
-  right: 214px;
+  top: 35px;
+  right: 237px;
 }
 @media (max-width: 640px) {
   .list-product.list-category div.dt-container .dt-layout-row .dt-search {
@@ -20683,8 +20717,8 @@ input[type=number] {
 }
 
 .list-product-view .list-product .recent-table div.dt-container .dt-layout-row .dt-search {
-  top: 26px;
-  right: 214px;
+  top: 38px;
+  right: 232px;
 }
 @media (max-width: 640px) {
   .list-product-view .list-product .recent-table div.dt-container .dt-layout-row .dt-search {
@@ -33751,10 +33785,6 @@ select.crypto-select.primary {
 /**=====================
   3.20 Dashboard_default CSS Start
 ==========================**/
-.form-control-plaintext {
-  width: auto !important;
-}
-
 @keyframes bounce-effect {
   0% {
     transform: translateY(0);
@@ -37021,7 +37051,6 @@ footer.blockquote-footer {
   margin-bottom: 0;
   margin-top: 5px;
   font-size: 20px;
-  font-family: roboto;
 }
 .product-box .product-details h6 {
   color: #404040;
@@ -37042,7 +37071,6 @@ footer.blockquote-footer {
 .product-box .modal .modal-header .product-box .product-details > a {
   margin-block: 5px 0;
   font-size: 20px;
-  font-family: Roboto;
   font-weight: 600;
 }
 .product-box .modal .modal-header .product-box .product-details h6 {
@@ -40436,6 +40464,10 @@ footer.blockquote-footer {
   display: none;
 }
 
+.my-gallery.gallery figure.img-hover.hover-12 a > div {
+  background: var(--theme-default) !important;
+}
+
 /**=====================
     3.30 Gallery CSS Ends
 ==========================**/
@@ -41569,7 +41601,7 @@ footer.blockquote-footer {
   background: rgba(247, 248, 249, 0.9);
 }
 .kanban-board .kanban-drag .itemform .form-group:last-child {
-  padding-top: 12px;
+  padding-block: 12px;
 }
 
 .kanban-item {
@@ -46877,7 +46909,7 @@ button.progress-btn {
   }
 }
 .scope-bottom-wrapper .sidebar-left-icons .nav-item .nav-link.active {
-  background: linear-gradient(90deg, #7366FF -175.57%, rgba(115, 102, 255, 0) 65.16%);
+  background: linear-gradient(90deg, #e16349 -175.57%, rgba(225, 99, 73, 0) 65.16%);
   color: unset;
 }
 .scope-bottom-wrapper .sidebar-left-icons .nav-item .nav-link.active .absolute-border::before {
@@ -47006,9 +47038,6 @@ button.progress-btn {
   }
 }
 
-.progress-project {
-  border: 2px solid #fff;
-}
 .progress-project .common-space svg {
   width: 15px;
   height: 15px;
@@ -47451,8 +47480,8 @@ button.progress-btn {
 
 @media (min-width: 641px) {
   .project-pending-table.recent-table div.dt-container .dt-layout-row .dt-search {
-    top: 30px;
-    right: 55px;
+    top: 42px;
+    right: 84px;
   }
 }
 .project-pending-table.recent-table table thead tr th,
@@ -47485,7 +47514,6 @@ button.progress-btn {
 .project-pending-table.recent-table table tbody tr th:last-child .btn,
 .project-pending-table.recent-table table tbody tr td:last-child .btn {
   min-width: 132px;
-  width: 132px;
 }
 @media (max-width: 1735px) and (min-width: 1661px) {
   .project-pending-table.recent-table table thead tr th:nth-child(4),
@@ -47516,19 +47544,19 @@ button.progress-btn {
   .project-pending-table.recent-table table thead tr td:first-child,
   .project-pending-table.recent-table table tbody tr th:first-child,
   .project-pending-table.recent-table table tbody tr td:first-child {
-    min-width: 100px;
+    min-width: 128px;
   }
   .project-pending-table.recent-table table thead tr th:nth-child(2),
   .project-pending-table.recent-table table thead tr td:nth-child(2),
   .project-pending-table.recent-table table tbody tr th:nth-child(2),
   .project-pending-table.recent-table table tbody tr td:nth-child(2) {
-    min-width: 199px;
+    min-width: 245px;
   }
   .project-pending-table.recent-table table thead tr th:nth-child(4),
   .project-pending-table.recent-table table thead tr td:nth-child(4),
   .project-pending-table.recent-table table tbody tr th:nth-child(4),
   .project-pending-table.recent-table table tbody tr td:nth-child(4) {
-    min-width: 74px;
+    min-width: 105px;
   }
 }
 .project-pending-table.recent-table table thead tr th a,
@@ -47549,7 +47577,7 @@ button.progress-btn {
   border: unset;
   margin-bottom: 18px;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
 }
 @media (max-width: 1818px) and (min-width: 320px) {
   .activity-wrapper .schedule-wrapper {
@@ -47778,9 +47806,9 @@ button.progress-btn {
 }
 .project-budget-wrapper .touchspin-wrapper .btn-touchspin {
   background-color: var(--white);
-  -webkit-box-shadow: 0px 9px 16px 0px rgba(115, 102, 255, 0.13);
-  -moz-box-shadow: 0px 9px 16px 0px rgba(115, 102, 255, 0.13);
-  box-shadow: 0px 9px 16px 0px rgba(115, 102, 255, 0.13);
+  -webkit-box-shadow: 0px 9px 16px 0px rgba(225, 99, 73, 0.13);
+  -moz-box-shadow: 0px 9px 16px 0px rgba(225, 99, 73, 0.13);
+  box-shadow: 0px 9px 16px 0px rgba(225, 99, 73, 0.13);
   border: transparent;
 }
 @media (max-width: 575px) {
@@ -48391,6 +48419,9 @@ button.progress-btn {
   .project-tabs.common-space .nav-tabs .nav-item .nav-link {
     padding: 10px 0;
   }
+}
+.project-tabs.common-space .nav-tabs .nav-item .nav-link.active {
+  background-color: transparent !important;
 }
 @media (min-width: 576px) {
   .project-tabs.common-space .nav-tabs .nav-item:first-child .nav-link {
@@ -51674,7 +51705,7 @@ div:where(.swal2-container) button:where(.swal2-close):hover {
 .seller-cards .seller-box {
   border-radius: 15px;
   padding: 20px;
-  background: var(--white);
+  background: #f8f8f8;
 }
 .seller-cards .seller-box > div {
   display: flex;
@@ -51703,9 +51734,6 @@ div:where(.swal2-container) button:where(.swal2-close):hover {
   width: 100%;
   border-top: 1px dashed var(--chart-dashed-border);
   z-index: -1;
-}
-.seller-cards .seller-box .seller-profits li .common-space span {
-  background-color: var(--white);
 }
 .seller-cards .seller-box .seller-profits li .common-space span:first-child {
   padding-right: 6px;
@@ -55266,7 +55294,7 @@ table.table-bordered thead tr th p {
 }
 [dir=rtl] .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu li a::before, .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu li [dir=rtl] a::before {
   left: unset;
-  right: 25px;
+  right: 18px;
 }
 
 .page-wrapper.horizontal-wrapper .page-body-wrapper .sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu li a:after {
@@ -56790,6 +56818,10 @@ table.table-bordered thead tr th p {
   background-color: var(--theme-default);
   visibility: visible;
 }
+[dir=rtl] .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu li a.active::after {
+  right: 21px;
+  left: unset;
+}
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu li a:hover {
   margin-left: 0;
 }
@@ -58199,7 +58231,7 @@ html[dir=rtl] .page-wrapper.compact-wrapper .page-body-wrapper .sidebar-wrapper 
   padding-left: unset !important;
 }
 html[dir=rtl] .page-wrapper.compact-wrapper .page-body-wrapper .sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-submenu > li a:after {
-  right: 26px;
+  right: 28px;
   left: unset;
 }
 html[dir=rtl] .page-wrapper.compact-wrapper .page-body-wrapper .sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-link::after {
@@ -58507,7 +58539,7 @@ html[dir=rtl] .main-scope-project .scope-bottom-wrapper .sidebar-left-icons .nav
   padding: 12px 8px 12px 0;
 }
 html[dir=rtl] .main-scope-project .scope-bottom-wrapper .sidebar-left-icons .nav-item .nav-link.active {
-  background: linear-gradient(-90deg, #7366FF -175.57%, rgba(115, 102, 255, 0) 65.16%);
+  background: linear-gradient(-90deg, #e16349 -175.57%, rgba(225, 99, 73, 0) 65.16%);
 }
 html[dir=rtl] .main-scope-project .scope-bottom-wrapper .sidebar-left-icons .nav-item .nav-link.active .absolute-border::before {
   left: unset;
@@ -61581,7 +61613,7 @@ html[dir=rtl] .toolbar-box .ql-container .ql-tooltip {
 }
 html[dir=rtl] .list-product-view .list-product .recent-table div.dt-container .dt-layout-row .dt-search {
   right: unset;
-  left: 214px;
+  left: 229px;
 }
 html[dir=rtl] .list-product-view .list-product .recent-table table thead tr th:first-child,
 html[dir=rtl] .list-product-view .list-product .recent-table table thead tr td:first-child,
@@ -61613,7 +61645,7 @@ html[dir=rtl] .e-category .main-divider .divider-body h6 {
 }
 html[dir=rtl] .e-category .list-product.list-category div.dt-container .dt-layout-row .dt-search {
   right: unset;
-  left: 214px;
+  left: 237px;
 }
 @media (max-width: 640px) {
   html[dir=rtl] .e-category .list-product.list-category div.dt-container .dt-layout-row .dt-search {
@@ -64326,7 +64358,7 @@ html[dir=rtl] .candidate-wrapper .candidates-box .table-responsive .dt-container
 @media (max-width: 640px) and (min-width: 400px) {
   html[dir=rtl] .candidate-wrapper .candidates-box .table-responsive .dt-container .dt-layout-row .dt-search {
     left: 20px;
-    right: unset;
+    right: unset !important;
   }
 }
 @media (max-width: 399px) {
@@ -67288,7 +67320,6 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   width: 100%;
   text-align: left;
   letter-spacing: 0.7px;
-  border: 1px solid #efefef;
   border-radius: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -71807,7 +71838,6 @@ body.dark-only .page-wrapper .default-according .card {
 }
 body.dark-only .page-wrapper .default-according .card .btn-link {
   background-color: #262932;
-  border: 1px solid #374558;
   border-bottom: none;
   color: #fff;
 }
@@ -73872,9 +73902,6 @@ body.dark-only .common-searchbox .input-group-text {
 body.dark-only .common-searchbox .form-control:focus {
   border-color: #374558;
   color: rgba(255, 255, 255, 0.4);
-}
-body.dark-only .progress-project {
-  border-color: #323846;
 }
 body.dark-only .progress-project .common-space .common-align .badge {
   background-color: #1f2533;

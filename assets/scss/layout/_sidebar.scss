@@ -35,7 +35,7 @@
 
   [dir="rtl"] & {
     left: unset;
-    right: 25px;
+    right: 18px;
   }
 }
 
@@ -2176,6 +2176,10 @@
                                   background-color: var(--theme-default);
                                   ;
                                   visibility: visible;
+                                  [dir="rtl"] & {
+                                    right: 21px;
+                                    left: unset;
+                                  }
                                 }
                               }
 
