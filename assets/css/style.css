@@ -8925,40 +8925,6 @@ button.button-primary:hover {
   top: 33px;
   left: 33px;
 }
-[dir=rtl] .default-dashboard div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-2 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-3 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-4 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-5 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-6 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-7 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-09 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-10 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-11 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-12 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .dashboard-13 div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .main-scope-project div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .e-category div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .list-product-view div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .seller-details-wrapper div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .common-order-history div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .datatable-init div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .common-cart div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .role-permission-wrapper div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .user-list-wrapper div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .main-tasks div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .project-status div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .api-manage div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .manage-review-wrapper div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .candidate-wrapper div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .product-report-wrapper div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .sale-report-wrapper div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .sale-return-wrapper div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .customer-order-wrapper div.dt-container .dt-layout-row .dt-length,
-[dir=rtl] .subscribed-user div.dt-container .dt-layout-row .dt-length {
-  right: 33px;
-  left: unset;
-}
 .default-dashboard div.dt-container .dt-layout-row .dt-length .dt-input,
 .dashboard-2 div.dt-container .dt-layout-row .dt-length .dt-input,
 .dashboard-3 div.dt-container .dt-layout-row .dt-length .dt-input,
@@ -10327,7 +10293,7 @@ button.button-primary:hover {
 .customer-order-wrapper div.dt-container .dt-layout-row .dt-layout-cell .dt-search,
 .subscribed-user div.dt-container .dt-layout-row .dt-layout-cell .dt-search {
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: -10px;
   z-index: 0;
 }
@@ -13041,7 +13007,7 @@ btn-group .dropdown-wrapper .input-group .input-group-text {
   top: 14px;
   height: 4px;
   background-color: var(--view-border-marker);
-  border: solid var(--view-border-marker);
+  border: solid #fce1cd;
   border-width: 2px 0;
 }
 .basic-wizard .stepper-horizontal .step .step-bar-left {
@@ -31582,9 +31548,6 @@ select.crypto-select.primary {
   background-size: cover;
   margin-bottom: 25px;
 }
-.widget-11 .card-body {
-  padding: 20px 19px;
-}
 .widget-11 .card-body .common-align {
   gap: 15px;
 }
@@ -45709,8 +45672,11 @@ ul.dot-group li {
   }
 }
 .common-order-history .order-history-wrapper .recent-table div.dt-container .dt-layout-row .dt-layout-cell .dt-search {
-  top: -40px;
-  right: -50px;
+  top: -54px;
+  right: 39px;
+}
+.common-order-history .order-history-wrapper .recent-table div.dt-container .dt-layout-row .dt-layout-cell .dt-search input {
+  width: auto;
 }
 @media (max-width: 1399px) {
   .common-order-history .order-history-wrapper .recent-table div.dt-container .dt-layout-row .dt-layout-cell .dt-search {
@@ -45723,8 +45689,8 @@ ul.dot-group li {
   }
 }
 .common-order-history .order-history-wrapper .recent-table div.dt-container .dt-layout-row .dt-length {
-  top: -45px;
-  left: 20px;
+  top: -55px;
+  left: 33px;
 }
 .common-order-history .order-history-wrapper .recent-table table thead tr th,
 .common-order-history .order-history-wrapper .recent-table table thead tr td,
@@ -45770,7 +45736,7 @@ ul.dot-group li {
   .common-order-history .order-history-wrapper .recent-table table thead tr td:nth-child(2),
   .common-order-history .order-history-wrapper .recent-table table tbody tr th:nth-child(2),
   .common-order-history .order-history-wrapper .recent-table table tbody tr td:nth-child(2) {
-    min-width: 104px;
+    min-width: 127px;
   }
   .common-order-history .order-history-wrapper .recent-table table thead tr th:nth-child(3),
   .common-order-history .order-history-wrapper .recent-table table thead tr td:nth-child(3),
@@ -51602,7 +51568,11 @@ div:where(.swal2-container) button:where(.swal2-close):hover {
   justify-content: flex-end;
   align-items: center;
   gap: 12px;
-  flex-wrap: wrap;
+}
+@media (max-width: 445px) {
+  .seller-wrapper .right-vendor {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 1422px) {
   .seller-wrapper .right-vendor {
@@ -51620,6 +51590,9 @@ div:where(.swal2-container) button:where(.swal2-close):hover {
 .seller-wrapper .right-vendor .input-group svg {
   width: 18px;
   height: 18px;
+}
+.seller-wrapper .right-vendor .btn {
+  text-wrap: nowrap;
 }
 @media (max-width: 445px) {
   .seller-wrapper .right-vendor .btn {
@@ -51958,7 +51931,7 @@ div:where(.swal2-container) button:where(.swal2-close):hover {
 }
 
 .seller-details-table .recent-table div.dt-container .dt-layout-row .dt-search {
-  top: 26px;
+  top: 39px;
   right: 214px;
 }
 @media (max-width: 767px) {
@@ -51978,7 +51951,7 @@ div:where(.swal2-container) button:where(.swal2-close):hover {
   width: auto;
 }
 .seller-details-table .recent-table div.dt-container .dt-layout-row .dt-length {
-  top: 25px;
+  top: 34px;
 }
 .seller-details-table .recent-table .table thead tr th,
 .seller-details-table .recent-table .table thead tr td,
@@ -52068,7 +52041,7 @@ div:where(.swal2-container) button:where(.swal2-close):hover {
   width: auto;
 }
 .vendor-selling-table .recent-table div.dt-container .dt-layout-row .dt-length {
-  top: 16px;
+  top: 26px;
 }
 .vendor-selling-table .recent-table .table thead tr th,
 .vendor-selling-table .recent-table .table thead tr td,
@@ -52121,7 +52094,7 @@ div:where(.swal2-container) button:where(.swal2-close):hover {
   width: auto;
 }
 .seller-order-table .recent-table div.dt-container .dt-layout-row .dt-length {
-  top: 16px;
+  top: 27px;
 }
 .seller-order-table .recent-table .table thead tr th,
 .seller-order-table .recent-table .table thead tr td,
@@ -58881,7 +58854,7 @@ html[dir=rtl] .common-order-history .form-select {
 }
 html[dir=rtl] .common-order-history .order-history-wrapper .recent-table div.dt-container .dt-layout-row .dt-layout-cell .dt-search {
   right: unset;
-  left: -50px;
+  left: 39px;
 }
 @media (max-width: 1399px) {
   html[dir=rtl] .common-order-history .order-history-wrapper .recent-table div.dt-container .dt-layout-row .dt-layout-cell .dt-search {
@@ -68489,6 +68462,12 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
 /**=====================
     4.3 Update CSS Ends
 ==========================**/
+table.dataTable thead > tr > th.dt-orderable-asc:hover, table.dataTable thead > tr > th.dt-orderable-desc:hover,
+table.dataTable thead > tr > td.dt-orderable-asc:hover,
+table.dataTable thead > tr > td.dt-orderable-desc:hover {
+  outline: unset;
+}
+
 /**=====================
 	4.1. Dark CSS Start
 ==========================**/
@@ -75260,6 +75239,9 @@ body.dark-only.box-layout .page-wrapper .page-body-wrapper {
 }
 body.dark-only.box-layout .page-wrapper.modern-type .page-body-wrapper {
   background-color: #1d1e26;
+}
+body.dark-only .seller-cards .seller-box {
+  background: #262932;
 }
 body.dark-sidebar .toggle-sidebar svg {
   stroke: var(--theme-default);

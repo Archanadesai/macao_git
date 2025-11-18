@@ -503,7 +503,8 @@
 				top: calc(32px - 18px);
 				height: 4px;
 				background-color: var(--view-border-marker);
-				border: solid var(--view-border-marker);
+				// border: solid var(--view-border-marker);
+				border: solid #fce1cd;	
 				border-width: 2px 0;
 			}
 

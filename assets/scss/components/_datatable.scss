@@ -57,10 +57,6 @@
         position: absolute;
         top: 33px;
         left: 33px;
-        [dir="rtl"] & {
-					right: 33px;
-					left: unset;
-				}
 
         .dt-input {
           border-color: var(--recent-dashed-border);
@@ -220,7 +216,8 @@
 
         .dt-search {
           position: absolute;
-          top: 20px;
+          // top: 20px;
+          top: 30px;
           right: -10px;
           z-index: 0;
 

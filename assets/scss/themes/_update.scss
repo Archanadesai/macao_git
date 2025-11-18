@@ -1563,3 +1563,8 @@
 /**=====================
     4.3 Update CSS Ends
 ==========================**/
+table.dataTable thead > tr > th.dt-orderable-asc:hover, table.dataTable thead > tr > th.dt-orderable-desc:hover,
+table.dataTable thead > tr > td.dt-orderable-asc:hover,
+table.dataTable thead > tr > td.dt-orderable-desc:hover {
+  outline: unset;
+}

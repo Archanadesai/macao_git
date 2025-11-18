@@ -23,8 +23,12 @@
 
                     .dt-layout-cell {
                         .dt-search {
-                            top: -40px;
-                            right: -50px;
+                            top: -54px;
+                            right: 39px;
+                            input{
+                                width: auto;
+                            }
+
 
                             @media (max-width:1399px) {
                                 position: relative;
@@ -38,8 +42,8 @@
                     }
 
                     .dt-length {
-                        top: -45px;
-                        left: 20px;
+                        top: -55px;
+                        left: 33px; 
                     }
                 }
             }
@@ -79,7 +83,7 @@
 
                             @media (max-width:1260px) {
                                 &:nth-child(2) {
-                                    min-width: 104px;
+                                    min-width: 127px;
                                 }
 
                                 &:nth-child(3) {

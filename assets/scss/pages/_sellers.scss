@@ -87,7 +87,9 @@
    .right-vendor {
       @include pixelstrap-flex(flex, flex-end, center);
       gap: 12px;
-      flex-wrap: wrap;
+      @media (max-width:445px) {
+         flex-wrap: wrap;
+      }
 
       @media (max-width:1422px) {
          justify-content: flex-start;
@@ -106,6 +108,7 @@
       }
 
       .btn {
+         text-wrap: nowrap;
          @media (max-width:445px) {
             margin: auto;
          }
@@ -528,7 +531,7 @@
       div.dt-container {
          .dt-layout-row {
             .dt-search {
-               top: 26px;
+               top: 39px;
                right: 214px;
 
                @media (max-width:767px) {
@@ -548,7 +551,7 @@
             }
 
             .dt-length {
-               top: 25px;
+               top: 34px;
             }
          }
       }
@@ -634,7 +637,7 @@
             }
 
             .dt-length {
-               top: 16px;
+               top: 26px;
             }
          }
       }
@@ -695,7 +698,7 @@
             }
 
             .dt-length {
-               top: 16px;
+               top: 27px;
             }
          }
       }
