@@ -100,7 +100,8 @@
 
                 &.active,
                 &:active {
-                    background-color: var(--light-shade-primary);
+                    // background-color: var(--light-shade-primary);
+                    background-color: $light-primary;
                     color: var(--theme-default);
                     border-radius: 5px;
 
@@ -682,7 +683,8 @@
 
             .btn {
                 padding: 5px 8px;
-                background-color: var(--light-shade-primary);
+                // background-color: var(--light-shade-primary);
+                background-color: $light-primary;
                 color: var(--theme-default);
             }
         }

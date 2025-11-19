@@ -85,8 +85,7 @@
     .advance-options {
 
       ul {
-        @include pixelstrap-flex(flex, center, center);
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         padding: 0;
 
         @media (max-width:767px) {
@@ -119,6 +118,11 @@
               color: var(--theme-default);
             }
           }
+        }
+        &.chat-tab{
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
 
@@ -435,6 +439,12 @@
         svg {
           width: 18px;
           height: 18px;
+        }
+        .contact-edit{
+          position: relative;
+          .dropdown-menu{
+            position: absolute;
+          }
         }
       }
 

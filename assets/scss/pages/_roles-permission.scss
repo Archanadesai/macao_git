@@ -6,8 +6,13 @@
         div.dt-container {
             .dt-layout-row {
                 .dt-search {
-                    top: 20px;
-                    right: 234px;
+                    top: 32px;
+                    right: 249px;
+
+                    [dir="rtl"] & {
+                        right: unset;
+                        left: 249px !important;
+                    }
 
                     @media (max-width:640px) {
                         top: 0;
@@ -188,8 +193,12 @@
         div.dt-container {
             .dt-layout-row {
                 .dt-search {
-                    right: 185px;
-                    top: 20px;
+                    right: 195px;
+                    top: 32px;
+                    [dir="rtl"] & {
+                        right: unset;
+                        left: 195px !important;
+                    }
 
                     @media (max-width:640px) {
                         top: 0;

@@ -22417,10 +22417,7 @@ p.data-attributes svg {
   box-shadow: unset;
 }
 .left-sidebar-wrapper .advance-options ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 0;
 }
 @media (max-width: 767px) {
@@ -22453,6 +22450,11 @@ p.data-attributes svg {
 .left-sidebar-wrapper .advance-options ul .nav-item .nav-link:active, .left-sidebar-wrapper .advance-options ul .nav-item .nav-link.active {
   border-bottom: 2px solid var(--theme-default);
   color: var(--theme-default);
+}
+.left-sidebar-wrapper .advance-options ul.chat-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .left-sidebar-wrapper .advance-options .common-space {
   padding: 11px 0;
@@ -22705,6 +22707,12 @@ p.data-attributes svg {
 .contact-wrapper ul li svg {
   width: 18px;
   height: 18px;
+}
+.contact-wrapper ul li .contact-edit {
+  position: relative;
+}
+.contact-wrapper ul li .contact-edit .dropdown-menu {
+  position: absolute;
 }
 .contact-wrapper ul:last-child .common-space {
   padding-bottom: unset;
@@ -37638,7 +37646,7 @@ footer.blockquote-footer {
   color: var(--theme-default);
 }
 .email-main-wrapper .email-app-sidebar .nav-pills .nav-link.active, .email-main-wrapper .email-app-sidebar .nav-pills .nav-link:active {
-  background-color: var(--light-shade-primary);
+  background-color: rgba(225, 99, 73, 0.1019607843);
   color: var(--theme-default);
   border-radius: 5px;
 }
@@ -38144,7 +38152,7 @@ footer.blockquote-footer {
 }
 .compose-modal form .add-bcc .btn {
   padding: 5px 8px;
-  background-color: var(--light-shade-primary);
+  background-color: rgba(225, 99, 73, 0.1019607843);
   color: var(--theme-default);
 }
 .compose-modal form .filepond--root {
@@ -49633,8 +49641,12 @@ form header {
     3.61 Roles and Permission CSS start
 ==========================**/
 .role-permission-wrapper .permission-table div.dt-container .dt-layout-row .dt-search {
-  top: 20px;
-  right: 234px;
+  top: 32px;
+  right: 249px;
+}
+[dir=rtl] .role-permission-wrapper .permission-table div.dt-container .dt-layout-row .dt-search {
+  right: unset;
+  left: 249px !important;
 }
 @media (max-width: 640px) {
   .role-permission-wrapper .permission-table div.dt-container .dt-layout-row .dt-search {
@@ -49805,8 +49817,12 @@ form header {
   fill: #52526c;
 }
 .user-list-wrapper .user-list-table div.dt-container .dt-layout-row .dt-search {
-  right: 185px;
-  top: 20px;
+  right: 195px;
+  top: 32px;
+}
+[dir=rtl] .user-list-wrapper .user-list-table div.dt-container .dt-layout-row .dt-search {
+  right: unset;
+  left: 195px !important;
 }
 @media (max-width: 640px) {
   .user-list-wrapper .user-list-table div.dt-container .dt-layout-row .dt-search {
@@ -75161,9 +75177,6 @@ body.dark-only .msger-inputarea .chat-icon div {
 }
 body.dark-only .right-sidebar-Chats .msger-inputarea {
   background: #1d1e26;
-}
-body.dark-only .right-sidebar-Chats .msger-input:focus {
-  background-color: #1d1e26;
 }
 body.dark-only .left-msg .msg-bubble {
   background: #1d1e26;
