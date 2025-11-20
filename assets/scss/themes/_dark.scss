@@ -4700,6 +4700,19 @@ body {
 							box-shadow: 1px 1px 2px 1px rgba($dark-body-background, 0.9);
 						}
 					}
+					.bookmark-wrap{
+						.left-bookmark{
+							ul{
+								li{
+									>.main-title{
+										svg{
+											color: #848789;
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 
 				.footer {
@@ -10891,6 +10904,15 @@ body {
 		.seller-cards {
 			.seller-box{
 				    background: $dark-card-background;
+			}
+		}
+		.market-tabs{
+			.border-tab{
+				&.nav-tabs{
+					&.tabs-social{
+						background: $dark-card-background;
+					}
+				}
 			}
 		}
 	}

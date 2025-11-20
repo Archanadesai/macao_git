@@ -248,6 +248,13 @@
       }
     }
   }
+  .invalid-tooltip{
+    top: 62px !important;
+    right: 9px !important;
+    &.username-tooltip{
+      top: 36px !important;
+    }
+  }
 }
 
 .custom-input {

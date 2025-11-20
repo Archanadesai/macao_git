@@ -7753,7 +7753,7 @@ body.modal-open .select2-container--open .select2-dropdown {
 
 .btn.button-primary,
 button.button-primary {
-  background-color: var(--light-shade-primary);
+  background-color: rgba(225, 99, 73, 0.1019607843);
   color: var(--theme-default);
 }
 .btn.button-primary:hover,
@@ -11854,7 +11854,6 @@ table.dataTable.display tbody tr.even .badge {
 }
 .calendar-basic #external-events {
   padding: 20px;
-  border: 1px solid #d7e2e9;
 }
 .calendar-basic #external-events h6 {
   margin-bottom: 14px;
@@ -14072,6 +14071,13 @@ btn-group .dropdown-wrapper .input-group .input-group-text {
 .needs-validation.was-validated .form-control:invalid ~ .invalid-feedback,
 .needs-validation.was-validated .form-select:invalid ~ .invalid-feedback {
   color: #d32f2f;
+}
+.needs-validation .invalid-tooltip {
+  top: 62px !important;
+  right: 9px !important;
+}
+.needs-validation .invalid-tooltip.username-tooltip {
+  top: 36px !important;
 }
 
 .custom-input.was-validated .form-control:valid,
@@ -50393,7 +50399,7 @@ form header {
 .subscribed-user .product-report .recent-table table thead tr td:nth-child(4),
 .subscribed-user .product-report .recent-table table tbody tr th:nth-child(4),
 .subscribed-user .product-report .recent-table table tbody tr td:nth-child(4) {
-  min-width: 138px;
+  min-width: 160px;
 }
 .product-report-wrapper .product-report .recent-table table thead tr th:nth-child(5),
 .product-report-wrapper .product-report .recent-table table thead tr td:nth-child(5),
@@ -50466,7 +50472,7 @@ form header {
 .sale-report-wrapper .sale-report .recent-table table thead tr td:nth-child(5),
 .sale-report-wrapper .sale-report .recent-table table tbody tr th:nth-child(5),
 .sale-report-wrapper .sale-report .recent-table table tbody tr td:nth-child(5) {
-  min-width: 92px;
+  min-width: 104px;
 }
 
 .sale-return-wrapper .sale-return-report .recent-table table thead tr th,
@@ -50502,7 +50508,7 @@ form header {
   .sale-return-wrapper .sale-return-report .recent-table table thead tr td:nth-child(3),
   .sale-return-wrapper .sale-return-report .recent-table table tbody tr th:nth-child(3),
   .sale-return-wrapper .sale-return-report .recent-table table tbody tr td:nth-child(3) {
-    min-width: 85px;
+    min-width: 104px;
   }
   .sale-return-wrapper .sale-return-report .recent-table table thead tr th:nth-child(6),
   .sale-return-wrapper .sale-return-report .recent-table table thead tr td:nth-child(6),
@@ -50514,7 +50520,7 @@ form header {
   .sale-return-wrapper .sale-return-report .recent-table table thead tr td:nth-child(7),
   .sale-return-wrapper .sale-return-report .recent-table table tbody tr th:nth-child(7),
   .sale-return-wrapper .sale-return-report .recent-table table tbody tr td:nth-child(7) {
-    min-width: 100px;
+    min-width: 115px;
   }
 }
 
@@ -50597,13 +50603,13 @@ form header {
   .customer-order-wrapper .customer-order-report .recent-table table thead tr td:nth-child(3),
   .customer-order-wrapper .customer-order-report .recent-table table tbody tr th:nth-child(3),
   .customer-order-wrapper .customer-order-report .recent-table table tbody tr td:nth-child(3) {
-    min-width: 122px;
+    min-width: 158px;
   }
   .customer-order-wrapper .customer-order-report .recent-table table thead tr th:nth-child(4),
   .customer-order-wrapper .customer-order-report .recent-table table thead tr td:nth-child(4),
   .customer-order-wrapper .customer-order-report .recent-table table tbody tr th:nth-child(4),
   .customer-order-wrapper .customer-order-report .recent-table table tbody tr td:nth-child(4) {
-    min-width: 100px;
+    min-width: 155px;
   }
   .customer-order-wrapper .customer-order-report .recent-table table thead tr th:nth-child(5),
   .customer-order-wrapper .customer-order-report .recent-table table thead tr td:nth-child(5),
@@ -50630,6 +50636,9 @@ form header {
   border-bottom: none !important;
   background-color: #fff;
 }
+.market-tabs .border-tab.nav-tabs.tabs-social {
+  background-color: #f8f8f8;
+}
 .market-tabs .nav {
   justify-content: center;
   gap: 12px;
@@ -50647,7 +50656,7 @@ form header {
 @media (max-width: 767px) {
   .market-tabs .nav .nav-item .nav-link {
     height: 50px;
-    padding: 14px 25px;
+    padding: 14px 25px !important;
   }
 }
 @media (max-width: 767px) {
@@ -52571,7 +52580,7 @@ div:where(.swal2-container) button:where(.swal2-close):hover {
   border-color: #d32f2f !important;
 }
 .main-tasks .common-task-table .table-responsive div.dt-container .dt-layout-row .dt-search {
-  right: -50px;
+  right: -25px;
 }
 .main-tasks .common-task-table .table-responsive form {
   padding: 20px;
@@ -67324,7 +67333,6 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   }
 }
 .default-according .card .card-body {
-  padding: 15px 20px;
   line-height: 22px;
   font-size: 14px;
   border-color: #efefef;
@@ -71546,6 +71554,9 @@ body.dark-only .page-wrapper .page-body-wrapper .page-body .sitemap-wrapper .hor
 body.dark-only .page-wrapper .page-body-wrapper .page-body .animate-wrapper .card {
   box-shadow: 1px 1px 2px 1px rgba(29, 30, 38, 0.9);
 }
+body.dark-only .page-wrapper .page-body-wrapper .page-body .bookmark-wrap .left-bookmark ul li > .main-title svg {
+  color: #848789;
+}
 body.dark-only .page-wrapper .page-body-wrapper .footer {
   background-color: #262932;
 }
@@ -75254,6 +75265,9 @@ body.dark-only.box-layout .page-wrapper.modern-type .page-body-wrapper {
   background-color: #1d1e26;
 }
 body.dark-only .seller-cards .seller-box {
+  background: #262932;
+}
+body.dark-only .market-tabs .border-tab.nav-tabs.tabs-social {
   background: #262932;
 }
 body.dark-sidebar .toggle-sidebar svg {
