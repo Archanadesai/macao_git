@@ -13382,7 +13382,6 @@ btn-group .dropdown-wrapper .input-group .input-group-text {
 .shipping-form .shipping-options .nav-link.active i,
 .checkout-cart .shipping-options .nav-link.active i {
   background-color: rgba(225, 99, 73, 0.1019607843);
-  color: var(--theme-default);
   transition: all 0.3s ease-in-out;
 }
 .shipping-form .shipping-options .nav-link.active h6,
