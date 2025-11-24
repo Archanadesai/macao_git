@@ -589,6 +589,14 @@
             right: 10px !important;
             left: unset !important;
           }
+          &.bookmark-flip{
+            @media (max-width:575px) {
+                      right: -88px;
+            }
+            @media (max-width:365px) {
+                      right: -134px;
+            }
+          }
         }
 
         .notification-box {
@@ -752,6 +760,9 @@
           .view-checkout {
             text-decoration: unset;
           }
+          @media (max-width:399px) {
+            left: -110px;
+          }
         }
 
         .notification-box {
@@ -763,11 +774,11 @@
         .notification-dropdown {
           top: 52px;
           width: 300px;
-          right: -20px !important;
+          right: -90px !important;
           left: unset;
 
           @media (max-width: 575.98px) {
-            width: calc(100vw - 30px);
+            // width: calc(100vw - 30px);
           }
 
           li {
@@ -807,7 +818,7 @@
         .profile-dropdown {
           width: 160px;
           top: 57px;
-          left: -12px;
+          right: -18px;
           padding: 0 10px;
 
           li {

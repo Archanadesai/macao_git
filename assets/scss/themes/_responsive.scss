@@ -4977,25 +4977,31 @@
       .header-wrapper {
         .nav-right {
           .onhover-show-div {
-            width: calc(100vw - 30px);
+            // width: calc(100vw - 30px);
             position: fixed;
             top: 60px;
             right: 12px;
           }
 
           .notification-dropdown {
-            width: calc(100vw - 30px);
+            // width: calc(100vw - 30px);
             position: fixed;
-            top: 60px;
-            left: 15px !important;
+            // top: 60px;
+            // left: 15px !important;
+            top: 41px;
+            left: -100px !important;
           }
 
           .cart-dropdown {
-            left: 15px;
+            left: -56px;
+            @media (max-width:320px) {
+              left: -77px;
+              width: calc(100vw - 30px);
+            }
           }
 
           .profile-dropdown {
-            top: 43px;
+            // top: 43px;
           }
         }
       }
@@ -5021,7 +5027,7 @@
 @media only screen and (max-width: 480px) {
 
   .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div {
-    width: 280px;
+    // width: 280px;
   }
 
   .page-wrapper.only-body .page-header .header-wrapper .nav-right {
