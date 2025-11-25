@@ -1117,8 +1117,10 @@ html[dir="rtl"] {
       .toggle-sidebar {
         margin-left: 15px;
         margin-right: unset;
-        border-left: 1px solid $ps-light-border;
+        border-left: 1px solid #ddd;
+        padding-left: 15px;
         border-right: unset;
+        padding-right: unset;
       }
     }
   }
@@ -1129,11 +1131,12 @@ html[dir="rtl"] {
       .header-wrapper {
         .nav-right {
           .notification-dropdown {
-            left: -20px !important;
-            right: unset !important;
+            // left: -20px !important;
+            left: -90px;
+            right: unset;
 
             @media (max-width: 575.98px) {
-              left: 12px !important;
+              left: 12px;
             }
           }
         }
@@ -3857,8 +3860,8 @@ html[dir="rtl"] {
         text-align: right;
 
         .onhover-show-div {
-          right: unset;
-          left: 0;
+          // right: unset;
+          // left: 0;
 
           @media (max-width:575.98px) {
             left: 12px;
@@ -9524,8 +9527,8 @@ html[dir="rtl"] {
         .header-wrapper {
           .nav-right {
             .onhover-show-div {
-              right: unset !important;
-              left: 12px !important;
+              right: unset;
+              left: 12px;
             }
           }
         }

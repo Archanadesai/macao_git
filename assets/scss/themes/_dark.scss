@@ -1125,7 +1125,7 @@ body {
 
 		.toggle-sidebar {
 			svg {
-				stroke: var(--theme-default);
+				stroke: $white;
 			}
 		}
 
@@ -2524,7 +2524,13 @@ body {
 				color: $white;
 			}
 		}
-
+		.left-header{
+			.searchBar {
+				svg{
+					stroke: $white;
+				}
+			}
+		}
 		.loader-wrapper {
 			background-color: $dark-body-background;
 
@@ -2571,13 +2577,14 @@ body {
 					.nav-right {
 						>ul {
 							>li {
+								background: $dark-body-background;
 								svg {
 									stroke: $white;
 								}
 
 								.mode {
 									svg {
-										fill: $white;
+										// fill: $white;
 									}
 								}
 							}
@@ -10912,6 +10919,13 @@ body {
 					&.tabs-social{
 						background: $dark-card-background;
 					}
+				}
+			}
+		}
+		.left-header{
+			.searchBar {
+				#searchQueryInput{
+					background: $dark-body-background;
 				}
 			}
 		}

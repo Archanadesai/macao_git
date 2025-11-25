@@ -4965,9 +4965,9 @@
 
       &.active {
         position: fixed;
-        width: calc(100vw - 30px);
+        // width: calc(100vw - 30px);
         left: 15px;
-        top: 60px;
+        // top: 60px;
       }
     }
   }
@@ -4990,6 +4990,10 @@
             // left: 15px !important;
             top: 41px;
             left: -100px !important;
+            [dir="rtl"] & {
+              right:-100px !important;
+              left: unset;
+            }
           }
 
           .cart-dropdown {
