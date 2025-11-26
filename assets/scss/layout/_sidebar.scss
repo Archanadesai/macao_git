@@ -215,12 +215,6 @@
                 }
               }
             }
-            @media (max-width:578px) {
-              
-            &:nth-child(4){
-              display: none;
-            }
-            }
             &.language-nav{
               @media (max-width:417px) {
                 display: none;
@@ -503,6 +497,10 @@
           // right: 0;
           right: -64px;
           left: unset;
+          [dir="rtl"] & {
+            right:unset;
+            left: -64px !important;
+          }
           @media (max-width:782px) {
             right: -98px;
             [dir="rtl"] & {
@@ -615,6 +613,14 @@
               [dir="rtl"] & {
                 right: unset;
                 left: -134px !important;
+              }
+            }
+          }
+          &.profile-dropdown{
+            @media (max-width:782px) {
+              [dir="rtl"] & {
+                right: unset;
+                left: -29px !important;
               }
             }
           }

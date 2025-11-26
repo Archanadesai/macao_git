@@ -2568,40 +2568,9 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .balance-card{
-        align-items: center;
-        display: flex;
-        gap: 10px;
-        padding: 0;
-        .balance-svg{
-          background-color: var(--white);
-          width: 60px;
-          height: 60px;
-          border-radius: 12px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          border: 1px solid #ededed;
-          margin: 4px;
-          &::before{
-            content: "";
-            position: absolute;
-            outline: 2px solid #ededed;
-            width: 100%;
-            height: 100%;
-            border-radius: 12px;
-          }
-          svg{
-            stroke: var(--theme-default);
-            width: 25px;
-            height: 25px;
-            fill: none;
-          }
-        }
         .balance-detail{
           p{
-            margin-bottom: 0;
+            margin-bottom: 16px;
             font-size: 22px;
             font-weight: 600;
             line-height: 1;
@@ -2613,38 +2582,44 @@ footer {
           }
           >span{
             margin-bottom: 0;
+            font-size: 20px;
           }
         }
-      }
-      .badge{
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        padding: 7px 14px;
-        svg{
-          stroke: var(--theme-default);
-          width: 20px;
-          height: 20px;
-          padding-top: 0;
-          fill: none;
+        .customer-card{
+          width: 55px;
+          height: 55px;
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg{
+            width: 25px;
+            height: 25px;
+            stroke: var(--theme-default);
+            fill: none;
+          }
         }
-        span{
-          font-size: 16px;
-        }
-      }
     }
     .balance1{
       display: flex;
-      justify-content: space-between;
+      align-items: center;
       padding-top: 24px;
+      gap: 10px;
       p{
+        color: var(--theme-default);
         margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
       }
       svg{
         width: 18px;
         height: 18px;
-        stroke: $dark-gray;
+        stroke: var(--theme-default);
         fill: none;
+      }
+      span{
+        color: gray;
       }
     }
   }

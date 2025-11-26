@@ -36091,81 +36091,56 @@ footer.blockquote-footer {
   justify-content: space-between;
   align-items: center;
 }
-.default-dashboard .card .balance-wrapper .balance-card {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  padding: 0;
-}
-.default-dashboard .card .balance-wrapper .balance-card .balance-svg {
-  background-color: var(--white);
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border: 1px solid #ededed;
-  margin: 4px;
-}
-.default-dashboard .card .balance-wrapper .balance-card .balance-svg::before {
-  content: "";
-  position: absolute;
-  outline: 2px solid #ededed;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-}
-.default-dashboard .card .balance-wrapper .balance-card .balance-svg svg {
-  stroke: var(--theme-default);
-  width: 25px;
-  height: 25px;
-  fill: none;
-}
-.default-dashboard .card .balance-wrapper .balance-card .balance-detail p {
-  margin-bottom: 0;
+.default-dashboard .card .balance-wrapper .balance-detail p {
+  margin-bottom: 16px;
   font-size: 22px;
   font-weight: 600;
   line-height: 1;
 }
-.default-dashboard .card .balance-wrapper .balance-card .balance-detail span {
+.default-dashboard .card .balance-wrapper .balance-detail span {
   color: #898989;
   font-weight: 500;
   margin-bottom: 5px;
 }
-.default-dashboard .card .balance-wrapper .balance-card .balance-detail > span {
+.default-dashboard .card .balance-wrapper .balance-detail > span {
   margin-bottom: 0;
+  font-size: 20px;
 }
-.default-dashboard .card .balance-wrapper .badge {
+.default-dashboard .card .balance-wrapper .customer-card {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
 }
-.default-dashboard .card .balance-wrapper .badge svg {
+.default-dashboard .card .balance-wrapper .customer-card svg {
+  width: 25px;
+  height: 25px;
   stroke: var(--theme-default);
-  width: 20px;
-  height: 20px;
-  padding-top: 0;
   fill: none;
-}
-.default-dashboard .card .balance-wrapper .badge span {
-  font-size: 16px;
 }
 .default-dashboard .card .balance1 {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   padding-top: 24px;
+  gap: 10px;
 }
 .default-dashboard .card .balance1 p {
+  color: var(--theme-default);
   margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .default-dashboard .card .balance1 svg {
   width: 18px;
   height: 18px;
-  stroke: #898989;
+  stroke: var(--theme-default);
   fill: none;
+}
+.default-dashboard .card .balance1 span {
+  color: gray;
 }
 
 /**=====================
@@ -55434,11 +55409,6 @@ table.table-bordered thead tr th p {
 .page-wrapper .page-header .header-wrapper .nav-right ul li svg path {
   color: #242934;
 }
-@media (max-width: 578px) {
-  .page-wrapper .page-header .header-wrapper .nav-right ul li:nth-child(4) {
-    display: none;
-  }
-}
 @media (max-width: 417px) {
   .page-wrapper .page-header .header-wrapper .nav-right ul li.language-nav {
     display: none;
@@ -55659,6 +55629,10 @@ table.table-bordered thead tr th p {
   right: -64px;
   left: unset;
 }
+[dir=rtl] .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div {
+  right: unset;
+  left: -64px !important;
+}
 @media (max-width: 782px) {
   .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div {
     right: -98px;
@@ -55759,6 +55733,12 @@ table.table-bordered thead tr th p {
   [dir=rtl] .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div.bookmark-flip {
     right: unset;
     left: -134px !important;
+  }
+}
+@media (max-width: 782px) {
+  [dir=rtl] .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div.profile-dropdown {
+    right: unset;
+    left: -29px !important;
   }
 }
 .page-wrapper .page-header .header-wrapper .nav-right .notification-box {
@@ -78058,6 +78038,7 @@ body[class*=dark-] .for-light {
   }
   .translate_wrapper.active .more_lang.active {
     position: fixed;
+    width: calc(100vw - 30px);
     left: 15px;
   }
   .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div {
