@@ -8185,8 +8185,7 @@ button.button-primary:hover {
 .card .card-header {
   padding: 32px;
   background-color: #f8f8f8;
-  border-top-left-radius: 28px;
-  border-top-right-radius: 28px;
+  border-radius: 28px;
   border-bottom: none;
   position: relative;
 }
@@ -24358,10 +24357,6 @@ p.data-attributes svg {
 .recent-table table tr th {
   padding: 12px 8px;
   vertical-align: middle;
-}
-.recent-table table tr td:first-child,
-.recent-table table tr th:first-child {
-  min-width: 157px;
 }
 @media (max-width: 1660px) {
   .recent-table table tr td:nth-child(2),
@@ -67783,6 +67778,14 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
 .starter-main .alert i {
   display: flex;
   align-items: center;
+}
+
+.sale-product-table .table-responsive .table thead tr th:first-child,
+.sale-product-table .table-responsive .table thead tr td:first-child,
+.sale-product-table .table-responsive .table tbody tr th:first-child,
+.sale-product-table .table-responsive .table tbody tr td:first-child {
+  padding-left: 20px;
+  cursor: pointer;
 }
 
 .card-block .table-responsive .table caption {

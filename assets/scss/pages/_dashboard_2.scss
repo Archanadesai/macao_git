@@ -541,9 +541,9 @@
         padding: 12px 8px;
         vertical-align: middle;
 
-        &:first-child {
-          min-width: 157px;
-        }
+        // &:first-child {
+        //   min-width: 157px;
+        // }
 
         &:nth-child(2) {
           @media (max-width: 1660px) {

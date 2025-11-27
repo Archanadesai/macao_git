@@ -19,9 +19,10 @@
     // background-color: $card-header-bg-color;
     padding: $card-padding;
     background-color: $light-card-background;
+    border-radius: $card-border-radius;
     // border-bottom: $card-border-color;
-    border-top-left-radius: $card-border-radius;
-    border-top-right-radius: $card-border-radius;
+    // border-top-left-radius: $card-border-radius;
+    // border-top-right-radius: $card-border-radius;
     border-bottom: none;
     position: relative;
 

@@ -25,6 +25,40 @@
       searchable: true,
       pageLength: 4,
     });
+    
+    $("#top-customer-card").DataTable({
+      columnDefs: [
+        {
+          orderable: false,
+          render: $.fn.dataTable.render.select(),
+          targets: 0,
+        },
+      ],
+      fixedColumns: {
+        leftColumns: 2, // Note: 'start' is changed to 'leftColumns' in jQuery DataTables
+      },
+      order: [[1, "asc"]],
+      scrollCollapse: true,
+      select: {
+        style: "multi",
+        selector: "td:first-child",
+      },
+      responsive: {
+        details: {
+          type: "column",
+          target: -1,
+        },
+        breakpoints: [
+          { name: "fablet", pageLength: 4 },
+          { name: "phone", pageLength: 6 },
+        ],
+      },
+      searchable: true,
+      responsive: true,
+      pageLength: 4,
+      lengthChange: false,
+      autoWidth: false,
+    });
     $("#main-recent-order").DataTable({
       columnDefs: [
         {
@@ -115,7 +149,7 @@
       lengthChange: false,
       info: false,
     });
-    $("#treading-t-product").DataTable({
+    $("#treading-product").DataTable({
       searching: false,
       pageLength: 4,
       autoWidth: false,
