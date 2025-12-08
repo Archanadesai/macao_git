@@ -66,8 +66,8 @@ html(lang='en')
                   .card-body   
                     .balance-wrapper
                       .balance-detail 
-                        p New Customer
-                        span 68
+                        p Running Orders
+                        span 501
                       .customer-card.bg-light-secondary 
                         svg.stroke-icon.stroke-secondary
                           use(href='../assets/svg/icon-sprite.svg#stroke-home')
@@ -81,8 +81,8 @@ html(lang='en')
                   .card-body   
                     .balance-wrapper
                       .balance-detail 
-                        p New Customer
-                        span 68
+                        p Total Profit
+                        span $8.546
                       .customer-card.bg-light-success 
                         svg.stroke-icon.stroke-success
                           use(href='../assets/svg/icon-sprite.svg#stroke-home') 
@@ -96,8 +96,8 @@ html(lang='en')
                   .card-body   
                     .balance-wrapper
                       .balance-detail 
-                        p New Customer
-                        span 68
+                        p Order Completed
+                        span 1400
                       .customer-card.bg-light-warning 
                         svg.stroke-icon.stroke-warning
                           use(href='../assets/svg/icon-sprite.svg#stroke-home')
@@ -250,7 +250,7 @@ html(lang='en')
                               td.number $ 956.00
                               td
                                 button.btn Pending        
-              .col-xxl-4 
+              .col-xl-4 
                 .card 
                   .card-header 
                     .header-top 
@@ -333,6 +333,150 @@ html(lang='en')
                                 a(href="list-products.html").f-w-500 Airpods Pro
                             td Electronics
                             td 1,256    
+              .col-xl-3   
+                .card 
+                  .card-header 
+                    h5 Recent performance
+                  .card-body.performance-card.pt-0  
+                    #browservisiting
+                    ul.d-flex
+                      li
+                        h5 87%
+                        span.f-light Growth
+                      li
+                        h5
+                          span Growth: 87%
+                        span.f-light Excellent performance
+              .col-xl-5 
+                .card 
+                  .card-header 
+                    h5 hq 
+                  .card-body.pt-0 
+                    #monthlyChart  
+              .col-xl-6 
+                .card 
+                  .card-header 
+                    h5 Sales Report
+                  .card-body 
+                    #delivery-duration  
+              .col-xl-6 
+                .card.heading-space 
+                  .card-header 
+                    .header-top 
+                      h5 Shipment Tracking
+                  .card-body.px-0.pt-0.shipment-tracking-table
+                    .recent-table.table-responsive.custom-scrollbar
+                      table.table#shipment-tracking-table
+                        thead 
+                          tr
+                            th  
+                            th Shipment
+                            th Carrier
+                            th Origin
+                            th Current Location
+                            th ETA
+                            th Status
+                        tbody 
+                          tr.inbox-data
+                            td 
+                            td 
+                              a(href="order-details.html" target="_blank") #FH83P3
+                            td FedEx
+                            td New York
+                            td Denver
+                            td 10 May 2024
+                            td  
+                              span.badge.f-14.f-w-400.txt-warning In Transit
+                          tr.inbox-data
+                            td 
+                            td 
+                              a(href="order-details.html" target="_blank") #SD56Q3
+                            td UPS
+                            td Miami
+                            td Chicago
+                            td 12 Jul 2024  
+                            td  
+                              span.badge.f-14.f-w-400.txt-danger Delayed
+                          tr.inbox-data
+                            td 
+                            td 
+                              a(href="order-details.html" target="_blank") #DR45E4
+                            td DHL
+                            td Houston
+                            td Houston
+                            td 18 Aug 2024
+                            td  
+                              span.badge.f-14.f-w-400.txt-warning In Transit
+                          tr.inbox-data
+                            td 
+                            td 
+                              a(href="order-details.html" target="_blank") #DE56H4
+                            td USPS
+                            td Houston
+                            td Francisco
+                            td 23 Sep 2024
+                            td  
+                              span.badge.f-14.f-w-400.txt-success Dispatched
+                          tr.inbox-data
+                            td 
+                            td 
+                              a(href="order-details.html" target="_blank") #RT89A1
+                            td FedEx
+                            td Germany
+                            td Seattle
+                            td 16 Aug 2024
+                            td  
+                              span.badge.f-14.f-w-400.txt-success Dispatched
+                          tr.inbox-data
+                            td 
+                            td 
+                              a(href="order-details.html" target="_blank") #ED58B5
+                            td DHL
+                            td Miami
+                            td Denver
+                            td 02 Feb 2024
+                            td  
+                              span.badge.f-14.f-w-400.txt-danger Delayed
+                          tr.inbox-data
+                            td 
+                            td 
+                              a(href="order-details.html" target="_blank") #TY71S1
+                            td USPS
+                            td Atlanta
+                            td Dallas
+                            td 12 Mar 2024
+                            td  
+                              span.badge.f-14.f-w-400.txt-success Dispatched
+                          tr.inbox-data
+                            td 
+                            td 
+                              a(href="order-details.html" target="_blank") #RT66W4
+                            td FedEx
+                            td Dallas
+                            td Orlando
+                            td 19 Oct 2024
+                            td  
+                              span.badge.f-14.f-w-400.txt-warning In Transit
+                          tr.inbox-data
+                            td 
+                            td 
+                              a(href="order-details.html" target="_blank") #ER89Q3
+                            td DHL
+                            td Orlando
+                            td Seattle
+                            td 23 Apr 2024
+                            td  
+                              span.badge.f-14.f-w-400.txt-success Dispatched
+                          tr.inbox-data
+                            td 
+                            td 
+                              a(href="order-details.html" target="_blank") #QQ66D2
+                            td UPS
+                            td Boston
+                            td San Diego
+                            td 29 Sep 2024
+                            td  
+                              span.badge.f-14.f-w-400.txt-warning In Transit  
           // Container-fluid Ends
         include ../../components/footer        
     include ../../components/footer-files

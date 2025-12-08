@@ -110,7 +110,7 @@
         selector: "td:first-child",
       },
       searchable: true,
-      pageLength: 3,
+      pageLength: 5,
       autoWidth: false,
       lengthMenu: [3, 5, 10, 15],
     });

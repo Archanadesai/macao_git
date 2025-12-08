@@ -2562,64 +2562,107 @@ footer {
     }
   }
 }
-.default-dashboard{
-  .card{
-    .balance-wrapper{
+.default-dashboard {
+  .card {
+    .balance-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
-        .balance-detail{
-          p{
-            margin-bottom: 16px;
-            font-size: 22px;
-            font-weight: 600;
-            line-height: 1;
-          }
-          span{
-            color: $dark-gray;
-            font-weight: 500;
-            margin-bottom: 5px;
-          }
-          >span{
-            margin-bottom: 0;
-            font-size: 20px;
-          }
+      .balance-detail {
+        p {
+          margin-bottom: 16px;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 1;
         }
-        .customer-card{
-          width: 55px;
-          height: 55px;
-          border-radius: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          svg{
-            width: 25px;
-            height: 25px;
-            stroke: var(--theme-default);
-            fill: none;
-          }
+        span {
+          color: $dark-gray;
+          font-weight: 500;
+          margin-bottom: 5px;
         }
+        > span {
+          margin-bottom: 0;
+          font-size: 20px;
+        }
+      }
+      .customer-card {
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          width: 25px;
+          height: 25px;
+          stroke: var(--theme-default);
+          fill: none;
+        }
+      }
     }
-    .balance1{
+    .balance1 {
       display: flex;
       align-items: center;
       padding-top: 24px;
       gap: 10px;
-      p{
+      p {
         color: var(--theme-default);
         margin-bottom: 0;
         display: flex;
         align-items: center;
         gap: 5px;
       }
-      svg{
+      svg {
         width: 18px;
         height: 18px;
         stroke: var(--theme-default);
         fill: none;
       }
-      span{
+      span {
         color: gray;
+      }
+    }
+    .card-body {
+      &.performance-card {
+        ul {
+          margin-top: 22px;
+          li {
+            padding: 8px 14px;
+            background: linear-gradient(180deg, var(--course-light-btn) 0%, rgba(242, 243, 247, 0) 100%);
+            border-radius: 5px;
+            margin-right: 15px;
+            position: relative;
+            + li {
+              &::after {
+                content: "";
+                top: 50%;
+                background-color: #52526ccc;
+                transform: translate(-15px, -50%);
+                left: 0;
+                position: absolute;
+                height: 30px;
+                width: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+  .shipment-tracking-table{
+    .recent-table{
+      table{
+        thead,
+        tbody{
+          tr{
+            th,
+            td{
+              &:first-child{
+                padding-left: 20px; 
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -654,6 +654,445 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#deviceChart"), options);
 chart.render();
 
+var options = {
+  series: [87],
+  chart: {
+    height: 300,
+    type: "radialBar",
+  },
+  plotOptions: {
+    radialBar: {
+      startAngle: -135,
+      endAngle: 135,
+      hollow: {
+        size: "60%",
+      },
+      track: {
+        background: "#f2f2f2",
+        strokeWidth: "100%",
+        margin: 5,
+      },
+      dataLabels: {
+        name: {
+          offsetY: 20,
+          fontSize: "14px",
+          color: "#000",
+          show: true,
+        },
+        value: {
+          offsetY: -10,
+          fontSize: "22px",
+          fontWeight: 700,
+          show: true,
+          formatter: function (val) {
+            return val + "%";
+          },
+        },
+      },
+    },
+  },
+  fill: {
+    type: "solid",
+    colors: [MacaoAdminConfig.primary],
+  },
+  stroke: {
+    dashArray: 8,
+  },
+  labels: ["Growth"],
+};
+
+
+var chart = new ApexCharts(document.querySelector("#browservisiting"), options);
+chart.render();
+
+ var attendance_option = {
+   series: [
+     {
+       name: "Total Present",
+       data: [35, 40, 15, 45, 38, 55, 25],
+     },
+     {
+       name: "Total Absent",
+       data: [25, 45, 30, 35, 48, 35, 20],
+     },
+   ],
+   chart: {
+     type: "bar",
+     height: 295,
+     toolbar: {
+       show: false,
+     },
+   },
+
+   plotOptions: {
+     bar: {
+       horizontal: false,
+       columnWidth: "55%",
+       endingShape: "rounded",
+     },
+   },
+   dataLabels: {
+     enabled: false,
+   },
+   stroke: {
+     show: true,
+     width: 2,
+     colors: ["transparent"],
+   },
+   grid: {
+     show: true,
+     borderColor: "var(--chart-border)",
+   },
+   xaxis: {
+     categories: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+     axisTicks: {
+       show: false,
+     },
+     labels: {
+       style: {
+         colors: "var(--chart-text-color)",
+         fontSize: "12px",
+         fontFamily: "Rubik, sans-serif",
+         fontWeight: 400,
+       },
+     },
+   },
+   yaxis: {
+     min: 0,
+     max: 60,
+     tickAmount: 6,
+     tickPlacement: "between",
+     labels: {
+       style: {
+         colors: "var(--chart-text-color)",
+         fontSize: "12px",
+         fontFamily: "Rubik, sans-serif",
+         fontWeight: 400,
+       },
+     },
+   },
+   colors: ["var(--theme-default)", MacaoAdminConfig.secondary],
+   fill: {
+     opacity: 1,
+   },
+   legend: {
+     show: false,
+   },
+   responsive: [
+     {
+       breakpoint: 1661,
+       options: {
+         chart: {
+           height: 325,
+         },
+       },
+     },
+     {
+       breakpoint: 1531,
+       options: {
+         chart: {
+           height: 380,
+         },
+       },
+     },
+     {
+       breakpoint: 1400,
+       options: {
+         chart: {
+           height: 370,
+         },
+       },
+     },
+     {
+       breakpoint: 1200,
+       options: {
+         chart: {
+           height: 320,
+         },
+       },
+     },
+     {
+       breakpoint: 771,
+       options: {
+         chart: {
+           height: 275,
+         },
+       },
+     },
+     {
+       breakpoint: 590,
+       options: {
+         chart: {
+           height: 215,
+         },
+       },
+     },
+   ],
+ };
+
+ var attendance_option = new ApexCharts(document.querySelector("#monthlyChart"), attendance_option);
+ attendance_option.render();
+  var deliveryDuration = {
+    series: [
+      {
+        name: "Late Delivery",
+        type: "column",
+        data: [37, 30, 25, 56, 39, 28, 30, 18, 45, 20, 26],
+      },
+      {
+        name: "On Time Delivery",
+        type: "line",
+        data: [75, 45, 38, 36, 68, 74, 60, 55, 72, 20, 65],
+      },
+    ],
+    chart: {
+      height: 270,
+      type: "line",
+      stacked: false,
+      offsetX: 20,
+      offsetY: 20,
+      toolbar: {
+        show: false,
+      },
+      dropShadow: {
+        enabled: true,
+        enabledOnSeries: [1],
+        top: 13,
+        left: 0,
+        blur: 6,
+        color: MacaoAdminConfig.primary,
+        opacity: 0.4,
+      },
+    },
+    stroke: {
+      width: [0, 2],
+      curve: "smooth",
+      dashArray: [0, 0],
+    },
+    plotOptions: {
+      bar: {
+        columnWidth: "30%",
+        borderRadius: 6,
+        borderRadiusApplication: "end",
+      },
+    },
+    colors: ["rgba(131, 131, 131, 0.3)", MacaoAdminConfig.primary],
+    fill: {
+      type: "solid",
+      gradient: {
+        shade: "dark",
+        type: "vertical",
+        opacityFrom: 1,
+        opacityTo: 1,
+        stops: [0, 100],
+      },
+    },
+    grid: {
+      borderColor: "var(--chart-border)",
+      yaxis: {
+        lines: {
+          show: true,
+        },
+      },
+    },
+    legend: {
+      show: false,
+    },
+    markers: {
+      size: 0,
+      discrete: [
+        {
+          seriesIndex: 0,
+          dataPointIndex: 4,
+          fillColor: "rgba(131, 131, 131, 1)",
+          strokeColor: "var(--white)",
+          size: 6,
+          sizeOffset: 3,
+        },
+        {
+          seriesIndex: 1,
+          dataPointIndex: 4,
+          fillColor: MacaoAdminConfig.primary,
+          strokeColor: "var(--white)",
+          size: 6,
+          sizeOffset: 3,
+        },
+      ],
+    },
+    annotations: {
+      points: [
+        {
+          x: 217,
+          y: 29.5,
+          marker: {
+            size: 6,
+            fillColor: "rgba(131, 131, 131, 0.3)",
+            strokeColor: "var(--white)",
+            strokeWidth: 2,
+            radius: 5,
+          },
+        },
+      ],
+      xaxis: [
+        {
+          x: 217,
+          strokeDashArray: 2,
+          borderWidth: 1,
+          borderColor: "var(--body-font-color)",
+        },
+      ],
+    },
+    xaxis: {
+      categories: ["Jan", "Feb", "Mar", " Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
+      labels: {
+        style: {
+          fontFamily: "Rubik, sans-serif",
+          colors: ["#52526c"],
+        },
+      },
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
+      },
+    },
+    yaxis: {
+      title: {
+        text: "Points",
+      },
+      min: 0,
+      max: 100,
+      tickAmount: 5,
+      title: {
+        text: undefined,
+      },
+    },
+    responsive: [
+      {
+        breakpoint: 1870,
+        options: {
+          chart: {
+            height: 300,
+          },
+        },
+      },
+      {
+        breakpoint: 1691,
+        options: {
+          chart: {
+            height: 280,
+          },
+        },
+      },
+      {
+        breakpoint: 1245,
+        options: {
+          xaxis: {
+            tickAmount: 5,
+            tickPlacement: "on",
+          },
+          annotations: {
+            points: [
+              {
+                x: 103,
+                y: 29.5,
+                marker: {
+                  size: 6,
+                  fillColor: "rgba(131, 131, 131, 0.3)",
+                  strokeColor: "var(--white)",
+                  strokeWidth: 2,
+                  radius: 5,
+                },
+              },
+            ],
+            xaxis: [
+              {
+                x: 103,
+                strokeDashArray: 2,
+                borderWidth: 1,
+                borderColor: "var(--body-font-color)",
+              },
+            ],
+          },
+        },
+      },
+      {
+        breakpoint: 1063,
+        options: {
+          chart: {
+            height: 305,
+          },
+        },
+      },
+      {
+        breakpoint: 1048,
+        options: {
+          chart: {
+            height: 328,
+          },
+        },
+      },
+      {
+        breakpoint: 1008,
+        options: {
+          chart: {
+            height: 350,
+          },
+        },
+      },
+      {
+        breakpoint: 992,
+        options: {
+          chart: {
+            height: 280,
+          },
+        },
+      },
+      {
+        breakpoint: 968,
+        options: {
+          chart: {
+            height: 328,
+          },
+        },
+      },
+      {
+        breakpoint: 928,
+        options: {
+          chart: {
+            height: 350,
+          },
+        },
+      },
+      {
+        breakpoint: 778,
+        options: {
+          chart: {
+            height: 375,
+          },
+        },
+      },
+      {
+        breakpoint: 576,
+        options: {
+          chart: {
+            height: 250,
+            offsetX: 0,
+            offsetY: 0,
+          },
+          xaxis: {
+            tickAmount: 3,
+            tickPlacement: "on",
+          },
+        },
+      },
+    ],
+  };
+
+  // // Initialize the chart
+  var deliveryDurationChart = new ApexCharts(document.querySelector("#delivery-duration"), deliveryDuration);
+  deliveryDurationChart.render();
 
 })();
 

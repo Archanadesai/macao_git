@@ -19,6 +19,65 @@
     }
   }
 }
+.dashboard-2{
+   .activities {
+    position: relative;
+    margin: auto;
+    max-width: 400px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 3px;
+      width: 2px;
+      height: 100%;
+      background: #e0e0e0;
+    }
+
+    .activities-item {
+      position: relative;
+      padding-bottom: 18px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: 4px;
+        width: 12px;
+        height: 12px;
+        background: $primary-color;
+        border: 2px solid $white;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px $primary-color;
+      }
+
+      .activities-header {
+        font-weight: bold;
+        margin-left: 20px;
+      }
+
+      .activities-contente {
+        font-size: 14px;
+        color: #444;
+        margin-left: 20px;
+        margin-top: 6.5px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .activities-time {
+        font-size: 12px;
+        color: #888;
+        margin-left: 20px;
+        margin-top: 4px;
+      }
+    }
+  }
+}
 
 .main-title-box {
   .common-space {
@@ -34,7 +93,6 @@
     }
   }
 }
-
 .balance-widget {
   background-image: url(../images/dashboard-2/balance-bg.png);
   background-size: cover;
