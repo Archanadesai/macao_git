@@ -23945,6 +23945,86 @@ p.data-attributes svg {
   margin-left: 20px;
   margin-top: 4px;
 }
+.dashboard-2 .review-slider .review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dashboard-2 .review-slider .review img {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.dashboard-2 .review-slider .review .review-content {
+  margin: 12px 0;
+}
+.dashboard-2 .review-slider .review .review-content span {
+  color: #999999;
+}
+.dashboard-2 .review-slider .review p {
+  color: #999999;
+  margin-top: 15px;
+  margin-bottom: 22px;
+}
+@media screen and (max-width: 1750px) and (min-width: 1200px) {
+  .dashboard-2 .review-slider .review p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+}
+.dashboard-2 .owl-carousel.owl-loaded {
+  display: block;
+}
+.dashboard-2 .card.widget-card .customer-card span {
+  background-color: rgba(253, 167, 95, 0.05) !important;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.dashboard-2 .card.widget-card .customer-card span svg {
+  filter: drop-shadow(0 6px 6px rgba(225, 99, 80, 0.4));
+  width: 24px;
+  height: 24px;
+  fill: var(--theme-default);
+}
+.dashboard-2 .card.custom-card .assets-card {
+  width: 48px;
+  height: 48px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-2 .card.custom-card .assets-card svg {
+  width: 20px;
+  height: 20px;
+}
+.dashboard-2 .card.custom-card .card-body .d-flex .assets-detail p svg {
+  width: 18px;
+  height: 18%;
+  stroke: #4caf50;
+}
+.dashboard-2 .card.custom-card .card-body .d-flex .assets-detail p.asset-icon {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.dashboard-2 .top-country-sales-list li {
+  margin-block-end: 16px;
+}
+.dashboard-2 .top-country-sales-list li div .sale-list {
+  display: flex;
+  gap: 12px;
+}
 
 .main-title-box .common-space {
   flex-wrap: wrap;
@@ -36188,26 +36268,6 @@ footer.blockquote-footer {
 }
 .default-dashboard .card .balance1 span {
   color: gray;
-}
-.default-dashboard .card .card-body.performance-card ul {
-  margin-top: 22px;
-}
-.default-dashboard .card .card-body.performance-card ul li {
-  padding: 8px 14px;
-  background: linear-gradient(180deg, var(--course-light-btn) 0%, rgba(242, 243, 247, 0) 100%);
-  border-radius: 5px;
-  margin-right: 15px;
-  position: relative;
-}
-.default-dashboard .card .card-body.performance-card ul li + li::after {
-  content: "";
-  top: 50%;
-  background-color: rgba(82, 82, 108, 0.8);
-  transform: translate(-15px, -50%);
-  left: 0;
-  position: absolute;
-  height: 30px;
-  width: 1px;
 }
 .default-dashboard .shipment-tracking-table .recent-table table thead tr th:first-child,
 .default-dashboard .shipment-tracking-table .recent-table table thead tr td:first-child,

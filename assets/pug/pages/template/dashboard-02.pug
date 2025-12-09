@@ -11,6 +11,8 @@
 - var sidebar               = true;
 - var slick                 = true;
 - var header_slider         = true;
+- var owlcarousel           = true;
+- var page_owlcarousel      = true;
 - var scrollbar             = true;
 doctype html
 html(lang='en')
@@ -93,12 +95,143 @@ html(lang='en')
                             h6.mb-0 Bethany Nienow
                             small.text-muted 03 Feb, 2023
                         .badge.badge-dark $630.73        
-              .col-xxl-4 
+              .col-xxl-6 
                 .row 
                   .col-6
-                      
-                  .col-6         
-              .col-xl-5
+                    .card.widget-card 
+                      .card-body 
+                        .d-flex.align-items-center.justify-content-between
+                          div 
+                            h5.fw-semibold $43,038.00
+                            span.d-block.fs-12.text-muted Total Sales
+                          div.customer-card
+                            span.bg-primary-transparent.svg-primary
+                              svg.stroke-icon
+                                use(href='../assets/svg/icon-sprite.svg#stroke-bag')  
+                  .col-6
+                    .card.widget-card 
+                      .card-body 
+                        .d-flex.align-items-center.justify-content-between
+                          div 
+                            h5.fw-semibold $28,346.00
+                            span.d-block.fs-12.text-muted Total Expenses
+                          div.customer-card
+                            span.bg-primary-transparent.svg-primary
+                              svg.stroke-icon
+                                use(href='../assets/svg/icon-sprite.svg#stroke-bag')
+                  .col-6
+                    .card.widget-card 
+                      .card-body 
+                        .d-flex.align-items-center.justify-content-between
+                          div 
+                            h5.fw-semibold 1,29,368
+                            span.d-block.fs-12.text-muted Total Visitors
+                          div.customer-card
+                            span.bg-primary-transparent.svg-primary
+                              svg.stroke-icon
+                                use(href='../assets/svg/icon-sprite.svg#stroke-bag')
+                  .col-6
+                    .card.widget-card 
+                      .card-body 
+                        .d-flex.align-items-center.justify-content-between
+                          div 
+                            h5.fw-semibold 35,367
+                            span.d-block.fs-12.text-muted Total Orders
+                          div.customer-card
+                            span.bg-primary-transparent.svg-primary
+                              svg.stroke-icon
+                                use(href='../assets/svg/icon-sprite.svg#stroke-bag')                            
+                  .col-6 
+                    .card.custom-card 
+                      .card-body.p-0 
+                        .d-flex 
+                          .me-3
+                            span.assets-card.bg-light-primary
+                              svg.stroke-icon
+                                use(href='../assets/svg/icon-sprite.svg#stroke-assets')  
+                          .assets-detail 
+                            p.text-muted.mb-1 Total Assets
+                            h5.mb-2 596
+                            p.text-muted.mb-1.asset-icon
+                              span.text-success 0.25%
+                              i(data-feather="arrow-up") 
+                              | This month
+                  .col-6 
+                    .card.custom-card 
+                      .card-body.p-0 
+                        .d-flex 
+                          .me-3
+                            span.assets-card.bg-light-primary
+                              svg.stroke-icon
+                                use(href='../assets/svg/icon-sprite.svg#stroke-assets')  
+                          .assets-detail 
+                            p.text-muted.mb-1 Total Assets
+                            h5.mb-2 596
+                            p.text-muted.mb-1.asset-icon
+                              span.text-success 0.25%
+                              i(data-feather="arrow-up") 
+                              | This month            
+              .col-xxl-3
+                .card 
+                  .card-header 
+                    .header-top 
+                      h5 Top Countries By sale 
+                  .card-body 
+                    ul.top-country-sales-list
+                      li
+                        .d-flex.justify-content-between.align-items-center 
+                          .sale-list
+                            span
+                              i.flag-icon.flag-icon-us
+                            span.top-country-name France  
+                          div   
+                            i(data-feather="arrow-up-right" class="text-success")
+                          div.sale-price 5,932
+                      li
+                        .d-flex.justify-content-between.align-items-center 
+                          .sale-list
+                            span
+                              i.flag-icon.flag-icon-ae
+                            span.top-country-name France  
+                          div   
+                            i(data-feather="arrow-down-right" class="text-danger")
+                          div.sale-price 5,932
+                      li
+                        .d-flex.justify-content-between.align-items-center 
+                          .sale-list
+                            span
+                              i.flag-icon.flag-icon-cn
+                            span.top-country-name France  
+                          div   
+                            i(data-feather="arrow-down-right" class="text-danger")
+                          div.sale-price 5,932
+                      li
+                        .d-flex.justify-content-between.align-items-center 
+                          .sale-list
+                            span
+                              i.flag-icon.flag-icon-pt
+                            span.top-country-name France  
+                          div   
+                            i(data-feather="arrow-up-right" class="text-success")
+                          div.sale-price 5,932
+                      li
+                        .d-flex.justify-content-between.align-items-center 
+                          .sale-list
+                            span
+                              i.flag-icon.flag-icon-fr
+                            span.top-country-name France  
+                          div   
+                            i(data-feather="arrow-down-right" class="text-danger")
+                          div.sale-price 5,932
+                      li
+                        .d-flex.justify-content-between.align-items-center 
+                          .sale-list
+                            span
+                              i.flag-icon.flag-icon-es
+                            span.top-country-name France  
+                          div   
+                            i(data-feather="arrow-up-right" class="text-success")
+                          div.sale-price 5,932                    
               .col-xxl-3 
                 .card 
                   .card-header.card-no-border.pb-2
@@ -254,6 +387,177 @@ html(lang='en')
                             td 212
                             td Bank Transfer
                             td $12.32     
+              .col-xxl-6 
+                .card 
+                  .card-header 
+                    .header-top 
+                      h5 customer Report
+                      .card-header-right-icon
+                        .dropdown.icon-dropdown
+                          button#treadingProduct.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false')
+                            i.icon-more-alt
+                          .dropdown-menu.dropdown-menu-end(aria-labelledby='treadingProduct')
+                            a.dropdown-item(href='#!') This Month
+                            a.dropdown-item(href='#!') Previous Month
+                            a.dropdown-item(href='#!') Last 3 Months
+                            a.dropdown-item(href='#!') Last 6 Months 
+                  .card-body.pt-0 
+                    #delivery-duration    
+              .col-xxl-3 
+                .card.review-slider 
+                  .card-header 
+                    .header-top 
+                      h5 Customer review 
+                  .card-body
+                    #owl-carousel-dashboard.owl-carousel.owl-theme.owl-loaded
+                      .review
+                        div 
+                          img.img-fluid(src='/assets/images/user/1.jpg', alt='')
+                          .review-content 
+                            a(href="user-profile.html") 
+                              h5.txt-primary.f-w-600 Mary Jades
+                            span Web Designer
+                          span.d-flex.gap-1.justify-content-center
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                          p "This product exceeded my expectations! The quality is outstanding, and it arrived faster than I anticipated. Also, thank you for the support. Highly recommend!"
+                          span.txt-secondary.f-w-600 ( 10th Feb, 2024 )
+                      .review
+                        div 
+                          img.img-fluid(src='../assets/images/user/3.png', alt='')
+                          .review-content 
+                            a(href="user-profile.html")
+                              h5.txt-primary.f-w-600 Anna Proas
+                            span Graphics Designer
+                          span.d-flex.gap-1.justify-content-center
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-regular.fa-star.font-warning
+                          p "I love how versatile this product is. It's perfect for everyday use and has made a noticeable difference in my routine. Definitely worth the purchase."
+                          span.txt-secondary.f-w-600 ( 05th May, 2024 )
+                      .review
+                        div 
+                          img.img-fluid(src='../assets/images/user/6.jpg', alt='')
+                          .review-content 
+                            a(href="user-profile.html")
+                              h5.txt-primary.f-w-600 Rachel Green
+                            span Web Developer
+                          span.d-flex.gap-1.justify-content-center
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-regular.fa-star.font-warning
+                          p "Great value for the price! It's durable, stylish, and exactly what I was looking for. Couldn't be happier with my choice. Also, thank you for the quick response."
+                          span.txt-secondary.f-w-600 ( 23th Aug, 2024 )    
+              .col-xxl-3 
+                .card 
+                  .card-header 
+                    .header-top 
+                      h5 Product Sales
+                  .card-body 
+                    #overall    
+              .col-xl-6 
+                .card
+                  .card-header.card-no-border
+                    .header-top
+                      h5 Stock Report
+                      .card-header-right-icon
+                        .dropdown.icon-dropdown
+                          button#stockReport.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false')
+                            i.icon-more-alt
+                          .dropdown-menu.dropdown-menu-end(aria-labelledby='stockReport')
+                            a.dropdown-item(href='#!') This Month
+                            a.dropdown-item(href='#!') Previous Month
+                            a.dropdown-item(href='#!') Last 3 Months
+                            a.dropdown-item(href='#!') Last 6 Months
+                  .card-body.px-0.pt-0.stock-report
+                    .recent-table.table-responsive.custom-scrollbar
+                      table.table#stock-report 
+                        thead 
+                          tr 
+                            th Items
+                            th Product ID
+                            th QTY
+                            th Price
+                            th Status
+                        tbody
+                          tr 
+                            td
+                              .common-flex.align-items-center
+                                .img-border
+                                  img.img-fluid.rounded-circle(src='../assets/images/dashboard-2/order/sub-product/14.png',alt='user')
+                                a(href="product-report.html").f-w-500 Shoes
+                            td #854129
+                            td 0 PCS
+                            td $513
+                            td
+                              button.btn.button-light-danger.txt-danger.f-w-500 Out of Stock
+                          tr 
+                            td
+                              .common-flex.align-items-center
+                                .img-border
+                                  img.img-fluid.rounded-circle(src='../assets/images/dashboard-2/order/sub-product/15.png',alt='user')
+                                a(href="product-report.html").f-w-500 Couch
+                            td #245987
+                            td 95 PCS
+                            td $3061
+                            td
+                              button.btn.button-light-success.txt-success.f-w-500 In Stock
+                          tr 
+                            td
+                              .common-flex.align-items-center
+                                .img-border
+                                  img.img-fluid.rounded-circle(src='../assets/images/dashboard-2/order/sub-product/16.png',alt='user')
+                                a(href="product-report.html").f-w-500 Bags
+                            td #357896
+                            td 45 PCS
+                            td $1256
+                            td
+                              button.btn.button-light-success.txt-success.f-w-500 In Stock
+                          tr 
+                            td
+                              .common-flex.align-items-center
+                                .img-border
+                                  img.img-fluid.rounded-circle(src='../assets/images/dashboard-2/order/sub-product/24.png',alt='user')
+                                a(href="product-report.html").f-w-500 Watch
+                            td #589456
+                            td 0 PCS
+                            td $120
+                            td
+                              button.btn.button-light-danger.txt-danger.f-w-500 Out of Stock
+                          tr 
+                            td
+                              .common-flex.align-items-center
+                                .img-border
+                                  img.img-fluid.rounded-circle(src='../assets/images/dashboard-2/order/sub-product/25.png',alt='user')
+                                a(href="product-report.html").f-w-500 Chair
+                            td #698789
+                            td 10 PCS
+                            td $1200
+                            td
+                              button.btn.button-light-success.txt-success.f-w-500 In Stock
+                          tr 
+                            td
+                              .common-flex.align-items-center
+                                .img-border
+                                  img.img-fluid.rounded-circle(src='../assets/images/dashboard-2/order/sub-product/26.png',alt='user')
+                                a(href="product-report.html").f-w-500 Lamp
+                            td #120447
+                            td 0 PCS
+                            td $1200
+                            td
+                              button.btn.button-light-danger.txt-danger.f-w-500 Out of Stock
+              .col-xl-6 
+                .card 
+                  .card-header 
+                    .header-top 
+                      h5 
           // Container-fluid Ends
         include ../../components/footer
     include ../../components/footer-files

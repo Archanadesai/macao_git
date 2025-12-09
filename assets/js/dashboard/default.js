@@ -654,184 +654,159 @@ var options = {
 var chart = new ApexCharts(document.querySelector("#deviceChart"), options);
 chart.render();
 
+
 var options = {
-  series: [87],
   chart: {
-    height: 300,
-    type: "radialBar",
+    type: "donut",
+    height: 334,
   },
+  series: [45, 15], // Example values: Income, Expand, Booking
+  labels: ["Income", "Expand"],
+
+  colors: [MacaoAdminConfig.primary, MacaoAdminConfig.secondary], // orange, lavender, light peach
+
   plotOptions: {
-    radialBar: {
-      startAngle: -135,
-      endAngle: 135,
-      hollow: {
-        size: "60%",
-      },
-      track: {
-        background: "#f2f2f2",
-        strokeWidth: "100%",
-        margin: 5,
-      },
-      dataLabels: {
-        name: {
-          offsetY: 20,
-          fontSize: "14px",
-          color: "#000",
+    pie: {
+      donut: {
+        size: "70%",
+        labels: {
           show: true,
-        },
-        value: {
-          offsetY: -10,
-          fontSize: "22px",
-          fontWeight: 700,
-          show: true,
-          formatter: function (val) {
-            return val + "%";
+          value: {
+            show: true,
+            fontSize: "18",
+            fontWeight: 600,
+            color: "#000",
+            formatter: () => "$24,006",
+          },
+          name: {
+            show: true,
+            offsetY: 10,
+            fontSize: "14px",
+            color: "#777",
+            formatter: () => "Business Spend",
+          },
+          total: {
+            show: false,
           },
         },
       },
     },
   },
-  fill: {
-    type: "solid",
-    colors: [MacaoAdminConfig.primary],
+  dataLabels: {
+    enabled: false,
   },
+
+  legend: {
+    position: "bottom",
+    horizontalAlign: "center",
+    fontSize: "13px",
+    markers: {
+      width: 12,
+      height: 12,
+      radius: 12,
+    },
+  },
+
   stroke: {
-    dashArray: 8,
+    width: 0,
   },
-  labels: ["Growth"],
 };
+
 
 
 var chart = new ApexCharts(document.querySelector("#browservisiting"), options);
 chart.render();
 
- var attendance_option = {
-   series: [
-     {
-       name: "Total Present",
-       data: [35, 40, 15, 45, 38, 55, 25],
-     },
-     {
-       name: "Total Absent",
-       data: [25, 45, 30, 35, 48, 35, 20],
-     },
-   ],
-   chart: {
-     type: "bar",
-     height: 295,
-     toolbar: {
-       show: false,
-     },
-   },
 
-   plotOptions: {
-     bar: {
-       horizontal: false,
-       columnWidth: "55%",
-       endingShape: "rounded",
-     },
-   },
-   dataLabels: {
-     enabled: false,
-   },
-   stroke: {
-     show: true,
-     width: 2,
-     colors: ["transparent"],
-   },
-   grid: {
-     show: true,
-     borderColor: "var(--chart-border)",
-   },
-   xaxis: {
-     categories: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-     axisTicks: {
-       show: false,
-     },
-     labels: {
-       style: {
-         colors: "var(--chart-text-color)",
-         fontSize: "12px",
-         fontFamily: "Rubik, sans-serif",
-         fontWeight: 400,
-       },
-     },
-   },
-   yaxis: {
-     min: 0,
-     max: 60,
-     tickAmount: 6,
-     tickPlacement: "between",
-     labels: {
-       style: {
-         colors: "var(--chart-text-color)",
-         fontSize: "12px",
-         fontFamily: "Rubik, sans-serif",
-         fontWeight: 400,
-       },
-     },
-   },
-   colors: ["var(--theme-default)", MacaoAdminConfig.secondary],
-   fill: {
-     opacity: 1,
-   },
-   legend: {
-     show: false,
-   },
-   responsive: [
-     {
-       breakpoint: 1661,
-       options: {
-         chart: {
-           height: 325,
-         },
-       },
-     },
-     {
-       breakpoint: 1531,
-       options: {
-         chart: {
-           height: 380,
-         },
-       },
-     },
-     {
-       breakpoint: 1400,
-       options: {
-         chart: {
-           height: 370,
-         },
-       },
-     },
-     {
-       breakpoint: 1200,
-       options: {
-         chart: {
-           height: 320,
-         },
-       },
-     },
-     {
-       breakpoint: 771,
-       options: {
-         chart: {
-           height: 275,
-         },
-       },
-     },
-     {
-       breakpoint: 590,
-       options: {
-         chart: {
-           height: 215,
-         },
-       },
-     },
-   ],
- };
+var attendance_option = {
+  series: [
+    {
+      name: "Hours",
+      data: [2, 3, 4, 6, 5, 3, 4], // change your data here
+    },
+  ],
+
+  chart: {
+    type: "area",
+    height: 290,
+    toolbar: { show: false }, // remove top menu icons
+  },
+
+  stroke: {
+    curve: "smooth",
+    width: 3,
+    colors: ["#E65A50"],
+  },
+
+  fill: {
+    type: "gradient",
+    gradient: {
+      shadeIntensity: 1,
+      opacityFrom: 0.45,
+      opacityTo: 0.05,
+      stops: [0, 90, 100],
+      colorStops: [
+        {
+          offset: 0,
+          color: "#E65A50",
+          opacity: 0.35,
+        },
+        {
+          offset: 100,
+          color: "#E65A50",
+          opacity: 0.02,
+        },
+      ],
+    },
+  },
+
+  markers: {
+    size: 4,
+    colors: ["#fff"],
+    strokeColors: "#E65A50",
+    strokeWidth: 3,
+    hover: { size: 6 },
+  },
+  dataLabels: {
+    enabled: false
+  },
+
+  xaxis: {
+    categories: ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"],
+    labels: {
+      style: { fontSize: "12px" },
+    },
+  },
+
+  yaxis: {
+    min: 0,
+    labels: { style: { fontSize: "12px" } },
+  },
+
+  grid: {
+    borderColor: "#eee",
+  },
+
+  annotations: {
+    xaxis: [
+      {
+        x: 3,
+        strokeDashArray: 0,
+        borderColor: "rgba(230,90,80,0.5)",
+        fillColor: "rgba(230,90,80,0.2)",
+        opacity: 0.3,
+      },
+    ],
+  },
+
+  colors: ["#E65A50"], // Line color (Red for the gradient fill)
+};
+
 
  var attendance_option = new ApexCharts(document.querySelector("#monthlyChart"), attendance_option);
  attendance_option.render();
+
+
   var deliveryDuration = {
     series: [
       {

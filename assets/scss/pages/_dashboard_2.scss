@@ -77,6 +77,109 @@
       }
     }
   }
+   .review-slider {
+        .review {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            img {
+                width: 72px;
+                height: 72px;
+                margin: 0 auto;
+                border-radius: 6px;
+            }
+            .review-content {
+                margin: 12px 0;
+                span {
+                    color: $light-text;
+                }
+            }
+            p {
+                color: $light-text;
+                margin-top: 15px;
+                margin-bottom: 22px;
+                @media screen and (max-width: 1750px) and (min-width: 1200px) {
+                    text-overflow:ellipsis;
+                    overflow:hidden;
+                    display: -webkit-box !important;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    white-space: normal;
+                }
+            }
+        }
+    }
+    .owl-carousel{
+      &.owl-loaded{
+        display: block;
+      }
+    }
+    .card{
+      &.widget-card{
+        .customer-card{
+          span{
+            background-color: rgb(253 167 95 / 5%) !important;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            svg{
+              filter: drop-shadow(0 6px 6px #e1635066);
+              width: 24px;
+              height: 24px;
+              fill: var(--theme-default);
+            }
+          }
+        }
+      }
+      &.custom-card{
+        .assets-card{
+          width: 48px;
+          height: 48px;
+          font-size: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg{
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .card-body{
+          .d-flex{
+            .assets-detail{
+              p{
+                svg{
+                  width: 18px;
+                  height: 18%;
+                  stroke: $success-color;
+                }
+                &.asset-icon{
+                  
+                display: flex;
+                justify-content: center;
+                gap: 4px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .top-country-sales-list{
+      li{
+        margin-block-end: 16px;
+        div{
+          .sale-list{
+            display: flex;
+            gap: 12px;
+          }
+        }
+      }
+    }
 }
 
 .main-title-box {

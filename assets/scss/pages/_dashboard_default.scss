@@ -2622,32 +2622,6 @@ footer {
         color: gray;
       }
     }
-    .card-body {
-      &.performance-card {
-        ul {
-          margin-top: 22px;
-          li {
-            padding: 8px 14px;
-            background: linear-gradient(180deg, var(--course-light-btn) 0%, rgba(242, 243, 247, 0) 100%);
-            border-radius: 5px;
-            margin-right: 15px;
-            position: relative;
-            + li {
-              &::after {
-                content: "";
-                top: 50%;
-                background-color: #52526ccc;
-                transform: translate(-15px, -50%);
-                left: 0;
-                position: absolute;
-                height: 30px;
-                width: 1px;
-              }
-            }
-          }
-        }
-      }
-    }
   } 
   .shipment-tracking-table{
     .recent-table{

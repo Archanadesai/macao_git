@@ -28,9 +28,11 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/jquery.dataTables.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/select.bootstrap5.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
@@ -1119,13 +1121,159 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-4"> 
+              <div class="col-xxl-6"> 
                 <div class="row"> 
-                  <div class="col-6"></div>
-                  <div class="col-6">        </div>
+                  <div class="col-6">
+                    <div class="card widget-card"> 
+                      <div class="card-body"> 
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div> 
+                            <h5 class="fw-semibold">$43,038.00</h5><span class="d-block fs-12 text-muted">Total Sales</span>
+                          </div>
+                          <div class="customer-card"><span class="bg-primary-transparent svg-primary">
+                              <svg class="stroke-icon">
+                                <use href="../assets/svg/icon-sprite.svg#stroke-bag"> </use>
+                              </svg></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card widget-card"> 
+                      <div class="card-body"> 
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div> 
+                            <h5 class="fw-semibold">$28,346.00</h5><span class="d-block fs-12 text-muted">Total Expenses</span>
+                          </div>
+                          <div class="customer-card"><span class="bg-primary-transparent svg-primary">
+                              <svg class="stroke-icon">
+                                <use href="../assets/svg/icon-sprite.svg#stroke-bag"></use>
+                              </svg></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card widget-card"> 
+                      <div class="card-body"> 
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div> 
+                            <h5 class="fw-semibold">1,29,368</h5><span class="d-block fs-12 text-muted">Total Visitors</span>
+                          </div>
+                          <div class="customer-card"><span class="bg-primary-transparent svg-primary">
+                              <svg class="stroke-icon">
+                                <use href="../assets/svg/icon-sprite.svg#stroke-bag"></use>
+                              </svg></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card widget-card"> 
+                      <div class="card-body"> 
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div> 
+                            <h5 class="fw-semibold">35,367</h5><span class="d-block fs-12 text-muted">Total Orders</span>
+                          </div>
+                          <div class="customer-card"><span class="bg-primary-transparent svg-primary">
+                              <svg class="stroke-icon">
+                                <use href="../assets/svg/icon-sprite.svg#stroke-bag">                           </use>
+                              </svg></span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6"> 
+                    <div class="card custom-card"> 
+                      <div class="card-body p-0"> 
+                        <div class="d-flex"> 
+                          <div class="me-3"><span class="assets-card bg-light-primary">
+                              <svg class="stroke-icon">
+                                <use href="../assets/svg/icon-sprite.svg#stroke-assets"> </use>
+                              </svg></span></div>
+                          <div class="assets-detail"> 
+                            <p class="text-muted mb-1">Total Assets</p>
+                            <h5 class="mb-2">596</h5>
+                            <p class="text-muted mb-1 asset-icon"><span class="text-success">0.25%</span><i data-feather="arrow-up"> </i>This month</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6"> 
+                    <div class="card custom-card"> 
+                      <div class="card-body p-0"> 
+                        <div class="d-flex"> 
+                          <div class="me-3"><span class="assets-card bg-light-primary">
+                              <svg class="stroke-icon">
+                                <use href="../assets/svg/icon-sprite.svg#stroke-assets"> </use>
+                              </svg></span></div>
+                          <div class="assets-detail"> 
+                            <p class="text-muted mb-1">Total Assets</p>
+                            <h5 class="mb-2">596</h5>
+                            <p class="text-muted mb-1 asset-icon"><span class="text-success">0.25%</span><i data-feather="arrow-up"> </i>This month            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-5"></div>
+              <div class="col-xxl-3">
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <div class="header-top"> 
+                      <h5>Top Countries By sale </h5>
+                    </div>
+                  </div>
+                  <div class="card-body"> 
+                    <ul class="top-country-sales-list">
+                      <li>
+                        <div class="d-flex justify-content-between align-items-center"> 
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-us"></i></span><span class="top-country-name">France  </span></div>
+                          <div>  <i class="text-success" data-feather="arrow-up-right"></i></div>
+                          <div class="sale-price">5,932</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between align-items-center"> 
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-ae"></i></span><span class="top-country-name">France  </span></div>
+                          <div>  <i class="text-danger" data-feather="arrow-down-right"></i></div>
+                          <div class="sale-price">5,932</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between align-items-center"> 
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-cn"></i></span><span class="top-country-name">France  </span></div>
+                          <div>  <i class="text-danger" data-feather="arrow-down-right"></i></div>
+                          <div class="sale-price">5,932</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between align-items-center"> 
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-pt"></i></span><span class="top-country-name">France  </span></div>
+                          <div>  <i class="text-success" data-feather="arrow-up-right"></i></div>
+                          <div class="sale-price">5,932</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between align-items-center"> 
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-fr"></i></span><span class="top-country-name">France  </span></div>
+                          <div>  <i class="text-danger" data-feather="arrow-down-right"></i></div>
+                          <div class="sale-price">5,932</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex justify-content-between align-items-center"> 
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-es"></i></span><span class="top-country-name">France  </span></div>
+                          <div>  <i class="text-success" data-feather="arrow-up-right"></i></div>
+                          <div class="sale-price">5,932                    </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <div class="col-xxl-3"> 
                 <div class="card"> 
                   <div class="card-header card-no-border pb-2">
@@ -1301,6 +1449,189 @@
                   </div>
                 </div>
               </div>
+              <div class="col-xxl-6"> 
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <div class="header-top"> 
+                      <h5>customer Report</h5>
+                      <div class="card-header-right-icon">
+                        <div class="dropdown icon-dropdown">
+                          <button class="btn dropdown-toggle" id="treadingProduct" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="treadingProduct"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months </a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pt-0"> 
+                    <div id="delivery-duration">   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-3"> 
+                <div class="card review-slider"> 
+                  <div class="card-header"> 
+                    <div class="header-top"> 
+                      <h5>Customer review </h5>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="owl-carousel owl-theme owl-loaded" id="owl-carousel-dashboard">
+                      <div class="review">
+                        <div> <img class="img-fluid" src="/assets/images/user/1.jpg" alt="">
+                          <div class="review-content"> <a href="user-profile.html"> 
+                              <h5 class="txt-primary f-w-600">Mary Jades</h5></a><span>Web Designer</span></div><span class="d-flex gap-1 justify-content-center"><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i></span>
+                          <p>"This product exceeded my expectations! The quality is outstanding, and it arrived faster than I anticipated. Also, thank you for the support. Highly recommend!"</p><span class="txt-secondary f-w-600">( 10th Feb, 2024 )</span>
+                        </div>
+                      </div>
+                      <div class="review">
+                        <div> <img class="img-fluid" src="../assets/images/user/3.png" alt="">
+                          <div class="review-content"> <a href="user-profile.html">
+                              <h5 class="txt-primary f-w-600">Anna Proas</h5></a><span>Graphics Designer</span></div><span class="d-flex gap-1 justify-content-center"><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-regular fa-star font-warning"></i></span>
+                          <p>"I love how versatile this product is. It's perfect for everyday use and has made a noticeable difference in my routine. Definitely worth the purchase."</p><span class="txt-secondary f-w-600">( 05th May, 2024 )</span>
+                        </div>
+                      </div>
+                      <div class="review">
+                        <div> <img class="img-fluid" src="../assets/images/user/6.jpg" alt="">
+                          <div class="review-content"> <a href="user-profile.html">
+                              <h5 class="txt-primary f-w-600">Rachel Green</h5></a><span>Web Developer</span></div><span class="d-flex gap-1 justify-content-center"><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-regular fa-star font-warning"></i></span>
+                          <p>"Great value for the price! It's durable, stylish, and exactly what I was looking for. Couldn't be happier with my choice. Also, thank you for the quick response."</p><span class="txt-secondary f-w-600">( 23th Aug, 2024 )    </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-3"> 
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <div class="header-top"> 
+                      <h5>Product Sales</h5>
+                    </div>
+                  </div>
+                  <div class="card-body"> 
+                    <div id="overall">   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6"> 
+                <div class="card">
+                  <div class="card-header card-no-border">
+                    <div class="header-top">
+                      <h5>Stock Report</h5>
+                      <div class="card-header-right-icon">
+                        <div class="dropdown icon-dropdown">
+                          <button class="btn dropdown-toggle" id="stockReport" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="stockReport"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body px-0 pt-0 stock-report">
+                    <div class="recent-table table-responsive custom-scrollbar">
+                      <table class="table" id="stock-report"> 
+                        <thead> 
+                          <tr> 
+                            <th>Items</th>
+                            <th>Product ID</th>
+                            <th>QTY</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr> 
+                            <td>
+                              <div class="common-flex align-items-center">
+                                <div class="img-border"><img class="img-fluid rounded-circle" src="../assets/images/dashboard-2/order/sub-product/14.png" alt="user"></div><a class="f-w-500" href="product-report.html">Shoes</a>
+                              </div>
+                            </td>
+                            <td>#854129</td>
+                            <td>0 PCS</td>
+                            <td>$513</td>
+                            <td>
+                              <button class="btn button-light-danger txt-danger f-w-500">Out of Stock</button>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td>
+                              <div class="common-flex align-items-center">
+                                <div class="img-border"><img class="img-fluid rounded-circle" src="../assets/images/dashboard-2/order/sub-product/15.png" alt="user"></div><a class="f-w-500" href="product-report.html">Couch</a>
+                              </div>
+                            </td>
+                            <td>#245987</td>
+                            <td>95 PCS</td>
+                            <td>$3061</td>
+                            <td>
+                              <button class="btn button-light-success txt-success f-w-500">In Stock</button>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td>
+                              <div class="common-flex align-items-center">
+                                <div class="img-border"><img class="img-fluid rounded-circle" src="../assets/images/dashboard-2/order/sub-product/16.png" alt="user"></div><a class="f-w-500" href="product-report.html">Bags</a>
+                              </div>
+                            </td>
+                            <td>#357896</td>
+                            <td>45 PCS</td>
+                            <td>$1256</td>
+                            <td>
+                              <button class="btn button-light-success txt-success f-w-500">In Stock</button>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td>
+                              <div class="common-flex align-items-center">
+                                <div class="img-border"><img class="img-fluid rounded-circle" src="../assets/images/dashboard-2/order/sub-product/24.png" alt="user"></div><a class="f-w-500" href="product-report.html">Watch</a>
+                              </div>
+                            </td>
+                            <td>#589456</td>
+                            <td>0 PCS</td>
+                            <td>$120</td>
+                            <td>
+                              <button class="btn button-light-danger txt-danger f-w-500">Out of Stock</button>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td>
+                              <div class="common-flex align-items-center">
+                                <div class="img-border"><img class="img-fluid rounded-circle" src="../assets/images/dashboard-2/order/sub-product/25.png" alt="user"></div><a class="f-w-500" href="product-report.html">Chair</a>
+                              </div>
+                            </td>
+                            <td>#698789</td>
+                            <td>10 PCS</td>
+                            <td>$1200</td>
+                            <td>
+                              <button class="btn button-light-success txt-success f-w-500">In Stock</button>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td>
+                              <div class="common-flex align-items-center">
+                                <div class="img-border"><img class="img-fluid rounded-circle" src="../assets/images/dashboard-2/order/sub-product/26.png" alt="user"></div><a class="f-w-500" href="product-report.html">Lamp</a>
+                              </div>
+                            </td>
+                            <td>#120447</td>
+                            <td>0 PCS</td>
+                            <td>$1200</td>
+                            <td>
+                              <button class="btn button-light-danger txt-danger f-w-500">Out of Stock</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6"> 
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <div class="header-top"> 
+                      <h5> </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Container-fluid Ends-->
@@ -1332,6 +1663,8 @@
     <!-- Plugins JS start-->
     <script src="../assets/js/sidebar-menu.js"></script>
     <script src="../assets/js/sidebar-pin.js"></script>
+    <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
+    <script src="/assets/js/owl-custom.js"> </script>
     <script src="../assets/js/slick/slick.min.js"></script>
     <script src="../assets/js/slick/slick.js"></script>
     <script src="../assets/js/header-slick.js"></script>
@@ -1343,6 +1676,7 @@
     <script src="../assets/js/datatable/datatables/dataTables.select.js"></script>
     <script src="../assets/js/datatable/datatables/select.bootstrap5.js"></script>
     <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
+    <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
     <script src="../assets/js/dashboard/dashboard_2.js"></script>
     <script src="../assets/js/tooltip-init.js"></script>
     <!-- Plugins JS Ends-->
