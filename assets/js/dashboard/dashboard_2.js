@@ -1070,4 +1070,92 @@
 
    var chart = new ApexCharts(document.querySelector("#overall"), options);
    chart.render();
+
+   var options = {
+     chart: {
+       height: 300,
+       type: "line",
+       toolbar: { show: false },
+       foreColor: "#777",
+     },
+
+     // --- BAR SERIES (gradient columns) ---
+     series: [
+       {
+         name: "Sales",
+         type: "bar",
+         data: [12, 10, 15, 13, 11, 12, 16], // adjust to your data
+       },
+       {
+         name: "Trend",
+         type: "line",
+         data: [10, 12, 14, 11, 10, 9, 15],
+       },
+     ],
+
+     fill: {
+       type: ["gradient", "solid"],
+       gradient: {
+         shade: "light",
+         type: "vertical",
+         shadeIntensity: 0.4,
+         gradientToColors: ["#C3B7FF"],
+         inverseColors: false,
+         opacityFrom: 1,
+         opacityTo: 0.2,
+         stops: [0, 100],
+       },
+     },
+
+     colors: [MacaoAdminConfig.primary, "#ee9f8e"],
+
+     stroke: {
+       width: [0, 3],
+       curve: "smooth",
+     },
+
+     markers: {
+       size: 5,
+       colors: "#fff",
+       strokeColors: "#FF7750",
+       strokeWidth: 2,
+     },
+
+     dataLabels: { enabled: false },
+
+     xaxis: {
+       categories: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+       labels: { style: { fontSize: "12px" } },
+       axisTicks: { show: false },
+       axisBorder: { show: false },
+     },
+
+     yaxis: {
+       min: 0,
+       max: 20,
+       tickAmount: 4,
+       labels: {
+         formatter: function (val) {
+           return "$" + val + "K";
+         },
+       },
+     },
+
+     grid: {
+       borderColor: "#eee",
+       strokeDashArray: 5,
+       padding: { left: 10, right: 10 },
+     },
+
+     tooltip: {
+       shared: true,
+       intersect: false,
+     },
+
+     legend: { show: false },
+   };
+
+var chart = new ApexCharts(document.querySelector("#sale-static"), options);
+chart.render();
+
 })();
