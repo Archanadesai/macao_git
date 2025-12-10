@@ -1,45 +1,38 @@
 // Page Header Start
 .page-header
-  .header-wrapper.row.m-0
-    form(action='#', method='get').form-inline.search-full.col
-      .form-group.w-100
-        .Typeahead.Typeahead--twitterUsers
-          .u-posRelative
-            input.demo-input.Typeahead-input.form-control-plaintext.w-100(type='text' placeholder='Search Anything Here...' name='q' title='' autofocus)
-            .spinner-border.Typeahead-spinner(role='status')
-              span.sr-only Loading...
-            i(data-feather='x').close-search
-          .Typeahead-menu
-    .header-logo-wrapper.col-auto.p-0
+  .header-wrapper.row.g-0
+    .header-logo-wrapper.col-auto
+      //- .toggle-sidebar
+      //-   i.status_toggle.middle(data-feather='grid').sidebar-toggle 
       .logo-wrapper
         a(href='index.html')
           img.img-fluid.for-light(src='../assets/images/logo/logo.png', alt='')
           img.img-fluid.for-dark(src='../assets/images/logo/logo_dark.png', alt='')
       .toggle-sidebar
-        i.status_toggle.middle(data-feather='align-center').sidebar-toggle
+        //- i.status_toggle.middle(data-feather='align-center').sidebar-toggle
+        svg
+          use(href='../assets/svg/icon-sprite.svg#bar')
 
-    .left-header.col-xxl-5.col-xl-6.col-lg-5.col-md-4.col-sm-3.p-0
-      .notification-slider
-        div.d-flex.h-100 
-          img(src="../assets/images/giftools.gif" alt="gif")
-          h6.mb-0.f-w-400
-            span.font-primary Don't Miss Out! 
-            span.f-light  Our new update has been released.
-          i.icon-arrow-top-right.f-light
-        div.d-flex.h-100
-          img(src="../assets/images/giftools.gif" alt="gif")
-          h6.mb-0.f-w-400
-            span.f-light Something you love is now on sale! 
-          a.ms-1(href="https://1.envato.market/3GVzd" target="_blank") Buy now !
-          
-    .nav-right.col-xxl-7.col-xl-6.col-md-7.col-8.pull-right.right-header.p-0.ms-auto
+    
+
+    .nav-right.col-xxl-8.col-xl-6.col-md-7.col-8.pull-right.right-header.ms-auto
       ul.nav-menus
+        form(action='#', method='get').form-inline.search-full.col
+          .form-group.w-100
+            .Typeahead.Typeahead--twitterUsers
+              .searchBar
+                input#searchQueryInput(type='text' name='searchQueryInput' placeholder='Type to Search' value='')
+                .spinner-border.Typeahead-spinner(role='status')
+                  span.sr-only Loading...
+                i(data-feather='x').close-search
+              .Typeahead-menu
         li.language-nav
           .translate_wrapper
             .current_lang
               .lang
                 i.flag-icon.flag-icon-us
-                span.lang-txt EN                               
+                //- svg
+                //-   use(href='../assets/svg/icon-sprite.svg#language')                             
             .more_lang
               .lang.selected(data-value='en')
                 i.flag-icon.flag-icon-us
@@ -68,16 +61,119 @@
                 span.lang-txt
                   | لعربية 
                   span  (ae)
-        li.fullscreen-body                        
-          span
-            svg#maximize-screen
-              use(href='../assets/svg/icon-sprite.svg#full-screen')
-        li                          
-          span.header-search
+        
+        li.cart-nav.onhover-dropdown
+          .cart-box
             svg
-              use(href='../assets/svg/icon-sprite.svg#search')
-
-        li.onhover-dropdown
+              use(href='../assets/svg/icon-sprite.svg#stroke-ecommerce')
+            span.badge.rounded-pill.badge-danger 3
+          .cart-dropdown.onhover-show-div
+            h6.f-18.mb-0.dropdown-title Cart items
+            ul.cart-list
+              li
+                .d-flex
+                  img.img-fluid.b-r-5.me-3.img-50(src='../assets/images/other-images/cart-img.jpg', alt='')
+                  .flex-grow-1
+                    span Wireless Headphones
+                    .qty-box
+                      .input-group
+                        span.input-group-prepend
+                          button.btn.quantity-left-minus(type='button' data-type='minus')
+                            | -
+                        input.form-control.input-number(type='text' name='quantity' value='1')
+                        span.input-group-prepend
+                          button.btn.quantity-right-plus(type='button' data-type='plus')
+                            | +                  
+                      h6.font-primary $75
+                  .close-circle
+                    a.bg-danger(href='#')
+                      i(data-feather='x')
+              li
+                .d-flex
+                  img.img-fluid.b-r-5.me-3.img-50(src='../assets/images/dashboard-2/order/sub-product/16.png', alt='')
+                  .flex-grow-1
+                    span Ladies Hand Bag
+                    .qty-box
+                      .input-group
+                        span.input-group-prepend
+                          button.btn.quantity-left-minus(type='button' data-type='minus')
+                            | -
+                        input.form-control.input-number(type='text' name='quantity' value='1')
+                        span.input-group-prepend
+                          button.btn.quantity-right-plus(type='button' data-type='plus')
+                            | +                  
+                      h6.font-primary $49
+                  .close-circle
+                    a.bg-danger(href='#')
+                      i(data-feather='x')
+              li
+                .d-flex
+                  img.img-fluid.b-r-5.me-3.img-50(src='../assets/images/other-images/cart-img1.jpg', alt='')
+                  .flex-grow-1
+                    span Advanced Smart Watch
+                    .qty-box
+                      .input-group
+                        span.input-group-prepend
+                          button.btn.quantity-left-minus(type='button' data-type='minus')
+                            | -
+                        input.form-control.input-number(type='text' name='quantity' value='1')
+                        span.input-group-prepend
+                          button.btn.quantity-right-plus(type='button' data-type='plus')
+                            | +                  
+                      h6.font-primary $87.03
+                  .close-circle
+                    a.bg-danger(href='#')
+                      i(data-feather='x')
+              .text-center.m-2
+                a.btn.btn-primary.view-checkout.btn.btn-primary.w-100.f-w-700(href='checkout.html')
+                  | Proceed to checkout 
+        li.onhover-dropdown.notification-body
+          .notification-box
+            svg
+              use(href='../assets/svg/icon-sprite.svg#notification')
+            span.pulse.rounded.badge-success 
+          .onhover-show-div.notification-dropdown
+            .notification-header.d-flex.align-items-center.justify-content-between
+              h6.f-18.mb-0 Notifications
+              span.unread.bg-danger 4 unread                             
+            ul.notification-list
+              li
+                .d-flex.align-items-center.justify-content-between
+                  img.img-fluid.avatar.b-r-20.me-3(src='../assets/images/avtar/1.jpg', alt='')
+                  .flex-grow-1
+                    p.mb-0 General Update
+                    span.notification-content New features are now available!
+                  .close-circle
+                    a.close-notification(href='#')
+                      i(data-feather='x')
+              li
+                .d-flex.align-items-center.justify-content-between
+                  img.img-fluid.avatar.b-r-20.me-3(src='../assets/images/avtar/10.jpg', alt='')
+                  .flex-grow-1
+                    p.mb-0 Success Message
+                    span.notification-content  The profile was successfully updated.
+                  .close-circle
+                    a.close-notification(href='#')
+                      i(data-feather='x')
+              li
+                .d-flex.align-items-center.justify-content-between
+                  img.img-fluid.avatar.b-r-20.me-3(src='../assets/images/avtar/1.jpg', alt='')
+                  .flex-grow-1
+                    p.mb-0  Support Ticket Submitted
+                    span.notification-content We need your attention on ticket #45678.
+                  .close-circle
+                    a.close-notification(href='#')
+                      i(data-feather='x')
+              li
+                .d-flex.align-items-center.justify-content-between
+                  img.img-fluid.avatar.b-r-20.me-3(src='../assets/images/avtar/10.jpg', alt='')
+                  .flex-grow-1
+                    p.mb-0 Low Inventory Alert
+                    span.notification-content  Only 5 items left in inventory.
+                  .close-circle
+                    a.close-notification(href='#')
+                      i(data-feather='x')
+        li.onhover-dropdown.bookmark-body
           svg
             use(href='../assets/svg/icon-sprite.svg#star')
           .onhover-show-div.bookmark-flip
@@ -113,125 +209,72 @@
                     li
                       a.f-w-700.d-block.flip-back#flip-back.btn.btn-primary.w-100(href="#!")
                         | Back
-
+        li#small-header-toggle
+          .plus-icon
+            svg
+              use(href='../assets/svg/icon-sprite.svg#add')
+        li.header-search                          
+          span
+            svg
+              use(href='../assets/svg/icon-sprite.svg#search')
+        .left-header.col-xxl-3.col-xl-5.col-lg-4.col-md-4.col-sm-3
+          .searchBar
+            input#searchQueryInput(type='text' name='searchQueryInput' placeholder='Type to Search' value='')
+            button#searchQuerySubmit(type='submit' name='searchQuerySubmit')
+              svg
+                use(href='../assets/svg/icon-sprite.svg#search')
+        li.fullscreen-body                        
+          span
+            svg#maximize-screen
+              use(href='../assets/svg/icon-sprite.svg#full-screen')
         li
           .mode
             svg
               use(href='../assets/svg/icon-sprite.svg#moon')
-        li.cart-nav.onhover-dropdown
-          .cart-box
-            svg
-              use(href='../assets/svg/icon-sprite.svg#stroke-ecommerce')
-            span.badge.rounded-pill.badge-danger 2
-          .cart-dropdown.onhover-show-div
-            h6.f-18.mb-0.dropdown-title Cart
-            ul
-              li
-                .d-flex
-                  img.img-fluid.b-r-5.me-3.img-60(src='../assets/images/other-images/cart-img.jpg', alt='')
-                  .flex-grow-1
-                    span Furniture Chair for Home
-                    .qty-box
-                      .input-group
-                        span.input-group-prepend
-                          button.btn.quantity-left-minus(type='button' data-type='minus' data-field='')
-                            | -
-                        input.form-control.input-number(type='text' name='quantity' value='1')
-                        span.input-group-prepend
-                          button.btn.quantity-right-plus(type='button' data-type='plus' data-field='')
-                            | +
-
-                    h6.font-primary $12.45
-                  .close-circle
-                    a.bg-danger(href='#')
-                      i(data-feather='x')
-              li
-                .d-flex
-                  img.img-fluid.b-r-5.me-3.img-60(src='../assets/images/other-images/cart-img1.jpg', alt='')
-                  .flex-grow-1
-                    span Rest Well Chair
-                    .qty-box
-                      .input-group
-                        span.input-group-prepend
-                          button.btn.quantity-left-minus(type='button' data-type='minus' data-field='')
-                            | -
-                        input.form-control.input-number(type='text' name='quantity' value='1')
-                        span.input-group-prepend
-                          button.btn.quantity-right-plus(type='button' data-type='plus' data-field='')
-                            | +
-
-                    h6.font-primary $49.00
-                  .close-circle
-                    a.bg-danger(href='#')
-                      i(data-feather='x')
-
-              li.total
-                h6.mb-0
-                  | Order Total : 
-                  span.f-right $1000.00
-              li.text-center
-                a.d-block.view-cart.f-w-700.btn.btn-primary.w-100(href='cart.html')
-                  | View Cart
-                a.btn.btn-primary.view-checkout.btn.btn-primary.w-100.f-w-700(href='checkout.html')
-                  | Checkout
-        li.onhover-dropdown
-          .notification-box
-            svg
-              use(href='../assets/svg/icon-sprite.svg#notification')
-            span.badge.rounded-pill.badge-success 4 
-          .onhover-show-div.notification-dropdown
-            h6.f-18.mb-0.dropdown-title Notifications                               
-            ul
-              li.b-l-primary.border-4.toast.default-show-toast.align-items-center.text-light.border-0.fade.show(aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
-                .d-flex.justify-content-between
-                  .toast-body
-                    p
-                      | Delivery processing
-                  button.btn-close.btn-close-white.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')
-              li.b-l-success.border-4.toast.default-show-toast.align-items-center.text-light.border-0.fade.show(aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
-                .d-flex.justify-content-between
-                  .toast-body
-                    p
-                      | Order Complete
-                  button.btn-close.btn-close-white.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')
-              li.b-l-secondary.border-4.toast.default-show-toast.align-items-center.text-light.border-0.fade.show(aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
-                .d-flex.justify-content-between
-                  .toast-body
-                    p
-                      | Tickets Generated
-                  button.btn-close.btn-close-white.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')
-              li.b-l-warning.border-4.toast.default-show-toast.align-items-center.text-light.border-0.fade.show(aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
-                .d-flex.justify-content-between
-                  .toast-body
-                    p
-                      | Delivery Complete
-                  button.btn-close.btn-close-white.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')
+        
+        
+              //- li.b-l-success.border-4.toast.default-show-toast.align-items-center.text-light.border-0.fade.show(aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
+              //-   .d-flex.justify-content-between
+              //-     .toast-body
+              //-       p
+              //-         | Order Complete
+              //-     button.btn-close.btn-close-white.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')
+              //- li.b-l-secondary.border-4.toast.default-show-toast.align-items-center.text-light.border-0.fade.show(aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
+              //-   .d-flex.justify-content-between
+              //-     .toast-body
+              //-       p
+              //-         | Tickets Generated
+              //-     button.btn-close.btn-close-white.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')
+              //- li.b-l-warning.border-4.toast.default-show-toast.align-items-center.text-light.border-0.fade.show(aria-live='assertive' aria-atomic='true' data-bs-autohide='false')
+              //-   .d-flex.justify-content-between
+              //-     .toast-body
+              //-       p
+              //-         | Delivery Complete
+              //-     button.btn-close.btn-close-white.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')
         li.profile-nav.onhover-dropdown.pe-0.py-0
-          .d-flex.profile-media
+          .d-flex.align-items-center.profile-media
             img.b-r-10(src='../assets/images/dashboard/profile.png', alt='')
-            .flex-grow-1
-              span Emay Walter
-              p.mb-0 Admin 
-                i.middle.fa-solid.fa-angle-down
+              //- p.mb-0 Admin 
+              //-   i.middle.fa-solid.fa-angle-down
           ul.profile-dropdown.onhover-show-div
             li
-              a(href='../template/sign-up.html')
+              a(href='sign-up.html')
                 i(data-feather='user')
                 span Account 
             li
-              a(href='../template/mail-box.html')
+              a(href='mail-box.html')
                 i(data-feather='mail')
                 span Inbox
             li
-              a(href='../template/task.html')
+              a(href='task.html')
                 i(data-feather='file-text')
                 span Taskboard
             li
-              a(href='../template/add-user.html')
+              a(href='add-user.html')
                 i(data-feather='settings')
                 span Settings
             li
-              a(href='../template/login.html')
+              a(href='login.html')
                 i(data-feather='log-in') 
                 span Log out
     script.result-template(type='text/x-handlebars-template').

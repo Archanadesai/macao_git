@@ -24000,6 +24000,7 @@ p.data-attributes svg {
   width: 48px;
   height: 48px;
   font-size: 16px;
+  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24011,12 +24012,14 @@ p.data-attributes svg {
 .dashboard-2 .card.custom-card .card-body .d-flex .assets-detail p svg {
   width: 18px;
   height: 18%;
-  stroke: #4caf50;
 }
 .dashboard-2 .card.custom-card .card-body .d-flex .assets-detail p.asset-icon {
   display: flex;
   justify-content: center;
   gap: 4px;
+}
+.dashboard-2 .card.custom-card .card-body #delivery-duration {
+  margin-left: -38px;
 }
 .dashboard-2 .top-country-sales-list li {
   margin-block-end: 16px;
@@ -36224,6 +36227,39 @@ footer.blockquote-footer {
   font-weight: 600;
   line-height: 1;
 }
+@media (max-width: 1708px) {
+  .default-dashboard .card .balance-wrapper .balance-detail p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px;
+  }
+}
+@media (max-width: 1525px) {
+  .default-dashboard .card .balance-wrapper .balance-detail p {
+    max-width: 160px;
+  }
+}
+@media (max-width: 1400px) {
+  .default-dashboard .card .balance-wrapper .balance-detail p {
+    max-width: unset;
+  }
+}
+@media (max-width: 715px) {
+  .default-dashboard .card .balance-wrapper .balance-detail p {
+    max-width: 150px;
+  }
+}
+@media (max-width: 605px) {
+  .default-dashboard .card .balance-wrapper .balance-detail p {
+    max-width: 135px;
+  }
+}
+@media (max-width: 576px) {
+  .default-dashboard .card .balance-wrapper .balance-detail p {
+    max-width: 185px;
+  }
+}
 .default-dashboard .card .balance-wrapper .balance-detail span {
   color: #898989;
   font-weight: 500;
@@ -36234,18 +36270,35 @@ footer.blockquote-footer {
   font-size: 20px;
 }
 .default-dashboard .card .balance-wrapper .customer-card {
-  width: 55px;
-  height: 55px;
+  width: calc(38px + 17 * (100vw - 320px) / 1600);
+  height: calc(38px + 17 * (100vw - 320px) / 1600);
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1578px) and (min-width: 1400px) {
+  .default-dashboard .card .balance-wrapper .customer-card {
+    width: 37px;
+    height: 37px;
+  }
+}
 .default-dashboard .card .balance-wrapper .customer-card svg {
-  width: 25px;
-  height: 25px;
+  width: calc(20px + 5 * (100vw - 320px) / 1600);
+  height: calc(20px + 5 * (100vw - 320px) / 1600);
   stroke: var(--theme-default);
   fill: none;
+}
+@media (max-width: 1578px) and (min-width: 1400px) {
+  .default-dashboard .card .balance-wrapper .customer-card svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 1438px) and (min-width: 1400px) {
+  .default-dashboard .card .balance-wrapper .customer-card {
+    display: none;
+  }
 }
 .default-dashboard .card .balance1 {
   display: flex;
@@ -36274,6 +36327,189 @@ footer.blockquote-footer {
 .default-dashboard .shipment-tracking-table .recent-table table tbody tr th:first-child,
 .default-dashboard .shipment-tracking-table .recent-table table tbody tr td:first-child {
   padding-left: 20px;
+}
+@media (max-width: 1602px) and (min-width: 1289px) {
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(5),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(5),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(5),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 1469px) and (min-width: 1289px) {
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(4),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(4),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(4),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 1288px) {
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(2),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(2),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(2),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(2) {
+    min-width: 172px;
+  }
+}
+@media (max-width: 1288px) {
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(3),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(3),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(3),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(3) {
+    min-width: 200px;
+  }
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(4),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(4),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(4),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(4) {
+    min-width: 105px;
+  }
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(5),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(5),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(5),
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(5) {
+    min-width: 100px;
+  }
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr td:last-child,
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr th:last-child,
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr td:last-child,
+  .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr th:last-child {
+    min-width: 135px;
+  }
+}
+@media (max-width: 822px) {
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr td:first-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr th:first-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr td:first-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr th:first-child {
+    min-width: 170px;
+  }
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(2),
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(2),
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(2),
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(2) {
+    min-width: 120px;
+  }
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr td:last-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr th:last-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr td:last-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr th:last-child {
+    min-width: 70px;
+  }
+}
+@media (max-width: 1488px) and (min-width: 1262px) {
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr td:last-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr th:last-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr td:last-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr th:last-child {
+    display: none;
+  }
+}
+@media (max-width: 1262px) {
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr td:first-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr th:first-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr td:first-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr th:first-child {
+    min-width: 150px;
+  }
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(2),
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(2),
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(2),
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(2) {
+    min-width: 120px;
+  }
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr td:last-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr th:last-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr td:last-child,
+  .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table tbody tr th:last-child {
+    min-width: 70px;
+  }
+}
+@media (max-width: 1660px) {
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(2),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(2),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(2),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(2) {
+    min-width: unset;
+  }
+}
+@media (max-width: 1826px) and (min-width: 1200px) {
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(5),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(5),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(5),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 1283px) and (min-width: 1200px) {
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(4),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(4),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(4),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 1546px) and (min-width: 1200px) {
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(6),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(6),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(6),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(6) {
+    display: none;
+  }
+}
+@media (max-width: 805px) {
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(2),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(2),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(2),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(2) {
+    min-width: 110px;
+  }
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(3),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(3),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(3),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(3) {
+    min-width: 105px;
+  }
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(4),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(4),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(4),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(4) {
+    min-width: 100px;
+  }
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(5),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(5),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(5),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(5) {
+    min-width: 170px;
+  }
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr td:nth-child(6),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table thead tr th:nth-child(6),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr td:nth-child(6),
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .table tbody tr th:nth-child(6) {
+    min-width: 130px;
+  }
+}
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .dt-layout-row .dt-layout-cell .dt-search {
+    position: relative;
+    top: 4px;
+    left: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1334px) and (min-width: 1200px) {
+  .default-dashboard .shipment-tracking-table .recent-table.table-responsive div.dt-container .dt-layout-row .dt-layout-cell .dt-info {
+    display: none;
+  }
+}
+
+.widget-card:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+.widget-card:hover svg {
+  animation: tada 1.5s ease infinite;
 }
 
 /**=====================
@@ -67911,7 +68147,7 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   padding: 30px;
 }
 .starter-main .alert {
-  background-color: rgba(68, 102, 242, 0.2) !important;
+  background-color: rgba(225, 99, 73, 0.2) !important;
 }
 .starter-main .alert i {
   display: flex;
@@ -67924,6 +68160,13 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
 .sale-product-table .table-responsive .table tbody tr td:first-child {
   padding-left: 20px;
   cursor: pointer;
+}
+[dir=rtl] .sale-product-table .table-responsive .table thead tr th:first-child,
+[dir=rtl] .sale-product-table .table-responsive .table thead tr td:first-child,
+[dir=rtl] .sale-product-table .table-responsive .table tbody tr th:first-child,
+[dir=rtl] .sale-product-table .table-responsive .table tbody tr td:first-child {
+  padding-left: unset;
+  padding-right: 20px;
 }
 
 .card-block .table-responsive .table caption {

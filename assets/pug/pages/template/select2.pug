@@ -46,7 +46,7 @@ html(lang='en')
                       h5 Single-value Select
                       p.f-m-light.mt-1 
                         | Use tagify plugin for drag and sort options available.
-                    .card-body 
+                    .card-body.pt-0 
                       form.row.g-3
                         .col-xl-3.col-sm-6
                           input.selectMode.bg-light-primary(name='tags-select-mode' placeholder='Please select')
@@ -62,7 +62,7 @@ html(lang='en')
                       h5 Default Select 
                       p.f-m-light.mt-1 
                         | Use tagify plugin for select options and edit.
-                    .card-body
+                    .card-body.pt-0
                       form
                         input(name='basic' value='tag1, tag2, tag3, tag4 autofocus')
                 .col-sm-6 
@@ -71,7 +71,7 @@ html(lang='en')
                       h5 Random Suggestions
                       p.f-m-light.mt-1 
                         | Use tagify plugin for select options.
-                    .card-body 
+                    .card-body.pt-0 
                       form
                         input.some_class_name(name='input-custom-dropdown' placeholder='write some tags' value='tivo, roxo, sheltos, viho, zeta, koho')
                 .col-sm-6 
@@ -80,7 +80,7 @@ html(lang='en')
                       h5 Colors Select Options
                       p.f-m-light.mt-1 
                         | Use tagify plugin for select colors options.
-                    .card-body 
+                    .card-body.pt-0 
                       form
                         input(name='tags3' value='[{"value":"point"}, {"value":"soft"}, {"value":"horse"}, {"value":"flood"}, {"value":"asset"}]' pattern='^[A-Za-z_✲ ]{1,15}$')
                 .col-sm-6 
@@ -89,7 +89,7 @@ html(lang='en')
                       h5 Flags Selection
                       p.f-m-light.mt-1 
                         | Use tagify plugin for select flags options.
-                    .card-body 
+                    .card-body.pt-0 
                       form
                         input.countries(name='tags3-1' placeholder='Try to add tags from the list')
                 .col-md-4.col-md-6
@@ -98,7 +98,7 @@ html(lang='en')
                       h5 Readonly Options
                       p.f-m-light.mt-1 
                         | Use tagify plugin for readonly options.
-                    .card-body 
+                    .card-body.pt-0 
                       form
                         input(name='tags4' readonly='' value='tag1, tag 2, another tag')
                 .col-md-4.col-md-6
@@ -107,7 +107,7 @@ html(lang='en')
                       h5 Read and Write Options
                       p.f-m-light.mt-1 
                         | Use tagify plugin for read and write options.
-                    .card-body 
+                    .card-body.pt-0 
                       form
                         input.readonlyMix(name='tags-readonly-mix' placeholder='Type something' value='[\
                         {\
@@ -130,7 +130,7 @@ html(lang='en')
                       h5 Disabled Readonly
                       p.f-m-light.mt-1 
                         | Use tagify plugin for readonly option available.
-                    .card-body 
+                    .card-body.pt-0 
                       form
                         input(name='disabledInput' disabled='' value='tag1, tag 2, another tag')
                 .col-md-4.col-md-6
@@ -139,7 +139,7 @@ html(lang='en')
                       h5 Customize Emails
                       p.f-m-light.mt-1 
                         | Use tagify plugin for select email options.
-                    .card-body 
+                    .card-body.pt-0 
                       form
                         input.customLook(value='pixelstrap.theme@website.com')
                         button(type='button') +
@@ -149,7 +149,7 @@ html(lang='en')
                       h5 Telephone Input
                       p.f-m-light.mt-1 
                         | Select country and enter your telephone number.
-                    .card-body 
+                    .card-body.pt-0 
                       form.international-num
                         input#country(type='tel')
                 .col-md-4.col-md-6
@@ -158,7 +158,7 @@ html(lang='en')
                       h5 Movie Suggestions
                       p.f-m-light.mt-1 
                         | Use tagify plugin for select movie options.
-                    .card-body 
+                    .card-body.pt-0 
                       form
                         textarea(name='tags2' placeholder='Enter movie names')
                           | [{&quot;value&quot;:&quot;Hot Sit&quot;}, {&quot;value&quot;:&quot;The Matrix&quot;}]
@@ -168,7 +168,7 @@ html(lang='en')
                       h5 Autocomplete Words
                       p.f-m-light.mt-1 
                         | Enter any letter and display autocomplete words.
-                    .card-body 
+                    .card-body.pt-0 
                       form.international-num.row
                         .col-12
                           label(for="autokeyword") Search programming language 
@@ -181,7 +181,7 @@ html(lang='en')
                       h5 Select input using search option
                       p.f-m-light.mt-1 
                         | Use search option through select any options.
-                    .card-body 
+                    .card-body.pt-0 
                       .select-box
                         .options-container.custom-scrollbar
                           .selection-option
@@ -221,7 +221,7 @@ html(lang='en')
                       h5 Render suggestions list manually
                       p.f-m-light.mt-1 
                         | Use tagify plugin for select random options.
-                    .card-body 
+                    .card-body.pt-0 
                       form
                         input(name='tags-manual-suggestions' placeholder='write some tags')
           // Container-fluid Ends

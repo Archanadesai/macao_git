@@ -50,7 +50,7 @@ html(lang='en')
                       | classes for 
                       code {valid|invalid}-tooltip 
                       | classes to display validation feedback in a styled tooltip. Be sure to have a parent with position: relative on it for tooltip positioning.
-                  .card-body
+                  .card-body.pt-0
                     form.row.g-3.needs-validation.custom-input(novalidate='')
                       .col-md-4.position-relative
                         label.form-label(for='validationTooltip01') First Name
@@ -97,7 +97,7 @@ html(lang='en')
                     h5 Browser Defaults
                     p.f-m-light.mt-1 
                       | Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? Depending on your browser and OS,While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
-                  .card-body.custom-input
+                  .card-body.custom-input.pt-0
                     form.row.g-3
                       .col-12 
                         label.form-label(for='first-name') First Name
@@ -159,7 +159,7 @@ html(lang='en')
                       code form-select
                       |  and not 
                       code form-control.
-                  .card-body
+                  .card-body.pt-0
                     form.row.g-3.needs-validation.custom-input(novalidate='')
                       .col-12
                         label.form-label(for='validationCustom01') First Name
@@ -244,7 +244,7 @@ html(lang='en')
                       | -feedback classes for 
                       code {valid|invalid}
                       | - classes to display validation in a styled effect.
-                  .card-body.animated-form
+                  .card-body.animated-form.pt-0
                     form.row.g-3.needs-validation.custom-input(novalidate='')
                       .col-12.position-relative
                         label.form-label(for='validationTooltipName') Full Name
@@ -269,7 +269,7 @@ html(lang='en')
                       code horizontal-login 
                       | to check password field strength.
                   //- .custom-input used as dark mode 
-                  .card-body
+                  .card-body.pt-0
                     .horizontal-login
                       form#horizontal-login.needs-validation.custom-input(novalidate='')
                         .mb-3

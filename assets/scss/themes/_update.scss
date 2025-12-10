@@ -724,7 +724,7 @@
   }
 
   .alert {
-    background-color: rgba(68, 102, 242, 0.2) !important;
+    background-color: rgb(225 99 73 / 20%) !important;
 
     i {
       display: flex;
@@ -742,6 +742,10 @@
           td:first-child {
             padding-left: 20px;
             cursor: pointer;
+            [dir="rtl"] & {
+              padding-left: unset;
+              padding-right: 20px;
+            }
           }
         }
       }

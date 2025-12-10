@@ -582,7 +582,7 @@
 var options = {
   chart: {
     type: "line",
-    height: 365,
+    height: 360,
     toolbar: { show: false },
   },
 
@@ -710,6 +710,17 @@ var options = {
   stroke: {
     width: 0,
   },
+  responsive: [
+      {
+        breakpoint: 1801,
+        options: {
+          chart: {
+            height: 340,
+          },
+        },
+      },
+      
+    ],
 };
 
 
@@ -807,267 +818,135 @@ var attendance_option = {
  attendance_option.render();
 
 
-  var deliveryDuration = {
-    series: [
-      {
-        name: "Late Delivery",
-        type: "column",
-        data: [37, 30, 25, 56, 39, 28, 30, 18, 45, 20, 26],
-      },
-      {
-        name: "On Time Delivery",
-        type: "line",
-        data: [75, 45, 38, 36, 68, 74, 60, 55, 72, 20, 65],
-      },
-    ],
-    chart: {
-      height: 270,
-      type: "line",
-      stacked: false,
-      offsetX: 20,
-      offsetY: 20,
-      toolbar: {
-        show: false,
-      },
-      dropShadow: {
-        enabled: true,
-        enabledOnSeries: [1],
-        top: 13,
-        left: 0,
-        blur: 6,
-        color: MacaoAdminConfig.primary,
-        opacity: 0.4,
-      },
-    },
-    stroke: {
-      width: [0, 2],
-      curve: "smooth",
-      dashArray: [0, 0],
-    },
-    plotOptions: {
-      bar: {
-        columnWidth: "30%",
-        borderRadius: 6,
-        borderRadiusApplication: "end",
-      },
-    },
-    colors: ["rgba(131, 131, 131, 0.3)", MacaoAdminConfig.primary],
-    fill: {
-      type: "solid",
-      gradient: {
-        shade: "dark",
-        type: "vertical",
-        opacityFrom: 1,
-        opacityTo: 1,
-        stops: [0, 100],
-      },
-    },
-    grid: {
-      borderColor: "var(--chart-border)",
-      yaxis: {
-        lines: {
-          show: true,
-        },
-      },
-    },
-    legend: {
-      show: false,
-    },
-    markers: {
-      size: 0,
-      discrete: [
-        {
-          seriesIndex: 0,
-          dataPointIndex: 4,
-          fillColor: "rgba(131, 131, 131, 1)",
-          strokeColor: "var(--white)",
-          size: 6,
-          sizeOffset: 3,
-        },
-        {
-          seriesIndex: 1,
-          dataPointIndex: 4,
-          fillColor: MacaoAdminConfig.primary,
-          strokeColor: "var(--white)",
-          size: 6,
-          sizeOffset: 3,
-        },
-      ],
-    },
-    annotations: {
-      points: [
-        {
-          x: 217,
-          y: 29.5,
-          marker: {
-            size: 6,
-            fillColor: "rgba(131, 131, 131, 0.3)",
-            strokeColor: "var(--white)",
-            strokeWidth: 2,
-            radius: 5,
-          },
-        },
-      ],
-      xaxis: [
-        {
-          x: 217,
-          strokeDashArray: 2,
-          borderWidth: 1,
-          borderColor: "var(--body-font-color)",
-        },
-      ],
-    },
-    xaxis: {
-      categories: ["Jan", "Feb", "Mar", " Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
-      labels: {
-        style: {
-          fontFamily: "Rubik, sans-serif",
-          colors: ["#52526c"],
-        },
-      },
-      axisBorder: {
-        show: false,
-      },
-      axisTicks: {
-        show: false,
-      },
-    },
-    yaxis: {
-      title: {
-        text: "Points",
-      },
-      min: 0,
-      max: 100,
-      tickAmount: 5,
-      title: {
-        text: undefined,
-      },
-    },
-    responsive: [
-      {
-        breakpoint: 1870,
-        options: {
-          chart: {
-            height: 300,
-          },
-        },
-      },
-      {
-        breakpoint: 1691,
-        options: {
-          chart: {
-            height: 280,
-          },
-        },
-      },
-      {
-        breakpoint: 1245,
-        options: {
-          xaxis: {
-            tickAmount: 5,
-            tickPlacement: "on",
-          },
-          annotations: {
-            points: [
-              {
-                x: 103,
-                y: 29.5,
-                marker: {
-                  size: 6,
-                  fillColor: "rgba(131, 131, 131, 0.3)",
-                  strokeColor: "var(--white)",
-                  strokeWidth: 2,
-                  radius: 5,
-                },
-              },
-            ],
-            xaxis: [
-              {
-                x: 103,
-                strokeDashArray: 2,
-                borderWidth: 1,
-                borderColor: "var(--body-font-color)",
-              },
-            ],
-          },
-        },
-      },
-      {
-        breakpoint: 1063,
-        options: {
-          chart: {
-            height: 305,
-          },
-        },
-      },
-      {
-        breakpoint: 1048,
-        options: {
-          chart: {
-            height: 328,
-          },
-        },
-      },
-      {
-        breakpoint: 1008,
-        options: {
-          chart: {
-            height: 350,
-          },
-        },
-      },
-      {
-        breakpoint: 992,
-        options: {
-          chart: {
-            height: 280,
-          },
-        },
-      },
-      {
-        breakpoint: 968,
-        options: {
-          chart: {
-            height: 328,
-          },
-        },
-      },
-      {
-        breakpoint: 928,
-        options: {
-          chart: {
-            height: 350,
-          },
-        },
-      },
-      {
-        breakpoint: 778,
-        options: {
-          chart: {
-            height: 375,
-          },
-        },
-      },
-      {
-        breakpoint: 576,
-        options: {
-          chart: {
-            height: 250,
-            offsetX: 0,
-            offsetY: 0,
-          },
-          xaxis: {
-            tickAmount: 3,
-            tickPlacement: "on",
-          },
-        },
-      },
-    ],
-  };
-
-  // // Initialize the chart
-  var deliveryDurationChart = new ApexCharts(document.querySelector("#delivery-duration"), deliveryDuration);
-  deliveryDurationChart.render();
+ var options = {
+   series: [
+     {
+       name: "Sales",
+       data: [44, 42, 57, 86, 58, 55, 70, 43, 23, 54, 77, 34],
+     },
+     {
+       name: "OPEX Ratio",
+       data: [74, 72, 87, 116, 88, 85, 100, 73, 53, 84, 107, 64],
+     },
+     {
+       name: "General & Admin",
+       data: [84, 82, 97, 126, 98, 95, 110, 83, 63, 94, 117, 74],
+     },
+   ],
+   chart: {
+     stacked: true,
+     type: "bar",
+     height: 300,
+     toolbar: {
+       show: false,
+     },
+   },
+   grid: {
+     borderColor: "#f5f4f4",
+     strokeDashArray: 5,
+     yaxis: {
+       lines: {
+         show: true, // Ensure y-axis grids are shown
+       },
+     },
+   },
+   colors: ["rgb(225, 99, 73)", "rgba(225, 99, 73, 0.6)", "rgba(225, 99, 73, 0.3)"],
+   plotOptions: {
+     bar: {
+       colors: {
+         ranges: [
+           {
+             from: -100,
+             to: -46,
+             color: "#ebeff5",
+           },
+           {
+             from: -45,
+             to: 0,
+             color: "#ebeff5",
+           },
+         ],
+       },
+       columnWidth: "20%",
+     },
+   },
+   dataLabels: {
+     enabled: false,
+   },
+   legend: {
+     show: true,
+     position: "top",
+   },
+   yaxis: {
+     axisBorder: {
+       show: true,
+       color: "rgba(119, 119, 142, 0.05)",
+       offsetX: 0,
+       offsetY: 0,
+     },
+     axisTicks: {
+       show: true,
+       borderType: "solid",
+       color: "rgba(119, 119, 142, 0.05)",
+       width: 6,
+       offsetX: 0,
+       offsetY: 0,
+     },
+     labels: {
+       formatter: function (y) {
+         return y.toFixed(0) + "";
+       },
+     },
+   },
+   xaxis: {
+     type: "month",
+     categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "sep", "oct", "nov", "dec"],
+     axisBorder: {
+       show: false,
+       color: "rgba(119, 119, 142, 0.05)",
+       offsetX: 0,
+       offsetY: 0,
+     },
+     axisTicks: {
+       show: false,
+       borderType: "solid",
+       color: "rgba(119, 119, 142, 0.05)",
+       width: 6,
+       offsetX: 0,
+       offsetY: 0,
+     },
+     labels: {
+       rotate: -90,
+     },
+   },
+   responsive: [
+     {
+       breakpoint: 1401,
+       options: {
+         chart: {
+           height: 355,
+         },
+       },
+     },
+     {
+       breakpoint: 1200,
+       options: {
+         chart: {
+           height: 290,
+         },
+       },
+     },
+   ],
+ };
+ console.log(options.grid);
+ document.getElementById("delivery-duration").innerHTML = "";
+ var chart = new ApexCharts(document.querySelector("#delivery-duration"), options);
+ chart.render();
+ function salesOverview() {
+   chart.updateOptions({
+     colors: ["rgb(" + myVarVal + ")", "rgba(" + myVarVal + ", 0.6)", "rgba(" + myVarVal + ", 0.3)", "#ebeff5"],
+   });
+ }
 
 })();
 

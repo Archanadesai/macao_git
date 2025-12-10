@@ -46,8 +46,8 @@ html(lang='en')
           // Container-fluid starts
           .container-fluid.default-dashboard
             .row.widget-grid
-              .col-xl-3   
-                .card.bg-light-primary
+              .col-xxl-3.col-lg-6.col-md-6.col-sm-6   
+                .card.bg-light-primary.widget-card
                   .card-body   
                     .balance-wrapper
                       .balance-detail 
@@ -61,8 +61,8 @@ html(lang='en')
                         svg.stroke-icon
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month
-              .col-xl-3   
-                .card.bg-light-secondary
+              .col-xxl-3.col-lg-6.col-md-6.col-sm-6   
+                .card.bg-light-secondary.widget-card
                   .card-body   
                     .balance-wrapper
                       .balance-detail 
@@ -76,8 +76,8 @@ html(lang='en')
                         svg.stroke-icon.stroke-secondary
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month
-              .col-xl-3   
-                .card.bg-light-success
+              .col-xxl-3.col-lg-6.col-md-6.col-sm-6   
+                .card.bg-light-success.widget-card
                   .card-body   
                     .balance-wrapper
                       .balance-detail 
@@ -91,8 +91,8 @@ html(lang='en')
                         svg.stroke-icon.stroke-success
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month
-              .col-xl-3   
-                .card.bg-light-warning
+              .col-xxl-3.col-lg-6.col-md-6.col-sm-6   
+                .card.bg-light-warning.widget-card
                   .card-body   
                     .balance-wrapper
                       .balance-detail 
@@ -143,7 +143,7 @@ html(lang='en')
                               td.number $ 18.00  
                               td.number $ 512.00
                               td
-                                button.btn Done 
+                                button.btn.bg-light-primary.txt-primary Done 
                             tr 
                               td
                               td
@@ -159,7 +159,7 @@ html(lang='en')
                               td.number $ 62.00 
                               td.number $ 325.00
                               td
-                                button.btn Pending 
+                                button.btn.bg-light-warning.txt-warning Pending 
                             tr
                               td 
                               td
@@ -174,7 +174,7 @@ html(lang='en')
                               td.number $ 51.00  
                               td.number $ 956.00
                               td
-                                button.btn Done 
+                                button.btn.bg-light-primary.txt-primary Done 
                             tr
                               td 
                               td
@@ -189,7 +189,7 @@ html(lang='en')
                               td.number $ 18.00  
                               td.number $ 512.00
                               td
-                                button.btn Pending 
+                                button.btn.bg-light-warning.txt-warning Pending 
                             tr
                               td 
                               td
@@ -204,7 +204,7 @@ html(lang='en')
                               td.number $ 62.00  
                               td.number $ 325.00
                               td
-                                button.btn Done 
+                                button.btn.bg-light-primary.txt-primary Done 
                             tr
                               td 
                               td
@@ -219,7 +219,7 @@ html(lang='en')
                               td.number $ 51.00  
                               td.number $ 956.00
                               td
-                                button.btn Pending   
+                                button.btn.bg-light-warning.txt-warning Pending   
                             tr
                               td 
                               td
@@ -234,7 +234,7 @@ html(lang='en')
                               td.number $ 51.00  
                               td.number $ 956.00
                               td
-                                button.btn Pending
+                                button.btn.bg-light-warning.txt-warning Pending
                             tr
                               td 
                               td
@@ -249,8 +249,8 @@ html(lang='en')
                               td.number $ 51.00  
                               td.number $ 956.00
                               td
-                                button.btn Pending        
-              .col-xl-4 
+                                button.btn.bg-light-warning.txt-warning Pending        
+              .col-xl-4.col-lg-6.col-md-6 
                 .card 
                   .card-header 
                     .header-top 
@@ -333,28 +333,28 @@ html(lang='en')
                                 a(href="list-products.html").f-w-500 Airpods Pro
                             td Electronics
                             td 1,256    
-              .col-xl-3   
+              .col-xl-3.col-lg-6.col-md-6   
                 .card 
                   .card-header 
                     h5 Recent performance
                   .card-body.pt-0  
                     #browservisiting
-              .col-xl-5 
+              .col-xl-5.col-lg-6.col-md-6 
                 .card 
                   .card-header 
-                    h5 hq 
+                    h5 Weekly Trend 
                   .card-body.pt-0 
                     #monthlyChart  
-              .col-xl-6 
+              .col-xl-6.col-lg-6.col-md-6 
                 .card 
                   .card-header 
                     h5 Sales Report
-                  .card-body 
+                  .card-body.pt-0 
                     #delivery-duration  
               .col-xl-6 
                 .card.heading-space 
                   .card-header 
-                    .header-top 
+                    .header-top.text-nowrap 
                       h5 Shipment Tracking
                   .card-body.px-0.pt-0.shipment-tracking-table
                     .recent-table.table-responsive.custom-scrollbar
