@@ -47,7 +47,7 @@ html(lang='en')
                       code  &lt;input type="file"&gt;
                       |  into a filepond drop area.
                       code [https://pqina.nl/filepond/]
-                  .card-body
+                  .card-body.pt-0
                     input(type='file' class="no-preview")
 
               .col-lg-6
@@ -59,7 +59,7 @@ html(lang='en')
                       code  &lt;input type="file"&gt;
                       |  into a filepond drop area.
                       code [https://pqina.nl/filepond/]
-                  .card-body
+                  .card-body.pt-0
                     input(type='file' class="show-preview")
               .col-lg-4
                 .card.height-equal
@@ -71,7 +71,7 @@ html(lang='en')
                       |  class through create upload files and with that we can upload single file by doing 
                       code singleFileUpload 
                       | id.
-                  .card-body
+                  .card-body.pt-0
                     form#singleFileUpload.dropzone.dropzone-secondary(action='/upload.php')
                       .dropzone-wrapper
                         .dz-message.needsclick
@@ -91,7 +91,7 @@ html(lang='en')
                       |  class through create upload files and with that we can upload multiple file by doing 
                       code multiFileUpload 
                       | id.
-                  .card-body
+                  .card-body.pt-0
                     form#multiFileUpload.dropzone.dropzone-secondary(action='/upload.php')
                       .dz-message.needsclick
                         i.fa-solid.fa-cloud-arrow-up.fa-fade
@@ -110,7 +110,7 @@ html(lang='en')
                       |  id and 
                       code dropzone 
                       | to create upload images.
-                  .card-body.animated-dropfile
+                  .card-body.pt-0.animated-dropfile
                     form(name='upload' method='post' action='#' enctype='multipart/form-data' accept-charset='utf-8')
                       .row
                         .col-md-12.col-md-offset-3.text-center

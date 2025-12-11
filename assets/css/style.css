@@ -8185,7 +8185,8 @@ button.button-primary:hover {
 .card .card-header {
   padding: 32px;
   background-color: #f8f8f8;
-  border-radius: 28px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
   border-bottom: none;
   position: relative;
 }
