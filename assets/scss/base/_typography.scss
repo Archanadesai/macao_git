@@ -266,8 +266,10 @@ pre {
     .owl-nav {
         &.disabled {
             &+.owl-dots {
-                margin-bottom: -10px;
-                margin-top: 25px;
+                // margin-bottom: -10px;
+                margin-bottom: -19px;
+                margin-top: 11px;
+                // margin-top: 25px;
             }
         }
     }

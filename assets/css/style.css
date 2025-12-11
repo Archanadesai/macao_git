@@ -4780,8 +4780,8 @@ pre {
   background: var(--theme-default);
 }
 .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-bottom: -10px;
-  margin-top: 25px;
+  margin-bottom: -19px;
+  margin-top: 11px;
 }
 
 .click2edit ~ .note-editor.note-frame {
@@ -24018,9 +24018,47 @@ p.data-attributes svg {
   display: flex;
   justify-content: center;
   gap: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dashboard-2 .card.custom-card .card-body #delivery-duration {
   margin-left: -38px;
+}
+.dashboard-2 .card .card-body .contries-sale .map-value .cities .city {
+  margin-bottom: 20px;
+}
+.dashboard-2 .card .card-body .contries-sale .map-value .cities .city:last-child {
+  margin-bottom: 0;
+}
+.dashboard-2 .card .card-body .contries-sale .map-value .cities .city .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.dashboard-2 .card .card-body .contries-sale .map-value .cities .city .info .name {
+  font-size: 15px;
+  color: #2e2e2e;
+}
+.dashboard-2 .card .card-body .contries-sale .map-value .cities .city .info .value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+}
+.dashboard-2 .card .card-body .contries-sale .map-value .cities .city .bar {
+  width: 100%;
+  height: 3px;
+  background: rgb(253, 233, 223);
+  border-radius: 100px;
+  overflow: hidden;
+}
+.dashboard-2 .card .card-body .contries-sale .map-value .cities .city .bar .bar-fill {
+  height: 100%;
+  background: var(--theme-default);
+  border-radius: inherit;
+  transition: width 0.3s ease;
 }
 .dashboard-2 .top-country-sales-list li {
   margin-block-end: 16px;
@@ -24028,6 +24066,10 @@ p.data-attributes svg {
 .dashboard-2 .top-country-sales-list li div .sale-list {
   display: flex;
   gap: 12px;
+}
+
+.jvm-tooltip {
+  background-color: var(--theme-default) !important;
 }
 
 .main-title-box .common-space {
@@ -25381,6 +25423,9 @@ p.data-attributes svg {
   }
   .ord-xl-x {
     order: 10;
+  }
+  .ord-xl-xi {
+    order: 11;
   }
 }
 /**=====================
@@ -76068,9 +76113,6 @@ body[class*=dark-] .for-light {
   }
   .support-ticket-font .total-num {
     font-size: 22px;
-  }
-  .custom-card {
-    padding: 15px;
   }
   .custom-card .card-social li a {
     padding: 12px;

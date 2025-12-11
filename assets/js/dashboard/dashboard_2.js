@@ -797,7 +797,7 @@
        },
      ],
      chart: {
-       height: 365,
+       height: 400,
        type: "line",
        stacked: false,
        offsetX: 20,
