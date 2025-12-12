@@ -781,7 +781,30 @@
 
   // var chartvisitor = new ApexCharts(document.querySelector("#visitor-chart"), optionsvisitor);
   // chartvisitor.render();
+  var options = {
+    chart: {
+      type: "pie",
+      width: 350,
+    },
+    labels: ["A", "B", "C", "D", "E"],
+    series: [25, 20, 10, 15, 30], // Adjust values as needed
+    colors: [
+      "#e16349", // medium blue
+      "#f07d67", // dark teal
+      "#f7a293", // light sky blue
+      "#a83c28", // very light blue
+      "#c74f37", // mid tone blue
+    ],
+    legend: {
+      show: false,
+    },
+    dataLabels: {
+      enabled: false,
+    },
+  };
 
+  var chart = new ApexCharts(document.querySelector("#overall"), options);
+  chart.render();
 
    var deliveryDuration = {
      series: [
@@ -797,7 +820,7 @@
        },
      ],
      chart: {
-       height: 400,
+       height: 385,
        type: "line",
        stacked: false,
        offsetX: 20,
@@ -921,120 +944,10 @@
      },
      responsive: [
        {
-         breakpoint: 1870,
+         breakpoint: 1399,
          options: {
            chart: {
-             height: 300,
-           },
-         },
-       },
-       {
-         breakpoint: 1691,
-         options: {
-           chart: {
-             height: 280,
-           },
-         },
-       },
-       {
-         breakpoint: 1245,
-         options: {
-           xaxis: {
-             tickAmount: 5,
-             tickPlacement: "on",
-           },
-           annotations: {
-             points: [
-               {
-                 x: 103,
-                 y: 29.5,
-                 marker: {
-                   size: 6,
-                   fillColor: "rgba(131, 131, 131, 0.3)",
-                   strokeColor: "var(--white)",
-                   strokeWidth: 2,
-                   radius: 5,
-                 },
-               },
-             ],
-             xaxis: [
-               {
-                 x: 103,
-                 strokeDashArray: 2,
-                 borderWidth: 1,
-                 borderColor: "var(--body-font-color)",
-               },
-             ],
-           },
-         },
-       },
-       {
-         breakpoint: 1063,
-         options: {
-           chart: {
-             height: 305,
-           },
-         },
-       },
-       {
-         breakpoint: 1048,
-         options: {
-           chart: {
-             height: 328,
-           },
-         },
-       },
-       {
-         breakpoint: 1008,
-         options: {
-           chart: {
-             height: 350,
-           },
-         },
-       },
-       {
-         breakpoint: 992,
-         options: {
-           chart: {
-             height: 280,
-           },
-         },
-       },
-       {
-         breakpoint: 968,
-         options: {
-           chart: {
-             height: 328,
-           },
-         },
-       },
-       {
-         breakpoint: 928,
-         options: {
-           chart: {
-             height: 350,
-           },
-         },
-       },
-       {
-         breakpoint: 778,
-         options: {
-           chart: {
-             height: 375,
-           },
-         },
-       },
-       {
-         breakpoint: 576,
-         options: {
-           chart: {
-             height: 250,
-             offsetX: 0,
-             offsetY: 0,
-           },
-           xaxis: {
-             tickAmount: 3,
-             tickPlacement: "on",
+             height: 385,
            },
          },
        },
@@ -1048,32 +961,7 @@
 
    var options = {
      chart: {
-       type: "pie",
-       width: 350,
-     },
-     labels: ["A", "B", "C", "D", "E"],
-     series: [25, 20, 10, 15, 30], // Adjust values as needed
-     colors: [
-       "#e16349", // medium blue
-       "#f07d67", // dark teal
-       "#f7a293", // light sky blue
-       "#a83c28", // very light blue
-       "#c74f37", // mid tone blue
-     ],
-     legend: {
-       show: false,
-     },
-     dataLabels: {
-       enabled: false,
-     },
-   };
-
-   var chart = new ApexCharts(document.querySelector("#overall"), options);
-   chart.render();
-
-   var options = {
-     chart: {
-       height: 300,
+       height: 285,
        type: "line",
        toolbar: { show: false },
        foreColor: "#777",

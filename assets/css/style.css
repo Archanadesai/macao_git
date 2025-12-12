@@ -4780,8 +4780,15 @@ pre {
   background: var(--theme-default);
 }
 .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-bottom: -19px;
-  margin-top: 11px;
+  margin-bottom: -10px;
+  margin-top: 25px;
+}
+
+@media (max-width: 1492px) {
+  .dashboard-2 .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-bottom: -19px;
+    margin-top: 11px;
+  }
 }
 
 .click2edit ~ .note-editor.note-frame {
@@ -10294,7 +10301,7 @@ button.button-primary:hover {
 .subscribed-user div.dt-container .dt-layout-row .dt-layout-cell .dt-search {
   position: absolute;
   top: 30px;
-  right: -10px;
+  right: 0;
   z-index: 0;
 }
 @media (max-width: 640px) {
@@ -24027,6 +24034,71 @@ p.data-attributes svg {
 .dashboard-2 .card.custom-card .card-body #delivery-duration {
   margin-left: -38px;
 }
+.dashboard-2 .card.custom-card.stats-card {
+  border-bottom: 3px solid var(--theme-default);
+}
+.dashboard-2 .card.custom-card.stats-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-2 .card.custom-card.stats-card .card-header .title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a8a8a;
+  text-transform: uppercase;
+}
+.dashboard-2 .card.custom-card.stats-card .card-header .icon {
+  background: rgba(225, 99, 73, 0.1019607843);
+  color: var(--theme-default);
+  width: 30px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-2 .card.custom-card.stats-card .card-header > span {
+  margin-top: 0;
+}
+.dashboard-2 .card.custom-card.stats-card .amount {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #212121;
+}
+.dashboard-2 .card.custom-card.stats-card .amount .cents {
+  font-size: 22px;
+  font-weight: 500;
+  color: #7c7c7c;
+}
+.dashboard-2 .card.custom-card.stats-card .change {
+  margin-top: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.dashboard-2 .card.custom-card.stats-card .change .arrow {
+  margin-right: 4px;
+  font-size: 14px;
+}
+.dashboard-2 .card.custom-card.stats-card .change.negative {
+  color: #d32f2f;
+}
+.dashboard-2 .card.custom-card.stats-card .change.positive {
+  color: #4caf50;
+}
+.dashboard-2 .card.custom-card.stats-card .change .text {
+  margin-left: 4px;
+  color: #888;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .dashboard-2 .card .card-body .contries-sale .map-value .cities .city {
   margin-bottom: 20px;
 }
@@ -24059,6 +24131,9 @@ p.data-attributes svg {
   background: var(--theme-default);
   border-radius: inherit;
   transition: width 0.3s ease;
+}
+.dashboard-2 .card .card-body #delivery-duration {
+  margin-left: -38px;
 }
 .dashboard-2 .top-country-sales-list li {
   margin-block-end: 16px;
@@ -25050,6 +25125,14 @@ p.data-attributes svg {
     min-width: 108px;
   }
 }
+@media (max-width: 1458px) and (min-width: 1200px) {
+  .recent-transaction thead tr th:nth-child(3),
+  .recent-transaction thead tr td:nth-child(3),
+  .recent-transaction tbody tr th:nth-child(3),
+  .recent-transaction tbody tr td:nth-child(3) {
+    display: none;
+  }
+}
 .recent-transaction thead tr th {
   color: #52526c;
 }
@@ -25073,7 +25156,7 @@ p.data-attributes svg {
 .stock-report .table-responsive .table tbody tr td:last-child {
   padding-right: 20px;
 }
-@media (max-width: 1798px) and (min-width: 1400px) {
+@media (max-width: 1798px) and (min-width: 1200px) {
   .stock-report .table-responsive .table thead tr th:last-child,
   .stock-report .table-responsive .table thead tr td:last-child,
   .stock-report .table-responsive .table tbody tr th:last-child,
@@ -64364,7 +64447,7 @@ html[dir=rtl] .customer-order-wrapper div.dt-container .dt-layout-row .dt-layout
 html[dir=rtl] .main-tasks div.dt-container .dt-layout-row .dt-layout-cell .dt-search,
 html[dir=rtl] .subscribed-user div.dt-container .dt-layout-row .dt-layout-cell .dt-search,
 html[dir=rtl] .overall-budget div.dt-container .dt-layout-row .dt-layout-cell .dt-search {
-  left: -10px;
+  left: 0;
   right: unset;
 }
 @media (max-width: 640px) {
@@ -74551,6 +74634,21 @@ body.dark-only .vertical-main-wizard .header-vertical-wizard .nav-link:active .v
 body.dark-only .vertical-main-wizard .accordion .accordion-item .accordion-button.collapsed {
   background-color: #1d1e26;
 }
+body.dark-only .dashboard-2 .activities::before {
+  background: #584437;
+}
+body.dark-only .dashboard-2 .activities .activities-item::before {
+  border: 2px solid #584437;
+}
+body.dark-only .dashboard-2 .card .card-body .contries-sale .map-value .cities .city .bar {
+  background: rgb(131, 131, 131);
+}
+body.dark-only .dashboard-2 .card .card-body .contries-sale .map-value .cities .city .info .value {
+  color: #e9edf1;
+}
+body.dark-only .dashboard-2 .card .card-body .contries-sale .map-value .cities .city .info .name {
+  color: #e9edf1;
+}
 body.dark-only .default-dashboard div.dt-container .dt-layout-row .dt-length .dt-input,
 body.dark-only .dashboard-2 div.dt-container .dt-layout-row .dt-length .dt-input,
 body.dark-only .dashboard-3 div.dt-container .dt-layout-row .dt-length .dt-input,
@@ -76797,9 +76895,6 @@ body[class*=dark-] .for-light {
   .tilt-showcase .mt-4 {
     margin-top: 20px !important;
   }
-  .custom-card {
-    padding-bottom: 0;
-  }
   .custom-card .card-footer {
     padding: 0 15px 15px 15px !important;
   }
@@ -78582,9 +78677,6 @@ body[class*=dark-] .for-light {
   }
   .error-wrapper .maintenance-heading {
     margin-top: 0;
-  }
-  .custom-card {
-    padding: 0;
   }
   .custom-card .card-footer > div h3 {
     font-size: 20px;

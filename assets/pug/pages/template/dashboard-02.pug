@@ -47,9 +47,9 @@ html(lang='en')
           .container-fluid.dashboard-2
             .row.size-column
                        
-              .col-xxl-9.col-xl-8 
+              .col-xxl-9.col-xl-12 
                 .row                           
-                  .col-xl-4 
+                  .col-xl-4.col-lg-4.col-md-6.col-sm-6 
                     .card.custom-card 
                       .card-body.p-0 
                         .d-flex 
@@ -64,7 +64,7 @@ html(lang='en')
                               span.text-success 0.25%
                               i(data-feather="arrow-down" class="text-success") 
                               | This month
-                  .col-xl-4 
+                  .col-xl-4.col-lg-4.col-md-6.col-sm-6 
                     .card.custom-card 
                       .card-body.p-0 
                         .d-flex 
@@ -79,7 +79,7 @@ html(lang='en')
                               span.text-danger 0.74%
                               i(data-feather="arrow-down" class="text-danger") 
                               | This month
-                  .col-xl-4 
+                  .col-xl-4.col-lg-4 
                     .card.custom-card 
                       .card-body.p-0 
                         .d-flex 
@@ -94,51 +94,47 @@ html(lang='en')
                               span.text-danger 1.52%
                               i(data-feather="arrow-down" class="text-danger") 
                               | This month
-                  .col-xl-4 
-                    .card.custom-card 
-                      .card-body.p-0 
-                        .d-flex 
-                          .me-3
-                            span.assets-card.bg-light-warning
-                              svg.stroke-icon
-                                use(href='../assets/svg/icon-sprite.svg#stroke-assets')  
-                          .assets-detail 
-                            p.text-muted.mb-1 Total Revenue
-                            h5.mb-2 $7,63,129.09
-                            p.text-muted.mb-1.asset-icon
-                              span.text-success 0.124%
-                              i(data-feather="arrow-up" class="text-success") 
-                              | This month
-                  .col-xl-4 
-                    .card.custom-card 
-                      .card-body.p-0 
-                        .d-flex 
-                          .me-3
-                            span.assets-card.bg-light-dark
-                              svg.stroke-icon
-                                use(href='../assets/svg/icon-sprite.svg#stroke-assets')  
-                          .assets-detail 
-                            p.text-muted.mb-1 Total Products
-                            h5.mb-2 1,245
-                            p.text-muted.mb-1.asset-icon
-                              span.text-success 3.2%
-                              i(data-feather="arrow-up" class="text-success") 
-                              | This month                                                
-                  .col-xl-4 
-                    .card.custom-card 
-                      .card-body.p-0 
-                        .d-flex 
-                          .me-3
-                            span.assets-card.bg-light-primary
-                              svg.stroke-icon
-                                use(href='../assets/svg/icon-sprite.svg#stroke-assets')  
-                          .assets-detail 
-                            p.text-muted.mb-1 Total Orders
-                            h5.mb-2 3,680
-                            p.text-muted.mb-1.asset-icon
-                              span.text-danger 1.8%
-                              i(data-feather="arrow-down" class="text-danger") 
-                              | This month
+                  .col-xl-4.col-lg-4.col-md-6.col-sm-6
+                    .card.custom-card.stats-card
+                      .card-header
+                        span.title Sales Revenue
+                        i.fa-solid.fa-dollar-sign(class="icon")
+                      
+                      .amount
+                        | $7,145.
+                        span.cents 56
+
+                      .change.negative
+                        i(data-feather="arrow-down" class="text-danger")
+                        | -0.10%
+                        span.text Since last week
+                  .col-xl-4.col-lg-4.col-md-6.col-sm-6 
+                    .card.custom-card.stats-card
+                      .card-header
+                        span.title Sales Revenue
+                        i.fa-solid.fa-money-check-dollar(class="icon")
+                      
+                      .amount
+                        | $46.
+                        span.cents 90
+
+                      .change.positive
+                        i(data-feather="arrow-up" class="text-success")
+                        | 3.5%
+                        span.text Since last week                                                
+                  .col-xl-4.col-lg-4 
+                    .card.custom-card.stats-card
+                      .card-header
+                        span.title Total Visitor
+                        i.fa-solid.fa-users(class="icon")
+                      
+                      .amount
+                        | 298,456
+
+                      .change.positive
+                        i(data-feather="arrow-up" class="text-success")
+                        | 2.01%
+                        span.text Since last week
                   .col-xxl-12 
                     .card.heading-space 
                       .card-header  
@@ -259,7 +255,7 @@ html(lang='en')
                                 td 212
                                 td Bank Transfer
                                 td $12.32
-                  .col-xxl-4.col-xl-4
+                  .col-xxl-4.col-xl-4.col-lg-12
                     .card 
                       .card-header 
                         .header-top
@@ -309,7 +305,7 @@ html(lang='en')
                                   span.value 40K
                                 .bar
                                   .bar-fill(style="width: 35%")
-                  .col-xxl-8.col-xl-8 
+                  .col-xxl-8.col-xl-8.col-lg-12
                     .card 
                       .card-header 
                         .header-top 
@@ -325,69 +321,70 @@ html(lang='en')
                                 a.dropdown-item(href='#!') Last 6 Months 
                       .card-body.pt-0 
                         #delivery-duration
-              .col-xxl-3.col-xl-4
-                .card 
-                  .card-header 
-                    .header-top 
-                      h5 Top Countries By sale 
-                  .card-body 
-                    ul.top-country-sales-list
-                      li
-                        .d-flex.justify-content-between.align-items-center 
-                          .sale-list
-                            span
-                              i.flag-icon.flag-icon-us
-                            span.top-country-name France  
-                          div   
-                            i(data-feather="arrow-up-right" class="text-success")
-                          div.sale-price 5,932
-                      li
-                        .d-flex.justify-content-between.align-items-center 
-                          .sale-list
-                            span
-                              i.flag-icon.flag-icon-ae
-                            span.top-country-name France  
-                          div   
-                            i(data-feather="arrow-down-right" class="text-danger")
-                          div.sale-price 5,932
-                      li
-                        .d-flex.justify-content-between.align-items-center 
-                          .sale-list
-                            span
-                              i.flag-icon.flag-icon-cn
-                            span.top-country-name France  
-                          div   
-                            i(data-feather="arrow-down-right" class="text-danger")
-                          div.sale-price 5,932
-                      li
-                        .d-flex.justify-content-between.align-items-center 
-                          .sale-list
-                            span
-                              i.flag-icon.flag-icon-pt
-                            span.top-country-name France  
-                          div   
-                            i(data-feather="arrow-up-right" class="text-success")
-                          div.sale-price 5,932
-                      li
-                        .d-flex.justify-content-between.align-items-center 
-                          .sale-list
-                            span
-                              i.flag-icon.flag-icon-fr
-                            span.top-country-name France  
-                          div   
-                            i(data-feather="arrow-down-right" class="text-danger")
-                          div.sale-price 5,932
-                      li
-                        .d-flex.justify-content-between.align-items-center 
-                          .sale-list
-                            span
-                              i.flag-icon.flag-icon-es
-                            span.top-country-name France  
-                          div   
-                            i(data-feather="arrow-up-right" class="text-success")
-                          div.sale-price 5,932                        
-                .row 
-                  .col-12 
+              .col-xxl-3
+                .row
+                  .col-xxl-12.col-xl-4.col-lg-6.col-md-6.col-sm-6 
+                    .card 
+                      .card-header 
+                        .header-top 
+                          h5 Top Countries By sale 
+                      .card-body 
+                        ul.top-country-sales-list
+                          li
+                            .d-flex.justify-content-between.align-items-center 
+                              .sale-list
+                                span
+                                  i.flag-icon.flag-icon-us
+                                span.top-country-name France  
+                              div   
+                                i(data-feather="arrow-up-right" class="text-success")
+                              div.sale-price 5,932
+                          li
+                            .d-flex.justify-content-between.align-items-center 
+                              .sale-list
+                                span
+                                  i.flag-icon.flag-icon-ae
+                                span.top-country-name France  
+                              div   
+                                i(data-feather="arrow-down-right" class="text-danger")
+                              div.sale-price 5,932
+                          li
+                            .d-flex.justify-content-between.align-items-center 
+                              .sale-list
+                                span
+                                  i.flag-icon.flag-icon-cn
+                                span.top-country-name France  
+                              div   
+                                i(data-feather="arrow-down-right" class="text-danger")
+                              div.sale-price 5,932
+                          li
+                            .d-flex.justify-content-between.align-items-center 
+                              .sale-list
+                                span
+                                  i.flag-icon.flag-icon-pt
+                                span.top-country-name France  
+                              div   
+                                i(data-feather="arrow-up-right" class="text-success")
+                              div.sale-price 5,932
+                          li
+                            .d-flex.justify-content-between.align-items-center 
+                              .sale-list
+                                span
+                                  i.flag-icon.flag-icon-fr
+                                span.top-country-name France  
+                              div   
+                                i(data-feather="arrow-down-right" class="text-danger")
+                              div.sale-price 5,932
+                          li
+                            .d-flex.justify-content-between.align-items-center 
+                              .sale-list
+                                span
+                                  i.flag-icon.flag-icon-es
+                                span.top-country-name France  
+                              div   
+                                i(data-feather="arrow-up-right" class="text-success")
+                              div.sale-price 5,932
+                  .col-xxl-12.col-xl-4.col-lg-6.col-md-6.col-sm-6 
                     .card 
                       .card-header.card-no-border.pb-2
                         .header-top
@@ -422,7 +419,7 @@ html(lang='en')
                             .activities-contente
                               p It has to happen. I'm thinking two circus clowns dancing. Tonight's the night.
                             .activities-time 7 months ago
-                  .col-xxl-12.col-xl-4 
+                  .col-xxl-12.col-xl-4.col-lg-12
                     .card.review-slider 
                       .card-header 
                         .header-top 
@@ -474,17 +471,8 @@ html(lang='en')
                                 i.fa-regular.fa-star.font-warning
                               p "Great value and stylish quality! Exactly what I needed—plus, super quick response."
                               span.txt-secondary.f-w-600 ( 23th Aug, 2024 )
-                  
-                  
-              //- .col-xxl-3.col-xl-4 
-              //-   .card 
-              //-     .card-header 
-              //-       .header-top 
-              //-         h5 Product Sales
-              //-     .card-body 
-              //-       #overall
-                 
-              .col-xxl-6.col-xl-8  
+             
+              .col-xl-6  
                 .card
                   .card-header.card-no-border
                     .header-top
@@ -575,7 +563,7 @@ html(lang='en')
                             td $1200
                             td
                               button.btn.button-light-danger.txt-danger.f-w-500 Out of Stock
-              .col-xxl-6.col-xl-4 
+              .col-xl-6.col-lg-12
                 .card 
                   .card-header 
                     .header-top 

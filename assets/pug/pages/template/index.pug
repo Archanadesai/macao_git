@@ -46,7 +46,7 @@ html(lang='en')
           // Container-fluid starts
           .container-fluid.default-dashboard
             .row.widget-grid
-              .col-xxl-3.col-lg-6.col-md-6.col-sm-6   
+              .col-xxl-3.col-lg-6.col-md-6.col-sm-6.box-col-6   
                 .card.bg-light-primary.widget-card
                   .card-body   
                     .balance-wrapper
@@ -61,7 +61,7 @@ html(lang='en')
                         svg.stroke-icon
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month
-              .col-xxl-3.col-lg-6.col-md-6.col-sm-6   
+              .col-xxl-3.col-lg-6.col-md-6.col-sm-6.box-col-6   
                 .card.bg-light-secondary.widget-card
                   .card-body   
                     .balance-wrapper
@@ -76,7 +76,7 @@ html(lang='en')
                         svg.stroke-icon.stroke-secondary
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month
-              .col-xxl-3.col-lg-6.col-md-6.col-sm-6   
+              .col-xxl-3.col-lg-6.col-md-6.col-sm-6.box-col-6   
                 .card.bg-light-success.widget-card
                   .card-body   
                     .balance-wrapper
@@ -91,7 +91,7 @@ html(lang='en')
                         svg.stroke-icon.stroke-success
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month
-              .col-xxl-3.col-lg-6.col-md-6.col-sm-6   
+              .col-xxl-3.col-lg-6.col-md-6.col-sm-6.box-col-6   
                 .card.bg-light-warning.widget-card
                   .card-body   
                     .balance-wrapper
@@ -106,13 +106,13 @@ html(lang='en')
                         svg.stroke-icon.stroke-warning
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month                                                                    
-              .col-xl-5
+              .col-xl-5.box-col-12
                 .card 
                   .card-header.pb-3 
                     h5 Performance Overview
                   .card-body.pt-0 
                     #deviceChart  
-              .col-xl-7
+              .col-xl-7.box-col-12
                 .card 
                   .card-header 
                     h5 Recent Orders
@@ -250,7 +250,7 @@ html(lang='en')
                               td.number $ 956.00
                               td
                                 button.btn.bg-light-warning.txt-warning Pending        
-              .col-xl-4.col-lg-6.col-md-6 
+              .col-xl-4.col-lg-6.col-md-6.box-col-6 
                 .card 
                   .card-header 
                     .header-top 
@@ -333,25 +333,25 @@ html(lang='en')
                                 a(href="list-products.html").f-w-500 Airpods Pro
                             td Electronics
                             td 1,256    
-              .col-xl-3.col-lg-6.col-md-6   
+              .col-xl-3.col-lg-6.col-md-6.box-col-6   
                 .card 
                   .card-header 
                     h5 Recent performance
                   .card-body.pt-0  
                     #browservisiting
-              .col-xl-5.col-lg-6.col-md-6 
+              .col-xl-5.col-lg-6.col-md-6.box-col-6 
                 .card 
                   .card-header 
                     h5 Weekly Trend 
                   .card-body.pt-0 
                     #monthlyChart  
-              .col-xl-6.col-lg-6.col-md-6 
+              .col-xl-6.col-lg-6.col-md-6.box-col-6 
                 .card 
                   .card-header 
                     h5 Sales Report
                   .card-body.pt-0 
                     #delivery-duration  
-              .col-xl-6 
+              .col-xl-6.box-col-12 
                 .card.heading-space 
                   .card-header 
                     .header-top.text-nowrap 

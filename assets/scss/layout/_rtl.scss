@@ -8704,7 +8704,8 @@ html[dir="rtl"] {
 
         .dt-layout-cell {
           .dt-search {
-            left: -10px;
+            // left: -10px;
+            left: 0;
             right: unset;
 
             @media (max-width:640px) {
