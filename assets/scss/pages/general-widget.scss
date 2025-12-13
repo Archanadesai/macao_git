@@ -1,0 +1,105 @@
+.general-widget-wrapper {
+  .card {
+    .balance-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .balance-detail {
+        p {
+          margin-bottom: 16px;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 1;
+          @media (max-width: 1708px) {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 180px;
+          }
+          @media (max-width: 1525px) {
+            max-width: 160px;
+          }
+          @media (max-width: 1400px) {
+            max-width: unset;
+          }
+          @media (max-width: 715px) {
+            max-width: 150px;
+          }
+          @media (max-width: 605px) {
+            max-width: 135px;
+          }
+          @media (max-width: 576px) {
+            max-width: 185px;
+          }
+        }
+        span {
+          color: $dark-gray;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+        > span {
+          margin-bottom: 0;
+          font-size: 20px;
+        }
+      }
+      .customer-card {
+        width: calc(38px + (55 - 38) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(38px + (55 - 38) * ((100vw - 320px) / (1920 - 320)));
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 1578px) and (min-width: 1400px) {
+          width: 37px;
+          height: 37px;
+        }
+        svg {
+          width: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+          height: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+          stroke: var(--theme-default);
+          fill: none;
+          @media (max-width: 1578px) and (min-width: 1400px) {
+            width: 18px;
+            height: 18px;
+          }
+        }
+        @media (max-width: 1438px) and (min-width: 1400px) {
+          display: none;
+        }
+      }
+    }
+    .balance1 {
+      display: flex;
+      align-items: center;
+      padding-top: 24px;
+      gap: 10px;
+      p {
+        color: var(--theme-default);
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+        stroke: var(--theme-default);
+        fill: none;
+      }
+      span {
+        color: gray;
+      }
+    }
+    .top-country-sales-list {
+        li {
+            margin-block-end: 16px;
+            div {
+                .sale-list {
+                    display: flex;
+                    gap: 12px;
+                }
+            }
+        }
+    }
+  }
+}

@@ -24099,6 +24099,11 @@ p.data-attributes svg {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media (max-width: 1200px) {
+  .dashboard-2 .card .card-body .contries-sale .map-value {
+    width: 100%;
+  }
+}
 .dashboard-2 .card .card-body .contries-sale .map-value .cities .city {
   margin-bottom: 20px;
 }
@@ -24131,6 +24136,23 @@ p.data-attributes svg {
   background: var(--theme-default);
   border-radius: inherit;
   transition: width 0.3s ease;
+}
+@media (max-width: 1200px) {
+  .dashboard-2 .card .card-body .contries-sale {
+    display: flex;
+    gap: 10px;
+  }
+}
+@media (max-width: 640px) {
+  .dashboard-2 .card .card-body .contries-sale {
+    flex-direction: column;
+  }
+}
+@media (max-width: 640px) {
+  .dashboard-2 .card .card-body .contries-sale .follower-country #countryMapvalue {
+    justify-content: center;
+    display: flex;
+  }
 }
 .dashboard-2 .card .card-body #delivery-duration {
   margin-left: -38px;
@@ -34017,6 +34039,120 @@ select.crypto-select.primary {
 /**=====================
     3.66 Dashboard_13 Start
 ==========================**/
+.general-widget-wrapper .card .balance-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.general-widget-wrapper .card .balance-wrapper .balance-detail p {
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+}
+@media (max-width: 1708px) {
+  .general-widget-wrapper .card .balance-wrapper .balance-detail p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px;
+  }
+}
+@media (max-width: 1525px) {
+  .general-widget-wrapper .card .balance-wrapper .balance-detail p {
+    max-width: 160px;
+  }
+}
+@media (max-width: 1400px) {
+  .general-widget-wrapper .card .balance-wrapper .balance-detail p {
+    max-width: unset;
+  }
+}
+@media (max-width: 715px) {
+  .general-widget-wrapper .card .balance-wrapper .balance-detail p {
+    max-width: 150px;
+  }
+}
+@media (max-width: 605px) {
+  .general-widget-wrapper .card .balance-wrapper .balance-detail p {
+    max-width: 135px;
+  }
+}
+@media (max-width: 576px) {
+  .general-widget-wrapper .card .balance-wrapper .balance-detail p {
+    max-width: 185px;
+  }
+}
+.general-widget-wrapper .card .balance-wrapper .balance-detail span {
+  color: #898989;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.general-widget-wrapper .card .balance-wrapper .balance-detail > span {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.general-widget-wrapper .card .balance-wrapper .customer-card {
+  width: calc(38px + 17 * (100vw - 320px) / 1600);
+  height: calc(38px + 17 * (100vw - 320px) / 1600);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1578px) and (min-width: 1400px) {
+  .general-widget-wrapper .card .balance-wrapper .customer-card {
+    width: 37px;
+    height: 37px;
+  }
+}
+.general-widget-wrapper .card .balance-wrapper .customer-card svg {
+  width: calc(20px + 5 * (100vw - 320px) / 1600);
+  height: calc(20px + 5 * (100vw - 320px) / 1600);
+  stroke: var(--theme-default);
+  fill: none;
+}
+@media (max-width: 1578px) and (min-width: 1400px) {
+  .general-widget-wrapper .card .balance-wrapper .customer-card svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 1438px) and (min-width: 1400px) {
+  .general-widget-wrapper .card .balance-wrapper .customer-card {
+    display: none;
+  }
+}
+.general-widget-wrapper .card .balance1 {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  gap: 10px;
+}
+.general-widget-wrapper .card .balance1 p {
+  color: var(--theme-default);
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.general-widget-wrapper .card .balance1 svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--theme-default);
+  fill: none;
+}
+.general-widget-wrapper .card .balance1 span {
+  color: gray;
+}
+.general-widget-wrapper .card .top-country-sales-list li {
+  margin-block-end: 16px;
+}
+.general-widget-wrapper .card .top-country-sales-list li div .sale-list {
+  display: flex;
+  gap: 12px;
+}
+
 /**=====================
   3.20 Dashboard_default CSS Start
 ==========================**/

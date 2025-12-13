@@ -781,30 +781,7 @@
 
   // var chartvisitor = new ApexCharts(document.querySelector("#visitor-chart"), optionsvisitor);
   // chartvisitor.render();
-  var options = {
-    chart: {
-      type: "pie",
-      width: 350,
-    },
-    labels: ["A", "B", "C", "D", "E"],
-    series: [25, 20, 10, 15, 30], // Adjust values as needed
-    colors: [
-      "#e16349", // medium blue
-      "#f07d67", // dark teal
-      "#f7a293", // light sky blue
-      "#a83c28", // very light blue
-      "#c74f37", // mid tone blue
-    ],
-    legend: {
-      show: false,
-    },
-    dataLabels: {
-      enabled: false,
-    },
-  };
 
-  var chart = new ApexCharts(document.querySelector("#overall"), options);
-  chart.render();
 
    var deliveryDuration = {
      series: [

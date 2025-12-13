@@ -251,6 +251,9 @@
     .card-body {
       .contries-sale {
         .map-value {
+          @media (max-width:1200px) {
+            width: 100%;
+          }
           .cities {
             .city {
               margin-bottom: 20px;
@@ -290,6 +293,21 @@
                   transition: width 0.3s ease;
                 }
               }
+            }
+          }
+        }
+        @media (max-width:1200px) {
+          display: flex;
+          gap: 10px;
+        }
+        @media (max-width:640px) {
+          flex-direction: column;
+        }
+        .follower-country{
+          #countryMapvalue{
+            @media (max-width:640px) {
+              justify-content: center;
+              display: flex;
             }
           }
         }
