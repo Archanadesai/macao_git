@@ -33,6 +33,10 @@
       width: 2px;
       height: 100%;
       background: #e0e0e0;
+      [dir="rtl"] & {
+        right: 3px;
+        left: unset;
+      }
     }
 
     .activities-item {
@@ -50,11 +54,19 @@
         border: 2px solid $white;
         border-radius: 50%;
         box-shadow: 0 0 0 2px $primary-color;
+        [dir="rtl"] & {
+          right: -2px;
+          left: unset;
+        }
       }
 
       .activities-header {
         font-weight: bold;
         margin-left: 20px;
+        [dir="rtl"] & {
+          margin-right: 20px;
+          margin-left: unset;
+        }
       }
 
       .activities-contente {
@@ -67,6 +79,10 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+        [dir="rtl"] & {
+          margin-right: 20px;
+          margin-left: unset;
+        }
       }
 
       .activities-time {
@@ -74,6 +90,10 @@
         color: #888;
         margin-left: 20px;
         margin-top: 4px;
+        [dir="rtl"] & {
+          margin-right: 20px;
+          margin-left: unset;
+        }
       }
     }
   }
@@ -174,79 +194,6 @@
           margin-left: -38px;
         }
       }
-      &.stats-card {
-        border-bottom: 3px solid var(--theme-default);
-        .card-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          .title {
-            font-size: 12px;
-            font-weight: 600;
-            color: #8a8a8a;
-            text-transform: uppercase;
-          }
-
-          .icon {
-            background: $light-primary;
-            color: var(--theme-default);
-            width: 30px;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 600;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          > span {
-            margin-top: 0;
-          }
-        }
-
-        .amount {
-          margin-top: 10px;
-          font-size: 32px;
-          font-weight: 700;
-          color: #212121;
-
-          .cents {
-            font-size: 22px;
-            font-weight: 500;
-            color: #7c7c7c;
-          }
-        }
-
-        .change {
-          margin-top: 8px;
-          font-size: 14px;
-          display: flex;
-          align-items: center;
-
-          .arrow {
-            margin-right: 4px;
-            font-size: 14px;
-          }
-
-          &.negative {
-            color: $danger-color;
-          }
-          &.positive{
-            color: $success-color;
-          }
-
-          .text {
-            margin-left: 4px;
-            color: #888;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-          }
-        }
-      }
     }
     .card-body {
       .contries-sale {
@@ -314,6 +261,21 @@
       }
       #delivery-duration{
         margin-left: -38px;
+      }
+      &.activities-wrapper{
+        height: 250px;
+        overflow: auto;
+        @media (max-width:1399px) {
+          height: unset;
+        }
+      }
+      &.country-wrapper{
+        @media screen and (min-width:1875px) {
+          padding-top: 0;
+        }
+        @media (max-width:1399px) {
+          padding-top: 32px;
+        }
       }
     }
   }

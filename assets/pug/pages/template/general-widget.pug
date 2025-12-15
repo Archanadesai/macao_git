@@ -10,6 +10,11 @@
 - var counter               = true;
 - var animate               = true;
 - var scrollbar             = true;
+- var owlcarousel           = true;
+- var page_vector_map1      = true;
+- var page_owlcarousel      = true;
+
+
 doctype html
 html(lang='en')
   include ../../components/header-files
@@ -40,7 +45,7 @@ html(lang='en')
           // Container-fluid starts
           .container-fluid
             .row.general-widget-wrapper 
-              .col-xl-3
+              .col-xl-3.col-lg-6.col-md-6.box-col-6
                 .card.bg-light-primary.widget-card
                   .card-body   
                     .balance-wrapper
@@ -55,7 +60,7 @@ html(lang='en')
                         svg.stroke-icon
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month
-              .col-xl-3
+              .col-xl-3.col-lg-6.col-md-6.box-col-6
                 .card.bg-light-secondary.widget-card
                   .card-body   
                     .balance-wrapper
@@ -70,7 +75,7 @@ html(lang='en')
                         svg.stroke-icon.stroke-secondary
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month
-              .col-xl-3
+              .col-xl-3.col-lg-6.col-md-6.box-col-6
                 .card.bg-light-success.widget-card
                   .card-body   
                     .balance-wrapper
@@ -85,7 +90,7 @@ html(lang='en')
                         svg.stroke-icon.stroke-success
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month
-              .col-xl-3
+              .col-xl-3.col-lg-6.col-md-6.box-col-6
                 .card.bg-light-warning.widget-card
                   .card-body   
                     .balance-wrapper
@@ -100,7 +105,64 @@ html(lang='en')
                         svg.stroke-icon.stroke-warning
                           use(href='../assets/svg/icon-sprite.svg#up-arrow')
                       span | This month
-              .col-xl-4 
+              .col-xl-3.col-lg-6.col-md-6.col-sm-6.box-col-6 
+                .card.custom-card 
+                  .card-body.p-0 
+                    .d-flex 
+                      .me-3
+                        span.assets-card.bg-light-primary.txt-primary
+                          i.fa-solid.fa-briefcase  
+                      .assets-detail 
+                        p.text-muted.mb-1 Total Assets
+                        h5.mb-2 596
+                        p.text-muted.mb-1.asset-icon
+                          span.text-success 0.25%
+                          i(data-feather="arrow-down" class="text-success") 
+                          | This month
+              .col-xl-3.col-lg-6.col-md-6.col-sm-6.box-col-6 
+                .card.custom-card 
+                  .card-body.p-0 
+                    .d-flex 
+                      .me-3
+                        span.assets-card.bg-light-primary.txt-primary
+                          i.fa-solid.fa-briefcase  
+                      .assets-detail 
+                        p.text-muted.mb-1 Total Assets
+                        h5.mb-2 596
+                        p.text-muted.mb-1.asset-icon
+                          span.text-success 0.25%
+                          i(data-feather="arrow-down" class="text-success") 
+                          | This month            
+              .col-xl-3.col-lg-6.col-md-6.col-sm-6.box-col-6 
+                .card.custom-card 
+                  .card-body.p-0 
+                    .d-flex 
+                      .me-3
+                        span.assets-card.bg-light-secondary.txt-secondary
+                          i.fa-solid.fa-coins    
+                      .assets-detail 
+                        p.text-muted.mb-1 Total Value
+                        h5.mb-2 $1,298
+                        p.text-muted.mb-1.asset-icon
+                          span.text-danger 0.74%
+                          i(data-feather="arrow-down" class="text-danger") 
+                          | This month
+              .col-xl-3.col-lg-6.col-md-6.col-sm-6.box-col-6 
+                .card.custom-card 
+                  .card-body.p-0 
+                    .d-flex 
+                      .me-3
+                        span.assets-card.bg-light-success.txt-success
+                          i.fa-solid.fa-cart-shopping  
+                      .assets-detail 
+                        p.text-muted.mb-1 Total Sales
+                        h5.mb-2 821
+                        p.text-muted.mb-1.asset-icon
+                          span.text-danger 1.52%
+                          i(data-feather="arrow-down" class="text-danger") 
+                          | This month
+              
+              .col-xl-3.col-lg-6.col-md-6.box-col-6 
                 .card 
                   .card-header 
                     .header-top 
@@ -112,37 +174,37 @@ html(lang='en')
                           .sale-list
                             span
                               i.flag-icon.flag-icon-us
-                            span.top-country-name France  
+                            span.top-country-name United States  
                           div   
                             i(data-feather="arrow-up-right" class="text-success")
-                          div.sale-price 5,932
+                          div.sale-price 8,245
                       li
                         .d-flex.justify-content-between.align-items-center 
                           .sale-list
                             span
                               i.flag-icon.flag-icon-ae
-                            span.top-country-name France  
+                            span.top-country-name UAE 
                           div   
                             i(data-feather="arrow-down-right" class="text-danger")
-                          div.sale-price 5,932
+                          div.sale-price 6,980
                       li
                         .d-flex.justify-content-between.align-items-center 
                           .sale-list
                             span
                               i.flag-icon.flag-icon-cn
-                            span.top-country-name France  
+                            span.top-country-name China  
                           div   
                             i(data-feather="arrow-down-right" class="text-danger")
-                          div.sale-price 5,932
+                          div.sale-price 7,120
                       li
                         .d-flex.justify-content-between.align-items-center 
                           .sale-list
                             span
                               i.flag-icon.flag-icon-pt
-                            span.top-country-name France  
+                            span.top-country-name Portugal  
                           div   
                             i(data-feather="arrow-up-right" class="text-success")
-                          div.sale-price 5,932
+                          div.sale-price 4,560
                       li
                         .d-flex.justify-content-between.align-items-center 
                           .sale-list
@@ -157,12 +219,166 @@ html(lang='en')
                           .sale-list
                             span
                               i.flag-icon.flag-icon-es
-                            span.top-country-name France  
+                            span.top-country-name Spain  
                           div   
                             i(data-feather="arrow-up-right" class="text-success")
-                          div.sale-price 5,932                  
-              
-                  
+                          div.sale-price 6,410                  
+              .col-xl-6.col-lg-6.col-md-6.box-col-6 
+                .card 
+                  .card-header 
+                    h5 Sales Report
+                  .card-body.pt-0 
+                    #delivery-duration
+              .col-xl-3.col-lg-6.col-md-6.box-col-6
+                .card 
+                  .card-header.card-no-border.pb-2
+                    .header-top
+                      h5.m-0 Activities
+                      .card-header-right-icon
+                        .dropdown.icon-dropdown.dropzone
+                          button#subscribeButton.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false')
+                            i.icon-more-alt
+                          .dropdown-menu.dropdown-menu-end(aria-labelledby='subscribeButton')
+                            a.dropdown-item(href='#!') Today
+                            a.dropdown-item(href='#!') Maximum
+                            a.dropdown-item(href='#!') Today
+                            a.dropdown-item(href='#!') 30 Days
+                            a.dropdown-item(href='#!') Yesterday 
+                            a.dropdown-item(href='#!') Last month 
+                  .card-body.pt-1.pb-3.activities-wrapper.custom-scrollbar
+                    .activities
+                      .activities-item
+                        .activities-header User confirmation
+                        .activities-contente
+                          p Tonight's the night. And it's going to happen again and again. It has to happen. I'm ...
+                        .activities-time 7 months ago
+
+                      .activities-item
+                        .activities-header Continuous evaluation
+                        .activities-contente
+                          p And it's going to happen again and again. It has to happen. I'm thinking two circus ...
+                        .activities-time 7 months ago
+
+                      .activities-item
+                        .activities-header Promotion
+                        .activities-contente
+                          p It has to happen. I'm thinking two circus clowns dancing. Tonight's the night.
+                        .activities-time 7 months ago     
+              .col-xl-4.col-lg-6.col-md-6.box-col-6
+                .card.review-slider 
+                  .card-header 
+                    .header-top 
+                      h5 Customer review 
+                  .card-body.pt-0
+                    #owl-carousel-dashboard.owl-carousel.owl-theme.owl-loaded
+                      .review
+                        div 
+                          img.img-fluid(src='/assets/images/user/1.jpg', alt='')
+                          .review-content 
+                            a(href="user-profile.html") 
+                              h5.txt-primary.f-w-600 Mary Jades
+                            span Web Designer
+                          span.d-flex.gap-1.justify-content-center
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                          p "Exceeded my expectations with outstanding quality. Fast delivery and great support!"
+                          span.txt-secondary.f-w-600 ( 10th Feb, 2024 )
+                      .review
+                        div 
+                          img.img-fluid(src='../assets/images/user/3.png', alt='')
+                          .review-content 
+                            a(href="user-profile.html")
+                              h5.txt-primary.f-w-600 Anna Proas
+                            span Graphics Designer
+                          span.d-flex.gap-1.justify-content-center
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-regular.fa-star.font-warning
+                          p "A versatile product that fits perfectly into my daily routine. Absolutely worth buying!"
+                          span.txt-secondary.f-w-600 ( 05th May, 2024 )
+                      .review
+                        div 
+                          img.img-fluid(src='../assets/images/user/6.jpg', alt='')
+                          .review-content 
+                            a(href="user-profile.html")
+                              h5.txt-primary.f-w-600 Rachel Green
+                            span Web Developer
+                          span.d-flex.gap-1.justify-content-center
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-solid.fa-star.font-warning
+                            i.fa-regular.fa-star.font-warning
+                          p "Great value and stylish quality! Exactly what I needed—plus, super quick response."
+                          span.txt-secondary.f-w-600 ( 23th Aug, 2024 )
+              .col-xl-8.col-xl-4.col-lg-12.box-col-12
+                .card 
+                  .card-header 
+                    .header-top
+                      h5 Sales By Location  
+                      .card-header-right-icon
+                        .dropdown.icon-dropdown
+                          button#shipmentTracking.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false')
+                            i.icon-more-alt
+                          .dropdown-menu.dropdown-menu-end(aria-labelledby='shipmentTracking')
+                            a.dropdown-item(href='#!') This Month
+                            a.dropdown-item(href='#!') Previous Month
+                            a.dropdown-item(href='#!') Last 3 Months
+                            a.dropdown-item(href='#!') Last 6 Months
+                  .card-body 
+                    .contries-sale
+                      .follower-country
+                        #countryMapvalue
+                      .map-value.mt-2 
+                        .cities
+                          .city
+                            .info
+                              span.name New York
+                              span.value 72K
+                            .bar
+                              .bar-fill(style="width: 100%")
+                          .city
+                            .info
+                              span.name United Kingdom
+                              span.value 39K
+                            .bar
+                              .bar-fill(style="width: 54%")
+                          .city
+                            .info
+                              span.name Chile
+                              span.value 25K
+                            .bar
+                              .bar-fill(style="width: 34%")
+                          .city
+                            .info
+                              span.name Egypt
+                              span.value 61K
+                            .bar
+                              .bar-fill(style="width: 45%")
+                          .city
+                            .info
+                              span.name United States
+                              span.value 40K
+                            .bar
+                              .bar-fill(style="width: 35%")
+              .col-xl-6.col-lg-6.box-col-6 
+                .card 
+                  .card-header 
+                    h5 Weekly Trend 
+                  .card-body.pt-0 
+                    #monthlyChart
+              .col-xl-6.col-lg-6.box-col-6
+                .card 
+                  .card-header 
+                    .header-top 
+                      h5 Sales Statistic
+                  .card-body.pt-0 
+                    #sale-static
           // Container-fluid Ends
         include ../../components/footer
     include ../../components/footer-files

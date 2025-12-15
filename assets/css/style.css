@@ -4784,6 +4784,10 @@ pre {
   margin-top: 25px;
 }
 
+.dashboard-2 .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-bottom: -20px;
+  margin-top: 6px;
+}
 @media (max-width: 1492px) {
   .dashboard-2 .owl-theme .owl-nav.disabled + .owl-dots {
     margin-bottom: -19px;
@@ -23916,6 +23920,10 @@ p.data-attributes svg {
   height: 100%;
   background: #e0e0e0;
 }
+[dir=rtl] .dashboard-2 .activities::before {
+  right: 3px;
+  left: unset;
+}
 .dashboard-2 .activities .activities-item {
   position: relative;
   padding-bottom: 18px;
@@ -23932,9 +23940,17 @@ p.data-attributes svg {
   border-radius: 50%;
   box-shadow: 0 0 0 2px #e16349;
 }
+[dir=rtl] .dashboard-2 .activities .activities-item::before {
+  right: -2px;
+  left: unset;
+}
 .dashboard-2 .activities .activities-item .activities-header {
   font-weight: bold;
   margin-left: 20px;
+}
+[dir=rtl] .dashboard-2 .activities .activities-item .activities-header {
+  margin-right: 20px;
+  margin-left: unset;
 }
 .dashboard-2 .activities .activities-item .activities-contente {
   font-size: 14px;
@@ -23947,11 +23963,19 @@ p.data-attributes svg {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+[dir=rtl] .dashboard-2 .activities .activities-item .activities-contente {
+  margin-right: 20px;
+  margin-left: unset;
+}
 .dashboard-2 .activities .activities-item .activities-time {
   font-size: 12px;
   color: #888;
   margin-left: 20px;
   margin-top: 4px;
+}
+[dir=rtl] .dashboard-2 .activities .activities-item .activities-time {
+  margin-right: 20px;
+  margin-left: unset;
 }
 .dashboard-2 .review-slider .review {
   display: flex;
@@ -24034,71 +24058,6 @@ p.data-attributes svg {
 .dashboard-2 .card.custom-card .card-body #delivery-duration {
   margin-left: -38px;
 }
-.dashboard-2 .card.custom-card.stats-card {
-  border-bottom: 3px solid var(--theme-default);
-}
-.dashboard-2 .card.custom-card.stats-card .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.dashboard-2 .card.custom-card.stats-card .card-header .title {
-  font-size: 12px;
-  font-weight: 600;
-  color: #8a8a8a;
-  text-transform: uppercase;
-}
-.dashboard-2 .card.custom-card.stats-card .card-header .icon {
-  background: rgba(225, 99, 73, 0.1019607843);
-  color: var(--theme-default);
-  width: 30px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.dashboard-2 .card.custom-card.stats-card .card-header > span {
-  margin-top: 0;
-}
-.dashboard-2 .card.custom-card.stats-card .amount {
-  margin-top: 10px;
-  font-size: 32px;
-  font-weight: 700;
-  color: #212121;
-}
-.dashboard-2 .card.custom-card.stats-card .amount .cents {
-  font-size: 22px;
-  font-weight: 500;
-  color: #7c7c7c;
-}
-.dashboard-2 .card.custom-card.stats-card .change {
-  margin-top: 8px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-}
-.dashboard-2 .card.custom-card.stats-card .change .arrow {
-  margin-right: 4px;
-  font-size: 14px;
-}
-.dashboard-2 .card.custom-card.stats-card .change.negative {
-  color: #d32f2f;
-}
-.dashboard-2 .card.custom-card.stats-card .change.positive {
-  color: #4caf50;
-}
-.dashboard-2 .card.custom-card.stats-card .change .text {
-  margin-left: 4px;
-  color: #888;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 @media (max-width: 1200px) {
   .dashboard-2 .card .card-body .contries-sale .map-value {
     width: 100%;
@@ -24156,6 +24115,25 @@ p.data-attributes svg {
 }
 .dashboard-2 .card .card-body #delivery-duration {
   margin-left: -38px;
+}
+.dashboard-2 .card .card-body.activities-wrapper {
+  height: 250px;
+  overflow: auto;
+}
+@media (max-width: 1399px) {
+  .dashboard-2 .card .card-body.activities-wrapper {
+    height: unset;
+  }
+}
+@media screen and (min-width: 1875px) {
+  .dashboard-2 .card .card-body.country-wrapper {
+    padding-top: 0;
+  }
+}
+@media (max-width: 1399px) {
+  .dashboard-2 .card .card-body.country-wrapper {
+    padding-top: 32px;
+  }
 }
 .dashboard-2 .top-country-sales-list li {
   margin-block-end: 16px;
@@ -34050,7 +34028,7 @@ select.crypto-select.primary {
   font-weight: 600;
   line-height: 1;
 }
-@media (max-width: 1708px) {
+@media (max-width: 1708px) and (min-width: 1200px) {
   .general-widget-wrapper .card .balance-wrapper .balance-detail p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -34058,14 +34036,9 @@ select.crypto-select.primary {
     max-width: 180px;
   }
 }
-@media (max-width: 1525px) {
+@media (max-width: 1525px) and (min-width: 1200px) {
   .general-widget-wrapper .card .balance-wrapper .balance-detail p {
     max-width: 160px;
-  }
-}
-@media (max-width: 1400px) {
-  .general-widget-wrapper .card .balance-wrapper .balance-detail p {
-    max-width: unset;
   }
 }
 @media (max-width: 715px) {
@@ -34118,7 +34091,7 @@ select.crypto-select.primary {
     height: 18px;
   }
 }
-@media (max-width: 1438px) and (min-width: 1400px) {
+@media (max-width: 1438px) and (min-width: 1200px) {
   .general-widget-wrapper .card .balance-wrapper .customer-card {
     display: none;
   }
@@ -34144,6 +34117,9 @@ select.crypto-select.primary {
 }
 .general-widget-wrapper .card .balance1 span {
   color: gray;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .general-widget-wrapper .card .top-country-sales-list li {
   margin-block-end: 16px;
@@ -34151,6 +34127,187 @@ select.crypto-select.primary {
 .general-widget-wrapper .card .top-country-sales-list li div .sale-list {
   display: flex;
   gap: 12px;
+}
+.general-widget-wrapper .card .card-body #delivery-duration {
+  margin-left: -38px;
+}
+.general-widget-wrapper .card .card-body .contries-sale {
+  display: flex;
+  gap: 15px;
+}
+.general-widget-wrapper .card .card-body .contries-sale .map-value {
+  width: 100%;
+}
+.general-widget-wrapper .card .card-body .contries-sale .map-value .cities .city {
+  margin-bottom: 20px;
+}
+.general-widget-wrapper .card .card-body .contries-sale .map-value .cities .city:last-child {
+  margin-bottom: 0;
+}
+.general-widget-wrapper .card .card-body .contries-sale .map-value .cities .city .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.general-widget-wrapper .card .card-body .contries-sale .map-value .cities .city .info .name {
+  font-size: 15px;
+  color: #2e2e2e;
+}
+.general-widget-wrapper .card .card-body .contries-sale .map-value .cities .city .info .value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+}
+.general-widget-wrapper .card .card-body .contries-sale .map-value .cities .city .bar {
+  width: 100%;
+  height: 3px;
+  background: rgb(253, 233, 223);
+  border-radius: 100px;
+  overflow: hidden;
+}
+.general-widget-wrapper .card .card-body .contries-sale .map-value .cities .city .bar .bar-fill {
+  height: 100%;
+  background: var(--theme-default);
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+.general-widget-wrapper .card.custom-card .assets-card {
+  width: 48px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.general-widget-wrapper .card.custom-card .assets-card svg {
+  width: 20px;
+  height: 20px;
+}
+.general-widget-wrapper .card.custom-card .card-body .d-flex .assets-detail p svg {
+  width: 18px;
+  height: 18%;
+}
+.general-widget-wrapper .card.custom-card .card-body .d-flex .assets-detail p.asset-icon {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.general-widget-wrapper .card.custom-card .card-body #delivery-duration {
+  margin-left: -38px;
+}
+.general-widget-wrapper .card.review-slider .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-bottom: -10px;
+  margin-top: 12px;
+}
+.general-widget-wrapper .activities {
+  position: relative;
+  margin: auto;
+  max-width: 400px;
+}
+.general-widget-wrapper .activities::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  width: 2px;
+  height: 100%;
+  background: #e0e0e0;
+}
+[dir=rtl] .general-widget-wrapper .activities::before {
+  right: 3px;
+  left: unset;
+}
+.general-widget-wrapper .activities .activities-item {
+  position: relative;
+  padding-bottom: 18px;
+}
+.general-widget-wrapper .activities .activities-item::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background: #e16349;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #e16349;
+}
+[dir=rtl] .general-widget-wrapper .activities .activities-item::before {
+  right: -2px;
+  left: unset;
+}
+.general-widget-wrapper .activities .activities-item .activities-header {
+  font-weight: bold;
+  margin-left: 20px;
+}
+[dir=rtl] .general-widget-wrapper .activities .activities-item .activities-header {
+  margin-right: 20px;
+  margin-left: unset;
+}
+.general-widget-wrapper .activities .activities-item .activities-contente {
+  font-size: 14px;
+  color: #444;
+  margin-left: 20px;
+  margin-top: 6.5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+[dir=rtl] .general-widget-wrapper .activities .activities-item .activities-contente {
+  margin-right: 20px;
+  margin-left: unset;
+}
+.general-widget-wrapper .activities .activities-item .activities-time {
+  font-size: 12px;
+  color: #888;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+[dir=rtl] .general-widget-wrapper .activities .activities-item .activities-time {
+  margin-right: 20px;
+  margin-left: unset;
+}
+.general-widget-wrapper .review-slider .review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.general-widget-wrapper .review-slider .review img {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.general-widget-wrapper .review-slider .review .review-content {
+  margin: 12px 0;
+}
+.general-widget-wrapper .review-slider .review .review-content span {
+  color: #999999;
+}
+.general-widget-wrapper .review-slider .review p {
+  color: #999999;
+  margin-top: 15px;
+  margin-bottom: 22px;
+}
+@media screen and (max-width: 1750px) and (min-width: 1200px) {
+  .general-widget-wrapper .review-slider .review p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
 }
 
 /**=====================
@@ -67132,6 +67289,12 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   .box-layout .page-wrapper .smooth-animate .label, .box-layout.page-wrapper .smooth-animate .label {
     top: -175px;
   }
+  .box-layout .dashboard-2 .card .card-body.country-wrapper {
+    padding-top: 32px;
+  }
+  .box-layout .dashboard-2 .card .card-body.activities-wrapper {
+    height: unset;
+  }
 }
 @media (max-width: 1500px) {
   .box-layout .bounce-rate-wrapper {
@@ -74783,6 +74946,21 @@ body.dark-only .dashboard-2 .card .card-body .contries-sale .map-value .cities .
   color: #e9edf1;
 }
 body.dark-only .dashboard-2 .card .card-body .contries-sale .map-value .cities .city .info .name {
+  color: #e9edf1;
+}
+body.dark-only .general-widget-wrapper .activities::before {
+  background: #584437;
+}
+body.dark-only .general-widget-wrapper .activities .activities-item::before {
+  border: 2px solid #584437;
+}
+body.dark-only .general-widget-wrapper .card .card-body .contries-sale .map-value .cities .city .bar {
+  background: rgb(131, 131, 131);
+}
+body.dark-only .general-widget-wrapper .card .card-body .contries-sale .map-value .cities .city .info .value {
+  color: #e9edf1;
+}
+body.dark-only .general-widget-wrapper .card .card-body .contries-sale .map-value .cities .city .info .name {
   color: #e9edf1;
 }
 body.dark-only .default-dashboard div.dt-container .dt-layout-row .dt-length .dt-input,

@@ -47,16 +47,15 @@ html(lang='en')
           .container-fluid.dashboard-2
             .row.size-column
                        
-              .col-xxl-9.col-xl-12 
+              .col-xxl-9.col-xl-12.box-col-12 
                 .row                           
                   .col-xl-4.col-lg-4.col-md-6.col-sm-6 
                     .card.custom-card 
                       .card-body.p-0 
                         .d-flex 
                           .me-3
-                            span.assets-card.bg-light-primary
-                              svg.stroke-icon
-                                use(href='../assets/svg/icon-sprite.svg#stroke-assets')  
+                            span.assets-card.bg-light-primary.txt-primary
+                              i.fa-solid.fa-briefcase  
                           .assets-detail 
                             p.text-muted.mb-1 Total Assets
                             h5.mb-2 596
@@ -69,9 +68,8 @@ html(lang='en')
                       .card-body.p-0 
                         .d-flex 
                           .me-3
-                            span.assets-card.bg-light-secondary
-                              svg.stroke-icon
-                                use(href='../assets/svg/icon-sprite.svg#stroke-assets')  
+                            span.assets-card.bg-light-secondary.txt-secondary
+                              i.fa-solid.fa-coins    
                           .assets-detail 
                             p.text-muted.mb-1 Total Value
                             h5.mb-2 $1,298
@@ -84,9 +82,8 @@ html(lang='en')
                       .card-body.p-0 
                         .d-flex 
                           .me-3
-                            span.assets-card.bg-light-success
-                              svg.stroke-icon
-                                use(href='../assets/svg/icon-sprite.svg#stroke-assets')  
+                            span.assets-card.bg-light-success.txt-success
+                              i.fa-solid.fa-cart-shopping  
                           .assets-detail 
                             p.text-muted.mb-1 Total Sales
                             h5.mb-2 821
@@ -94,47 +91,74 @@ html(lang='en')
                               span.text-danger 1.52%
                               i(data-feather="arrow-down" class="text-danger") 
                               | This month
-                  .col-xl-4.col-lg-4.col-md-6.col-sm-6
-                    .card.custom-card.stats-card
-                      .card-header
-                        span.title Sales Revenue
-                        i.fa-solid.fa-dollar-sign(class="icon")
-                      
-                      .amount
-                        | $7,145.
-                        span.cents 56
-
-                      .change.negative
-                        i(data-feather="arrow-down" class="text-danger")
-                        | -0.10%
-                        span.text Since last week
-                  .col-xl-4.col-lg-4.col-md-6.col-sm-6 
-                    .card.custom-card.stats-card
-                      .card-header
-                        span.title Sales Revenue
-                        i.fa-solid.fa-money-check-dollar(class="icon")
-                      
-                      .amount
-                        | $46.
-                        span.cents 90
-
-                      .change.positive
-                        i(data-feather="arrow-up" class="text-success")
-                        | 3.5%
-                        span.text Since last week                                                
-                  .col-xl-4.col-lg-4 
-                    .card.custom-card.stats-card
-                      .card-header
-                        span.title Total Visitor
-                        i.fa-solid.fa-users(class="icon")
-                      
-                      .amount
-                        | 298,456
-
-                      .change.positive
-                        i(data-feather="arrow-up" class="text-success")
-                        | 2.01%
-                        span.text Since last week
+                  
+                  
+                  .col-xxl-4.col-xl-4.col-lg-12
+                    .card 
+                      .card-header 
+                        .header-top
+                          h5 Sales By Location  
+                          .card-header-right-icon
+                            .dropdown.icon-dropdown
+                              button#shipmentTracking.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false')
+                                i.icon-more-alt
+                              .dropdown-menu.dropdown-menu-end(aria-labelledby='shipmentTracking')
+                                a.dropdown-item(href='#!') This Month
+                                a.dropdown-item(href='#!') Previous Month
+                                a.dropdown-item(href='#!') Last 3 Months
+                                a.dropdown-item(href='#!') Last 6 Months
+                      .card-body.pt-0 
+                        .contries-sale
+                          .follower-country
+                            #countryMapvalue
+                          .map-value.mt-2 
+                            .cities
+                              .city
+                                .info
+                                  span.name New York
+                                  span.value 72K
+                                .bar
+                                  .bar-fill(style="width: 100%")
+                              .city
+                                .info
+                                  span.name United Kingdom
+                                  span.value 39K
+                                .bar
+                                  .bar-fill(style="width: 54%")
+                              .city
+                                .info
+                                  span.name Chile
+                                  span.value 25K
+                                .bar
+                                  .bar-fill(style="width: 34%")
+                              .city
+                                .info
+                                  span.name Egypt
+                                  span.value 61K
+                                .bar
+                                  .bar-fill(style="width: 45%")
+                              .city
+                                .info
+                                  span.name United States
+                                  span.value 40K
+                                .bar
+                                  .bar-fill(style="width: 35%")
+                  .col-xxl-8.col-xl-8.col-lg-12
+                    .card 
+                      .card-header 
+                        .header-top 
+                          h5 customer Report
+                          .card-header-right-icon
+                            .dropdown.icon-dropdown
+                              button#treadingProduct.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false')
+                                i.icon-more-alt
+                              .dropdown-menu.dropdown-menu-end(aria-labelledby='treadingProduct')
+                                a.dropdown-item(href='#!') This Month
+                                a.dropdown-item(href='#!') Previous Month
+                                a.dropdown-item(href='#!') Last 3 Months
+                                a.dropdown-item(href='#!') Last 6 Months 
+                      .card-body.pt-0 
+                        #delivery-duration
                   .col-xxl-12 
                     .card.heading-space 
                       .card-header  
@@ -254,81 +278,15 @@ html(lang='en')
                                 td Long Dress
                                 td 212
                                 td Bank Transfer
-                                td $12.32
-                  .col-xxl-4.col-xl-4.col-lg-12
-                    .card 
-                      .card-header 
-                        .header-top
-                          h5 Sales By Location  
-                          .card-header-right-icon
-                            .dropdown.icon-dropdown
-                              button#shipmentTracking.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false')
-                                i.icon-more-alt
-                              .dropdown-menu.dropdown-menu-end(aria-labelledby='shipmentTracking')
-                                a.dropdown-item(href='#!') This Month
-                                a.dropdown-item(href='#!') Previous Month
-                                a.dropdown-item(href='#!') Last 3 Months
-                                a.dropdown-item(href='#!') Last 6 Months
-                      .card-body.pt-0 
-                        .contries-sale
-                          .follower-country
-                            #countryMapvalue
-                          .map-value.mt-2 
-                            .cities
-                              .city
-                                .info
-                                  span.name New York
-                                  span.value 72K
-                                .bar
-                                  .bar-fill(style="width: 100%")
-                              .city
-                                .info
-                                  span.name United Kingdom
-                                  span.value 39K
-                                .bar
-                                  .bar-fill(style="width: 54%")
-                              .city
-                                .info
-                                  span.name Chile
-                                  span.value 25K
-                                .bar
-                                  .bar-fill(style="width: 34%")
-                              .city
-                                .info
-                                  span.name Egypt
-                                  span.value 61K
-                                .bar
-                                  .bar-fill(style="width: 45%")
-                              .city
-                                .info
-                                  span.name United States
-                                  span.value 40K
-                                .bar
-                                  .bar-fill(style="width: 35%")
-                  .col-xxl-8.col-xl-8.col-lg-12
-                    .card 
-                      .card-header 
-                        .header-top 
-                          h5 customer Report
-                          .card-header-right-icon
-                            .dropdown.icon-dropdown
-                              button#treadingProduct.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false')
-                                i.icon-more-alt
-                              .dropdown-menu.dropdown-menu-end(aria-labelledby='treadingProduct')
-                                a.dropdown-item(href='#!') This Month
-                                a.dropdown-item(href='#!') Previous Month
-                                a.dropdown-item(href='#!') Last 3 Months
-                                a.dropdown-item(href='#!') Last 6 Months 
-                      .card-body.pt-0 
-                        #delivery-duration
-              .col-xxl-3
+                                td $12.32          
+              .col-xxl-3.box-col-12
                 .row
-                  .col-xxl-12.col-xl-4.col-lg-6.col-md-6.col-sm-6 
+                  .col-xxl-12.col-xl-4.col-lg-6.col-md-6.col-sm-6.box-col-4 
                     .card 
                       .card-header 
                         .header-top 
                           h5 Top Countries By sale 
-                      .card-body 
+                      .card-body.country-wrapper 
                         ul.top-country-sales-list
                           li
                             .d-flex.justify-content-between.align-items-center 
@@ -375,7 +333,7 @@ html(lang='en')
                               div   
                                 i(data-feather="arrow-down-right" class="text-danger")
                               div.sale-price 5,932
-                          li
+                          li.mb-0
                             .d-flex.justify-content-between.align-items-center 
                               .sale-list
                                 span
@@ -384,7 +342,7 @@ html(lang='en')
                               div   
                                 i(data-feather="arrow-up-right" class="text-success")
                               div.sale-price 5,932
-                  .col-xxl-12.col-xl-4.col-lg-6.col-md-6.col-sm-6 
+                  .col-xxl-12.col-xl-4.col-lg-6.col-md-6.col-sm-6.box-col-4 
                     .card 
                       .card-header.card-no-border.pb-2
                         .header-top
@@ -400,7 +358,7 @@ html(lang='en')
                                 a.dropdown-item(href='#!') 30 Days
                                 a.dropdown-item(href='#!') Yesterday 
                                 a.dropdown-item(href='#!') Last month 
-                      .card-body.pt-1.pb-3
+                      .card-body.pt-1.pb-3.activities-wrapper.custom-scrollbar
                         .activities
                           .activities-item
                             .activities-header User confirmation
@@ -419,7 +377,7 @@ html(lang='en')
                             .activities-contente
                               p It has to happen. I'm thinking two circus clowns dancing. Tonight's the night.
                             .activities-time 7 months ago
-                  .col-xxl-12.col-xl-4.col-lg-12
+                  .col-xxl-12.col-xl-4.col-lg-12.box-col-4
                     .card.review-slider 
                       .card-header 
                         .header-top 
@@ -472,7 +430,7 @@ html(lang='en')
                               p "Great value and stylish quality! Exactly what I needed—plus, super quick response."
                               span.txt-secondary.f-w-600 ( 23th Aug, 2024 )
              
-              .col-xl-6  
+              .col-xl-6.box-col-12  
                 .card
                   .card-header.card-no-border
                     .header-top
@@ -563,7 +521,7 @@ html(lang='en')
                             td $1200
                             td
                               button.btn.button-light-danger.txt-danger.f-w-500 Out of Stock
-              .col-xl-6.col-lg-12
+              .col-xl-6.col-lg-12.box-col-12
                 .card 
                   .card-header 
                     .header-top 

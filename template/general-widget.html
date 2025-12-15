@@ -28,8 +28,11 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/vector-map1/jsvectormap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/date-picker.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
@@ -1057,7 +1060,7 @@
           <!-- Container-fluid starts-->
           <div class="container-fluid">
             <div class="row general-widget-wrapper"> 
-              <div class="col-xl-3">
+              <div class="col-xl-3 col-lg-6 col-md-6 box-col-6">
                 <div class="card bg-light-primary widget-card">
                   <div class="card-body">  
                     <div class="balance-wrapper">
@@ -1080,7 +1083,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3">
+              <div class="col-xl-3 col-lg-6 col-md-6 box-col-6">
                 <div class="card bg-light-secondary widget-card">
                   <div class="card-body">  
                     <div class="balance-wrapper">
@@ -1103,7 +1106,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3">
+              <div class="col-xl-3 col-lg-6 col-md-6 box-col-6">
                 <div class="card bg-light-success widget-card">
                   <div class="card-body">  
                     <div class="balance-wrapper">
@@ -1126,7 +1129,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3">
+              <div class="col-xl-3 col-lg-6 col-md-6 box-col-6">
                 <div class="card bg-light-warning widget-card">
                   <div class="card-body">  
                     <div class="balance-wrapper">
@@ -1149,7 +1152,63 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4"> 
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 box-col-6"> 
+                <div class="card custom-card"> 
+                  <div class="card-body p-0"> 
+                    <div class="d-flex"> 
+                      <div class="me-3"><span class="assets-card bg-light-primary txt-primary"><i class="fa-solid fa-briefcase"> </i></span></div>
+                      <div class="assets-detail"> 
+                        <p class="text-muted mb-1">Total Assets</p>
+                        <h5 class="mb-2">596</h5>
+                        <p class="text-muted mb-1 asset-icon"><span class="text-success">0.25%</span><i class="text-success" data-feather="arrow-down"> </i>This month</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 box-col-6"> 
+                <div class="card custom-card"> 
+                  <div class="card-body p-0"> 
+                    <div class="d-flex"> 
+                      <div class="me-3"><span class="assets-card bg-light-primary txt-primary"><i class="fa-solid fa-briefcase"> </i></span></div>
+                      <div class="assets-detail"> 
+                        <p class="text-muted mb-1">Total Assets</p>
+                        <h5 class="mb-2">596</h5>
+                        <p class="text-muted mb-1 asset-icon"><span class="text-success">0.25%</span><i class="text-success" data-feather="arrow-down"> </i>This month            </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 box-col-6"> 
+                <div class="card custom-card"> 
+                  <div class="card-body p-0"> 
+                    <div class="d-flex"> 
+                      <div class="me-3"><span class="assets-card bg-light-secondary txt-secondary"><i class="fa-solid fa-coins">   </i></span></div>
+                      <div class="assets-detail"> 
+                        <p class="text-muted mb-1">Total Value</p>
+                        <h5 class="mb-2">$1,298</h5>
+                        <p class="text-muted mb-1 asset-icon"><span class="text-danger">0.74%</span><i class="text-danger" data-feather="arrow-down"> </i>This month</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 box-col-6"> 
+                <div class="card custom-card"> 
+                  <div class="card-body p-0"> 
+                    <div class="d-flex"> 
+                      <div class="me-3"><span class="assets-card bg-light-success txt-success"><i class="fa-solid fa-cart-shopping"> </i></span></div>
+                      <div class="assets-detail"> 
+                        <p class="text-muted mb-1">Total Sales</p>
+                        <h5 class="mb-2">821</h5>
+                        <p class="text-muted mb-1 asset-icon"><span class="text-danger">1.52%</span><i class="text-danger" data-feather="arrow-down"> </i>This month</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 box-col-6"> 
                 <div class="card"> 
                   <div class="card-header"> 
                     <div class="header-top"> 
@@ -1160,30 +1219,30 @@
                     <ul class="top-country-sales-list">
                       <li>
                         <div class="d-flex justify-content-between align-items-center"> 
-                          <div class="sale-list"><span><i class="flag-icon flag-icon-us"></i></span><span class="top-country-name">France  </span></div>
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-us"></i></span><span class="top-country-name">United States  </span></div>
                           <div>  <i class="text-success" data-feather="arrow-up-right"></i></div>
-                          <div class="sale-price">5,932</div>
+                          <div class="sale-price">8,245</div>
                         </div>
                       </li>
                       <li>
                         <div class="d-flex justify-content-between align-items-center"> 
-                          <div class="sale-list"><span><i class="flag-icon flag-icon-ae"></i></span><span class="top-country-name">France  </span></div>
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-ae"></i></span><span class="top-country-name">UAE </span></div>
                           <div>  <i class="text-danger" data-feather="arrow-down-right"></i></div>
-                          <div class="sale-price">5,932</div>
+                          <div class="sale-price">6,980</div>
                         </div>
                       </li>
                       <li>
                         <div class="d-flex justify-content-between align-items-center"> 
-                          <div class="sale-list"><span><i class="flag-icon flag-icon-cn"></i></span><span class="top-country-name">France  </span></div>
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-cn"></i></span><span class="top-country-name">China  </span></div>
                           <div>  <i class="text-danger" data-feather="arrow-down-right"></i></div>
-                          <div class="sale-price">5,932</div>
+                          <div class="sale-price">7,120</div>
                         </div>
                       </li>
                       <li>
                         <div class="d-flex justify-content-between align-items-center"> 
-                          <div class="sale-list"><span><i class="flag-icon flag-icon-pt"></i></span><span class="top-country-name">France  </span></div>
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-pt"></i></span><span class="top-country-name">Portugal  </span></div>
                           <div>  <i class="text-success" data-feather="arrow-up-right"></i></div>
-                          <div class="sale-price">5,932</div>
+                          <div class="sale-price">4,560</div>
                         </div>
                       </li>
                       <li>
@@ -1195,12 +1254,174 @@
                       </li>
                       <li>
                         <div class="d-flex justify-content-between align-items-center"> 
-                          <div class="sale-list"><span><i class="flag-icon flag-icon-es"></i></span><span class="top-country-name">France  </span></div>
+                          <div class="sale-list"><span><i class="flag-icon flag-icon-es"></i></span><span class="top-country-name">Spain  </span></div>
                           <div>  <i class="text-success" data-feather="arrow-up-right"></i></div>
-                          <div class="sale-price">5,932                  </div>
+                          <div class="sale-price">6,410                  </div>
                         </div>
                       </li>
                     </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 box-col-6"> 
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <h5>Sales Report</h5>
+                  </div>
+                  <div class="card-body pt-0"> 
+                    <div id="delivery-duration"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 box-col-6">
+                <div class="card"> 
+                  <div class="card-header card-no-border pb-2">
+                    <div class="header-top">
+                      <h5 class="m-0">Activities</h5>
+                      <div class="card-header-right-icon">
+                        <div class="dropdown icon-dropdown dropzone">
+                          <button class="btn dropdown-toggle" id="subscribeButton" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="subscribeButton"><a class="dropdown-item" href="#!">Today</a><a class="dropdown-item" href="#!">Maximum</a><a class="dropdown-item" href="#!">Today</a><a class="dropdown-item" href="#!">30 Days</a><a class="dropdown-item" href="#!">Yesterday </a><a class="dropdown-item" href="#!">Last month </a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pt-1 pb-3 activities-wrapper custom-scrollbar">
+                    <div class="activities">
+                      <div class="activities-item">
+                        <div class="activities-header">User confirmation</div>
+                        <div class="activities-contente">
+                          <p>Tonight's the night. And it's going to happen again and again. It has to happen. I'm ...</p>
+                        </div>
+                        <div class="activities-time">7 months ago</div>
+                      </div>
+                      <div class="activities-item">
+                        <div class="activities-header">Continuous evaluation</div>
+                        <div class="activities-contente">
+                          <p>And it's going to happen again and again. It has to happen. I'm thinking two circus ...</p>
+                        </div>
+                        <div class="activities-time">7 months ago</div>
+                      </div>
+                      <div class="activities-item">
+                        <div class="activities-header">Promotion</div>
+                        <div class="activities-contente">
+                          <p>It has to happen. I'm thinking two circus clowns dancing. Tonight's the night.</p>
+                        </div>
+                        <div class="activities-time">7 months ago     </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-md-6 box-col-6">
+                <div class="card review-slider"> 
+                  <div class="card-header"> 
+                    <div class="header-top"> 
+                      <h5>Customer review </h5>
+                    </div>
+                  </div>
+                  <div class="card-body pt-0">
+                    <div class="owl-carousel owl-theme owl-loaded" id="owl-carousel-dashboard">
+                      <div class="review">
+                        <div> <img class="img-fluid" src="/assets/images/user/1.jpg" alt="">
+                          <div class="review-content"> <a href="user-profile.html"> 
+                              <h5 class="txt-primary f-w-600">Mary Jades</h5></a><span>Web Designer</span></div><span class="d-flex gap-1 justify-content-center"><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i></span>
+                          <p>"Exceeded my expectations with outstanding quality. Fast delivery and great support!"</p><span class="txt-secondary f-w-600">( 10th Feb, 2024 )</span>
+                        </div>
+                      </div>
+                      <div class="review">
+                        <div> <img class="img-fluid" src="../assets/images/user/3.png" alt="">
+                          <div class="review-content"> <a href="user-profile.html">
+                              <h5 class="txt-primary f-w-600">Anna Proas</h5></a><span>Graphics Designer</span></div><span class="d-flex gap-1 justify-content-center"><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-regular fa-star font-warning"></i></span>
+                          <p>"A versatile product that fits perfectly into my daily routine. Absolutely worth buying!"</p><span class="txt-secondary f-w-600">( 05th May, 2024 )</span>
+                        </div>
+                      </div>
+                      <div class="review">
+                        <div> <img class="img-fluid" src="../assets/images/user/6.jpg" alt="">
+                          <div class="review-content"> <a href="user-profile.html">
+                              <h5 class="txt-primary f-w-600">Rachel Green</h5></a><span>Web Developer</span></div><span class="d-flex gap-1 justify-content-center"><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-regular fa-star font-warning"></i></span>
+                          <p>"Great value and stylish quality! Exactly what I needed—plus, super quick response."</p><span class="txt-secondary f-w-600">( 23th Aug, 2024 )</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8 col-xl-4 col-lg-12 box-col-12">
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <div class="header-top">
+                      <h5>Sales By Location  </h5>
+                      <div class="card-header-right-icon">
+                        <div class="dropdown icon-dropdown">
+                          <button class="btn dropdown-toggle" id="shipmentTracking" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="shipmentTracking"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body"> 
+                    <div class="contries-sale">
+                      <div class="follower-country">
+                        <div id="countryMapvalue"></div>
+                      </div>
+                      <div class="map-value mt-2"> 
+                        <div class="cities">
+                          <div class="city">
+                            <div class="info"><span class="name">New York</span><span class="value">72K</span></div>
+                            <div class="bar">
+                              <div class="bar-fill" style="width: 100%"></div>
+                            </div>
+                          </div>
+                          <div class="city">
+                            <div class="info"><span class="name">United Kingdom</span><span class="value">39K</span></div>
+                            <div class="bar">
+                              <div class="bar-fill" style="width: 54%"></div>
+                            </div>
+                          </div>
+                          <div class="city">
+                            <div class="info"><span class="name">Chile</span><span class="value">25K</span></div>
+                            <div class="bar">
+                              <div class="bar-fill" style="width: 34%"></div>
+                            </div>
+                          </div>
+                          <div class="city">
+                            <div class="info"><span class="name">Egypt</span><span class="value">61K</span></div>
+                            <div class="bar">
+                              <div class="bar-fill" style="width: 45%"></div>
+                            </div>
+                          </div>
+                          <div class="city">
+                            <div class="info"><span class="name">United States</span><span class="value">40K</span></div>
+                            <div class="bar">
+                              <div class="bar-fill" style="width: 35%"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 box-col-6"> 
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <h5>Weekly Trend </h5>
+                  </div>
+                  <div class="card-body pt-0"> 
+                    <div id="monthlyChart"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 box-col-6">
+                <div class="card"> 
+                  <div class="card-header"> 
+                    <div class="header-top"> 
+                      <h5>Sales Statistic</h5>
+                    </div>
+                  </div>
+                  <div class="card-body pt-0"> 
+                    <div id="sale-static"></div>
                   </div>
                 </div>
               </div>
@@ -1235,6 +1456,8 @@
     <!-- Plugins JS start-->
     <script src="../assets/js/sidebar-menu.js"></script>
     <script src="../assets/js/sidebar-pin.js"></script>
+    <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
+    <script src="/assets/js/owl-custom.js"> </script>
     <script src="../assets/js/slick/slick.min.js"></script>
     <script src="../assets/js/slick/slick.js"></script>
     <script src="../assets/js/header-slick.js"></script>
@@ -1244,6 +1467,10 @@
     <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
     <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
     <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+    <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
+    <script src="../assets/js/vector-map1/jsvectormap.js"></script>
+    <script src="../assets/js/vector-map1/world.js"></script>
+    <script src="../assets/js/vector-map1/custom-vectormap.js"></script>
     <script src="../assets/js/general-widget.js"></script>
     <script src="../assets/js/height-equal.js"></script>
     <!-- Plugins JS Ends-->

@@ -277,6 +277,8 @@ pre {
         .owl-nav {
             &.disabled {
                 &+.owl-dots {
+                    margin-bottom: -20px;
+                    margin-top: 6px;
                     @media (max-width:1492px) {
                         margin-bottom: -19px;
                         margin-top: 11px;

@@ -3157,6 +3157,18 @@
         }
       }
     }
+    .dashboard-2{
+      .card{
+        .card-body{
+          &.country-wrapper{
+            padding-top: 32px;
+          }
+          &.activities-wrapper{
+            height: unset;
+          }
+        }
+      }
+    }
   }
 
   @media (max-width:1500px) {

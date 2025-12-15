@@ -9218,6 +9218,41 @@ body {
 				}
 			}
 		}
+		.general-widget-wrapper{
+			.activities{
+				&::before{
+					background: #584437;
+				}
+				.activities-item{
+					&::before{
+						border: 2px solid #584437;
+					}
+				}
+			}
+			.card {
+				.card-body {
+					.contries-sale {
+						.map-value {
+							.cities {
+								.city {
+									.bar{
+										background: rgb(131 131 131);
+									}
+									.info{
+										.value{
+											color: $light-gray;
+										}
+										.name{
+											color: $light-gray;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 		// Dashboard Datatables
 		.default-dashboard,
 		.dashboard-2,

@@ -1062,16 +1062,13 @@
           <!-- Container-fluid starts-->
           <div class="container-fluid dashboard-2">
             <div class="row size-column">
-              <div class="col-xxl-9 col-xl-12"> 
+              <div class="col-xxl-9 col-xl-12 box-col-12"> 
                 <div class="row">                          
                   <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6"> 
                     <div class="card custom-card"> 
                       <div class="card-body p-0"> 
                         <div class="d-flex"> 
-                          <div class="me-3"><span class="assets-card bg-light-primary">
-                              <svg class="stroke-icon">
-                                <use href="../assets/svg/icon-sprite.svg#stroke-assets"> </use>
-                              </svg></span></div>
+                          <div class="me-3"><span class="assets-card bg-light-primary txt-primary"><i class="fa-solid fa-briefcase"> </i></span></div>
                           <div class="assets-detail"> 
                             <p class="text-muted mb-1">Total Assets</p>
                             <h5 class="mb-2">596</h5>
@@ -1085,10 +1082,7 @@
                     <div class="card custom-card"> 
                       <div class="card-body p-0"> 
                         <div class="d-flex"> 
-                          <div class="me-3"><span class="assets-card bg-light-secondary">
-                              <svg class="stroke-icon">
-                                <use href="../assets/svg/icon-sprite.svg#stroke-assets"> </use>
-                              </svg></span></div>
+                          <div class="me-3"><span class="assets-card bg-light-secondary txt-secondary"><i class="fa-solid fa-coins">   </i></span></div>
                           <div class="assets-detail"> 
                             <p class="text-muted mb-1">Total Value</p>
                             <h5 class="mb-2">$1,298</h5>
@@ -1102,10 +1096,7 @@
                     <div class="card custom-card"> 
                       <div class="card-body p-0"> 
                         <div class="d-flex"> 
-                          <div class="me-3"><span class="assets-card bg-light-success">
-                              <svg class="stroke-icon">
-                                <use href="../assets/svg/icon-sprite.svg#stroke-assets"> </use>
-                              </svg></span></div>
+                          <div class="me-3"><span class="assets-card bg-light-success txt-success"><i class="fa-solid fa-cart-shopping"> </i></span></div>
                           <div class="assets-detail"> 
                             <p class="text-muted mb-1">Total Sales</p>
                             <h5 class="mb-2">821</h5>
@@ -1115,25 +1106,78 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                    <div class="card custom-card stats-card">
-                      <div class="card-header"><span class="title">Sales Revenue</span><i class="fa-solid fa-dollar-sign icon"></i></div>
-                      <div class="amount">$7,145.<span class="cents">56</span></div>
-                      <div class="change negative"><i class="text-danger" data-feather="arrow-down"></i>-0.10%<span class="text">Since last week</span></div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-12">
+                    <div class="card"> 
+                      <div class="card-header"> 
+                        <div class="header-top">
+                          <h5>Sales By Location  </h5>
+                          <div class="card-header-right-icon">
+                            <div class="dropdown icon-dropdown">
+                              <button class="btn dropdown-toggle" id="shipmentTracking" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="shipmentTracking"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body pt-0"> 
+                        <div class="contries-sale">
+                          <div class="follower-country">
+                            <div id="countryMapvalue"></div>
+                          </div>
+                          <div class="map-value mt-2"> 
+                            <div class="cities">
+                              <div class="city">
+                                <div class="info"><span class="name">New York</span><span class="value">72K</span></div>
+                                <div class="bar">
+                                  <div class="bar-fill" style="width: 100%"></div>
+                                </div>
+                              </div>
+                              <div class="city">
+                                <div class="info"><span class="name">United Kingdom</span><span class="value">39K</span></div>
+                                <div class="bar">
+                                  <div class="bar-fill" style="width: 54%"></div>
+                                </div>
+                              </div>
+                              <div class="city">
+                                <div class="info"><span class="name">Chile</span><span class="value">25K</span></div>
+                                <div class="bar">
+                                  <div class="bar-fill" style="width: 34%"></div>
+                                </div>
+                              </div>
+                              <div class="city">
+                                <div class="info"><span class="name">Egypt</span><span class="value">61K</span></div>
+                                <div class="bar">
+                                  <div class="bar-fill" style="width: 45%"></div>
+                                </div>
+                              </div>
+                              <div class="city">
+                                <div class="info"><span class="name">United States</span><span class="value">40K</span></div>
+                                <div class="bar">
+                                  <div class="bar-fill" style="width: 35%"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6"> 
-                    <div class="card custom-card stats-card">
-                      <div class="card-header"><span class="title">Sales Revenue</span><i class="fa-solid fa-money-check-dollar icon"></i></div>
-                      <div class="amount">$46.<span class="cents">90</span></div>
-                      <div class="change positive"><i class="text-success" data-feather="arrow-up"></i>3.5%<span class="text">Since last week                                                </span></div>
-                    </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4"> 
-                    <div class="card custom-card stats-card">
-                      <div class="card-header"><span class="title">Total Visitor</span><i class="fa-solid fa-users icon"></i></div>
-                      <div class="amount">298,456</div>
-                      <div class="change positive"><i class="text-success" data-feather="arrow-up"></i>2.01%<span class="text">Since last week</span></div>
+                  <div class="col-xxl-8 col-xl-8 col-lg-12">
+                    <div class="card"> 
+                      <div class="card-header"> 
+                        <div class="header-top"> 
+                          <h5>customer Report</h5>
+                          <div class="card-header-right-icon">
+                            <div class="dropdown icon-dropdown">
+                              <button class="btn dropdown-toggle" id="treadingProduct" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="treadingProduct"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months </a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body pt-0"> 
+                        <div id="delivery-duration"></div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xxl-12"> 
@@ -1263,7 +1307,7 @@
                                 <td>Long Dress</td>
                                 <td>212</td>
                                 <td>Bank Transfer</td>
-                                <td>$12.32</td>
+                                <td>$12.32          </td>
                               </tr>
                             </tbody>
                           </table>
@@ -1271,92 +1315,18 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xxl-4 col-xl-4 col-lg-12">
-                    <div class="card"> 
-                      <div class="card-header"> 
-                        <div class="header-top">
-                          <h5>Sales By Location  </h5>
-                          <div class="card-header-right-icon">
-                            <div class="dropdown icon-dropdown">
-                              <button class="btn dropdown-toggle" id="shipmentTracking" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="shipmentTracking"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months</a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body pt-0"> 
-                        <div class="contries-sale">
-                          <div class="follower-country">
-                            <div id="countryMapvalue"></div>
-                          </div>
-                          <div class="map-value mt-2"> 
-                            <div class="cities">
-                              <div class="city">
-                                <div class="info"><span class="name">New York</span><span class="value">72K</span></div>
-                                <div class="bar">
-                                  <div class="bar-fill" style="width: 100%"></div>
-                                </div>
-                              </div>
-                              <div class="city">
-                                <div class="info"><span class="name">United Kingdom</span><span class="value">39K</span></div>
-                                <div class="bar">
-                                  <div class="bar-fill" style="width: 54%"></div>
-                                </div>
-                              </div>
-                              <div class="city">
-                                <div class="info"><span class="name">Chile</span><span class="value">25K</span></div>
-                                <div class="bar">
-                                  <div class="bar-fill" style="width: 34%"></div>
-                                </div>
-                              </div>
-                              <div class="city">
-                                <div class="info"><span class="name">Egypt</span><span class="value">61K</span></div>
-                                <div class="bar">
-                                  <div class="bar-fill" style="width: 45%"></div>
-                                </div>
-                              </div>
-                              <div class="city">
-                                <div class="info"><span class="name">United States</span><span class="value">40K</span></div>
-                                <div class="bar">
-                                  <div class="bar-fill" style="width: 35%"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-8 col-xl-8 col-lg-12">
-                    <div class="card"> 
-                      <div class="card-header"> 
-                        <div class="header-top"> 
-                          <h5>customer Report</h5>
-                          <div class="card-header-right-icon">
-                            <div class="dropdown icon-dropdown">
-                              <button class="btn dropdown-toggle" id="treadingProduct" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="treadingProduct"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months </a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body pt-0"> 
-                        <div id="delivery-duration"></div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="col-xxl-3">
+              <div class="col-xxl-3 box-col-12">
                 <div class="row">
-                  <div class="col-xxl-12 col-xl-4 col-lg-6 col-md-6 col-sm-6"> 
+                  <div class="col-xxl-12 col-xl-4 col-lg-6 col-md-6 col-sm-6 box-col-4"> 
                     <div class="card"> 
                       <div class="card-header"> 
                         <div class="header-top"> 
                           <h5>Top Countries By sale </h5>
                         </div>
                       </div>
-                      <div class="card-body"> 
+                      <div class="card-body country-wrapper"> 
                         <ul class="top-country-sales-list">
                           <li>
                             <div class="d-flex justify-content-between align-items-center"> 
@@ -1393,7 +1363,7 @@
                               <div class="sale-price">5,932</div>
                             </div>
                           </li>
-                          <li>
+                          <li class="mb-0">
                             <div class="d-flex justify-content-between align-items-center"> 
                               <div class="sale-list"><span><i class="flag-icon flag-icon-es"></i></span><span class="top-country-name">France  </span></div>
                               <div>  <i class="text-success" data-feather="arrow-up-right"></i></div>
@@ -1404,7 +1374,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xxl-12 col-xl-4 col-lg-6 col-md-6 col-sm-6"> 
+                  <div class="col-xxl-12 col-xl-4 col-lg-6 col-md-6 col-sm-6 box-col-4"> 
                     <div class="card"> 
                       <div class="card-header card-no-border pb-2">
                         <div class="header-top">
@@ -1417,7 +1387,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="card-body pt-1 pb-3">
+                      <div class="card-body pt-1 pb-3 activities-wrapper custom-scrollbar">
                         <div class="activities">
                           <div class="activities-item">
                             <div class="activities-header">User confirmation</div>
@@ -1444,7 +1414,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xxl-12 col-xl-4 col-lg-12">
+                  <div class="col-xxl-12 col-xl-4 col-lg-12 box-col-4">
                     <div class="card review-slider"> 
                       <div class="card-header"> 
                         <div class="header-top"> 
@@ -1480,7 +1450,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6"> 
+              <div class="col-xl-6 box-col-12"> 
                 <div class="card">
                   <div class="card-header card-no-border">
                     <div class="header-top">
@@ -1590,7 +1560,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-12">
+              <div class="col-xl-6 col-lg-12 box-col-12">
                 <div class="card"> 
                   <div class="card-header"> 
                     <div class="header-top"> 
