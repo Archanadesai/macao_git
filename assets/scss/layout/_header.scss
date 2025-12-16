@@ -7,41 +7,6 @@
     align-items: center;
   }
 
-  // h6 {
-  //   line-height: 1.6;
-
-  //   @media (max-width: 1199px) {
-  //     width: 160px;
-  //     overflow: hidden;
-  //     -webkit-line-clamp: 1;
-  //     text-overflow: ellipsis;
-  //     white-space: nowrap;
-  //   }
-
-  //   @media (max-width: 991px) {
-  //     width: 120px;
-  //   }
-
-  //   @media (max-width: 767px) {
-  //     width: 66px;
-  //   }
-  // }
-
-  // @media (max-width: 755px) {
-  //   display: none;
-  // }
-
-  // img {
-  //   margin-top: -12px;
-  //   height: 26px;
-  // }
-
-  // i {
-  //   font-weight: 600;
-  //   font-size: 12px;
-  //   margin-bottom: -4px;
-  // }
-
   .searchBar {
     width: 100%;
     display: flex;
@@ -118,7 +83,6 @@
   position: unset;
   margin-right: 15px;
   border-right: 1px solid $ps-light-border;
-  ;
   padding-right: 15px;
   display: block;
 

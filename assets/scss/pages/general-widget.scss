@@ -10,12 +10,10 @@
           font-size: 22px;
           font-weight: 600;
           line-height: 1;
-          @media (max-width: 1708px) and (min-width:1200px)  {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            max-width: 180px;
-          }
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          max-width: 187px;
           @media (max-width: 1525px) and (min-width:1200px) {
             max-width: 160px;
           }
@@ -108,6 +106,9 @@
       .contries-sale {
         display: flex;
         gap: 15px;
+        @media (max-width:615px) {
+          flex-direction: column;
+        }
         .map-value {
           width: 100%;
           .cities {
@@ -186,6 +187,11 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
               }
+              &:not(.asset-icon){
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
             }
           }
         }
@@ -244,6 +250,11 @@
       .activities-header {
         font-weight: bold;
         margin-left: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
         [dir="rtl"] & {
           margin-right: 20px;
           margin-left: unset;

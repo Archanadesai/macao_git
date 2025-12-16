@@ -185,17 +185,6 @@
 }
 
 // sweetalert css
-.swal-button {
-    background-color: var(--theme-default);
-
-    &:active {
-        background-color: darken($primary-color, 5%);
-    }
-}
-
-.swal-button--cancel {
-    background-color: #EFEFEE !important;
-}
 
 .clipboaard-container {
     h6 {

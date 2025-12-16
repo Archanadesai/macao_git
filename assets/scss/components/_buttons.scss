@@ -9,33 +9,6 @@
   color: $theme-font-color !important;
 }
 
-.purchase-btn {
-  background: linear-gradient(90deg, var(--theme-default) -18.33%, #563EE0 62.78%);
-  padding: 12px 20px;
-  min-width: 200px;
-  border: none;
-  transition: 0.5s;
-
-  &:hover {
-    background: linear-gradient(90deg, #563EE0 -18.33%, var(--theme-default) 62.78%);
-    transition: 0.5s;
-  }
-
-  @media (max-width: 991px) {
-    min-width: 160px;
-  }
-
-  @media (max-width: 767px) {
-    min-width: 140px;
-    padding: 10px 17px;
-    font-size: 16px;
-  }
-
-  @media (max-width: 575px) {
-    font-size: 14px;
-  }
-}
-
 .btn-light {
   &:not([disabled]):not(.disabled).active.active {
     color: $theme-body-font-color;
@@ -204,27 +177,6 @@
   line-height: 1.4;
 }
 
-.large-btn {
-  margin-bottom: -20px;
-
-  .btn {
-    margin-right: 5px;
-    margin-bottom: 15px;
-  }
-
-}
-
-.btn-outline-white {
-  border: 1px solid $white;
-  color: $white;
-
-  &:hover,
-  &:focus {
-    background: $white;
-    color: var(--theme-default);
-  }
-}
-
 // Light Buttons
 $btn-light-name: primary,
   secondary,
@@ -344,21 +296,6 @@ $btn-color in (primary, $primary-color),
   }
 }
 
-.btn-dropdown-showcase {
-  margin-bottom: -10px;
-
-  .dropdown {
-    margin-bottom: 10px;
-    margin-right: 18px;
-  }
-
-  .btn-group {
-    margin-bottom: 10px;
-    margin-right: 18px;
-  }
-
-}
-
 .btn-group {
   .radio {
     label {
@@ -425,7 +362,6 @@ $btn-color in (primary, $primary-color),
 .btn,
 button {
   &.button-primary {
-    // background-color: var(--light-shade-primary);
     background-color: $light-primary;
     color: var(--theme-default);
 

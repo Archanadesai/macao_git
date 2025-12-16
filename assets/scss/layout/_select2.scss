@@ -386,22 +386,6 @@
   }
 }
 
-.customSuggestionsList {
-  >div {
-    max-height: 300px;
-    min-height: 50px;
-    border: 2px solid var(--chart-dashed-border);
-    overflow: auto;
-  }
-
-  .empty {
-    color: var(--theme-default);
-    font-size: 20px;
-    text-align: center;
-    padding: 1em;
-  }
-}
-
 // Flag tags
 .tagify__dropdown.extra-properties {
   .tagify__dropdown__item {

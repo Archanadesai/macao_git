@@ -140,14 +140,14 @@
       },
     },
     responsive: [
-      {
-        breakpoint: 1399,
-        options: {
-          chart: {
-            height: 385,
-          },
-        },
-      },
+      // {
+      //   breakpoint: 1399,
+      //   options: {
+      //     chart: {
+      //       height: 385,
+      //     },
+      //   },
+      // },
     ],
   };
 

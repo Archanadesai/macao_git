@@ -288,31 +288,6 @@ pre {
         }
     }
 }
-.click2edit {
-    &~.note-editor {
-        &.note-frame {
-            margin-bottom: 30px;
-        }
-    }
-}
-
-.note-editor {
-    &.note-frame {
-        border-color: $light-color;
-    }
-
-    &.fullscreen {
-        .note-toolbar-wrapper {
-            height: 0 !important;
-        }
-    }
-}
-
-.note-editor {
-    &.note-frame {
-        border-color: $light-color;
-    }
-}
 
 // index page notify
 
@@ -371,22 +346,6 @@ pre {
 .ace-editor {
     height: 400px;
     width: 100%;
-}
-
-.editor-toolbar {
-    width: 100% !important;
-
-    &.fullscreen {
-        z-index: 100;
-    }
-}
-
-.CodeMirror {
-    top: 0 !important;
-}
-
-.CodeMirror-fullscreen {
-    top: 50px !important;
 }
 
 // table

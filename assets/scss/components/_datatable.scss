@@ -4,16 +4,6 @@
 // Common data-table css start
 .default-dashboard,
 .dashboard-2,
-.dashboard-3,
-.dashboard-4,
-.dashboard-5,
-.dashboard-6,
-.dashboard-7,
-.dashboard-09,
-.dashboard-10,
-.dashboard-11,
-.dashboard-12,
-.dashboard-13,
 .main-scope-project,
 .e-category,
 .list-product-view,
@@ -1429,19 +1419,6 @@ tr.shown td.details-control {
 .dataTables_scroll {
   &~.dataTables_paginate {
     margin-top: 20px !important;
-  }
-}
-
-.product-table {
-  th {
-    &:last-child {
-      min-width: 120px;
-    }
-  }
-
-  h6 {
-    font-weight: 600;
-    color: $dark-color;
   }
 }
 

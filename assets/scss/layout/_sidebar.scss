@@ -116,8 +116,6 @@
     top: $main-header-top;
     z-index: $main-header-z-index;
     transition: $sidebar-transition;
-    // background-color: $white;
-    // box-shadow: $main-header-shadow-1;
 
     .header-wrapper {
       width: 100%;
@@ -903,7 +901,6 @@
   }
 
   .page-body-wrapper {
-    // background-color: $main-body-color;
     background-color: $white;
 
     .page-body {
@@ -921,7 +918,6 @@
     .page-title {
       padding: $page-title-padding;
       margin: 0 -27px 28px;
-      // background-color: $white;
 
       >.row {
         margin: 0;
@@ -1109,7 +1105,6 @@
       .sidebar-wrapper {
         height: 54px;
         line-height: inherit;
-        // top: 79px;
         top: 70px;
         background: $white;
         box-shadow: 0px 9px 24px rgba($semi-dark, 0.05);
@@ -1118,7 +1113,6 @@
         overflow-y: visible;
         position: fixed;
         width: 100vw;
-        // border-top: 1px solid $light-semi-gray;
         z-index: 3;
 
         .simplebar-content {
@@ -3632,19 +3626,6 @@
 }
 
 @media screen and (max-width: 1199px) {
-  // .page-wrapper {
-  //   .page-header {
-  //     .header-wrapper {
-  //       .nav-right {
-  //         >ul {
-  //           >li {
-  //             padding: 8px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 
   .mobile-title {
     &.d-none {
@@ -3666,22 +3647,6 @@
   }
 }
 
-// @media (max-width:1039px) and (min-width:992px) {
-//   .page-wrapper {
-//     .page-header {
-//       .header-wrapper {
-//         .nav-right {
-//           >ul {
-//             >li {
-//               padding: 6px;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
 @media screen and (min-width: 992px) {
   .page-header {
     .header-wrapper {
@@ -3691,10 +3656,6 @@
         }
       }
     }
-  }
-
-  .responsive-btn {
-    display: none;
   }
 
   .page-wrapper {
@@ -3992,22 +3953,6 @@
     }
   }
 }
-
-// @media only screen and (max-width:992px) {
-//   .page-wrapper {
-//     .page-header {
-//       .header-wrapper {
-//         .nav-right {
-//           >ul {
-//             >li {
-//               padding: 6px;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 
 @media screen and (max-width: 767px) {
   .sidebar-wrapper {

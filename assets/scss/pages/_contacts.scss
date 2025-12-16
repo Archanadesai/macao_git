@@ -79,10 +79,6 @@
   }
 }
 
-.delete-contact {
-  display: none;
-}
-
 .more-data {
   animation: displayTransition 1s;
 }
@@ -132,21 +128,6 @@
     .select2-selection--single {
       height: 39px !important;
       border-color: #ced4da !important;
-    }
-  }
-}
-
-#deletemodal {
-  .modal-header {
-    border-bottom: none;
-
-    .delete-data {
-      span {
-        svg {
-          vertical-align: middle;
-          margin-right: 15px;
-        }
-      }
     }
   }
 }
@@ -414,12 +395,6 @@
   .list-persons {
     .profile-mail {
       padding: 20px;
-
-      .email-general {
-        // .gender {
-        //   margin-top: 20px;
-        // }
-      }
     }
   }
 

@@ -88,17 +88,6 @@
   }
 }
 
-.hover-touchspin {
-  .btn-touchspin {
-    &.spin-border-dark {
-      &:hover {
-        background-color: $dark-color;
-        color: $white;
-      }
-    }
-  }
-}
-
 .pre-post-touchspin {
 
   .decrement-touchspin,

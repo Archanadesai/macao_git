@@ -109,9 +109,6 @@
   }
 
   .alert {
-    &:last-child {
-      // margin-bottom: 0;
-    }
 
     svg {
       @include pixelstrap-size(16px, 16px);
@@ -205,19 +202,6 @@ $dark-color;
 
   .alert-bg-#{$var} {
     background-color: rgba(nth($alert-color, $i), 0.1);
-  }
-
-  // dashboard-7
-  .income-wrapper {
-    ul {
-      li {
-        .income-dot {
-          &.dot-#{$var} {
-            background-color: nth($alert-color, $i);
-          }
-        }
-      }
-    }
   }
 
   // touchspin 
