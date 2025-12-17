@@ -219,10 +219,6 @@ body {
 			}
 		}
 
-		.total-balance {
-			background-blend-mode: overlay;
-		}
-
 		.progress {
 			background: $light-all-font-color;
 		}
@@ -243,12 +239,6 @@ body {
 			}
 		}
 
-		.social-widget {
-			.social-icons {
-				box-shadow: 0px 42.1092px 27.8569px $dark-body-background, 0px 8.90772px 7.12618px $dark-body-background, 0px 2.02448px 3.44162px $dark-body-background;
-			}
-		}
-
 		.calendar-basic {
 			.md-sidebar-aside {
 				background: $dark-card-background;
@@ -266,46 +256,6 @@ body {
 						color: $dark-all-font-color;
 					}
 				}
-			}
-		}
-
-		.clockpicker-popover {
-			.popover-title {
-				background-color: $dark-card-background;
-			}
-
-			&.bottom {
-				>.arrow {
-					border-bottom-color: $dark-body-background;
-
-					&:after {
-						border-bottom-color: $dark-card-background;
-					}
-				}
-			}
-
-			&.top {
-				>.arrow {
-					border-top-color: $dark-body-background;
-
-					&::after {
-						border-top-color: $dark-card-background;
-					}
-				}
-			}
-
-			&.left {
-				>.arrow {
-					border-left-color: $dark-body-background;
-
-					&::after {
-						border-left-color: $dark-card-background;
-					}
-				}
-			}
-
-			.popover-title {
-				border-bottom-color: $dark-card-background;
 			}
 		}
 
@@ -332,26 +282,11 @@ body {
 		}
 
 		// crypto dashboard
-		.currency-widget {
-			div[class*=bg-light-] {
-				color: $dark-all-font-color;
-			}
-		}
 
 		.btn {
 			&.badge-light-primary {
 				&:hover {
 					color: rgba($white, 0.6);
-				}
-			}
-		}
-
-		.portfolio-chart-container {
-			.apexcharts-canvas {
-				.apexcharts-radialbar {
-					image {
-						display: none;
-					}
 				}
 			}
 		}
@@ -362,26 +297,9 @@ body {
 			opacity: 1;
 		}
 
-		.course-widget {
-			.btn-light {
-				background-color: $dark-body-background !important;
-			}
-		}
-
 		.schedule-list {
 			>li {
 				box-shadow: 4px 7px 17px 5px rgba($dark-body-background, 0.3);
-			}
-		}
-
-		.upcoming-event-wrap {
-			.apexcharts-canvas {
-				.apexcharts-data-labels {
-					rect {
-						fill: none;
-						stroke: none;
-					}
-				}
 			}
 		}
 
@@ -418,17 +336,6 @@ body {
 
 			&.only-body {
 				background: $dark-body-background;
-			}
-		}
-
-		.balance-card {
-			.svg-box {
-				background: $dark-card-background;
-				box-shadow: none;
-
-				svg {
-					fill: $dark-all-font-color;
-				}
 			}
 		}
 
@@ -1044,10 +951,6 @@ body {
 		.swal-icon--success:after,
 		.swal-icon--success:before {
 			background: $dark-card-background;
-		}
-
-		.swal-icon--success__hide-corners {
-			background-color: $dark-card-background;
 		}
 
 		.note-editor.note-frame {
@@ -1748,10 +1651,6 @@ body {
 			}
 		}
 
-		#lnb {
-			border-right: 1px solid $dark-card-border;
-		}
-
 		.lnb-new-schedule,
 		.lnb-calendars>div {
 			border-bottom: 1px solid $dark-card-border;
@@ -1759,26 +1658,6 @@ body {
 
 		#menu .sidebar-list .btn-default {
 			color: rgba($dark-all-font-color, 0.2);
-		}
-
-		.tui-full-calendar-timegrid-hour {
-			background-color: $dark-card-background;
-			color: $white !important;
-		}
-
-		.tui-full-calendar-timegrid-gridline {
-			border-bottom: 1px solid $dark-card-border !important;
-		}
-
-		.tui-full-calendar-time-date,
-		.tui-full-calendar-weekday-grid-line,
-		.tui-full-calendar-left,
-		.tui-full-calendar-timegrid-timezone {
-			border-right-color: $dark-card-border !important;
-		}
-
-		.tui-full-calendar-popup {
-			color: $theme-body-font-color;
 		}
 
 		#menu {
@@ -1793,12 +1672,6 @@ body {
 			.dropdown-menu {
 				color: $dark-all-font-color;
 			}
-		}
-
-		.tui-full-calendar-dayname-container,
-		.tui-full-calendar-splitter {
-			border-top-color: $dark-card-border !important;
-			border-bottom-color: $dark-card-border !important;
 		}
 
 		span.tui-full-calendar-dayname-date-area {
@@ -1891,20 +1764,7 @@ body {
 			}
 		}
 
-		// index page css start		
-		.appointment-table {
-			table {
-				tr {
-					td {
-						&.img-content-box {
-							.font-roboto {
-								color: $dark-all-font-color;
-							}
-						}
-					}
-				}
-			}
-		}
+		// index page css start
 
 		.notification {
 			.card {
@@ -2202,12 +2062,6 @@ body {
 			}
 		}
 
-		.setting-dot {
-			.setting-bg {
-				background-color: var(--theme-secondary);
-			}
-		}
-
 		.bookmark.pull-right {
 			border: none;
 		}
@@ -2387,14 +2241,6 @@ body {
 
 		// cart css end
 
-		.shopping-checkout-option {
-			.checkbox_animated {
-				&:after {
-					border: 2px solid $dark-card-background;
-				}
-			}
-		}
-
 		.animate-chk {
 			.radio_animated {
 				&:after {
@@ -2485,18 +2331,6 @@ body {
 			}
 		}
 
-		.pricing-card-design-2 {
-			.pricing-block {
-				.pricing-inner {
-					ul {
-						li {
-							border-bottom: 1px solid $dark-border-color;
-						}
-					}
-				}
-			}
-		}
-
 		.flot-chart-container {
 			.legend {
 				.table {
@@ -2509,12 +2343,6 @@ body {
 						}
 					}
 				}
-			}
-		}
-
-		.google-visualization-tooltip {
-			text {
-				fill: rgba(0, 0, 0, 0.7) !important;
 			}
 		}
 
@@ -5150,10 +4978,6 @@ body {
 				}
 			}
 
-			.vertical-menu-main {
-				background-color: $dark-card-background;
-			}
-
 			.mega-menu {
 				.title {
 					color: $dark-all-font-color;
@@ -5177,7 +5001,6 @@ body {
 
 					.btn-link {
 						background-color: $dark-card-background;
-						// border: 1px solid $dark-card-border;
 						border-bottom: none;
 						color: $white;
 					}
@@ -5211,15 +5034,6 @@ body {
 			.balance-widget.card-body {
 				background-color: $dark-card-background;
 				background-blend-mode: overlay;
-			}
-
-			@media screen and (max-width: 1660px) {
-				.caller-img {
-					img {
-						opacity: 0.7;
-					}
-				}
-
 			}
 
 			@media only screen and (max-width: 1199px) {
@@ -5269,16 +5083,6 @@ body {
 						}
 					}
 				}
-			}
-		}
-
-		.lg-backdrop {
-			background-color: $dark-body-background;
-		}
-
-		.lg-outer {
-			.lg-thumb-outer {
-				background-color: $dark-card-background;
 			}
 		}
 
@@ -5422,18 +5226,6 @@ body {
 			}
 		}
 
-		.CodeMirror {
-			background: $dark-card-background;
-			border: 1px solid $dark-small-font-color;
-			color: $dark-all-font-color;
-
-			.CodeMirror-code {
-				pre {
-					background: $dark-card-background;
-				}
-			}
-		}
-
 		.editor-toolbar {
 			border-top: 1px solid $dark-small-font-color;
 			border-left: 1px solid $dark-small-font-color;
@@ -5472,45 +5264,10 @@ body {
 			}
 		}
 
-		.editor-preview {
-			background-color: $dark-card-background;
-		}
-
 		.editor-toolbar.fullscreen,
 		.editor-preview-side {
 			background: $dark-card-background;
 			border: 1px solid $dark-small-font-color;
-		}
-
-		.u-step {
-			background: $dark-border-color;
-
-			&.active,
-			&.current {
-				background: var(--theme-default);
-				color: $white;
-			}
-		}
-
-		.u-step-title,
-		.u-pearl-title {
-			color: $dark-all-font-color;
-		}
-
-		.u-step-number {
-			background-color: $dark-card-background;
-		}
-
-		.u-pearl {
-			&:before {
-				background-color: $dark-border-color;
-			}
-		}
-
-		.u-pearl-number,
-		.u-pearl-icon {
-			background: $dark-body-background;
-			border: 2px solid $dark-body-background;
 		}
 
 		.u-pearl.disabled {
@@ -5540,23 +5297,6 @@ body {
 					background-color: $dark-card-background;
 					color: $dark-all-font-color;
 				}
-			}
-		}
-
-		.swal-modal {
-			background-color: $dark-card-background;
-
-			.swal-title {
-				color: $dark-all-font-color;
-			}
-
-			.swal-text {
-				color: $dark-small-font-color;
-			}
-
-			.swal-content__input {
-				background-color: $dark-body-background;
-				color: $dark-all-font-color;
 			}
 		}
 
@@ -5830,12 +5570,6 @@ body {
 			}
 		}
 
-		#cd-timeline {
-			&::before {
-				background: $dark-border-color;
-			}
-		}
-
 		.timeliny {
 			border-top: 1px solid $dark-border-color;
 			border-bottom: 1px solid $dark-border-color;
@@ -5988,28 +5722,6 @@ body {
 			border: rgba($white, 0.5);
 		}
 
-		.jstree-default {
-
-			.jstree-node,
-			.jstree-icon {
-				color: #455869 !important;
-			}
-
-			.jstree-anchor {
-				color: $dark-small-font-color;
-			}
-
-			.jstree-clicked {
-				color: $white;
-				background-color: $transparent-color;
-			}
-
-			.jstree-hovered {
-				background-color: $dark-body-background;
-				border: 1px solid $dark-border-color;
-			}
-		}
-
 		span.twitter-typeahead {
 			.tt-menu {
 				background-color: $dark-body-background;
@@ -6117,18 +5829,6 @@ body {
 			}
 		}
 
-		#example-style-8_wrapper {
-
-			table.dataTable.stripe,
-			table.dataTable.display {
-				tbody {
-					tr.odd {
-						background-color: $dark-border-color;
-					}
-				}
-			}
-		}
-
 		.error-wrapper {
 			background-color: rgba(54, 64, 74, 0.8);
 
@@ -6187,12 +5887,6 @@ body {
 			}
 		}
 
-		.loader-box {
-			&.card-loader {
-				background-color: $dark-card-background;
-			}
-		}
-
 		.my-gallery {
 			&.gallery-with-description {
 				img {
@@ -6223,36 +5917,6 @@ body {
 			i {
 				padding: 20px;
 				margin-right: 20px !important;
-			}
-		}
-
-		.user-card {
-			.user-deatils {
-				h6 {
-					color: $dark-small-font-color;
-				}
-			}
-
-			.card-footer {
-				>div {
-					&:first-child {
-						border-right: 1px solid $dark-border-color;
-					}
-				}
-
-				.user-footer {
-					h6 {
-						color: $dark-small-font-color;
-					}
-
-					svg {
-
-						path,
-						rect {
-							color: $dark-small-font-color;
-						}
-					}
-				}
 			}
 		}
 
@@ -6451,38 +6115,6 @@ body {
 			color: $dark-all-font-color;
 		}
 
-		#cal-basic {
-			.fc-toolbar {
-
-				.fc-left,
-				.fc-right {
-					.fc-next-button {
-						.fc-icon-right-single-arrow {
-							&:after {
-								color: $dark-small-font-color;
-							}
-						}
-					}
-
-					.fc-prev-button {
-						.fc-icon-left-single-arrow {
-							&:after {
-								color: $dark-small-font-color;
-							}
-						}
-					}
-				}
-
-				.fc-left {
-					.fc-button-group {
-						.fc-month-button {
-							color: $white !important;
-						}
-					}
-				}
-			}
-		}
-
 		.fc-button-group {
 
 			.fc-basicWeek-button,
@@ -6520,28 +6152,6 @@ body {
 			&.disabled,
 			&:disabled {
 				color: rgba($theme-body-font-color, 0.5) !important;
-			}
-		}
-
-		#cal-agenda-view {
-			.fc-toolbar {
-				.fc-right {
-					.fc-button-group {
-
-						.fc-month-button,
-						.btn-light {
-							color: $black !important;
-						}
-
-						.fc-agendaWeek-button {
-							color: $white !important;
-
-							&:hover {
-								color: $black !important;
-							}
-						}
-					}
-				}
 			}
 		}
 
@@ -6925,14 +6535,6 @@ body {
 			}
 		}
 
-		.apexcharts-radialbar-track {
-			&.apexcharts-track {
-				path {
-					stroke: $dark-body-background;
-				}
-			}
-		}
-
 		// product details 
 		.collection-filter-block {
 			h6 {
@@ -7105,91 +6707,6 @@ body {
 
 			100% {
 				box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
-			}
-		}
-
-		// Dahboard-5
-		.mobile-app-card {
-
-			&.social-empower,
-			&.upgrade-plan {
-				background: $dark-body-background;
-			}
-		}
-
-		.campaign-table {
-			.badge-light-light {
-				&.disabled {
-					color: $dark-editor-document;
-				}
-			}
-
-			.twitter {
-				>div {
-					border-color: $dark-all-font-color;
-				}
-
-				.social-circle {
-					background-color: $light-all-font-color;
-					border-color: $dark-all-font-color;
-					color: $dark-all-font-color;
-				}
-			}
-		}
-
-		// Dashboard-6
-		.live-auction-wrapper {
-			.product-nft-content {
-				>div {
-					p {
-						span {
-							&.text-black {
-								color: $dark-all-font-color !important;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		.nft-collection {
-			.nft-user-info {
-				.user-desc {
-					color: rgba($dark-all-font-color, 0.4);
-				}
-			}
-		}
-
-		// Dashboard-7
-		.currency-table {
-			&.task-table {
-				.table {
-					.main-task-wrapper {
-						tr {
-							td {
-								.form-check-label {
-									&::before {
-										background-color: $dark-body-background;
-									}
-								}
-							}
-
-							.icons-box {
-								.square-white {
-									i {
-										color: rgba($dark-all-font-color, 0.4);
-									}
-								}
-							}
-						}
-
-						.square-white {
-							i {
-								color: rgba($dark-all-font-color, 0.4);
-							}
-						}
-					}
-				}
 			}
 		}
 
@@ -8035,11 +7552,6 @@ body {
 		}
 
 		// Dashboard-7
-		.student-leader-wrapper {
-			.student-leader-content {
-				border-bottom-color: $dark-card-border;
-			}
-		}
 
 		.attendance-card {
 			.left-overview-content {
@@ -8050,92 +7562,7 @@ body {
 			}
 		}
 
-		.task-table {
-			.main-task-wrapper {
-				.square-white {
-					box-shadow: unset;
-					border: 1px solid transparent;
-					background-color: $dark-body-background;
-				}
-			}
-		}
-
-		.income-wrapper {
-			ul {
-				li {
-					+li {
-						border-left: 1px dashed $dark-card-border;
-
-						[dir="rtl"] & {
-							border-left: unset;
-							border-right: 1px dashed $dark-card-border;
-						}
-
-						@media (max-width:1735px) {
-							border-left: unset;
-
-							[dir="rtl"] & {
-								border-right: unset;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		.icons-box-2 {
-			.open-options {
-				.dropdown-menu {
-					background-color: $dark-body-background;
-
-					.dropdown-item {
-						&:hover {
-							background-color: $dark-card-inbox;
-						}
-					}
-				}
-			}
-		}
-
 		// Dashboard-8
-		.main-product-wrapper {
-			.product-body {
-				.product-search {
-					&.input-group {
-						>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-							color: $dark-small-font-color;
-						}
-
-						.input-group-text {
-							border: 1px solid $dark-card-border;
-						}
-
-						.form-control {
-							border: 1px solid $dark-card-border;
-							border-left: unset;
-							background-color: $dark-card-background;
-
-							[dir="rtl"] & {
-								border: 1px solid $dark-card-border;
-								border-right: unset;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		.shop-category-slider {
-			.swiper-wrapper {
-				.category-title {
-					color: $dark-all-font-color !important;
-				}
-			}
-		}
-
-		.our-product-wrapper {
-			box-shadow: 0px 3px 17px rgb(113 113 137 / 18%);
-		}
 
 		.order-details {
 			.search-items {
@@ -8159,59 +7586,7 @@ body {
 			}
 		}
 
-		.create-customers {
-			.modal-body {
-				.dark-sign-up {
-					form {
-						.form-label {
-							color: $dark-all-font-color;
-						}
-
-						.form-control {
-							color: $light-all-font-color;
-
-							&::placeholder {
-								color: $light-all-font-color;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		.customer-sticky {
-			.border-bottom {
-				border-bottom-color: $dark-card-border !important;
-			}
-		}
-
 		// Dashboard-9
-		.compare-order {
-			.card-body {
-				.progress {
-					background: $dark-body-background;
-				}
-
-				.user-text {
-					color: rgba($dark-all-font-color, 0.4);
-				}
-			}
-
-			.compare-icon {
-				&[class*="shadow-"] {
-					box-shadow: 0px 10.511241px 12.4089927673px 0px $dark-card-inbox;
-				}
-			}
-		}
-
-		.pipeline-data {
-			.common-flex {
-				span {
-					color: rgba($dark-all-font-color, 0.4);
-
-				}
-			}
-		}
 
 		.crm-todo-list {
 			li {
@@ -8219,11 +7594,6 @@ body {
 					color: rgba($dark-all-font-color, 0.4);
 				}
 			}
-		}
-
-		.analytics-widget {
-			background-color: $dark-card-background;
-			background-blend-mode: darken;
 		}
 
 		// grid 
@@ -8244,115 +7614,9 @@ body {
 			}
 		}
 
-		// Dashboard-10
-		.main-session-devices {
-			.progress {
-				background: $dark-body-background;
-			}
-		}
-
 		// Dashboard-11
 		.widget-11 {
 			background-blend-mode: color-burn;
-		}
-
-		.project-finish-card {
-			.project-left-content {
-				.progress {
-					background: linear-gradient(180.36deg, $dark-card-border -32.82%, $dark-body-background 99.69%);
-				}
-			}
-		}
-
-		.employee-list-table {
-			&.recent-table {
-				table {
-					tbody {
-						.square-white {
-							box-shadow: unset;
-
-							svg {
-								fill: $dark-all-font-color;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		// Dashboard-12
-		.dashboard-12 {
-			.tasks-card {
-				.arrow-group {
-
-					.next,
-					.prev {
-						background-color: $dark-body-background;
-					}
-				}
-
-				.task-box {
-					.progress {
-						background: $light-all-font-color;
-					}
-
-					.swiper-wrapper {
-						.swiper-slide {
-							+.swiper-slide {
-								border-color: $dark-card-border;
-							}
-						}
-					}
-				}
-			}
-
-			.task-card {
-				.common-space {
-
-					&:nth-child(2),
-					&:nth-child(3) {
-						color: rgba($dark-all-font-color, 0.3);
-					}
-				}
-			}
-
-			.small-stats {
-				.task-box {
-
-					p,
-					a {
-						color: rgba($dark-all-font-color, 0.4);
-					}
-				}
-			}
-		}
-
-		// Dashboard-13
-		.dashboard-13 {
-			.widget-13 {
-				background-blend-mode: color-burn;
-			}
-
-			.shipping-details {
-				.simple-timeline {
-					ul {
-						li {
-							.shipment-details {
-								p {
-									&:last-child {
-										border-bottom-color: rgba($dark-card-border, 0.5);
-									}
-								}
-							}
-
-							.dots {
-								border-color: $dark-body-background;
-								box-shadow: 0px 6px 18px 0px rgba($dark-small-font-color, 0.19);
-							}
-						}
-					}
-				}
-			}
 		}
 
 		// Settings
@@ -8776,7 +8040,6 @@ body {
 		}
 
 		.progress-project {
-			// border-color: $dark-card-inbox;
 
 			.common-space {
 				.common-align {
@@ -9256,16 +8519,6 @@ body {
 		// Dashboard Datatables
 		.default-dashboard,
 		.dashboard-2,
-		.dashboard-3,
-		.dashboard-4,
-		.dashboard-5,
-		.dashboard-6,
-		.dashboard-7,
-		.dashboard-09,
-		.dashboard-10,
-		.dashboard-11,
-		.dashboard-12,
-		.dashboard-13,
 		.main-scope-project,
 		.e-category,
 		.list-product-view,
@@ -9669,27 +8922,6 @@ body {
 						.horizontal-wizard {
 							.stroke-icon-wizard {
 								color: $dark-all-font-color;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		// Dashboard-3
-		.default-inline-calender {
-			.main-inline-calender {
-				.form-control {
-					display: none;
-				}
-
-				.flatpickr-calendar {
-					box-shadow: unset;
-
-					.flatpickr-months {
-						.flatpickr-monthDropdown-months {
-							option {
-								background-color: $dark-body-background;
 							}
 						}
 					}

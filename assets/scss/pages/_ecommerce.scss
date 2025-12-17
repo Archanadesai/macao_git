@@ -368,16 +368,6 @@
   }
 }
 
-.d-none-productlist {
-  display: none;
-
-  svg {
-    vertical-align: middle;
-    cursor: pointer;
-    height: 16px;
-  }
-}
-
 .product-wrapper-grid {
   &.list-view {
     .product-box {
@@ -1040,16 +1030,6 @@
 }
 
 /**====== Product  Ends ======**/
-.payment-opt {
-  li {
-    display: inline-block;
-
-    img {
-      height: 20px;
-      margin: 15px 15px 0 0;
-    }
-  }
-}
 
 @media screen and (max-width: 1660px) and (min-width: 1200px) {
 
@@ -1063,11 +1043,6 @@
   .owl-carousel .owl-item img {
     max-width: 100%;
   }
-}
-
-
-.vanilla-zoom {
-  display: block;
 }
 
 .product-page-main .vanilla-zoom>.product-slider .item {

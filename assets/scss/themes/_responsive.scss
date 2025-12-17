@@ -2,15 +2,6 @@
      62. Responsive CSS Start
 ==========================**/
 
-/* ========= min and max scss for 1200 to 1366 screen ========= */
-@media (max-width:1800px) {
-
-  // chat page //
-  .caller-img {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 1660px) {
   .photos {
     ul {

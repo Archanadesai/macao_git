@@ -81,66 +81,6 @@
   }
 }
 
-.lg-backdrop {
-  background-color: $white;
-}
-
-.lg-outer {
-  .lg-actions {
-
-    .lg-next,
-    .lg-prev {
-      background-color: rgb(255, 255, 255);
-      border: 1px solid $light-semi-gray;
-
-      &:hover {
-        color: $dark-color;
-      }
-    }
-  }
-
-  .lg-toolbar {
-    background-color: rgba(255, 255, 255, 0.45);
-    border-bottom: 1px solid $dark-color;
-
-    .lg-icon:hover {
-      color: $dark-color;
-    }
-  }
-
-  #lg-counter {
-    color: $dark-color;
-  }
-
-  .lg-sub-html {
-    background-color: rgba(255, 255, 255, 0.45);
-
-    h4 {
-      font-size: inherit;
-      color: $dark-color;
-    }
-
-    p {
-      color: $dark-color;
-    }
-  }
-
-  .lg-thumb-outer {
-    background-color: $light-gray;
-  }
-
-  .lg-thumb-item {
-    padding: 4px;
-    border: 1px solid $light-semi-gray;
-    border-radius: 0;
-
-    .active,
-    &:hover {
-      border-color: $black;
-    }
-  }
-}
-
 .gallery {
   a {
 

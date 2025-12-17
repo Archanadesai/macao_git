@@ -76,26 +76,6 @@
 }
 
 // New Projects 
-.new-project-wrapper {
-	.apexcharts-legend {
-		display: flex;
-		flex-direction: unset !important;
-		flex-wrap: wrap;
-		padding: 0;
-
-		.apexcharts-legend-series {
-			display: flex;
-			align-items: center;
-			gap: 4px;
-			margin: 0 !important;
-			padding: 0 6px;
-
-			.apexcharts-legend-text {
-				margin-left: -14px;
-			}
-		}
-	}
-}
 
 .project-header {
 	>div {
@@ -308,7 +288,6 @@
 }
 
 .progress-project {
-	// border: 2px solid $white;
 
 	.common-space {
 
@@ -404,8 +383,6 @@
 }
 
 .expense-chart-wrap {
-
-	// width: calc(100% - 121px);
 	@media (max-width:1697px) {
 		margin: -20px 0 -20px 0;
 	}
