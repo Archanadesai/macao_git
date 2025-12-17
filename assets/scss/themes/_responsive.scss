@@ -22,17 +22,6 @@
       height: 520px;
     }
   }
-
-  .caller-img {
-    position: absolute;
-    width: 100%;
-    max-width: 100%;
-    left: 15px;
-
-    img {
-      opacity: 0.7;
-    }
-  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -392,17 +381,6 @@
     }
   }
 
-  // timeline small page
-  .timeline-small {
-    .d-flex {
-      .flex-grow-1 {
-        p {
-          width: 95%;
-        }
-      }
-    }
-  }
-
   .map-js-height {
     height: 350px;
   }
@@ -422,18 +400,10 @@
     }
   }
 
-  .equal-height-xl {
-    height: 517px;
-  }
-
   .authentication-main {
     .auth-innerright {
       background-size: cover;
     }
-  }
-
-  .grp-btns {
-    display: inline-block;
   }
 
   .button-builder {
@@ -485,26 +455,11 @@
     }
   }
 
-  .candidcahrt {
-    height: 360px;
-  }
-
   //chart widget
-  .status-details {
-    h3 {
-      font-size: 18px;
-    }
-  }
 
   .chart-widget-top {
     .total-value {
       font-size: 20px;
-    }
-  }
-
-  .status-widget {
-    .card-body {
-      padding: 10px;
     }
   }
 
@@ -563,18 +518,6 @@
   #advance-5_wrapper {
     .dataTables_paginate {
       margin-bottom: 8px;
-    }
-  }
-
-  // jsgrid-table page
-  // forgot password page
-  .reset-password-box {
-    .theme-form {
-      .form-group {
-        .btn {
-          padding: 6px 22px;
-        }
-      }
     }
   }
 }
@@ -783,44 +726,6 @@
     }
   }
 
-  // timeline small page
-  .timeline-small {
-    .d-flex {
-      .timeline-round {
-        &.timeline-line-1 {
-          &:after {
-            height: 33px;
-            bottom: -52px;
-          }
-        }
-
-        &.small-line {
-          &:after {
-            height: 18px;
-            bottom: -34px;
-          }
-        }
-
-        &.medium-line {
-          &:after {
-            height: 30px;
-            bottom: -52px;
-          }
-        }
-      }
-
-      .flex-grow-1 {
-        p {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .lg-mt-col {
-    margin-top: 30px;
-  }
-
   .xl-none {
     display: none;
   }
@@ -990,13 +895,6 @@
   .testimonial {
     p {
       margin-top: 17px;
-    }
-  }
-
-  //e-commerce dashboard
-  .crm-overall {
-    .overall-chart {
-      height: 200px;
     }
   }
 
@@ -1288,11 +1186,6 @@
     width: calc(100vw - 0px);
   }
 
-  .vertical-mobile-sidebar {
-    right: 75px;
-    top: 18px;
-  }
-
   .gallery {
     margin-bottom: -20px;
   }
@@ -1579,18 +1472,6 @@
     }
   }
 
-  // general widget page
-  .crm-activity {
-    > {
-      li {
-        +li {
-          margin-top: 10px;
-          padding-top: 10px;
-        }
-      }
-    }
-  }
-
   // add post page
   .add-post {
     .dropzone {
@@ -1675,59 +1556,6 @@
     margin-bottom: 20px;
   }
 
-  // timeline small page css
-  .timeline-small {
-    .d-flex {
-      margin-bottom: 20px;
-
-      .flex-grow-1 {
-        h6 {
-          margin-bottom: 20px;
-        }
-
-        p {
-          width: 75%;
-        }
-      }
-
-      .timeline-round {
-        width: 45px;
-        height: 45px;
-        top: -14px;
-
-        &.timeline-line-1 {
-          &:after {
-            bottom: -41px;
-            height: 25px;
-          }
-        }
-
-        &.small-line {
-          &:after {
-            bottom: -26px;
-            height: 14px;
-          }
-        }
-
-        &.medium-line {
-          &:after {
-            bottom: -33px;
-            height: 17px;
-          }
-        }
-
-        svg {
-          top: 14px;
-        }
-      }
-    }
-  }
-
-  // helper classes page start
-  .helper-classes {
-    padding: 20px;
-  }
-
   // helper classes page ends
   .floated-customizer-btn,
   .floated-customizer-panel {
@@ -1738,10 +1566,6 @@
     .progress-showcase {
       margin-top: 20px;
     }
-  }
-
-  .crm-overall {
-    margin: 0 -20px -20px;
   }
 
   .product-page-main {
@@ -1779,7 +1603,6 @@
   }
 
   .custom-card {
-    // padding-bottom: 0;
 
     .card-footer {
       padding: 0 15px 15px 15px !important;
@@ -1988,14 +1811,6 @@
     }
   }
 
-  // editor_container //
-  .editor_container {
-    .CodeMirror {
-      min-height: 250px;
-      height: 250px;
-    }
-  }
-
   //search
   .search-page {
     .info-block {
@@ -2165,12 +1980,6 @@
     margin-bottom: 20px !important;
   }
 
-
-  // navs page
-  .nav-md-mt {
-    margin-top: 20px;
-  }
-
   .navs-icon {
     padding: 20px;
 
@@ -2209,10 +2018,6 @@
     }
   }
 
-  // steps page
-  .steps-md-mt {
-    margin-top: 20px;
-  }
 
   // button group page
   .btn-group-wrapper {
@@ -2337,18 +2142,6 @@
     padding-left: 20px !important;
   }
 
-  .event-calendar {
-    display: block !important;
-
-    #right {
-      width: 100%;
-    }
-
-    #calendar {
-      clear: both;
-    }
-  }
-
   .page-wrapper {
     &.material-type {
       &::before {
@@ -2402,14 +2195,6 @@
 
       input {
         width: 100%;
-      }
-    }
-  }
-
-  .credit-card {
-    .text-center {
-      img {
-        margin-bottom: 20px;
       }
     }
   }
@@ -2505,17 +2290,6 @@
     }
   }
 
-  // timeline small page css
-  .timeline-small {
-    .d-flex {
-      .flex-grow-1 {
-        p {
-          width: 100%;
-        }
-      }
-    }
-  }
-
   // icon-compact layout page
   .my-gallery {
     figure {
@@ -2543,39 +2317,6 @@
         max-height: 100px;
       }
     }
-  }
-
-  .clockpicker-align-top {
-    left: 55px !important;
-    top: 470px !important;
-
-    .arrow {
-      display: none;
-    }
-  }
-
-  .form-builder-column {
-    .form-body {
-      min-height: 250px;
-    }
-  }
-
-  .form-builder-2-header {
-    flex-wrap: wrap;
-
-    >div {
-      width: 100%;
-      margin-top: 10px;
-
-      nav {
-        float: none;
-      }
-    }
-  }
-
-  // form-builder
-  .lg-mt-col {
-    margin-top: 20px;
   }
 
   .form-builder {
@@ -2634,15 +2375,6 @@
     }
   }
 
-  .reset-password-box {
-    width: 500px;
-    margin: 0 auto;
-
-    .card {
-      padding: 20px;
-    }
-  }
-
   .custom-card {
     .card-profile {
       img {
@@ -2689,10 +2421,6 @@
         }
       }
     }
-  }
-
-  .loader-box {
-    justify-content: center;
   }
 
   .dataTables_wrapper {
@@ -2923,12 +2651,6 @@
     }
   }
 
-
-
-
-
-
-
   //authentication
   .authentication-main {
     .authentication-box {
@@ -2945,10 +2667,6 @@
     .chart-container {
       height: 300px;
     }
-  }
-
-  .candidcahrt {
-    height: 250px;
   }
 
   //chart widget
@@ -3018,15 +2736,6 @@
     height: 150px;
   }
 
-  .sm-left-text {
-    text-align: left !important;
-
-    [dir="rtl"] & {
-      text-align: right !important;
-    }
-  }
-
-
   // alert page
   .alert-dismissible {
     p {
@@ -3035,11 +2744,6 @@
       white-space: nowrap;
       max-width: 294px;
     }
-  }
-
-  // button group page
-  .button-group-mb-sm {
-    margin-bottom: 5px;
   }
 
   // table components page
@@ -3111,17 +2815,6 @@
     }
   }
 
-  // forgot-password page
-  .reset-password-box {
-    .theme-form {
-      .form-group {
-        .btn {
-          margin-top: 15px !important;
-        }
-      }
-    }
-  }
-
   // gallery page
   .lg-outer {
 
@@ -3150,11 +2843,6 @@
     .text-right {
       text-align: left !important;
     }
-  }
-
-  .d-none-productlist {
-    display: block;
-    margin-right: 10px;
   }
 
   .grid-options {
@@ -3250,18 +2938,6 @@
       .header-wrapper {
         .nav-right {
           right: 30px;
-        }
-      }
-    }
-  }
-
-  .date-picker {
-    .theme-form {
-      >.row {
-        >div {
-          &:last-child {
-            margin-top: 0;
-          }
         }
       }
     }
@@ -3419,10 +3095,6 @@
     }
   }
 
-  // .page-wrapper .page-header .header-wrapper .nav-right>ul>li {
-  //   padding: 4px 6px;
-  // }
-
   .page-header {
     .header-wrapper {
       .nav-right {
@@ -3469,7 +3141,6 @@
     .page-body-wrapper {
       .page-title {
         .breadcrumb {
-          // margin-top: 4px;
           margin-top: 26px;
           justify-content: flex-start;
         }
@@ -3696,10 +3367,6 @@
     }
   }
 
-  .vertical-mobile-sidebar {
-    top: 19px;
-  }
-
   //notify index page
   .alert-theme {
     i {
@@ -3717,11 +3384,6 @@
         right: -30px;
       }
     }
-  }
-
-  .clockpicker-align-top {
-    left: 45px !important;
-    top: 406px !important;
   }
 
   .gallery {
@@ -3834,32 +3496,6 @@
     margin-bottom: 15px;
   }
 
-  // .tabs-social {
-  //   position: relative;
-  //   padding-top: 80px;
-
-  //   li {
-  //     &:nth-child(3) {
-  //       position: absolute;
-  //       top: 25px;
-  //       left: 0;
-  //       right: 0;
-  //       margin: 0 auto;
-  //     }
-  //   }
-
-  //   &.border-tab {
-  //     &.nav-tabs {
-  //       .nav-item {
-  //         .nav-link {
-  //           padding: 10px;
-  //           height: 60px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
   .timeline-content {
 
     p,
@@ -3890,10 +3526,6 @@
         margin-right: 15px;
       }
     }
-  }
-
-  #cd-timeline {
-    margin-right: 0;
   }
 
   .social-chat {
@@ -3964,71 +3596,6 @@
     }
   }
 
-  // timeline small page css
-  .timeline-small {
-    .d-flex {
-      margin-bottom: 15px;
-
-      .flex-grow-1 {
-        h6 {
-          margin-bottom: 15px;
-        }
-      }
-
-      .timeline-round {
-        &.timeline-line-1 {
-          &:after {
-            bottom: -39px;
-            height: 30px;
-          }
-        }
-
-        &.small-line {
-          &:after {
-            bottom: -17px;
-            height: 8px;
-          }
-        }
-
-        &.medium-line {
-          &:after {
-            bottom: -30px;
-            height: 22px;
-          }
-        }
-      }
-    }
-  }
-
-  // helper classes page start
-  .helper-classes {
-    padding: 15px;
-  }
-
-  // helper classes page ends
-  .form-builder-2-header {
-    ul {
-      li {
-        text-align: left;
-      }
-    }
-
-    .form-inline {
-      display: block;
-      width: 100%;
-
-      .form-group {
-        width: 100%;
-        margin-right: 0;
-      }
-
-      button {
-        width: 100%;
-        text-align: left;
-      }
-    }
-  }
-
   .wizard-4 {
     .step-container {
       div {
@@ -4082,15 +3649,6 @@
     border-bottom: none;
   }
 
-
-  // editor_container //
-  .editor_container {
-    .CodeMirror {
-      min-height: 190px;
-      height: 190px;
-    }
-  }
-
   // tab material start
   .border-tab.nav-left {
     .nav-link {
@@ -4121,10 +3679,6 @@
   // tab material end
   .nav-pills {
     text-align: center;
-  }
-
-  .crm-overall {
-    margin: 0 -15px -15px;
   }
 
   .product-color {
@@ -4177,22 +3731,8 @@
     margin-top: 15px;
   }
 
-  .reset-password-box {
-    width: 430px;
-  }
-
   .auth-bg {
     padding: 25px 15px;
-  }
-
-  .auth-bg-effect {
-    display: none;
-  }
-
-  .date-picker {
-    .text-right {
-      text-align: left !important;
-    }
   }
 
   .dataTables_wrapper {
@@ -4731,13 +4271,6 @@
     }
   }
 
-  // Form Wizard Two Start
-  .stepwizard {
-    margin-bottom: 15px;
-  }
-
-  // Form Wizard Two Ends
-
   // Form Wizard Three Start
   .f1 {
     .f1-steps {
@@ -4757,13 +4290,6 @@
 
     .step-container {
       width: 100%;
-    }
-  }
-
-  //chart
-  .status-widget {
-    .text-sm-right {
-      text-align: right;
     }
   }
 
@@ -4907,17 +4433,6 @@
   .ecommerce-widget {
     .progress-showcase {
       margin-top: 15px;
-    }
-  }
-
-  // forgot-password page
-  .reset-password-box {
-    .theme-form {
-      .form-group {
-        .btn {
-          margin-top: 13px !important;
-        }
-      }
     }
   }
 
@@ -5138,10 +4653,6 @@
     }
   }
 
-  .reset-password-box {
-    width: 290px;
-  }
-
   .icon-hover-bottom {
     .icon-first {
       margin-right: 10px;
@@ -5216,25 +4727,6 @@
     .card {
       .card-body {
         padding: 18px;
-      }
-    }
-  }
-
-  // timeline small page css
-  .timeline-small {
-    .d-flex {
-      .timeline-round {
-        &.timeline-line-1 {
-          &:after {
-            bottom: -50px;
-          }
-        }
-
-        &.medium-line {
-          &:after {
-            bottom: -40px;
-          }
-        }
       }
     }
   }
@@ -5427,10 +4919,6 @@
     }
   }
 
-  .clockpicker-align-top {
-    top: 426px !important;
-  }
-
   .note {
     min-width: 250px;
   }
@@ -5465,14 +4953,6 @@
     }
   }
 
-  // chart widget page css
-  .status-widget {
-    svg {
-      width: 18px;
-      height: 18px;
-    }
-  }
-
   // social app page css
   .tabs-social {
     &.border-tab {
@@ -5497,44 +4977,6 @@
     h5 {
       span.pull-right {
         display: none;
-      }
-    }
-  }
-
-  // timeline small page css
-  .timeline-small {
-    .d-flex {
-      .timeline-round {
-        &.timeline-line-1 {
-          &:after {
-            bottom: -74px;
-            height: 56px;
-          }
-        }
-
-        &.small-line {
-          &:after {
-            bottom: -32px;
-            height: 14px;
-          }
-        }
-
-        &.medium-line {
-          &:after {
-            bottom: -59px;
-            height: 40px;
-          }
-        }
-      }
-
-      .flex-grow-1 {
-        p {
-          display: -webkit-box;
-          text-overflow: ellipsis;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          -webkit-line-clamp: 4;
-        }
       }
     }
   }
