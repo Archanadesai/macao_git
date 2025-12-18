@@ -263,12 +263,6 @@
   }
 }
 
-.timeliny {
-  .timeliny-dot::before {
-    font-size: $btn-lg-font-size;
-  }
-}
-
 .component {
   .input-group {
     .btn {
@@ -326,21 +320,6 @@
     .search-icon {
       width: 16px;
       height: 16px;
-    }
-  }
-}
-
-// Data-tables
-.dt-button-collection {
-  width: auto !important;
-
-  .btn-group {
-    width: 100%;
-  }
-
-  .dropdown-item {
-    &:hover {
-      background-color: var(--white) !important;
     }
   }
 }
@@ -422,60 +401,6 @@
   .swiper-button-prev,
   .swiper-button-next {
     color: var(--white);
-  }
-}
-
-.thumb-swiper-wrapper {
-  .swiper {
-    width: 100%;
-    height: 100%;
-    width: 100%;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: var(--white);
-    @include pixelstrap-flex(flex, center, center);
-    background-size: cover;
-    background-position: center;
-
-    img {
-      display: block;
-      @include pixelstrap-size(100%, 100%);
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      object-fit: cover;
-    }
-  }
-
-  body {
-    background: $dark-color;
-    color: $dark-color;
-  }
-
-  .mySwiper2 {
-    @include pixelstrap-size(100%, 80%);
-  }
-
-  .mySwiper {
-    height: 20%;
-    box-sizing: border-box;
-    padding: 10px 0;
-
-    .swiper-slide {
-      @include pixelstrap-size(25%, 100%);
-      opacity: 0.4;
-    }
-
-    .swiper-slide-thumb-active {
-      opacity: 1;
-    }
   }
 }
 
@@ -687,13 +612,6 @@
   }
 }
 
-// Helper classes page css
-.helper-classes {
-  padding: 30px;
-  margin-bottom: 0;
-  white-space: pre-line;
-}
-
 // starter kit page css
 .starter-kit-fix {
   .page-body {
@@ -787,15 +705,6 @@
 
     #radio {
       margin-right: 5px;
-    }
-  }
-}
-
-// datatable styling page
-#example-style-3_wrapper {
-  #example-style-3 {
-    tfoot {
-      border-top: 2px solid $light-semi-gray;
     }
   }
 }
@@ -900,18 +809,6 @@
 
 //  draggable card start
 
-.element-draggable {
-  background-color: #f1edf3;
-  color: #29262b;
-  padding: 1rem;
-  margin-top: 14px;
-  transition: opacity 200ms ease;
-
-  &:first-child {
-    margin-top: 0;
-  }
-}
-
 .dragging {
   opacity: 0.5;
   transition: opacity 1s ease;
@@ -919,12 +816,6 @@
 
 //  draggable card end
 // Reload icon
-.reload-icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 12px;
-}
 
 .button-light-light {
   background-color: rgba($light-color, 0.5) !important;
@@ -1476,9 +1367,6 @@
 
 // Subscribed Users
 .subscribed-user {
-  .card-header {
-    // padding: 27px 20px;
-  }
 
   .subscribed-user-wrapper {
     .dt-container {
@@ -1580,11 +1468,11 @@
     }
   }
 }
-/**=====================
-    4.3 Update CSS Ends
-==========================**/
 table.dataTable thead > tr > th.dt-orderable-asc:hover, table.dataTable thead > tr > th.dt-orderable-desc:hover,
 table.dataTable thead > tr > td.dt-orderable-asc:hover,
 table.dataTable thead > tr > td.dt-orderable-desc:hover {
   outline: unset;
 }
+/**=====================
+    4.3 Update CSS Ends
+==========================**/

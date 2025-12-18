@@ -16,12 +16,6 @@
       width: 100% !important;
     }
   }
-
-  .chat-left-aside {
-    .people-list {
-      height: 520px;
-    }
-  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -79,18 +73,10 @@
 }
 
 @media screen and (max-width: 1660px) and (min-width: 1200px) {
-  .xl-none {
-    display: none;
-  }
 
   .xl-66 {
     max-width: 66.67%;
     flex: 0 0 66.67%;
-  }
-
-  .xl-77 {
-    max-width: 77%;
-    flex: 0 0 77%;
   }
 
   .xl-60 {
@@ -108,16 +94,6 @@
     flex: 0 0 100%;
   }
 
-  .xl-23 {
-    max-width: 23%;
-    flex: 0 0 23%;
-  }
-
-  .xl-25 {
-    max-width: 25%;
-    flex: 0 0 25%;
-  }
-
   .xl-40 {
     max-width: 40%;
     flex: 0 0 40%;
@@ -130,11 +106,6 @@
 }
 
 @media (max-width: 1280px) {
-
-  .img-gallery-set1,
-  .img-gallery-set5 {
-    display: none;
-  }
 
   .box-layout.page-wrapper.horizontal-wrapper {
     .page-header {
@@ -187,19 +158,12 @@
 }
 
 @media screen and (max-width: 1366px) and (min-width: 1200px) {
-  .flot-chart-container-small {
-    height: 227px;
-  }
 
   .progress-chart {
 
     #progress4 {
       display: none;
     }
-  }
-
-  .call-chat-sidebar {
-    max-width: 262px;
   }
 
   .product-box {
@@ -239,27 +203,6 @@
           font-size: 18px;
         }
       }
-    }
-  }
-
-  // chat
-  .chat-body {
-    padding: 10px;
-  }
-
-  .chat-left-aside {
-    .people-list {
-      height: 420px;
-
-      ul {
-        max-height: 376px;
-        overflow-y: auto;
-      }
-    }
-
-    .status-circle {
-      top: 4px;
-      left: 36px;
     }
   }
 
@@ -385,31 +328,9 @@
     height: 350px;
   }
 
-  // chat page
-  .chat-right-aside {
-    flex: 0 0 60%;
-    max-width: 60%;
-    overflow: hidden;
-
-    .chat {
-      .chat-message {
-        .smiley-box {
-          width: 45px;
-        }
-      }
-    }
-  }
-
   .authentication-main {
     .auth-innerright {
       background-size: cover;
-    }
-  }
-
-  .button-builder {
-    .button-generator-bx {
-      position: relative;
-      width: 100%;
     }
   }
 
@@ -447,14 +368,6 @@
 
   }
 
-  .speed-chart {
-    .chart-container {
-      height: 250px;
-      margin-top: -40px;
-      margin-bottom: 100px;
-    }
-  }
-
   //chart widget
 
   .chart-widget-top {
@@ -472,22 +385,6 @@
 
     p {
       margin-top: 20px;
-    }
-  }
-
-  //chat
-  .chat-body {
-    padding: 10px;
-  }
-
-  .chat-left-aside {
-    .people-list {
-      height: 490px;
-
-      ul {
-        max-height: 434px;
-        overflow-y: auto;
-      }
     }
   }
 
@@ -511,13 +408,6 @@
           left: -21px;
         }
       }
-    }
-  }
-
-  // datatable advance page
-  #advance-5_wrapper {
-    .dataTables_paginate {
-      margin-bottom: 8px;
     }
   }
 }
@@ -726,10 +616,6 @@
     }
   }
 
-  .xl-none {
-    display: none;
-  }
-
   .lg-mt {
     margin-top: 30px;
   }
@@ -847,17 +733,6 @@
     }
   }
 
-  .equal-height-lg {
-    min-height: unset !important;
-  }
-
-  .button-builder {
-    .button-generator-bx {
-      position: relative;
-      width: 100%;
-    }
-  }
-
   //blog
   .blog-single {
     .comment-box {
@@ -898,13 +773,6 @@
     }
   }
 
-  // e-commerce product
-  .product-table {
-    table.dataTable thead>tr>th {
-      padding-right: 50px;
-    }
-  }
-
   //chat
   .chat-menu-icons {
     display: block;
@@ -932,18 +800,6 @@
     }
   }
 
-
-  .chat-right-aside {
-    flex: 0 0 100%;
-    max-width: calc(100% - 15px);
-    overflow: hidden;
-  }
-
-  // tour page
-  .like-comment-lg-mb {
-    margin-bottom: 12px;
-  }
-
   // ribbons page
   .ribbon-space-bottom {
     top: 9px;
@@ -962,15 +818,6 @@
   .profile-img-style {
     #aniimated-thumbnials-3 {
       text-align: center;
-    }
-  }
-
-  // vertical page
-  .vertical-menu-mt {
-    margin-top: 80px !important;
-
-    .xl-none {
-      display: block;
     }
   }
 
@@ -1824,11 +1671,6 @@
     }
   }
 
-  // general widget
-  .xl-none {
-    display: block;
-  }
-
   //blog
   .top-radius-blog {
     width: 100%;
@@ -2025,13 +1867,6 @@
       &:last-child {
         margin-bottom: 0 !important;
       }
-    }
-  }
-
-  // datatable advance page
-  #advance-5_wrapper {
-    .dataTables_paginate {
-      margin-bottom: 20px;
     }
   }
 
@@ -2310,33 +2145,6 @@
   }
 
   // chat
-
-  .chat-left-aside {
-    .people-list {
-      ul {
-        max-height: 100px;
-      }
-    }
-  }
-
-  .form-builder {
-    .drag-box {
-      fieldset {
-        padding: 20px;
-        margin-top: 20px;
-      }
-    }
-
-    #components {
-      margin-top: 20px;
-    }
-
-    .component {
-      label {
-        padding-top: 0px;
-      }
-    }
-  }
 
   .range-slider {
     &.theme-form {
@@ -4374,11 +4182,6 @@
     }
   }
 
-  // steps page
-  .steps-md-mt {
-    margin-top: 15px;
-  }
-
   .steps-sizing-sm-mb {
     margin-bottom: 15px;
   }
@@ -5005,10 +4808,6 @@
     height: 230px;
   }
 
-  .map-block {
-    height: 250px;
-  }
-
   .img-cropper {
     .docs-tooltip {
       font-size: 11px;
@@ -5042,12 +4841,6 @@
           padding: 0 10px;
         }
       }
-    }
-  }
-
-  .button-builder-wrap {
-    .btn-lg {
-      font-size: 18px;
     }
   }
 
@@ -5090,24 +4883,6 @@
 
     .msg-box {
       top: 40px !important;
-    }
-  }
-
-  .xs-width-100 {
-    min-width: 100%;
-  }
-
-
-  // form-builder
-  .form-builder {
-    #components {
-      .component {
-        .form-group {
-          #button1id {
-            margin-bottom: 15px;
-          }
-        }
-      }
     }
   }
 
@@ -5210,30 +4985,12 @@
     text-align: center;
   }
 
-  // checkout //
-  .order-box {
-    ul {
-      li {
-        span {
-          text-align: right;
-        }
-
-        label {
-          text-align: right;
-          font-size: 14px;
-        }
-      }
-    }
-  }
-
   .checkout {
     .text-end {
       text-align: left !important;
       margin-top: 15px;
     }
   }
-
-
 
 }
 

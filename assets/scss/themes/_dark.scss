@@ -1875,18 +1875,6 @@ body {
 					filter: brightness(1) invert(1);
 				}
 			}
-
-			.dismiss-text {
-				.alert-dismissible {
-					.btn-close {
-						filter: unset;
-
-						.bg-light {
-							color: $theme-body-font-color !important;
-						}
-					}
-				}
-			}
 		}
 
 		// Alert
@@ -2300,33 +2288,6 @@ body {
 
 				svg {
 					color: $dark-all-font-color;
-				}
-			}
-		}
-
-		.active-order-table,
-		.market-table {
-			table {
-				thead {
-					tr {
-						th {
-							border-top: none !important;
-						}
-					}
-				}
-
-				tbody {
-					tr {
-						td {
-							border-bottom: 1px solid $dark-border-color;
-						}
-
-						&:last-child {
-							td {
-								border-bottom: none;
-							}
-						}
-					}
 				}
 			}
 		}

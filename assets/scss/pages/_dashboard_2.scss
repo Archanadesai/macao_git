@@ -268,6 +268,33 @@
         .sale-list {
           display: flex;
           gap: 12px;
+          .top-country-name{
+            width: 115px;
+            @media (max-width:1615px) and (min-width:1400px) {
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              max-width: 65px;
+              text-overflow: ellipsis;
+            }
+            @media (max-width:1285px) and (min-width:1200px) {
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              max-width: 65px;
+              text-overflow: ellipsis;
+            }
+            @media (max-width:700px) and (min-width:576px) {
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              max-width: 65px;
+              text-overflow: ellipsis;
+            }
+          }
         }
       }
     }

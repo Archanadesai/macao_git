@@ -62,15 +62,6 @@
         3.8 Comingsoon CSS
         3.9 Contacts CSS
         3.10 Dashboard_2 CSS
-        3.11 Dashboard_3 CSS 
-        3.12 Dashboard_4 CSS
-        3.13 Dashboard_5 CSS
-        3.14 Dashboard_6 CSS
-        3.15 Dashboard_7 CSS
-        3.16 Dashboard_8 CSS
-        3.17 Dashboard_9 CSS
-        3.18 Dashboard_10 CSS
-        3.19 Dashboard_11 CSS
         3.20 Dashboard_default CSS
         3.21 Divider CSS
         3.22 Flash_icons CSS
@@ -22801,6 +22792,39 @@ p.data-attributes svg {
   display: flex;
   gap: 12px;
 }
+.dashboard-2 .top-country-sales-list li div .sale-list .top-country-name {
+  width: 115px;
+}
+@media (max-width: 1615px) and (min-width: 1400px) {
+  .dashboard-2 .top-country-sales-list li div .sale-list .top-country-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 65px;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 1285px) and (min-width: 1200px) {
+  .dashboard-2 .top-country-sales-list li div .sale-list .top-country-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 65px;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 700px) and (min-width: 576px) {
+  .dashboard-2 .top-country-sales-list li div .sale-list .top-country-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 65px;
+    text-overflow: ellipsis;
+  }
+}
 
 .jvm-tooltip {
   background-color: var(--theme-default) !important;
@@ -24038,6 +24062,19 @@ select.crypto-select.primary {
   display: flex;
   gap: 12px;
 }
+.general-widget-wrapper .card .top-country-sales-list li div .sale-list .top-country-name {
+  width: 115px;
+}
+@media (max-width: 1615px) and (min-width: 1400px) {
+  .general-widget-wrapper .card .top-country-sales-list li div .sale-list .top-country-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 65px;
+    text-overflow: ellipsis;
+  }
+}
 .general-widget-wrapper .card .card-body #delivery-duration {
   margin-left: -38px;
 }
@@ -25118,6 +25155,12 @@ footer.blockquote-footer {
   .default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr th:last-child {
     min-width: 135px;
   }
+}
+.default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr td img,
+.default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table thead tr th img,
+.default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr td img,
+.default-dashboard .sale-product-table .recent-table.table-responsive div.dt-container .table tbody tr th img {
+  border-radius: 50%;
 }
 @media (max-width: 822px) {
   .default-dashboard .treading-product .recent-table.table-responsive div.dt-container .table thead tr td:first-child,
@@ -53886,10 +53929,6 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   border-bottom: 2px solid #e16349;
 }
 
-.timeliny .timeliny-dot::before {
-  font-size: 18px;
-}
-
 .component .input-group .btn {
   line-height: 32px;
   text-transform: capitalize;
@@ -53924,16 +53963,6 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
 .job-filter .faq-form .search-icon {
   width: 16px;
   height: 16px;
-}
-
-.dt-button-collection {
-  width: auto !important;
-}
-.dt-button-collection .btn-group {
-  width: 100%;
-}
-.dt-button-collection .dropdown-item:hover {
-  background-color: var(--white) !important;
 }
 
 .carousel .carousel-indicators {
@@ -53989,56 +54018,6 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
 .autoplay-swiper .swiper-button-prev,
 .autoplay-swiper .swiper-button-next {
   color: var(--white);
-}
-
-.thumb-swiper-wrapper .swiper {
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.thumb-swiper-wrapper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-}
-.thumb-swiper-wrapper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  object-fit: cover;
-}
-.thumb-swiper-wrapper body {
-  background: #1e1e1e;
-  color: #1e1e1e;
-}
-.thumb-swiper-wrapper .mySwiper2 {
-  width: 100%;
-  height: 80%;
-}
-.thumb-swiper-wrapper .mySwiper {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-.thumb-swiper-wrapper .mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
-}
-.thumb-swiper-wrapper .mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
 }
 
 .coverflow-slider.swiper {
@@ -54207,12 +54186,6 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   left: unset;
 }
 
-.helper-classes {
-  padding: 30px;
-  margin-bottom: 0;
-  white-space: pre-line;
-}
-
 .starter-kit-fix .page-body {
   margin-bottom: 52px;
 }
@@ -54275,10 +54248,6 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
 }
 .card-block .default-checkbox-align #radio {
   margin-right: 5px;
-}
-
-#example-style-3_wrapper #example-style-3 tfoot {
-  border-top: 2px solid #efefef;
 }
 
 .chart-vertical-center {
@@ -54353,27 +54322,9 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   text-shadow: 0px 0px 5px #1e2832;
 }
 
-.element-draggable {
-  background-color: #f1edf3;
-  color: #29262b;
-  padding: 1rem;
-  margin-top: 14px;
-  transition: opacity 200ms ease;
-}
-.element-draggable:first-child {
-  margin-top: 0;
-}
-
 .dragging {
   opacity: 0.5;
   transition: opacity 1s ease;
-}
-
-.reload-icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 12px;
 }
 
 .button-light-light {
@@ -54986,15 +54937,15 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
   box-shadow: unset;
 }
 
-/**=====================
-    4.3 Update CSS Ends
-==========================**/
 table.dataTable thead > tr > th.dt-orderable-asc:hover, table.dataTable thead > tr > th.dt-orderable-desc:hover,
 table.dataTable thead > tr > td.dt-orderable-asc:hover,
 table.dataTable thead > tr > td.dt-orderable-desc:hover {
   outline: unset;
 }
 
+/**=====================
+    4.3 Update CSS Ends
+==========================**/
 /**=====================
 	4.1. Dark CSS Start
 ==========================**/
@@ -55971,12 +55922,6 @@ body.dark-only .alert-primary.outline .btn-close,
 body.dark-only .alert-primary.outline-2x .btn-close {
   filter: brightness(1) invert(1);
 }
-body.dark-only .dismiss-text .alert-dismissible .btn-close {
-  filter: unset;
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close .bg-light {
-  color: #404040 !important;
-}
 body.dark-only .alert-secondary {
   background-color: rgba(121, 121, 121, 0.8) !important;
   border-color: rgba(121, 121, 121, 0.9) !important;
@@ -55999,12 +55944,6 @@ body.dark-only .alert-secondary.inverse .btn-close {
 body.dark-only .alert-secondary.outline .btn-close,
 body.dark-only .alert-secondary.outline-2x .btn-close {
   filter: brightness(1) invert(1);
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close {
-  filter: unset;
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close .bg-light {
-  color: #404040 !important;
 }
 body.dark-only .alert-success {
   background-color: rgba(76, 175, 80, 0.8) !important;
@@ -56029,12 +55968,6 @@ body.dark-only .alert-success.outline .btn-close,
 body.dark-only .alert-success.outline-2x .btn-close {
   filter: brightness(1) invert(1);
 }
-body.dark-only .dismiss-text .alert-dismissible .btn-close {
-  filter: unset;
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close .bg-light {
-  color: #404040 !important;
-}
 body.dark-only .alert-danger {
   background-color: rgba(211, 47, 47, 0.8) !important;
   border-color: rgba(211, 47, 47, 0.9) !important;
@@ -56057,12 +55990,6 @@ body.dark-only .alert-danger.inverse .btn-close {
 body.dark-only .alert-danger.outline .btn-close,
 body.dark-only .alert-danger.outline-2x .btn-close {
   filter: brightness(1) invert(1);
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close {
-  filter: unset;
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close .bg-light {
-  color: #404040 !important;
 }
 body.dark-only .alert-warning {
   background-color: rgba(255, 193, 7, 0.8) !important;
@@ -56087,12 +56014,6 @@ body.dark-only .alert-warning.outline .btn-close,
 body.dark-only .alert-warning.outline-2x .btn-close {
   filter: brightness(1) invert(1);
 }
-body.dark-only .dismiss-text .alert-dismissible .btn-close {
-  filter: unset;
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close .bg-light {
-  color: #404040 !important;
-}
 body.dark-only .alert-info {
   background-color: rgba(33, 150, 243, 0.8) !important;
   border-color: rgba(33, 150, 243, 0.9) !important;
@@ -56115,12 +56036,6 @@ body.dark-only .alert-info.inverse .btn-close {
 body.dark-only .alert-info.outline .btn-close,
 body.dark-only .alert-info.outline-2x .btn-close {
   filter: brightness(1) invert(1);
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close {
-  filter: unset;
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close .bg-light {
-  color: #404040 !important;
 }
 body.dark-only .alert-light {
   background-color: rgba(244, 244, 244, 0.8) !important;
@@ -56145,12 +56060,6 @@ body.dark-only .alert-light.outline .btn-close,
 body.dark-only .alert-light.outline-2x .btn-close {
   filter: brightness(1) invert(1);
 }
-body.dark-only .dismiss-text .alert-dismissible .btn-close {
-  filter: unset;
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close .bg-light {
-  color: #404040 !important;
-}
 body.dark-only .alert-dark {
   background-color: rgba(30, 30, 30, 0.8) !important;
   border-color: rgba(30, 30, 30, 0.9) !important;
@@ -56173,12 +56082,6 @@ body.dark-only .alert-dark.inverse .btn-close {
 body.dark-only .alert-dark.outline .btn-close,
 body.dark-only .alert-dark.outline-2x .btn-close {
   filter: brightness(1) invert(1);
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close {
-  filter: unset;
-}
-body.dark-only .dismiss-text .alert-dismissible .btn-close .bg-light {
-  color: #404040 !important;
 }
 body.dark-only .alert-addition-content .alert[class*=bg-light-] p {
   color: rgba(255, 255, 255, 0.6);
@@ -56379,18 +56282,6 @@ body.dark-only .square-product-setting .icon-grid {
 }
 body.dark-only .square-product-setting .icon-grid svg {
   color: rgba(255, 255, 255, 0.6);
-}
-body.dark-only .active-order-table table thead tr th,
-body.dark-only .market-table table thead tr th {
-  border-top: none !important;
-}
-body.dark-only .active-order-table table tbody tr td,
-body.dark-only .market-table table tbody tr td {
-  border-bottom: 1px solid #1d1e26;
-}
-body.dark-only .active-order-table table tbody tr:last-child td,
-body.dark-only .market-table table tbody tr:last-child td {
-  border-bottom: none;
 }
 body.dark-only .flot-chart-container .legend .table tbody {
   background-color: #262932;
@@ -61439,9 +61330,6 @@ body[class*=dark-] .for-light {
   .bar-chart canvas {
     width: 100% !important;
   }
-  .chat-left-aside .people-list {
-    height: 520px;
-  }
 }
 @media screen and (max-width: 1600px) {
   .page-wrapper.horizontal-wrapper.material-type .page-header {
@@ -61461,16 +61349,9 @@ body[class*=dark-] .for-light {
   }
 }
 @media screen and (max-width: 1660px) and (min-width: 1200px) {
-  .xl-none {
-    display: none;
-  }
   .xl-66 {
     max-width: 66.67%;
     flex: 0 0 66.67%;
-  }
-  .xl-77 {
-    max-width: 77%;
-    flex: 0 0 77%;
   }
   .xl-60 {
     max-width: 60%;
@@ -61484,14 +61365,6 @@ body[class*=dark-] .for-light {
     max-width: 100%;
     flex: 0 0 100%;
   }
-  .xl-23 {
-    max-width: 23%;
-    flex: 0 0 23%;
-  }
-  .xl-25 {
-    max-width: 25%;
-    flex: 0 0 25%;
-  }
   .xl-40 {
     max-width: 40%;
     flex: 0 0 40%;
@@ -61502,10 +61375,6 @@ body[class*=dark-] .for-light {
   }
 }
 @media (max-width: 1280px) {
-  .img-gallery-set1,
-  .img-gallery-set5 {
-    display: none;
-  }
   .box-layout.page-wrapper.horizontal-wrapper .page-header {
     padding-left: unset;
     max-width: unset;
@@ -61539,14 +61408,8 @@ body[class*=dark-] .for-light {
   }
 }
 @media screen and (max-width: 1366px) and (min-width: 1200px) {
-  .flot-chart-container-small {
-    height: 227px;
-  }
   .progress-chart #progress4 {
     display: none;
-  }
-  .call-chat-sidebar {
-    max-width: 262px;
   }
   .product-box .product-details {
     padding: 15px;
@@ -61568,20 +61431,6 @@ body[class*=dark-] .for-light {
   }
   .custom-card .card-footer > div h3 {
     font-size: 18px;
-  }
-  .chat-body {
-    padding: 10px;
-  }
-  .chat-left-aside .people-list {
-    height: 420px;
-  }
-  .chat-left-aside .people-list ul {
-    max-height: 376px;
-    overflow-y: auto;
-  }
-  .chat-left-aside .status-circle {
-    top: 4px;
-    left: 36px;
   }
   .blog-box .blog-details-main .blog-bottom-details {
     margin: 20px 10px;
@@ -61639,20 +61488,8 @@ body[class*=dark-] .for-light {
   .map-js-height {
     height: 350px;
   }
-  .chat-right-aside {
-    flex: 0 0 60%;
-    max-width: 60%;
-    overflow: hidden;
-  }
-  .chat-right-aside .chat .chat-message .smiley-box {
-    width: 45px;
-  }
   .authentication-main .auth-innerright {
     background-size: cover;
-  }
-  .button-builder .button-generator-bx {
-    position: relative;
-    width: 100%;
   }
   .ecommerce-widget .total-num {
     font-size: 23px;
@@ -61667,11 +61504,6 @@ body[class*=dark-] .for-light {
   .map-chart .chart-container {
     height: 300px;
   }
-  .speed-chart .chart-container {
-    height: 250px;
-    margin-top: -40px;
-    margin-bottom: 100px;
-  }
   .chart-widget-top .total-value {
     font-size: 20px;
   }
@@ -61680,16 +61512,6 @@ body[class*=dark-] .for-light {
   }
   .testimonial p {
     margin-top: 20px;
-  }
-  .chat-body {
-    padding: 10px;
-  }
-  .chat-left-aside .people-list {
-    height: 490px;
-  }
-  .chat-left-aside .people-list ul {
-    max-height: 434px;
-    overflow-y: auto;
   }
   .status-circle {
     top: 4px;
@@ -61700,9 +61522,6 @@ body[class*=dark-] .for-light {
   }
   .bootstrap-touchspin .dropdown-basic .dropdown .dropdown-content {
     left: -21px;
-  }
-  #advance-5_wrapper .dataTables_paginate {
-    margin-bottom: 8px;
   }
 }
 @media only screen and (max-width: 1366px) and (min-width: 1200px) {
@@ -61822,9 +61641,6 @@ body[class*=dark-] .for-light {
   .photos ul li:nth-child(3n) {
     margin-right: 15px;
   }
-  .xl-none {
-    display: none;
-  }
   .lg-mt {
     margin-top: 30px;
   }
@@ -61874,13 +61690,6 @@ body[class*=dark-] .for-light {
   .custom-card .card-profile .card-footer > div h3 {
     font-size: 18px;
   }
-  .equal-height-lg {
-    min-height: unset !important;
-  }
-  .button-builder .button-generator-bx {
-    position: relative;
-    width: 100%;
-  }
   .blog-single .comment-box ul .comment-social {
     margin-left: 0;
   }
@@ -61901,9 +61710,6 @@ body[class*=dark-] .for-light {
   }
   .testimonial p {
     margin-top: 17px;
-  }
-  .product-table table.dataTable thead > tr > th {
-    padding-right: 50px;
   }
   .chat-menu-icons {
     display: block;
@@ -61928,14 +61734,6 @@ body[class*=dark-] .for-light {
     transition: all linear 0.3s;
     padding-bottom: 25px;
   }
-  .chat-right-aside {
-    flex: 0 0 100%;
-    max-width: calc(100% - 15px);
-    overflow: hidden;
-  }
-  .like-comment-lg-mb {
-    margin-bottom: 12px;
-  }
   .ribbon-space-bottom {
     top: 9px;
   }
@@ -61944,12 +61742,6 @@ body[class*=dark-] .for-light {
   }
   .profile-img-style #aniimated-thumbnials-3 {
     text-align: center;
-  }
-  .vertical-menu-mt {
-    margin-top: 80px !important;
-  }
-  .vertical-menu-mt .xl-none {
-    display: block;
   }
   .calendar-wrap .fc-day-grid-event {
     width: 87%;
@@ -62422,9 +62214,6 @@ body[class*=dark-] .for-light {
   .search-page .tab-content .pb-4 {
     padding-bottom: 20px !important;
   }
-  .xl-none {
-    display: block;
-  }
   .top-radius-blog {
     width: 100%;
   }
@@ -62529,9 +62318,6 @@ body[class*=dark-] .for-light {
   }
   .btn-group-wrapper .m-b-30:last-child {
     margin-bottom: 0 !important;
-  }
-  #advance-5_wrapper .dataTables_paginate {
-    margin-bottom: 20px;
   }
   .card .card-body form.animated-modal {
     display: flex;
@@ -62671,19 +62457,6 @@ body[class*=dark-] .for-light {
   .project-list .btn {
     float: left;
     margin-top: 5px;
-  }
-  .chat-left-aside .people-list ul {
-    max-height: 100px;
-  }
-  .form-builder .drag-box fieldset {
-    padding: 20px;
-    margin-top: 20px;
-  }
-  .form-builder #components {
-    margin-top: 20px;
-  }
-  .form-builder .component label {
-    padding-top: 0px;
   }
   .range-slider.theme-form .form-group {
     margin-bottom: 0;
@@ -63741,9 +63514,6 @@ body[class*=dark-] .for-light {
   .animated-modal .animated-modal-md-mb {
     margin-bottom: 15px !important;
   }
-  .steps-md-mt {
-    margin-top: 15px;
-  }
   .steps-sizing-sm-mb {
     margin-bottom: 15px;
   }
@@ -64040,9 +63810,6 @@ body[class*=dark-] .for-light {
   .flot-chart-container {
     height: 230px;
   }
-  .map-block {
-    height: 250px;
-  }
   .img-cropper .docs-tooltip {
     font-size: 11px;
   }
@@ -64057,9 +63824,6 @@ body[class*=dark-] .for-light {
   }
   .blog-box .blog-details-main .blog-social li {
     padding: 0 10px;
-  }
-  .button-builder-wrap .btn-lg {
-    font-size: 18px;
   }
   .tabs-responsive-side {
     max-width: 100%;
@@ -64078,12 +63842,6 @@ body[class*=dark-] .for-light {
   }
   .wizard-4 .msg-box {
     top: 40px !important;
-  }
-  .xs-width-100 {
-    min-width: 100%;
-  }
-  .form-builder #components .component .form-group #button1id {
-    margin-bottom: 15px;
   }
   .default-according .card .card-header i {
     font-size: 14px;
@@ -64124,13 +63882,6 @@ body[class*=dark-] .for-light {
   .modal-footer {
     display: block;
     text-align: center;
-  }
-  .order-box ul li span {
-    text-align: right;
-  }
-  .order-box ul li label {
-    text-align: right;
-    font-size: 14px;
   }
   .checkout .text-end {
     text-align: left !important;
