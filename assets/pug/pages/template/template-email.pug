@@ -24,6 +24,10 @@ head
     display: block;
     padding: 0 12px;
     }
+    table td,
+    table th {
+      padding: 0;
+    }
     ul {
     margin: 0;
     padding: 0;
@@ -255,16 +259,16 @@ head
         font-size: 14px;
       }
     }
-table(align='center' border='0' cellpadding='0' cellspacing='0' style='background-color: #fff; -webkit-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);')
+table(style='background-color: #fff; border: none; border-collapse: collapse; -webkit-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);')
   tbody
     tr
       td
-        table(align='center' border='0' cellpadding='0' cellspacing='0' width='100%')
+        table(style="border: none; width:100%; border-collapse: collapse;")
           tbody
             tr.header
-              td(align='left' valign='top')
-                img.main-logo(src='../assets/images/logo/logo.png')
-              td.menu(align='right')
+              td(style="text-align:left; vertical-align: top;")
+                img.main-logo(src='../assets/images/logo/logo.png' alt="logo")
+              td.menu(style="text-align: right;")
                 ul
                   li(style='display: inline-block;text-decoration: unset')
                     a(href='index.html' target="_blank" style='text-transform: capitalize;color:#444;text-decoration: none;') Home
@@ -276,16 +280,15 @@ table(align='center' border='0' cellpadding='0' cellspacing='0' style='backgroun
                       | cart
                   li(style='display: inline-block;text-decoration: unset')
                     a(href='contacts.html' target="_blank" style='text-transform: capitalize;color:#444;text-decoration: none;') Contact
-        table(align='center' border='0' cellpadding='0' cellspacing='0' width='100%')
+        table(style="border-collapse: collapse; width:100%; border: none;")
           tbody
             tr
               td
-                img.img-fluid(src='../assets/images/email-template/1.jpg' alt='' style='width: 100%;')
+                img.img-fluid(src='../assets/images/email-template/1.jpg' alt='image' style='width: 100%;')
         h4.title(style='text-align: center;') Additional 50% Off
         h5(style='text-align: center;') This comfortable chairs and &amp; Sofa or etc.
-        table.product-sec(align='center' border='0' cellpadding='0' cellspacing='0' width='100%' style='margin-top:30px;')
+        table.product-sec( style='margin-top:30px; width:100%; border-collapse: collapse; border: none;')
           thead
-            tr
           tbody
             tr
               td
@@ -330,43 +333,43 @@ table(align='center' border='0' cellpadding='0' cellspacing='0' style='backgroun
                     a(href='#!' tabindex='0' style='text-align: center;')
                       h6(style='text-align: center;') When an unknown.
                     h4(style='text-align: center;') $90.00
-        table.main-bg-light(border='0' cellpadding='0' cellspacing='0' width='100%' style='margin-top:40px;')
+        table.main-bg-light(style='margin-top:40px; width:100%; border: none; border-collapse: collapse;')
           tbody
             tr
-              td(height='45' style='mso-line-height-rule:exactly; line-height:45px;')
-            tr.add-with-banner(align='center')
+              td(style='height:45px; line-height:45px;')
+            tr.add-with-banner(style="text-align: center;")
               td
-                img.img-fluid(src='../assets/images/email-template/3.png')
+                img.img-fluid(src='../assets/images/email-template/3.png' alt="product")
               td
-                div(style='border-top:1px solid #f02e4e; mso-line-height-rule: exactly;' data-border-bottom-color='Week Border')
+                div(style='border-top:1px solid #f02e4e;' data-border-bottom-color='Week Border')
                 a(href='#!')
-                  .Heading(align='center' style='color:#333333;font-weight:600; font-size:23px; letter-spacing:1px; line-height:35px; mso-line-height-rule: exactly; margin-top: 15px;' data-color='Week Heading' data-size='Week Heading' data-min='15' data-max='43') This Week&apos;s Sale 
-                  .Heading(align='center' style='color:#333333; font-weight:600; font-size:25px; letter-spacing:1px; line-height:35px; mso-line-height-rule: exactly; margin-bottom: 15px;' data-color='Week Heading' data-size='Week Heading' data-min='15' data-max='45') Save Up To 50%
-                div(style='border-bottom:1px solid #f02e4e; mso-line-height-rule: exactly;' data-border-bottom-color='Week Border')
+                  .Heading(style='color:#333333;font-weight:600; text-align: center; font-size:23px; letter-spacing:1px; line-height:35px; margin-top: 15px;' data-color='Week Heading' data-size='Week Heading' data-min='15' data-max='43') This Week&apos;s Sale 
+                  .Heading(style='color:#333333; font-weight:600; text-align: center; font-size:25px; letter-spacing:1px; line-height:35px; margin-bottom: 15px;' data-color='Week Heading' data-size='Week Heading' data-min='15' data-max='45') Save Up To 50%
+                div(style='border-bottom:1px solid #f02e4e;' data-border-bottom-color='Week Border')
             tr
-              td(height='45' style='mso-line-height-rule:exactly; line-height:45px;')
-        table(border='0' cellpadding='0' cellspacing='0' width='100%')
+              td(style='height:45px; line-height:45px;')
+        table( style="border-collapse: collapse; border: none; width:100%;")
           tbody
-            tr(align='center')
+            tr(style="text-align: center;")
               td
                 a(href='#!')
-                  img.img-fluid(src='../assets/images/email-template/cosmetic.jpg' style='width:100%;')
-        table.product-banner(border='0' cellpadding='0' cellspacing='0' width='100%' style='margin-top:30px;')
+                  img.img-fluid(src='../assets/images/email-template/cosmetic.jpg' alt="product" style='width:100%;')
+        table.product-banner(style='margin-top:30px; width:100%; border: none; border-collapse: collapse;')
           tbody
-            tr.add-with-banner(align='center')
+            tr.add-with-banner(style="text-align: center;")
               td
                 a(href='#!')
-                  img.img-fluid(src='../assets/images/email-template/6.png' style='width:100%;')
+                  img.img-fluid(src='../assets/images/email-template/6.png' alt="product" style='width:100%;')
               td
                 a(href='#!')
-                  img.img-fluid(src='../assets/images/email-template/5.png' style='width:100%;')
-        table.main-bg-light.text-center(align='center' border='0' cellpadding='0' cellspacing='0' width='100%' style='margin-top:30px;')
+                  img.img-fluid(src='../assets/images/email-template/5.png' alt="product" style='width:100%;')
+        table.main-bg-light.text-center(style='width:100%; margin-top:30px; border: none; border-collapse: collapse;')
           tbody
             tr
               td(style='padding: 30px;')
                 div
                   h4.title(style='margin:0;text-align: center;') Follow us
-                table.footer-social-icon(border='0' cellpadding='0' cellspacing='0' align='center' style='margin-top:20px;')
+                table.footer-social-icon(style='margin-top:20px; border: none; text-align: center; border-collapse: collapse;')
                   tbody
                     tr.temp-social
                       td
@@ -385,7 +388,7 @@ table(align='center' border='0' cellpadding='0' cellspacing='0' style='backgroun
                         a(href='https://in.pinterest.com/')
                           i.fa-brands.fa-pinterest-p
                 div(style='border-top: 1px solid #ddd; margin: 20px auto 0;')
-                table(border='0' cellpadding='0' cellspacing='0' width='100%' style='margin: 20px auto 0;')
+                table(style='margin: 20px auto 0; border: none; width:100%; border-collapse: collapse;')
                   tbody
                     tr
                       td

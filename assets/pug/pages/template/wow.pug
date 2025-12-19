@@ -234,7 +234,7 @@ html(lang='en')
                   .card-body.pt-0
                     div
                       .line
-                        | &lt; script src="js/wow.min.js" &gt; &lt; /script &gt; <br />&lt; script &gt; <br /><code>  WOW.init();</code><br />&lt; /script &gt;
+                        | &lt; script src="js/wow.min.js" &gt; &lt; /script &gt; &lt; script &gt; <code>  WOW.init();</code>&lt; /script &gt;
                 .card
                   .card-header.wow-title
                     h5
@@ -246,7 +246,7 @@ html(lang='en')
                       | Add the CSS class .wow to a HTML element: it will be invisible until the user scrolls to reveal it.
                     div
                       .line
-                        | &lt; div class="wow" &gt; <br /><code>Content to Reveal Here</code><br />&lt; /div &gt;
+                        | &lt; div class="wow" &gt; <code>Content to Reveal Here</code>&lt; /div &gt;
                 .card
                   .card-header.wow-title
                     h5
@@ -257,7 +257,7 @@ html(lang='en')
                   .card-body.pt-0
                     div
                       .line
-                        | &lt; div class="wow bounceInUp" &gt; <br /><code>Content to Reveal Here</code><br />&lt; /div &gt;
+                        | &lt; div class="wow bounceInUp" &gt; <code>Content to Reveal Here</code>&lt; /div &gt;
                 .card
                   .card-header.wow-title
                     h5
@@ -280,7 +280,7 @@ html(lang='en')
                           | Number of times the animation is repeated
                           br
                         pre.mb-0
-                          | &lt;section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"&gt;<br /> &lt;/section&gt;<br /> &lt;section class="wow slideInRight" data-wow-offset="10" data-wow-iteration="10"&gt;<br /> &lt;/section&gt;
+                          | &lt;section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"&gt; &lt;/section&gt; &lt;section class="wow slideInRight" data-wow-offset="10" data-wow-iteration="10"&gt; &lt;/section&gt;
 
                 .card
                   .card-header.wow-title
@@ -308,7 +308,7 @@ html(lang='en')
                           strong live: 
                           | consatantly check for new WOW elements on the page.
                         pre.mb-0
-                          | wow = new WOW(<br /> {<br /> boxClass: 'wow', // default<br /> animateClass: 'animated', // default<br /> offset: 0, // default<br /> mobile: true, // default<br /> live: true // default<br /> }<br /> )<br /> wow.init();                    
+                          | wow = new WOW( { boxClass: 'wow', // default animateClass: 'animated', // default offset: 0, // default mobile: true, // default live: true // default } ) wow.init();                    
                         // Page Body Ends                   
                         // Container-fluid Ends
         include ../../components/footer

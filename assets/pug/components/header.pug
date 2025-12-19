@@ -17,15 +17,16 @@
 
     .nav-right.col-xxl-8.col-xl-6.col-md-7.col-8.pull-right.right-header.ms-auto
       ul.nav-menus
-        form(action='#', method='get').form-inline.search-full.col
-          .form-group.w-100
-            .Typeahead.Typeahead--twitterUsers
-              .searchBar
-                input#searchQueryInput(type='text' name='searchQueryInput' placeholder='Type to Search' value='')
-                .spinner-border.Typeahead-spinner(role='status')
-                  span.sr-only Loading...
-                i(data-feather='x').close-search
-              .Typeahead-menu
+        li.search-li 
+          form(action='#', method='get').form-inline.search-full.col
+            .form-group.w-100
+              .Typeahead.Typeahead--twitterUsers
+                .searchBar
+                  input#searchQueryInputDesktop(type='text' name='searchQueryInputDesktop' placeholder='Type to Search' value='')
+                  .spinner-border.Typeahead-spinner(role='status')
+                    span.sr-only Loading...
+                  i(data-feather='x').close-search
+                .Typeahead-menu
         li.language-nav
           .translate_wrapper
             .current_lang
@@ -124,9 +125,10 @@
                   .close-circle
                     a.bg-danger(href='#')
                       i(data-feather='x')
-              .text-center.m-2
-                a.btn.btn-primary.view-checkout.btn.btn-primary.w-100.f-w-700(href='checkout.html')
-                  | Proceed to checkout 
+              li        
+                .text-center.m-2
+                  a.btn.btn-primary.view-checkout.btn.btn-primary.w-100.f-w-700(href='checkout.html')
+                    | Proceed to checkout 
         li.onhover-dropdown.notification-body
           .notification-box
             svg
@@ -217,7 +219,7 @@
           span
             svg
               use(href='../assets/svg/icon-sprite.svg#search')
-        .left-header.col-xxl-3.col-xl-5.col-lg-4.col-md-4.col-sm-3
+        li.left-header.col-xxl-3.col-xl-5.col-lg-4.col-md-4.col-sm-3
           .searchBar
             input#searchQueryInput(type='text' name='searchQueryInput' placeholder='Type to Search' value='')
             button#searchQuerySubmit(type='submit' name='searchQuerySubmit')

@@ -2,7 +2,7 @@
   if (localStorage.getItem("color")) $("#color").attr("href", "../assets/css/" + localStorage.getItem("color") + ".css");
   if (localStorage.getItem("dark")) $("body").attr("class", "dark-only");
   $(
-    '<div class="sidebar-panel-main"><ul><li id="grip-click"><a href="javascript:void(0)" class="grip-click icon-btn btn-primary"><i class="fa-solid fa-grip"></i></a><span>Layouts</span></li><li id="cog-click"><a href="javascript:void(0)" class="cog-click icon-btn btn-primary"><i class="fa-solid fa-gear fa-spin"></i></a><span>Settings</span></li></ul></div><section class="layout-sidebar"><div class="customizer-header"><div class="theme-title"><div><h4>Preview Settings</h4><p class="mb-0">Try It Real Time<i class="fa-solid fa-thumbs-up fa-fw"></i></p></div><div class="flex-grow-1"><a class="icon-btn btn-outline-light button-effect pull-right grip-close" id="grip-close"><i class="fa-solid fa-xmark fa-fw"></i></a></div></div></div><div class="customizer-body custom-scrollbar"><h6>Layouts</h6><ul class="layout-grid sidebar-type layout-types"><li data-attr=compact-sidebar><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/dubai.jpg></a><h6>Dubai</h6></div><li data-attr=material-layout><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/los-angle.png></a><h6>Los Angeles</h6></div><li data-attr=dark-sidebar><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/paris.jpg></a><h6>Paris</h6></div><li data-attr=compact-wrap><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/tokyo.jpg></a><h6>Tokyo</h6></div><li data-attr=compact-small><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/moscow.jpg></a><h6>Moscow</h6></div><li data-attr=enterprice-type><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/singapore.jpg></a><h6>Singapore</h6></div><li class=box-layout data-attr=box-layout><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/newyork.png></a><h6>New York</h6></div><li data-attr=advance-type><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/singapore.jpg></a><h6>Barcelona</h6></div><li data-attr=color-sidebar><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/paris.jpg></a><h6>Madrid</h6></div><li data-attr=material-icon><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/rome.jpg></a><h6>Rome</h6></div><li data-attr=modern-layout><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/dubai.jpg></a><h6>Seoul</h6></div><li class=only-body data-attr=default-body><div class=layout-img><a href=javascript:void(0)><img alt="" class=img-fluid src=../assets/images/landing/layout-images/landon.png></a><h6>London</h6></div></ul></div><h6>Links</h6></section><section class="setting-sidebar"><div class="customizer-header"><div class="theme-title"><div><h4>Preview Settings</h4><p class="mb-0">Try It Real Time<i class="fa-solid fa-thumbs-up fa-fw"></i></p></div><div class="flex-grow-1"><a class="icon-btn btn-outline-light button-effect pull-right cog-close" id="cog-close"><i class="fa-solid fa-xmark fa-fw"></i></a></div></div></div><div class="customizer-body custom-scrollbar"><h6>Layout Type</h6><ul class="layout-grid main-layout"><li class=active data-attr=ltr><div class="bg-light header"><ul><li><li><li></ul></div><div class=body><ul><li class="bg-light sidebar"><li class="bg-light body"><span class="badge badge-primary">LTR</span></ul></div><li data-attr=rtl><div class="bg-light header"><ul><li><li><li></ul></div><div class=body><ul><li class="bg-light body"><span class="badge badge-primary">RTL</span><li class="bg-light sidebar"></ul></div><li class="box-layout px-3" data-attr=ltr><div class="bg-light header"><ul><li><li><li></ul></div><div class=body><ul><li class="bg-light sidebar"><li class="bg-light body"><span class="badge badge-primary">Box</span></ul></div></ul><h6>Sidebar Type</h6><ul class="layout-grid sidebar-type"><li data-attr=normal-sidebar><div class="bg-light header"><ul><li><li><li></ul></div><div class=body><ul><li class="sidebar bg-dark"><li class="bg-light body"></ul></div><li data-attr=compact-sidebar><div class="bg-light header"><ul><li><li><li></ul></div><div class=body><ul><li class="sidebar bg-dark compact"><li class="bg-light body"></ul></div></ul><h6>Unlimited Color</h6><ul class="layout-grid unlimited-color-layout"><input id=ColorPicker1 name=Background type=color value=#7366ff><input id=ColorPicker2 name=Background type=color value=#838383><button class="color-apply-btn color-apply-btn btn btn-primary" type=button>Apply</button></ul><h6>Light layout</h6><ul class="layout-grid customizer-color"><li class=color-layout data-attr=color-1 data-primary=#7366ff data-secondary=#838383><div></div><li class=color-layout data-attr=color-2 data-primary=#4831D4 data-secondary=#ea2087><div></div><li class=color-layout data-attr=color-3 data-primary=#d64dcf data-secondary=#8e24aa><div></div><li class=color-layout data-attr=color-4 data-primary=#4c2fbf data-secondary=#2e9de4><div></div><li class=color-layout data-attr=color-5 data-primary=#7c4dff data-secondary=#7b1fa2><div></div><li class=color-layout data-attr=color-6 data-primary=#3949ab data-secondary=#4fc3f7><div></div></ul><h6>Dark Layout</h6><ul class="layout-grid customizer-color dark"><li class=color-layout data-attr=color-1 data-primary=#4466f2 data-secondary=#1ea6ec><div></div><li class=color-layout data-attr=color-2 data-primary=#4831D4 data-secondary=#ea2087><div></div><li class=color-layout data-attr=color-3 data-primary=#d64dcf data-secondary=#8e24aa><div></div><li class=color-layout data-attr=color-4 data-primary=#4c2fbf data-secondary=#2e9de4><div></div><li class=color-layout data-attr=color-5 data-primary=#7c4dff data-secondary=#7b1fa2><div></div><li class=color-layout data-attr=color-6 data-primary=#3949ab data-secondary=#4fc3f7><div></div></ul><h6>Sidebar Icon</h6><ul class="layout-grid sidebar-setting"><li class=active data-attr=stroke-svg><div class="bg-light header"><ul><li><li><li></ul></div><div class="bg-light body"><span class="badge badge-primary">Stroke</span></div><li data-attr=fill-svg><div class="bg-light header"><ul><li><li><li></ul></div><div class="bg-light body"><span class="badge badge-primary">Fill</span></div></ul><h6>Mix Layout</h6><ul class="layout-grid customizer-mix"><li class="color-layout active" data-attr=light-only><div class="bg-light header"><ul><li><li><li></ul></div><div class="body common-layout"><span class="badge badge-secondary">Light</span><ul><li class="bg-light sidebar"><li class="bg-light body"></ul></div><li class=color-layout data-attr=dark-sidebar><div class="bg-light header"><ul><li><li><li></ul></div><div class="body common-layout"><span class="badge badge-secondary">Sidebar</span><ul><li class="sidebar bg-dark"><li class="bg-light body"></ul></div><li class=color-layout data-attr=dark-only><div class="header bg-dark"><ul><li><li><li></ul></div><div class="body common-layout"><span class="badge badge-secondary">Dark</span><ul><li class="sidebar bg-dark"><li class="body bg-dark"></ul></div><li class=color-layout id=auto-layout onclick="detectColorScheme()"><div class="bg-light header"><ul><li><li><li></ul></div><div class="body common-layout"><span class="badge badge-secondary">Auto</span><ul><li class="sidebar bg-dark"><li class="bg-light body"></ul></div></ul><h6>Links</h6><ul class="layout-link"><li><a href="https://support.pixelstrap.com/"><i class="icon-headphone-alt"></i><span>Support</span></a></li><li><a href="https://docs.pixelstrap.com/macao/html/document/"><i class="icon-file"></i><span>Document</span></a></li><li><a href="https://admin.pixelstrap.com/macao/template/landing-page.html#"><i class="icon-panel"></i><span>Features</span></a></li><li><a href="https://1.envato.market/3GVzd"><i class="icon-shopping-cart-full"></i><span>Buy Now</span></a></li></ul></div></section>'
+    '<div class="sidebar-panel-main"><ul><li id="cog-click"><a href="javascript:void(0)" class="cog-click icon-btn btn-primary"><i class="fa-solid fa-gear fa-spin"></i></a><span>Settings</span></li></ul></div><section class="setting-sidebar"><div class="customizer-header"><div class="theme-title"><div><h4>Preview Settings</h4><p class="mb-0">Try It Real Time<i class="fa-solid fa-thumbs-up fa-fw"></i></p></div><div class="flex-grow-1"><a class="icon-btn btn-outline-light button-effect pull-right cog-close" id="cog-close"><i class="fa-solid fa-xmark fa-fw"></i></a></div></div></div><div class="customizer-body custom-scrollbar"><h6>Layout Type</h6><ul class="layout-grid main-layout"><li class=active data-attr=ltr><div class="bg-light header"><ul><li><li><li></ul></div><div class=body><ul><li class="bg-light sidebar"><li class="bg-light body"><span class="badge badge-primary">LTR</span></ul></div><li data-attr=rtl><div class="bg-light header"><ul><li><li><li></ul></div><div class=body><ul><li class="bg-light body"><span class="badge badge-primary">RTL</span><li class="bg-light sidebar"></ul></div><li class="box-layout px-3" data-attr=ltr><div class="bg-light header"><ul><li><li><li></ul></div><div class=body><ul><li class="bg-light sidebar"><li class="bg-light body"><span class="badge badge-primary">Box</span></ul></div></ul><h6>Sidebar Type</h6><ul class="layout-grid sidebar-type"><li data-attr=normal-sidebar><div class="bg-light header"><ul><li><li><li></ul></div><div class=body><ul><li class="sidebar bg-dark"><li class="bg-light body"></ul></div><li data-attr=compact-sidebar><div class="bg-light header"><ul><li><li><li></ul></div><div class=body><ul><li class="sidebar bg-dark compact"><li class="bg-light body"></ul></div></ul><h6>Unlimited Color</h6><ul class="layout-grid unlimited-color-layout"><input id=ColorPicker1 name=Background type=color value=#7366ff><input id=ColorPicker2 name=Background type=color value=#838383><button class="color-apply-btn color-apply-btn btn btn-primary" type=button>Apply</button></ul><h6>Light layout</h6><ul class="layout-grid customizer-color"><li class=color-layout data-attr=color-1 data-primary=#7366ff data-secondary=#838383><div></div><li class=color-layout data-attr=color-2 data-primary=#4831D4 data-secondary=#ea2087><div></div><li class=color-layout data-attr=color-3 data-primary=#d64dcf data-secondary=#8e24aa><div></div><li class=color-layout data-attr=color-4 data-primary=#4c2fbf data-secondary=#2e9de4><div></div><li class=color-layout data-attr=color-5 data-primary=#7c4dff data-secondary=#7b1fa2><div></div><li class=color-layout data-attr=color-6 data-primary=#3949ab data-secondary=#4fc3f7><div></div></ul><h6>Dark Layout</h6><ul class="layout-grid customizer-color dark"><li class=color-layout data-attr=color-1 data-primary=#4466f2 data-secondary=#1ea6ec><div></div><li class=color-layout data-attr=color-2 data-primary=#4831D4 data-secondary=#ea2087><div></div><li class=color-layout data-attr=color-3 data-primary=#d64dcf data-secondary=#8e24aa><div></div><li class=color-layout data-attr=color-4 data-primary=#4c2fbf data-secondary=#2e9de4><div></div><li class=color-layout data-attr=color-5 data-primary=#7c4dff data-secondary=#7b1fa2><div></div><li class=color-layout data-attr=color-6 data-primary=#3949ab data-secondary=#4fc3f7><div></div></ul><h6>Sidebar Icon</h6><ul class="layout-grid sidebar-setting"><li class=active data-attr=stroke-svg><div class="bg-light header"><ul><li><li><li></ul></div><div class="bg-light body"><span class="badge badge-primary">Stroke</span></div><li data-attr=fill-svg><div class="bg-light header"><ul><li><li><li></ul></div><div class="bg-light body"><span class="badge badge-primary">Fill</span></div></ul><h6>Mix Layout</h6><ul class="layout-grid customizer-mix"><li class="color-layout active" data-attr=light-only><div class="bg-light header"><ul><li><li><li></ul></div><div class="body common-layout"><span class="badge badge-secondary">Light</span><ul><li class="bg-light sidebar"><li class="bg-light body"></ul></div><li class=color-layout data-attr=dark-sidebar><div class="bg-light header"><ul><li><li><li></ul></div><div class="body common-layout"><span class="badge badge-secondary">Sidebar</span><ul><li class="sidebar bg-dark"><li class="bg-light body"></ul></div><li class=color-layout data-attr=dark-only><div class="header bg-dark"><ul><li><li><li></ul></div><div class="body common-layout"><span class="badge badge-secondary">Dark</span><ul><li class="sidebar bg-dark"><li class="body bg-dark"></ul></div><li class=color-layout id=auto-layout onclick="detectColorScheme()"><div class="bg-light header"><ul><li><li><li></ul></div><div class="body common-layout"><span class="badge badge-secondary">Auto</span><ul><li class="sidebar bg-dark"><li class="bg-light body"></ul></div></ul><h6>Links</h6><ul class="layout-link"><li><a href="https://support.pixelstrap.com/"><i class="icon-headphone-alt"></i><span>Support</span></a></li><li><a href="https://docs.pixelstrap.com/macao/html/document/"><i class="icon-file"></i><span>Document</span></a></li><li><a href="https://admin.pixelstrap.com/macao/template/landing-page.html#"><i class="icon-panel"></i><span>Features</span></a></li><li><a href="https://1.envato.market/3GVzd"><i class="icon-shopping-cart-full"></i><span>Buy Now</span></a></li></ul></div></section>'
   ).appendTo($("body"));
 
   (function () {})();
@@ -19,16 +19,6 @@
       settingSidebar.classList.remove("open");
     });
 
-    document.getElementById("grip-click").addEventListener("click", function () {
-      var settingSidebar = document.querySelector(".layout-sidebar");
-      settingSidebar.classList.add("open");
-    });
-
-    document.getElementById("grip-close").addEventListener("click", function () {
-      var settingSidebar = document.querySelector(".layout-sidebar");
-      settingSidebar.classList.remove("open");
-    });
-
     function closeSidebarOnClickOutside(sidebarClass) {
       document.addEventListener("click", function (event) {
         var setting_sidebar = document.querySelector(sidebarClass);
@@ -38,7 +28,6 @@
       });
     }
     closeSidebarOnClickOutside(".setting-sidebar");
-    closeSidebarOnClickOutside(".layout-sidebar");
 
     const defaultLayout = "dubai";
     const urlParams = new URLSearchParams(window.location.search);
@@ -223,108 +212,8 @@ function setLayout(layout) {
         localStorage.setItem("page-wrapper-macao", "horizontal-wrapper");
         break;
       }
-      case "london": {
-        $(".page-wrapper").attr("class", "page-wrapper  only-body" + boxed);
-        localStorage.setItem("page-wrapper-macao", "only-body");
-        break;
-      }
-      case "paris": {
-        $(".page-wrapper").attr("class", "page-wrapper compact-wrapper dark-sidebar" + boxed);
-        localStorage.setItem("page-wrapper-macao", "compact-wrapper dark-sidebar");
-        break;
-      }
-      case "tokyo": {
-        $(".page-wrapper").attr("class", "page-wrapper compact-sidebar" + boxed);
-        localStorage.setItem("page-wrapper-macao", "compact-sidebar");
-        break;
-      }
-      case "madrid": {
-        $(".page-wrapper").attr("class", "page-wrapper compact-wrapper color-sidebar" + boxed);
-        localStorage.setItem("page-wrapper-macao", "compact-wrapper color-sidebar");
-        break;
-      }
-      case "moscow": {
-        $(".page-wrapper").attr("class", "page-wrapper compact-sidebar compact-small" + boxed);
-        localStorage.setItem("page-wrapper-macao", "compact-sidebar compact-small");
-        break;
-      }
-      case "new_york": {
-        $(".page-wrapper").attr("class", "page-wrapper compact-wrapper box-layout " + boxed);
-        localStorage.setItem("page-wrapper-macao", "compact-wrapper box-layout");
-        break;
-      }
-      case "singapore": {
-        $(".page-wrapper").attr("class", "page-wrapper horizontal-wrapper enterprice-type" + boxed);
-        localStorage.setItem("page-wrapper-macao", "horizontal-wrapper enterprice-type");
-        break;
-      }
-      case "seoul": {
-        $(".page-wrapper").attr("class", "page-wrapper compact-wrapper modern-type" + boxed);
-        localStorage.setItem("page-wrapper-macao", "compact-wrapper modern-type");
-        break;
-      }
-      case "los_angeles": {
-        $(".page-wrapper").attr("class", "page-wrapper horizontal-wrapper material-type" + boxed);
-        localStorage.setItem("page-wrapper-macao", "horizontal-wrapper material-type");
-
-        break;
-      }
-      case "rome": {
-        $(".page-wrapper").attr("class", "page-wrapper compact-sidebar compact-small material-icon" + boxed);
-        localStorage.setItem("page-wrapper-macao", "compact-sidebar compact-small material-icon");
-
-        break;
-      }
-      case "barcelona": {
-        $(".page-wrapper").attr("class", "page-wrapper horizontal-wrapper enterprice-type advance-layout" + boxed);
-        localStorage.setItem("page-wrapper-macao", "horizontal-wrapper enterprice-type advance-layout");
-
-        break;
-      }
-      case "default-body": {
-        updateQueryParamInCurrentURL("layout", "london");
-        break;
-      }
-      case "dark-sidebar": {
-        updateQueryParamInCurrentURL("layout", "paris");
-        break;
-      }
-      case "compact-wrap": {
-        updateQueryParamInCurrentURL("layout", "tokyo");
-        break;
-      }
-      case "color-sidebar": {
-        updateQueryParamInCurrentURL("layout", "madrid");
-        break;
-      }
-      case "compact-small": {
-        updateQueryParamInCurrentURL("layout", "moscow");
-        break;
-      }
-      case "box-layout": {
-        updateQueryParamInCurrentURL("layout", "new_york");
-        break;
-      }
-      case "enterprice-type": {
-        updateQueryParamInCurrentURL("layout", "singapore");
-        break;
-      }
-      case "modern-layout": {
-        updateQueryParamInCurrentURL("layout", "seoul");
-        break;
-      }
-      case "material-layout": {
-        updateQueryParamInCurrentURL("layout", "los_angeles");
-        break;
-      }
-      case "material-icon": {
-        updateQueryParamInCurrentURL("layout", "rome");
-        break;
-      }
-      case "advance-type": {
-        updateQueryParamInCurrentURL("layout", "barcelona");
-        break;
-      }
+      
+      
       default: {
         $(".page-wrapper").attr("class", "page-wrapper compact-wrapper " + boxed);
         localStorage.setItem("page-wrapper-macao", "compact-wrapper");

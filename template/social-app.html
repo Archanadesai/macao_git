@@ -66,17 +66,19 @@
           </div>
           <div class="nav-right col-xxl-8 col-xl-6 col-md-7 col-8 pull-right right-header ms-auto">
             <ul class="nav-menus">
-              <form class="form-inline search-full col" action="#" method="get">
-                <div class="form-group w-100">
-                  <div class="Typeahead Typeahead--twitterUsers">
-                    <div class="searchBar">
-                      <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
-                      <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+              <li class="search-li"> 
+                <form class="form-inline search-full col" action="#" method="get">
+                  <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                      <div class="searchBar">
+                        <input id="searchQueryInputDesktop" type="text" name="searchQueryInputDesktop" placeholder="Type to Search" value="">
+                        <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                      </div>
+                      <div class="Typeahead-menu"></div>
                     </div>
-                    <div class="Typeahead-menu"></div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </li>
               <li class="language-nav">
                 <div class="translate_wrapper">
                   <div class="current_lang">
@@ -147,7 +149,9 @@
                         <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
                       </div>
                     </li>
-                    <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    <li>       
+                      <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -254,7 +258,7 @@
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#search"></use>
                   </svg></span></li>
-              <div class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
+              <li class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
                 <div class="searchBar">
                   <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
                   <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
@@ -263,7 +267,7 @@
                     </svg>
                   </button>
                 </div>
-              </div>
+              </li>
               <li class="fullscreen-body">                       <span>
                   <svg id="maximize-screen">
                     <use href="../assets/svg/icon-sprite.svg#full-screen"></use>
@@ -1084,7 +1088,7 @@
                               <button class="btn btn-link btn-block text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">My Profile</button>
                             </h2>
                           </div>
-                          <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" role="menu" data-bs-parent="#accordionExample">
                             <div class="card-body socialprofile filter-cards-view">
                               <div class="d-flex page-notification"><img class="img-50 img-fluid m-r-20 rounded-circle" src="../assets/images/dashboard-11/user/7.jpg" alt="">
                                 <div class="flex-grow-1">
@@ -1118,7 +1122,7 @@
                               <button class="btn btn-link btn-block text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Mutual Friends</button>
                             </h2>
                           </div>
-                          <div class="collapse show" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="collapse show" id="collapseTwo" aria-labelledby="headingTwo" role="menu" data-bs-parent="#accordionExample">
                             <div class="card-body social-status filter-cards-view">
                               <div class="d-flex"><img class="img-50 rounded-circle m-r-15" src="../assets/images/user/2.png" alt="">
                                 <div class="social-status social-online"></div>
@@ -1185,7 +1189,7 @@
                               <button class="btn btn-link btn-block text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Activity Feed</button>
                             </h2>
                           </div>
-                          <div class="collapse show" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="collapse show" id="collapseThree" aria-labelledby="headingThree" role="menu" data-bs-parent="#accordionExample">
                             <div class="card-body social-status filter-cards-view">
                               <div class="d-flex"><img class="img-50 rounded-circle m-r-15" src="../assets/images/user/10.jpg" alt="">
                                 <div class="flex-grow-1"><span class="f-w-600 d-block">Andew Jon</span>
@@ -1344,7 +1348,7 @@
                                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon2" aria-expanded="true" aria-controls="collapseicon2">Profile Intro</button>
                                 </h5>
                               </div>
-                              <div class="collapse show" id="collapseicon2" aria-labelledby="collapseicon2" data-bs-parent="#accordion">
+                              <div class="collapse show" id="collapseicon2" aria-labelledby="collapseicon2" role="menu" data-bs-parent="#accordion">
                                 <div class="card-body filter-cards-view"><span class="mb-2 d-block">About Me :</span>
                                   <p>
                                      Hi, I’m elana, I’m 30 and I work as a 
@@ -1377,7 +1381,7 @@
                                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon3" aria-expanded="true" aria-controls="collapseicon3">Followers</button>
                                 </h5>
                               </div>
-                              <div class="collapse show" id="collapseicon3" aria-labelledby="collapseicon3" data-bs-parent="#accordion">
+                              <div class="collapse show" id="collapseicon3" aria-labelledby="collapseicon3" role="menu" data-bs-parent="#accordion">
                                 <div class="card-body social-list filter-cards-view">
                                   <div class="d-flex"><img class="img-50 img-fluid m-r-20 rounded-circle" alt="" src="../assets/images/user/2.png">
                                     <div class="flex-grow-1"><span class="d-block">Bucky Barnes</span><a href="#!">Add Friend</a></div>
@@ -1405,7 +1409,7 @@
                                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon10" aria-expanded="true" aria-controls="collapseicon10">Followings</button>
                                 </h5>
                               </div>
-                              <div class="collapse show" id="collapseicon10" aria-labelledby="collapseicon10" data-bs-parent="#accordion">
+                              <div class="collapse show" id="collapseicon10" aria-labelledby="collapseicon10" role="menu" data-bs-parent="#accordion">
                                 <div class="card-body social-list filter-cards-view">
                                   <div class="d-flex"><img class="img-50 img-fluid m-r-20 rounded-circle" alt="" src="../assets/images/user/3.png">
                                     <div class="flex-grow-1"><span class="d-block">Sarah Loren</span><a href="#!">Add Friend</a></div>
@@ -1433,7 +1437,7 @@
                                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon4" aria-expanded="true" aria-controls="collapseicon4">Latest Photos</button>
                                 </h5>
                               </div>
-                              <div class="collapse show" id="collapseicon4" data-bs-parent="#accordion" aria-labelledby="collapseicon4">
+                              <div class="collapse show" id="collapseicon4" data-bs-parent="#accordion" role="menu" aria-labelledby="collapseicon4">
                                 <div class="card-body photos filter-cards-view">
                                   <ul>
                                     <li><img class="img-fluid" alt="" src="../assets/images/social-app/post-1.png"></li>
@@ -1456,7 +1460,7 @@
                                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon13" aria-expanded="true" aria-controls="collapseicon13">Friends</button>
                                 </h5>
                               </div>
-                              <div class="collapse show" id="collapseicon13" data-bs-parent="#accordion" aria-labelledby="collapseicon13">
+                              <div class="collapse show" id="collapseicon13" data-bs-parent="#accordion" role="menu" aria-labelledby="collapseicon13">
                                 <div class="card-body avatar-showcase filter-cards-view">
                                   <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle" src="../assets/images/user/3.jpg" alt="#"></div>
                                   <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle" src="../assets/images/user/5.jpg" alt="#"></div>
@@ -1492,7 +1496,7 @@
                               <button class="btn btn-link btn-block text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneone" aria-expanded="true" aria-controls="collapseOneone">My Profile</button>
                             </h2>
                           </div>
-                          <div class="collapse show" id="collapseOneone" aria-labelledby="headingOneone" data-bs-parent="#accordionExample1">
+                          <div class="collapse show" id="collapseOneone" aria-labelledby="headingOneone" role="menu" data-bs-parent="#accordionExample1">
                             <div class="card-body socialprofile filter-cards-view">
                               <div class="d-flex page-notification"><img class="img-50 img-fluid m-r-20 rounded-circle" src="../assets/images/dashboard-11/user/7.jpg" alt="">
                                 <div class="flex-grow-1">
@@ -1526,7 +1530,7 @@
                               <button class="btn btn-link btn-block text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwotwo" aria-expanded="true" aria-controls="collapseTwotwo">Mutual Friends</button>
                             </h2>
                           </div>
-                          <div class="collapse show" id="collapseTwotwo" aria-labelledby="headingTwotwo" data-bs-parent="#accordionExample1">
+                          <div class="collapse show" id="collapseTwotwo" aria-labelledby="headingTwotwo" role="menu" data-bs-parent="#accordionExample1">
                             <div class="card-body social-status filter-cards-view">
                               <div class="d-flex"><img class="img-50 rounded-circle m-r-15" src="../assets/images/user/2.png" alt="">
                                 <div class="social-status social-online"></div>
@@ -1593,7 +1597,7 @@
                               <button class="btn btn-link btn-block text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeThree" aria-expanded="true" aria-controls="collapseThreeThree">Activity Feed</button>
                             </h2>
                           </div>
-                          <div class="collapse show" id="collapseThreeThree" aria-labelledby="headingThreeThree" data-bs-parent="#accordionExample1">
+                          <div class="collapse show" id="collapseThreeThree" aria-labelledby="headingThreeThree" role="menu" data-bs-parent="#accordionExample1">
                             <div class="card-body social-status filter-cards-view">
                               <div class="d-flex"><img class="img-50 rounded-circle m-r-15" src="../assets/images/user/10.jpg" alt="">
                                 <div class="flex-grow-1"><span class="f-w-600 d-block">Andew Jon</span>
@@ -1895,7 +1899,7 @@
                                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon7" aria-expanded="true" aria-controls="collapseicon7">Profile Intro</button>
                                 </h5>
                               </div>
-                              <div class="collapse show" id="collapseicon7" aria-labelledby="collapseicon7" data-bs-parent="#accordion">
+                              <div class="collapse show" id="collapseicon7" aria-labelledby="collapseicon7" role="menu" data-bs-parent="#accordion">
                                 <div class="card-body filter-cards-view"><span class="f-w-600 mb-2 d-block">About Me :</span>
                                   <p>
                                      Hi, I’m elana, I’m 30 and I work as a 
@@ -1928,7 +1932,7 @@
                                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon8" aria-expanded="true" aria-controls="collapseicon8">Followers</button>
                                 </h5>
                               </div>
-                              <div class="collapse show" id="collapseicon8" aria-labelledby="collapseicon8" data-bs-parent="#accordion">
+                              <div class="collapse show" id="collapseicon8" aria-labelledby="collapseicon8" role="menu" data-bs-parent="#accordion">
                                 <div class="card-body social-list filter-cards-view">
                                   <div class="d-flex"><img class="img-50 img-fluid m-r-20 rounded-circle" alt="" src="../assets/images/user/2.png">
                                     <div class="flex-grow-1"><span class="d-block">Bucky Barnes</span><a href="#!">Add Friend</a></div>
@@ -1956,7 +1960,7 @@
                                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon11" aria-expanded="true" aria-controls="collapseicon11">Followings</button>
                                 </h5>
                               </div>
-                              <div class="collapse show" id="collapseicon11" aria-labelledby="collapseicon11" data-bs-parent="#accordion">
+                              <div class="collapse show" id="collapseicon11" aria-labelledby="collapseicon11" role="menu" data-bs-parent="#accordion">
                                 <div class="card-body social-list filter-cards-view">
                                   <div class="d-flex"><img class="img-50 img-fluid m-r-20 rounded-circle" alt="" src="../assets/images/user/3.png">
                                     <div class="flex-grow-1"><span class="d-block">Sarah Loren</span><a href="#!">Add Friend</a></div>
@@ -1984,7 +1988,7 @@
                                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon9" aria-expanded="true" aria-controls="collapseicon9">Latest Photos</button>
                                 </h5>
                               </div>
-                              <div class="collapse show" id="collapseicon9" data-bs-parent="#accordion" aria-labelledby="collapseicon9">
+                              <div class="collapse show" id="collapseicon9" data-bs-parent="#accordion" role="menu" aria-labelledby="collapseicon9">
                                 <div class="card-body photos filter-cards-view">
                                   <ul>
                                     <li><img class="img-fluid" alt="" src="../assets/images/social-app/post-1.png"></li>
@@ -2008,7 +2012,7 @@
                                   <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseicon15" aria-expanded="true" aria-controls="collapseicon15">Friends</button>
                                 </h5>
                               </div>
-                              <div class="collapse show" id="collapseicon15" data-bs-parent="#accordion" aria-labelledby="collapseicon15">
+                              <div class="collapse show" id="collapseicon15" data-bs-parent="#accordion" role="menu" aria-labelledby="collapseicon15">
                                 <div class="card-body avatar-showcase filter-cards-view">
                                   <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle" src="../assets/images/user/3.jpg" alt="#"></div>
                                   <div class="d-inline-block friend-pic"><img class="img-50 rounded-circle" src="../assets/images/user/5.jpg" alt="#"></div>

@@ -75,77 +75,168 @@ var chart = new ApexCharts(document.querySelector("#deviceChart"), options);
 chart.render();
 
 
-var options = {
-  chart: {
-    type: "donut",
-    height: 334,
-  },
-  series: [45, 15], // Example values: Income, Expand, Booking
-  labels: ["Income", "Expand"],
+// var options = {
+//   chart: {
+//     type: "donut",
+//     height: 334,
+//   },
+//   series: [45, 15], // Example values: Income, Expand, Booking
+//   labels: ["Income", "Expand"],
 
-  colors: [MacaoAdminConfig.primary, MacaoAdminConfig.secondary], // orange, lavender, light peach
+//   colors: [MacaoAdminConfig.primary, MacaoAdminConfig.secondary], // orange, lavender, light peach
 
-  plotOptions: {
-    pie: {
-      donut: {
-        size: "70%",
-        labels: {
-          show: true,
-          value: {
+//   plotOptions: {
+//     pie: {
+//       donut: {
+//         size: "70%",
+//         labels: {
+//           show: true,
+//           value: {
+//             show: true,
+//             fontSize: "18",
+//             fontWeight: 600,
+//             color: "#000",
+//             formatter: () => "$24,006",
+//           },
+//           name: {
+//             show: true,
+//             offsetY: 10,
+//             fontSize: "14px",
+//             color: "#777",
+//             formatter: () => "Business Spend",
+//           },
+//           total: {
+//             show: false,
+//           },
+//         },
+//       },
+//     },
+//   },
+//   dataLabels: {
+//     enabled: false,
+//   },
+
+//   legend: {
+//     position: "bottom",
+//     horizontalAlign: "center",
+//     fontSize: "13px",
+//     markers: {
+//       width: 12,
+//       height: 12,
+//       radius: 12,
+//     },
+//   },
+
+//   stroke: {
+//     width: 0,
+//   },
+//   responsive: [
+//       {
+//         breakpoint: 1801,
+//         options: {
+//           chart: {
+//             height: 340,
+//           },
+//         },
+//       },
+      
+//     ],
+// };
+
+// var chart = new ApexCharts(document.querySelector("#browservisiting"), options);
+// chart.render();
+
+  var options = {
+    series: [45, 25, 20, 10],
+    chart: {
+      height: 330,
+      type: "donut",
+    },
+    stroke: {
+      width: 0,
+    },
+    labels: ["Completed Orders", "Pending Orders", "Cancelled Orders", "Returned Orders"],
+    colors: [MacaoAdminConfig.primary, "#ffb829", MacaoAdminConfig.secondary, "#6FBF73"],
+    dataLabels: {
+      enabled: false,
+    },
+    legend: {
+      show: true,
+      position: "bottom",
+      horizontalAlign: "center",
+      itemMargin: {
+        horizontal: 15,
+        vertical: 5,
+      },
+    },
+    plotOptions: {
+      pie: {
+        donut: {
+          size: "80%",
+          labels: {
             show: true,
-            fontSize: "18",
-            fontWeight: 600,
-            color: "#000",
-            formatter: () => "$24,006",
-          },
-          name: {
-            show: true,
-            offsetY: 10,
-            fontSize: "14px",
-            color: "#777",
-            formatter: () => "Business Spend",
-          },
-          total: {
-            show: false,
+            name: {
+              show: true,
+              color: "#000000",
+              offsetY: 16,
+            },
+            value: {
+              show: true,
+              color: undefined,
+              offsetY: -25,
+              formatter: function (val) {
+                return val;
+              },
+            },
+            total: {
+              show: true,
+              label: "Total",
+              color: "#86909C",
+              formatter: function (w) {
+                return w.globals.seriesTotals.reduce((a, b) => a + b, 0) + "%";
+              },
+            },
           },
         },
       },
     },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-
-  legend: {
-    position: "bottom",
-    horizontalAlign: "center",
-    fontSize: "13px",
-    markers: {
-      width: 12,
-      height: 12,
-      radius: 12,
-    },
-  },
-
-  stroke: {
-    width: 0,
-  },
-  responsive: [
+    responsive: [
       {
-        breakpoint: 1801,
+        breakpoint: 1630,
+        options: {
+          chart: {
+            height: 320,
+          },
+        },
+      },
+      {
+        breakpoint: 1333,
+        options: {
+          chart: {
+            height: 298,
+          },
+        },
+      },
+      {
+        breakpoint: 1200,
+        options: {
+          chart: {
+            height: 325,
+          },
+        },
+      },
+      {
+        breakpoint: 826,
         options: {
           chart: {
             height: 340,
           },
         },
       },
-      
     ],
-};
-
-var chart = new ApexCharts(document.querySelector("#browservisiting"), options);
-chart.render();
-
+  };
+  var revenueproduct = new ApexCharts(document.querySelector("#revenueproduct"), options);
+  revenueproduct.render();
 
 var attendance_option = {
   series: [

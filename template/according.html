@@ -67,17 +67,19 @@
           </div>
           <div class="nav-right col-xxl-8 col-xl-6 col-md-7 col-8 pull-right right-header ms-auto">
             <ul class="nav-menus">
-              <form class="form-inline search-full col" action="#" method="get">
-                <div class="form-group w-100">
-                  <div class="Typeahead Typeahead--twitterUsers">
-                    <div class="searchBar">
-                      <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
-                      <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+              <li class="search-li"> 
+                <form class="form-inline search-full col" action="#" method="get">
+                  <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                      <div class="searchBar">
+                        <input id="searchQueryInputDesktop" type="text" name="searchQueryInputDesktop" placeholder="Type to Search" value="">
+                        <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                      </div>
+                      <div class="Typeahead-menu"></div>
                     </div>
-                    <div class="Typeahead-menu"></div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </li>
               <li class="language-nav">
                 <div class="translate_wrapper">
                   <div class="current_lang">
@@ -148,7 +150,9 @@
                         <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
                       </div>
                     </li>
-                    <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    <li>       
+                      <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -255,7 +259,7 @@
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#search"></use>
                   </svg></span></li>
-              <div class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
+              <li class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
                 <div class="searchBar">
                   <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
                   <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
@@ -264,7 +268,7 @@
                     </svg>
                   </button>
                 </div>
-              </div>
+              </li>
               <li class="fullscreen-body">                       <span>
                   <svg id="maximize-screen">
                     <use href="../assets/svg/icon-sprite.svg#full-screen"></use>
@@ -1309,7 +1313,7 @@
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                           <button class="accordion-button collapsed gap-2 accordion-light-secondary active txt-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne"><i class="svg-wrapper" data-feather="bell"></i>Keep in touch<i class="svg-color" data-feather="chevron-down"></i></button>
                         </h2>
-                        <div class="accordion-collapse collapse" id="panelsStayOpen-collapseOne" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-collapse collapse" id="panelsStayOpen-collapseOne" aria-labelledby="panelsStayOpen-headingOne" role="menu">
                           <div class="accordion-body">
                             <p> <b> " This page might not behave as expected because Windows Internet Explorer isn't configured to load unsigned ActiveX controls."</b> or "Allow this page to install an unsigned ActiveX Control? Doing so from untrusted sources may harm your computer." (Both phrased as conditions that may cause future problems.)</p>
                           </div>
@@ -1319,7 +1323,7 @@
                         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                           <button class="accordion-button collapsed gap-2 accordion-light-secondary active txt-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo"><i class="svg-wrapper" data-feather="message-circle"></i>Chats with others<i class="svg-color" data-feather="chevron-down"></i></button>
                         </h2>
-                        <div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo" aria-labelledby="panelsStayOpen-headingTwo" role="menu">
                           <div class="accordion-body">
                             <ul class="d-flex flex-column gap-2 accordions-content">
                               <li>You get the same features in Chat and Chat in Gmail, but the integrated Gmail experience provides a central location to communicate with friends, family, or coworkers between emails.</li>
@@ -1332,7 +1336,7 @@
                         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                           <button class="accordion-button collapsed gap-2 accordion-light-secondary active txt-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree"><i class="svg-wrapper" data-feather="check-square"></i>Right way to code <i class="svg-color" data-feather="chevron-down"></i></button>
                         </h2>
-                        <div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree" aria-labelledby="panelsStayOpen-headingThree" role="menu">
                           <div class="accordion-body">
                             <ul class="d-flex flex-column gap-2 accordions-content"> 
                               <li>1) Decide on the indentation and keep it that way.</li>
@@ -1358,7 +1362,7 @@
        &lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;
      &lt;/button&gt;
    &lt;/h2&gt;
-   &lt;div class="accordion-collapse collapse" id="panelsStayOpen-collapseOne" aria-labelledby="panelsStayOpen-headingOne"&gt;
+   &lt;div class="accordion-collapse collapse" id="panelsStayOpen-collapseOne" aria-labelledby="panelsStayOpen-headingOne" role="menu&gt;
      &lt;div class="accordion-body"&gt;
        &lt;p&gt;&lt;b&gt;" This page might not behave as expected because Windows Internet Explorer isn't configured to load unsigned ActiveX controls."&lt;/b&gt; or "Allow this page to install an unsigned ActiveX Control? Doing so from untrusted sources may harm your computer." (Both phrased as conditions that may cause future problems.)
        &lt;/p&gt;
@@ -1369,7 +1373,7 @@
    &lt;h2 class="accordion-header" id="panelsStayOpen-headingTwo"&gt;
      &lt;button class="accordion-button collapsed gap-2 accordion-light-secondary active txt-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo"&gt;&lt;i class="svg-wrapper" data-feather="message-circle"&gt;&lt;/i&gt;Chats with others&lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;&lt;/button&gt;
    &lt;/h2&gt;
-   &lt;div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo" aria-labelledby="panelsStayOpen-headingTwo"&gt;
+   &lt;div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo" aria-labelledby="panelsStayOpen-headingTwo" role="menu&gt;
      &lt;div class="accordion-body"&gt;
        &lt;ul class="d-flex flex-column gap-2 accordions-content"&gt;
          &lt;li&gt;You get the same features in Chat and Chat in Gmail, but the integrated Gmail experience provides a central location to communicate with friends, family, or coworkers between emails.&lt;/li&gt;
@@ -1385,7 +1389,7 @@
        &lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;
      &lt;/button&gt;
    &lt;/h2&gt;
-   &lt;div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree" aria-labelledby="panelsStayOpen-headingThree"&gt;
+   &lt;div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree" aria-labelledby="panelsStayOpen-headingThree" role="menu&gt;
      &lt;div class="accordion-body"&gt;
        &lt;ul class="d-flex flex-column gap-2 accordions-content"&gt; 
          &lt;li&gt;1) Decide on the indentation and keep it that way.&lt;/li&gt;
@@ -1428,7 +1432,7 @@
                         <h2 class="accordion-header" id="outlineaccordionone">
                           <button class="accordion-button collapsed accordion-light-primary txt-primary" type="button" data-bs-toggle="collapse" data-bs-target="#left-collapseOne" aria-expanded="true" aria-controls="left-collapseOne">What do web designers do?<i class="svg-color" data-feather="chevron-down"></i></button>
                         </h2>
-                        <div class="accordion-collapse collapse" id="left-collapseOne" aria-labelledby="outlineaccordionone" data-bs-parent="#outlineaccordion">
+                        <div class="accordion-collapse collapse" id="left-collapseOne" aria-labelledby="outlineaccordionone" role="menu" data-bs-parent="#outlineaccordion">
                           <div class="accordion-body">
                             <p>
                                Web design<b> identifies the goals</b> of a website or webpage and promotes accessibility for all potential users. This process involves organizing content and images across a series of pages and integrating applications and other interactive elements.</p>
@@ -1439,7 +1443,7 @@
                         <h2 class="accordion-header" id="outlineaccordiontwo">
                           <button class="accordion-button collapsed accordion-light-primary txt-primary" type="button" data-bs-toggle="collapse" data-bs-target="#left-collapseTwo" aria-expanded="false" aria-controls="left-collapseTwo">What is the use of web design?<i class="svg-color" data-feather="chevron-down"></i></button>
                         </h2>
-                        <div class="accordion-collapse collapse" id="left-collapseTwo" aria-labelledby="outlineaccordiontwo" data-bs-parent="#outlineaccordion">
+                        <div class="accordion-collapse collapse" id="left-collapseTwo" aria-labelledby="outlineaccordiontwo" role="menu" data-bs-parent="#outlineaccordion">
                           <div class="accordion-body">
                             <ul class="d-flex flex-column gap-2 accordions-content">
                               <li><strong> Search engine optimization: </strong>Search engine optimization (SEO) is a method for improving the chances for a website to be found by search engines. Web design codes information in a way that search engines can read it. It can boost business because the site shows up on the top search result pages, helping people to find it.</li>
@@ -1453,7 +1457,7 @@
                         <h2 class="accordion-header" id="outlineaccordionthree">
                           <button class="accordion-button collapsed accordion-light-primary txt-primary" type="button" data-bs-toggle="collapse" data-bs-target="#left-collapseThree" aria-expanded="false" aria-controls="left-collapseThree">What are the elements of web design?<i class="svg-color" data-feather="chevron-down"></i></button>
                         </h2>
-                        <div class="accordion-collapse collapse" id="left-collapseThree" aria-labelledby="outlineaccordionthree" data-bs-parent="#outlineaccordion">
+                        <div class="accordion-collapse collapse" id="left-collapseThree" aria-labelledby="outlineaccordionthree" role="menu" data-bs-parent="#outlineaccordion">
                           <div class="accordion-body">
                             <ul class="d-flex flex-column gap-2 accordions-content">
                               <li> The web design process allows designers to adjust to any preferences and provide effective solutions. There are many standard components of every web design, including:</li>
@@ -1479,7 +1483,7 @@
        &lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;
      &lt;/button&gt;
    &lt;/h2&gt;
-   &lt;div class="accordion-collapse collapse" id="left-collapseOne" aria-labelledby="outlineaccordionone" data-bs-parent="#outlineaccordion"&gt;
+   &lt;div class="accordion-collapse collapse" id="left-collapseOne" aria-labelledby="outlineaccordionone" role="menu" data-bs-parent="#outlineaccordion"&gt;
      &lt;div class="accordion-body"&gt;
        &lt;p&gt;Web design&lt;b&gt; identifies the goals&lt;/b&gt;of a website or webpage and promotes accessibility for all potential users. This process involves organizing content and images across a series of pages and integrating applications and other interactive elements.&lt;/p&gt;
      &lt;/div&gt;
@@ -1491,7 +1495,7 @@
        &lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;
      &lt;/button&gt;
    &lt;/h2&gt;
-   &lt;div class="accordion-collapse collapse" id="left-collapseTwo" aria-labelledby="outlineaccordiontwo" data-bs-parent="#outlineaccordion"&gt;
+   &lt;div class="accordion-collapse collapse" id="left-collapseTwo" aria-labelledby="outlineaccordiontwo" role="menu" data-bs-parent="#outlineaccordion"&gt;
      &lt;div class="accordion-body"&gt;
        &lt;ul class="d-flex flex-column gap-2 accordions-content"&gt;
          &lt;li&gt;
@@ -1513,7 +1517,7 @@
        &lt;i class="svg-color" data-feather="chevron-down"&gt;&lt;/i&gt;
      &lt;/button&gt;
    &lt;/h2&gt;
-   &lt;div class="accordion-collapse collapse" id="left-collapseThree" aria-labelledby="outlineaccordionthree" data-bs-parent="#outlineaccordion"&gt;
+   &lt;div class="accordion-collapse collapse" id="left-collapseThree" aria-labelledby="outlineaccordionthree" role="menu" data-bs-parent="#outlineaccordion"&gt;
      &lt;div class="accordion-body"&gt;
        &lt;ul class="d-flex flex-column gap-2 accordions-content"&gt;
          &lt;li&gt; The web design process allows designers to adjust to any preferences and provide effective solutions. There are many standard components of every web design, including:&lt;/li&gt;

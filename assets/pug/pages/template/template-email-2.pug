@@ -28,6 +28,10 @@ html(lang='en')
       margin:0;
       padding: 0;
       }
+      table td,
+      table th {
+        padding: 0;
+      }
       li{
       display: inline-block;
       text-decoration: unset;
@@ -241,16 +245,16 @@ html(lang='en')
         }
       }
   body(style='margin: 20px auto;')
-    table(align='center', border='0', cellpadding='0', cellspacing='0', style='background-color: #fff; -webkit-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);')
+    table(style='background-color: #fff; text-align:center; border:none; border-collapse: collapse; -webkit-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);')
       tbody
         tr
           td
-            table(align='center', border='0', cellpadding='0', cellspacing='0', width='100%')
+            table(style="border-collapse: collapse; border:none; width:100%; text-align:center;")
               tbody
                 tr.header
-                  td(align='left', valign='top')
+                  td(style="text-align:left; vertical-align:top;")
                     img.main-logo(src='../assets/images/logo/logo.png')
-                  td.menu(align='right')
+                  td.menu(style="text-align:right;")
                     ul
                       li
                         a(href='index.html' target="_blank") Home
@@ -260,13 +264,13 @@ html(lang='en')
                         a(href='cart.html' target="_blank") My cart
                       li
                         a(href='contacts.html' target="_blank") Contact
-            table.slider(align='center', border='0', cellpadding='0', cellspacing='0', width='100%')
+            table.slider(style="border-collapse: collapse; border:none; text-align:center; width:100%;")
               tbody
                 tr
-                  th(align='center', width='40%')
+                  th(style="text-align:center; width:100%")
                     img(src='../assets/images/email-template/slider.jpg', alt='', style='margin-bottom: -5px;')
                   th(width='60%', style='background-color: #e16349;padding: 30px;')
-                    table(align='center', border='0', cellpadding='0', cellspacing='0', width='100%')
+                    table(style="border-collapse: collapse; border:none; width:100%; text-align:center;")
                       tbody
                         tr
                           td(style='color:#ffffff;font-size: 16px;line-height:20px;text-transform:uppercase;text-align:left;padding-bottom: 5px;') New Color
@@ -286,7 +290,7 @@ html(lang='en')
                               span(style='color:#fc564a; text-decoration:none;') shop now
             h4.title(style='width: 100%; text-align:center;margin-top: 50px;') trending product
             p(style='margin:0') GET EVEN 25% OFF DISCOUNT
-            table.product-sec(align='center', border='0', cellpadding='0', cellspacing='0', width='100%', style='margin-top:30px;')
+            table.product-sec(style='margin-top:30px; border:none; text-align:center; width:100%; border-collapse: collapse;')
               thead
                 tr
               tbody
@@ -319,27 +323,27 @@ html(lang='en')
                         a(href='#!', tabindex='0')
                           h6 When an unknown.
                         h4 $75.00
-            table(border='0', cellpadding='0', cellspacing='0', align='center', style='margin-top:30px;')
+            table(style='margin-top:30px; border:none; text-align:center; border-collapse: collapse;')
               tbody
-                tr.add-with-banner(align='center')
+                tr.add-with-banner(style="text-align:center;")
                   td
                     a(href='#!')
                       img(src='../assets/images/email-template/banner.jpg', alt='product', style='width: 100%;')
-            table(border='0', cellpadding='0', cellspacing='0', align='center', style='margin-top:30px;')
+            table(style='margin-top:30px; border:none; text-align:center; border-collapse: collapse;')
               tbody
                 tr
                   td
                     img(src='../assets/images/email-template/banner-2.jpg', alt='', style='width: 100%;')
-            table(align='center', border='0', cellpadding='0', cellspacing='0', width='100%', style='margin-top: 30px;')
+            table(style='margin-top: 30px; border:none; text-align:center; width:100%; border-collapse: collapse;')
               tbody
                 tr
-                  td(align='center')
-                    table.display-width-inner(align='center', border='0', cellpadding='0', cellspacing='0', width='100%', style='max-width:450px;')
+                  td(style="text-align:center;")
+                    table.display-width-inner(style='max-width:450px; border:none; text-align:center; width:100%; border-collapse: collapse;')
                       tbody
                         tr
-                          td(align='center', style='width: 40%;')
+                          td( style='width: 40%; text-align:center;')
                             img(src='../assets/images/email-template/10.jpg', alt='', style='width: 225px;margin-bottom: -4px;')
-                          td(align='center', style='background-color: #fafafa;width: 60%;')
+                          td( style='background-color: #fafafa;width: 60%; text-align:center;')
                             h3(style='margin: 0;') Product One
                             div(style='color:#E01931; font-weight:600; font-size:16px; line-height:27px; letter-spacing:1px;margin: 4px;')
                               span.txt-price1(style='color:#666666; font-weight:600; font-size:15px; line-height:25px; letter-spacing:1px;', data-color='Price1', data-size='Price1', data-min='10', data-max='35')
@@ -348,10 +352,10 @@ html(lang='en')
                               | $20.90
                             div(style='padding: 15px 0px;text-transform: uppercase;font-size: 11px;letter-spacing: 1px;')
                               a(href='#!', style='color: #ffffff;text-decoration: none;background: #000;padding: 8px 12px;') SHOP NOW
-                    table.display-width-inner(align='center', border='0', cellpadding='0', cellspacing='0', width='100%', style='max-width:450px;')
+                    table.display-width-inner(style='max-width:450px; border:none; text-align:center; width:100%; border-collapse: collapse;')
                       tbody
                         tr
-                          td(align='center', style='background-color: #fafafa;width: 60%;')
+                          td(style='background-color: #fafafa;width: 60%; text-align:center;')
                             h3(style='margin: 0;') Product One
                             div(style='color:#E01931; font-weight:600; font-size:16px; line-height:27px; letter-spacing:1px;margin: 4px;')
                               span.txt-price1(style='color:#666666; font-weight:600; font-size:15px; line-height:25px; letter-spacing:1px;', data-color='Price1', data-size='Price1', data-min='10', data-max='35')
@@ -360,14 +364,14 @@ html(lang='en')
                               | $20.90
                             div(style='padding: 15px 0px;text-transform: uppercase;font-size: 11px;letter-spacing: 1px;')
                               a(href='#!', style='color: #ffffff;text-decoration: none;background: #000;padding: 8px 12px;') SHOP NOW
-                          td(align='center', style='width: 40%;')
+                          td( style='width: 40%; text-align:center;')
                             img(src='../assets/images/email-template/11.jpg', alt='', style='width: 225px;margin-bottom: -4px;')
-                    table.display-width-inner(align='center', border='0', cellpadding='0', cellspacing='0', width='100%', style='max-width:450px;')
+                    table.display-width-inner(style='max-width:450px; border:none; text-align:center; width:100%; border-collapse: collapse;')
                       tbody
                         tr
-                          td(align='center', style='width: 40%;')
+                          td(style='width: 40%; text-align:center;')
                             img(src='../assets/images/email-template/12.jpg', alt='', style='width: 225px;margin-bottom: -4px;')
-                          td(align='center', style='background-color: #fafafa;width: 60%;')
+                          td(style='background-color: #fafafa;width: 60%; text-align:center;')
                             h3(style='margin: 0;') Product One
                             div(style='color:#E01931; font-weight:600; font-size:16px; line-height:27px; letter-spacing:1px;margin: 4px;')
                               span.txt-price1(style='color:#666666; font-weight:600; font-size:15px; line-height:25px; letter-spacing:1px;', data-color='Price1', data-size='Price1', data-min='10', data-max='35')
@@ -376,13 +380,13 @@ html(lang='en')
                               | $20.90
                             div(style='padding: 15px 0px;text-transform: uppercase;font-size: 11px;letter-spacing: 1px;')
                               a(href='#!', style='color: #ffffff;text-decoration: none;background: #000;padding: 8px 12px;') SHOP NOW
-            table.main-bg-light.text-center(align='center', border='0', cellpadding='0', cellspacing='0', width='100%', style='margin-top:30px;')
+            table.main-bg-light.text-center(style='margin-top:30px; border:none; width:100%; text-align:center; border-collapse: collapse;')
               tbody
                 tr
                   td(style='padding: 30px;')
                     div
                       h4.title(style='margin:0') Follow us
-                    table.footer-social-icon(border='0' cellpadding='0' cellspacing='0' align='center' style='margin-top:20px;')
+                    table.footer-social-icon(style='margin-top:20px; text-align:center; border:none; border-collapse: collapse;')
                       tbody
                         tr.temp-social
                           td
@@ -401,7 +405,7 @@ html(lang='en')
                             a(href='https://in.pinterest.com/')
                               i.fa-brands.fa-pinterest-p
                     div(style='border-top: 1px solid #ddd; margin: 20px auto 0;')
-                    table(border='0', cellpadding='0', cellspacing='0', width='100%', style='margin: 20px auto 0;')
+                    table(style='margin: 20px auto 0; border:none; width:100%; border-collapse: collapse;')
                       tbody
                         tr
                           td

@@ -54,6 +54,16 @@
             box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
         }
     }
+    
+    .card-wrapper{
+        .stroke-flex{
+            a{
+                svg{
+                    fill: none;
+                }
+            }
+        }
+    }
 }
 
 .heartbeat-wrapper {

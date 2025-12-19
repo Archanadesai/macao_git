@@ -6,6 +6,10 @@
   bottom: 80px;
   z-index: 9;
   right: 30px;
+  [dir="rtl"] & {
+    right: unset;
+    left: 30px;
+  }
 
   @media (max-width:575px) {
     display: none;

@@ -771,36 +771,6 @@ footer {
 
 
 // Los angeles css
-.page-wrapper {
-  &.horizontal-wrapper {
-    &.material-type {
-      .default-dashboard {
-        .appointments-wrapper {
-          li {
-            .main-box {
-              span {
-                &:nth-child(2) {
-                  @include pixelstrap-ellipsis;
-                  max-width: 310px;
-                }
-              }
-            }
-          }
-        }
-
-        .visitor-chart {
-          .common-flex {
-            p {
-              @media (min-width: 1400px) {
-                display: none;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
 .default-dashboard {
   .card {
     .balance-wrapper {

@@ -89,7 +89,7 @@ html(lang='en')
                               | Please select a valid priority
                           .col-xxl-4.col-md-6
                             label.form-label(for='selectTeamLeader') Select Team Leader
-                            select#selectTeamLeader.form-select(required='')
+                            select#selectTeamLeader.form-select
                               option Nathan Cooper
                               option Owen Davis
                               option Zoey Jenkins
@@ -98,7 +98,7 @@ html(lang='en')
                               | Please select your team leader
                           .col-xxl-4.col-md-6
                             label.form-label(for='selectMember') Select Members
-                            select.selectpicker(multiple='' aria-label='Default select example' data-live-search='true' required)
+                            select.selectpicker(multiple='' aria-label='Default select example' id="selectMember" data-live-search='true' required)
                               option(value='1' selected) Nathan Cooper
                               option(value='2' selected) Owen Davis
                               option(value='3') Zoey Jenkins

@@ -18,7 +18,7 @@
 doctype html
 html(lang='en')
   include ../../components/header-files
-  body(onload='startTime()')
+  body
     include ../../components/loader
     include ../../components/taptop
     // page-wrapper Start
@@ -258,7 +258,7 @@ html(lang='en')
                         .dropdown.icon-dropdown
                           button#treadingProduct.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false')
                             i.icon-more-alt
-                          .dropdown-menu.dropdown-menu-end(aria-labelledby='treadingProduct')
+                          .dropdown-menu.dropdown-menu-end(aria-labelledby='treadingProduct' role="menu" )
                             a.dropdown-item(href='#!') This Month
                             a.dropdown-item(href='#!') Previous Month
                             a.dropdown-item(href='#!') Last 3 Months
@@ -337,7 +337,7 @@ html(lang='en')
                   .card-header 
                     h5 Recent performance
                   .card-body.pt-0  
-                    #browservisiting
+                    #revenueproduct
               .col-xl-5.col-lg-6.col-md-6.box-col-6 
                 .card 
                   .card-header 

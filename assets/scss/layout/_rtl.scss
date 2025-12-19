@@ -392,17 +392,6 @@ html[dir="rtl"] {
         }
       }
     }
-
-    &.only-body {
-      .page-header {
-        .header-wrapper {
-          .nav-right {
-            right: unset;
-            left: 60px;
-          }
-        }
-      }
-    }
   }
 
   // Datepicker
@@ -1042,14 +1031,6 @@ html[dir="rtl"] {
         }
       }
     }
-
-    &.material-type {
-      .page-body-wrapper {
-        .page-body {
-          margin-right: auto;
-        }
-      }
-    }
   }
 
   .page-header {
@@ -1119,175 +1100,6 @@ html[dir="rtl"] {
             .close-search {
               right: unset;
               left: 0;
-            }
-          }
-        }
-      }
-    }
-
-    &.compact-sidebar {
-      .toggle-sidebar {
-        margin-left: 15px;
-        margin-right: unset;
-      }
-
-      .page-header {
-        margin-left: unset;
-        margin-right: 150px;
-
-        &.close_icon {
-          margin-right: 0;
-        }
-      }
-
-      .page-body-wrapper {
-        .page-body {
-          margin-left: unset;
-          margin-right: 150px;
-        }
-
-        .footer {
-          margin-left: unset;
-          margin-right: 150px;
-        }
-
-        div.sidebar-wrapper {
-          >div {
-            text-align: right;
-          }
-
-          .sidebar-main {
-
-            .sidebar-links {
-              li {
-                > {
-                  .sidebar-submenu {
-                    li {
-                      a {
-                        padding: 15px 40px 150px 15px;
-                      }
-
-                      .sidebar-submenu {
-                        padding-left: unset;
-                        padding-right: 20px;
-                      }
-                    }
-                  }
-                }
-
-                a {
-                  &.active {
-
-                    ~.sidebar-submenu {
-                      animation: fadeInRight 1000ms ease-in-out;
-                    }
-                  }
-                }
-
-                .sidebar-submenu {
-                  right: 150px;
-                  left: unset;
-
-                  li {
-                    a {
-                      padding: 15px 40px 15px 15px;
-
-                      .according-menu {
-                        right: unset;
-                        left: 20px;
-                        transform: scaleX(-1);
-                      }
-
-                    }
-                  }
-
-                  >li {
-                    >a {
-                      &::after {
-                        left: unset;
-                        right: 20px;
-                      }
-                    }
-                  }
-                }
-              }
-
-
-              .sidebar-list {
-
-                .badge {
-                  left: unset;
-                  right: 53%;
-                }
-
-                .sidebar-link {
-                  text-align: center;
-                }
-              }
-            }
-          }
-
-          &.close_icon {
-            transform: translateX(150px);
-
-            ~.page-body,
-            ~.footer {
-              margin-right: 0px;
-            }
-          }
-        }
-      }
-    }
-
-    &.compact-small {
-      .page-header {
-        margin-right: 90px;
-      }
-
-      .page-body-wrapper {
-        div.sidebar-wrapper {
-          .sidebar-main {
-            .sidebar-links {
-              li {
-
-                .sidebar-submenu {
-                  right: 90px;
-                }
-              }
-            }
-          }
-        }
-
-        .footer,
-        .page-body {
-          margin-right: 90px;
-        }
-      }
-    }
-
-    &.material-icon {
-      .page-header {
-        padding-left: unset;
-        padding-right: 90px;
-        margin: 0 auto;
-
-        &.close_icon {
-          padding-right: 0;
-        }
-      }
-
-      .page-body-wrapper {
-        .page-body {
-          padding-left: 15px;
-          padding-right: 90px;
-          margin: 0 auto;
-        }
-
-        div.sidebar-wrapper {
-          &.close_icon {
-            ~.page-body {
-              padding-right: 15px;
-              margin: 0 auto !important;
             }
           }
         }
@@ -3484,53 +3296,6 @@ html[dir="rtl"] {
           margin-right: 80px;
           margin-left: unset;
           width: calc(100% - 80px);
-        }
-      }
-    }
-
-    &.modern-type {
-      .page-header {
-        margin-right: 0;
-        width: calc(100% - 0px);
-
-        &.close_icon {
-          margin-right: 0;
-          width: calc(100% - 0px);
-        }
-
-        .header-wrapper {
-          .logo-wrapper {
-            margin-right: unset;
-            margin-left: 30px;
-          }
-
-          .toggle-sidebar {
-            margin-right: unset;
-            margin-left: 15px;
-          }
-        }
-      }
-
-      .page-body-wrapper {
-        .page-body {
-          margin-right: 296px;
-        }
-
-        .footer {
-          margin-left: 55px;
-          margin-right: 360px;
-        }
-
-        div.sidebar-wrapper {
-          &.close_icon {
-            ~.page-body {
-              margin-right: 0px;
-            }
-
-            ~footer {
-              margin-right: 0;
-            }
-          }
         }
       }
     }
@@ -6035,24 +5800,6 @@ html[dir="rtl"] {
           }
         }
       }
-
-      &.compact-sidebar {
-        .page-header {
-          margin-right: 0;
-        }
-      }
-
-      &.material-icon {
-        .page-header {
-          padding-right: 0;
-        }
-
-        .page-body-wrapper {
-          .page-body {
-            padding-right: 15px;
-          }
-        }
-      }
     }
 
     .faq-accordion {
@@ -6141,21 +5888,6 @@ html[dir="rtl"] {
       .card-header {
         .card-header-right {
           left: 15px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 991px) and (min-width: 768px) {
-    .page-wrapper {
-      &.compact-wrapper {
-        &.material-type {
-          .page-body-wrapper {
-            div.sidebar-wrapper {
-              left: unset;
-              right: 0;
-            }
-          }
         }
       }
     }
@@ -6318,8 +6050,7 @@ html[dir="rtl"] {
         }
       }
 
-      &.compact-wrapper,
-      &.compact-sidebar {
+      &.compact-wrapper {
         .page-header {
           .header-wrapper {
             .toggle-sidebar {
@@ -7365,44 +7096,6 @@ html[dir="rtl"] {
         .clock-medium {
           right: 32px;
           left: unset;
-        }
-      }
-    }
-  }
-
-  @media only screen and (max-width: 420px) {
-    .page-wrapper {
-      &.compact-sidebar {
-        .page-body-wrapper {
-          div.sidebar-wrapper {
-            .sidebar-main {
-              .sidebar-links {
-                li {
-
-                  .sidebar-submenu {
-                    right: 112px;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &.compact-small {
-        .page-body-wrapper {
-          div.sidebar-wrapper {
-            .sidebar-main {
-              .sidebar-links {
-                li {
-
-                  .sidebar-submenu {
-                    right: 80px;
-                  }
-                }
-              }
-            }
-          }
         }
       }
     }

@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const badge = document.querySelector(".cart-box .badge");
   const cartList = document.querySelector(".cart-list");
 
-  // Update cart badge count
+  if (!cartList) return;
   function updateUnreadCount() {
     const totalItems = cartList.querySelectorAll("li").length;
     if (badge) {
@@ -49,98 +49,65 @@ document.addEventListener("DOMContentLoaded", function () {
       badge.style.display = totalItems === 0 ? "none" : "inline-block";
     }
   }
-
-  // Format price as $xx.xx
   function formatPrice(value) {
     return "$" + value.toFixed(2);
   }
-
-  if (cartList) {
-    cartList.addEventListener("click", function (e) {
-      // Remove item
-      const closeBtn = e.target.closest(".close-circle");
-      if (closeBtn) {
-        e.preventDefault();
-        const li = closeBtn.closest("li");
-        if (li) {
-          li.remove();
-          updateUnreadCount();
-        }
-      }
-
-      // Quantity minus
-      const minusBtn = e.target.closest(".quantity-left-minus");
-      if (minusBtn) {
-        const input = minusBtn.closest(".input-group").querySelector(".input-number");
-        let value = parseInt(input.value);
-        if (value > 1) input.value = value - 1;
-        updateItemPrice(minusBtn.closest("li"));
-      }
-
-      // Quantity plus
-      const plusBtn = e.target.closest(".quantity-right-plus");
-      if (plusBtn) {
-        const input = plusBtn.closest(".input-group").querySelector(".input-number");
-        let value = parseInt(input.value);
-        input.value = value + 1;
-        updateItemPrice(plusBtn.closest("li"));
-      }
-    });
-  }
-
-  // Update the price for a single cart item
   function updateItemPrice(li) {
     if (!li) return;
+
     const quantityInput = li.querySelector(".input-number");
     const priceElement = li.querySelector(".qty-box h6");
-    const originalPrice = parseFloat(priceElement.dataset.price); // store original price in data-price
+    if (!quantityInput || !priceElement) return;
+
+    const originalPrice = parseFloat(priceElement.dataset.price);
     const quantity = parseInt(quantityInput.value);
+
     priceElement.textContent = formatPrice(originalPrice * quantity);
   }
-
-  // Initialize original prices in data-price attribute
-  cartList.querySelectorAll(".cart-list li").forEach((li) => {
-    const priceElement = li.querySelector(".qty-box h6");
-    const price = parseFloat(priceElement.textContent.replace("$", ""));
-    priceElement.dataset.price = price; // save original price
-  });
-
-  // Initial count on page load
-  updateUnreadCount();
-});
-
-// cart close icon js
-
-document.addEventListener("DOMContentLoaded", function () {
-  const badge = document.querySelector(".cart-box .badge");
-  const cartList = document.querySelector(".cart-list");
-
-  function updateUnreadCount() {
-    const totalItems = cartList.querySelectorAll("li").length;
-    if (badge) {
-      badge.textContent = totalItems;
-      badge.style.display = totalItems === 0 ? "none" : "inline-block";
-    }
-  }
-
-  // Event delegation: listen for clicks on .close-circle
-  if (cartList) {
-    cartList.addEventListener("click", function (e) {
-      const closeBtn = e.target.closest(".close-circle");
-      if (closeBtn) {
-        e.preventDefault();
-        const li = closeBtn.closest("li");
-        if (li) {
-          li.remove();
-          updateUnreadCount();
-        }
+  cartList.addEventListener("click", function (e) {
+    const closeBtn = e.target.closest(".close-circle");
+    if (closeBtn) {
+      e.preventDefault();
+      const li = closeBtn.closest("li");
+      if (li) {
+        li.remove();
+        updateUnreadCount();
       }
-    });
-  }
+      return;
+    }
+    const minusBtn = e.target.closest(".quantity-left-minus");
+    if (minusBtn) {
+      const input = minusBtn.closest(".input-group")?.querySelector(".input-number");
+      if (!input) return;
 
-  // Initial count on page load
+      let value = parseInt(input.value);
+      if (value > 1) input.value = value - 1;
+
+      updateItemPrice(minusBtn.closest("li"));
+      return;
+    }
+    const plusBtn = e.target.closest(".quantity-right-plus");
+    if (plusBtn) {
+      const input = plusBtn.closest(".input-group")?.querySelector(".input-number");
+      if (!input) return;
+
+      let value = parseInt(input.value);
+      input.value = value + 1;
+
+      updateItemPrice(plusBtn.closest("li"));
+      return;
+    }
+  });
+  cartList.querySelectorAll("li").forEach((li) => {
+    const priceElement = li.querySelector(".qty-box h6");
+    if (!priceElement) return;
+
+    const price = parseFloat(priceElement.textContent.replace("$", ""));
+    priceElement.dataset.price = price;
+  });
   updateUnreadCount();
 });
+
 
 // notification close icon js
 
@@ -173,10 +140,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Set initial count on page load
   updateUnreadCount();
-  document.getElementById("small-header-toggle").addEventListener("click", function () {
-    document.querySelector(".bookmark-body").classList.toggle("show-icons");
-    document.querySelector(".language-nav").classList.toggle("show-icons");
-    document.querySelector(".cart-nav").classList.toggle("show-icons");
-    document.querySelector(".notification-body").classList.toggle("show-icons");
-  });
+  const smallHeaderToggle = document.getElementById("small-header-toggle");
+
+  if (smallHeaderToggle) {
+    smallHeaderToggle.addEventListener("click", function () {
+      document.querySelector(".bookmark-body")?.classList.toggle("show-icons");
+      document.querySelector(".language-nav")?.classList.toggle("show-icons");
+      document.querySelector(".cart-nav")?.classList.toggle("show-icons");
+      document.querySelector(".notification-body")?.classList.toggle("show-icons");
+    });
+  }
 });

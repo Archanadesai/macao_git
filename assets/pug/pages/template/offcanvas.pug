@@ -68,7 +68,7 @@ html(lang='en')
                   .card-body.common-flex.common-offcanvas.pt-0
                     button.btn.btn-secondary(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample') Button with data-bs-target
                     a.btn.btn-primary(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample') Link with href
-                    #offcanvasExample.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasExampleLabel')
+                    #offcanvasExample.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasExampleLabel' role="menu")
                       .offcanvas-header.pb-0
                         h5#offcanvasExampleLabel.offcanvas-title Main Offcanvas Title
                         button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
@@ -96,7 +96,7 @@ html(lang='en')
                         code.language-html#initial-offcanvas
                           |&lt;button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"&gt;Button with data-bs-target&lt;/button&gt;
                           |&lt;a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"&gt;Link with href&lt;/a&gt;
-                          |&lt;div class="offcanvas offcanvas-start" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel"&gt;
+                          |&lt;div class="offcanvas offcanvas-start" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel" role="menu&gt;
                           |  &lt;div class="offcanvas-header pb-0"&gt;
                           |    &lt;h5 class="offcanvas-title" id="offcanvasExampleLabel"&gt;Main Offcanvas Title&lt;/h5&gt;
                           |    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -144,7 +144,7 @@ html(lang='en')
                           i.icofont.icofont-error.close-card
                   .card-body.common-flex.common-offcanvas.pt-0
                       button.btn.btn-primary(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasTop' aria-controls='offcanvasTop') Top Offcanvas
-                      #offcanvasTop.offcanvas.offcanvas-top(tabindex='-1' aria-labelledby='offcanvasTopLabel')
+                      #offcanvasTop.offcanvas.offcanvas-top(tabindex='-1' role="menu" aria-labelledby='offcanvasTopLabel')
                           .offcanvas-header.pb-0
                               h5#offcanvasTopLabel.offcanvas-title Offcanvas Top
                               button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
@@ -182,7 +182,7 @@ html(lang='en')
                                   .col-12
                                       button.btn.btn-primary(type='submit') Submit
                       button.btn.btn-secondary(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasRight' aria-controls='offcanvasRight') Right Offcanvas
-                      #offcanvasRight.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasRightLabel')
+                      #offcanvasRight.offcanvas.offcanvas-end(tabindex='-1' role="menu" aria-labelledby='offcanvasRightLabel')
                           .offcanvas-header.pb-0
                               h5#offcanvasRightLabel.offcanvas-title Offcanvas End
                               button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
@@ -217,7 +217,7 @@ html(lang='en')
                                       button.btn.btn-light.me-2(type='submit' data-bs-dismiss='offcanvas' aria-label='Close') Cancel
                                       button.btn.btn-primary(type='submit') Submit
                       button.btn.btn-dark(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasBottom' aria-controls='offcanvasBottom') Bottom Offcanvas
-                      #offcanvasBottom.offcanvas.offcanvas-bottom(tabindex='-1' aria-labelledby='offcanvasBottomLabel')
+                      #offcanvasBottom.offcanvas.offcanvas-bottom(tabindex='-1' role="menu" aria-labelledby='offcanvasBottomLabel')
                           .offcanvas-header.pb-0
                               h5#offcanvasBottomLabel.offcanvas-title Offcanvas Bottom
                               button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
@@ -255,7 +255,7 @@ html(lang='en')
                                   .col-12
                                       button.btn.btn-primary(type='submit') Submit
                       button.btn.btn-success(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasLeft' aria-controls='offcanvasLeft') Left Offcanvas
-                      #offcanvasLeft.offcanvas.offcanvas-start(tabindex='-1' aria-labelledby='offcanvasLeftLabel')
+                      #offcanvasLeft.offcanvas.offcanvas-start(tabindex='-1' role="menu" aria-labelledby='offcanvasLeftLabel')
                           .offcanvas-header.pb-0
                               h5#offcanvasLeftLabel.offcanvas-title Offcanvas Start
                               button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
@@ -295,7 +295,7 @@ html(lang='en')
                         pre
                           code.language-html#offcanvas-direction
                             |&lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"&gt;Top Offcanvas&lt;/button&gt;
-                            |&lt;div class="offcanvas offcanvas-top" id="offcanvasTop" tabindex="-1" aria-labelledby="offcanvasTopLabel"&gt;
+                            |&lt;div class="offcanvas offcanvas-top" id="offcanvasTop" tabindex="-1" aria-labelledby="offcanvasTopLabel" role="menu"&gt;
                             |  &lt;div class="offcanvas-header pb-0"&gt;
                             |    &lt;h5 class="offcanvas-title" id="offcanvasTopLabel"&gt;Offcanvas Top&lt;/h5&gt;
                             |    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -346,7 +346,7 @@ html(lang='en')
                             |  &lt;/div&gt;
                             |&lt;/div&gt;
                             |&lt;button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"&gt;Right Offcanvas&lt;/button&gt;
-                            |&lt;div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" aria-labelledby="offcanvasRightLabel"&gt;
+                            |&lt;div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" role="menu" aria-labelledby="offcanvasRightLabel"&gt;
                             |  &lt;div class="offcanvas-header pb-0"&gt;
                             |    &lt;h5 class="offcanvas-title" id="offcanvasRightLabel"&gt;Offcanvas End&lt;/h5&gt;
                             |    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -393,7 +393,7 @@ html(lang='en')
                             |  &lt;/div&gt;
                             |&lt;/div&gt;
                             |&lt;button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"&gt;Bottom Offcanvas&lt;/button&gt;
-                            |&lt;div class="offcanvas offcanvas-bottom" id="offcanvasBottom" tabindex="-1" aria-labelledby="offcanvasBottomLabel"&gt;
+                            |&lt;div class="offcanvas offcanvas-bottom" id="offcanvasBottom" tabindex="-1" role="menu" aria-labelledby="offcanvasBottomLabel"&gt;
                             |  &lt;div class="offcanvas-header pb-0"&gt;
                             |    &lt;h5 class="offcanvas-title" id="offcanvasBottomLabel"&gt;Offcanvas Bottom&lt;/h5&gt;
                             |    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -444,7 +444,7 @@ html(lang='en')
                             |  &lt;/div&gt;
                             |&lt;/div&gt;
                             |&lt;button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft"&gt;Left Offcanvas&lt;/button&gt;
-                            |&lt;div class="offcanvas offcanvas-start" id="offcanvasLeft" tabindex="-1" aria-labelledby="offcanvasLeftLabel"&gt;
+                            |&lt;div class="offcanvas offcanvas-start" id="offcanvasLeft" tabindex="-1" role="menu" aria-labelledby="offcanvasLeftLabel"&gt;
                             |  &lt;div class="offcanvas-header pb-0"&gt;
                             |    &lt;h5 class="offcanvas-title" id="offcanvasLeftLabel"&gt;Offcanvas Start&lt;/h5&gt;
                             |    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -516,7 +516,7 @@ html(lang='en')
                             i.icofont.icofont-error.close-card
                     .card-body.common-flex.common-offcanvas.pt-0     
                         button.btn.btn-info(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasScrolling' aria-controls='offcanvasScrolling') Enable Body Scrolling
-                        #offcanvasScrolling.offcanvas.offcanvas-start(data-bs-scroll='true' data-bs-backdrop='false' tabindex='-1' aria-labelledby='offcanvasScrollingLabel')
+                        #offcanvasScrolling.offcanvas.offcanvas-start(data-bs-scroll='true' data-bs-backdrop='false' tabindex='-1' role="menu" aria-labelledby='offcanvasScrollingLabel')
                             .offcanvas-header.pb-0
                                 h5#offcanvasScrollingLabel.offcanvas-title Offcanvas Body Scrolling
                                 button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
@@ -553,7 +553,7 @@ html(lang='en')
                                         button.btn.btn-light.me-2(type='submit' data-bs-dismiss='offcanvas' aria-label='Close') Cancel
                                         button.btn.btn-primary(type='submit') Submit
                         button.btn.btn-warning(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasWithBothOptions' aria-controls='offcanvasWithBothOptions') Enable Both Scrolling &amp; Backdrop
-                        #offcanvasWithBothOptions.offcanvas.offcanvas-start(data-bs-scroll='true' tabindex='-1' aria-labelledby='offcanvasWithBothOptionsLabel')
+                        #offcanvasWithBothOptions.offcanvas.offcanvas-start(data-bs-scroll='true' tabindex='-1' role="menu" aria-labelledby='offcanvasWithBothOptionsLabel')
                             .offcanvas-header.pb-0
                                 h5#offcanvasWithBothOptionsLabel.offcanvas-title Backdrop with Scrolling
                                 button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
@@ -591,7 +591,7 @@ html(lang='en')
                                         button.btn.btn-primary(type='submit') Submit
                         button.btn.btn-info(type='button' data-bs-toggle='offcanvas' data-bs-target='#staticBackdrop' aria-controls='staticBackdrop')
                             | Toggle Static Offcanvas
-                        #staticBackdrop.offcanvas.offcanvas-start(data-bs-backdrop='static' tabindex='-1' aria-labelledby='staticBackdropLabel')
+                        #staticBackdrop.offcanvas.offcanvas-start(data-bs-backdrop='static' tabindex='-1' role="menu" aria-labelledby='staticBackdropLabel')
                             .offcanvas-header.pb-0
                                 h5#staticBackdropLabel.offcanvas-title Static Offcanvas
                                 button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
@@ -633,7 +633,7 @@ html(lang='en')
                           pre
                             code.language-html#offcanvas-variation
                               |&lt;button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"&gt;Enable Body Scrolling&lt;/button&gt;
-                              |&lt;div class="offcanvas offcanvas-start" id="offcanvasScrolling" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" aria-labelledby="offcanvasScrollingLabel"&gt;
+                              |&lt;div class="offcanvas offcanvas-start" id="offcanvasScrolling" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" role="menu" aria-labelledby="offcanvasScrollingLabel"&gt;
                               |  &lt;div class="offcanvas-header pb-0"&gt;
                               |    &lt;h5 class="offcanvas-title" id="offcanvasScrollingLabel"&gt;Offcanvas Body Scrolling&lt;/h5&gt;
                               |    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -682,7 +682,7 @@ html(lang='en')
                               |  &lt;/div&gt;
                               |&lt;/div&gt;
                               |&lt;button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"&gt;Enable Both Scrolling &amp; Backdrop&lt;/button&gt;
-                              |&lt;div class="offcanvas offcanvas-start" id="offcanvasWithBothOptions" data-bs-scroll="true" tabindex="-1" aria-labelledby="offcanvasWithBothOptionsLabel"&gt;
+                              |&lt;div class="offcanvas offcanvas-start" id="offcanvasWithBothOptions" data-bs-scroll="true" tabindex="-1" role="menu" aria-labelledby="offcanvasWithBothOptionsLabel"&gt;
                               |  &lt;div class="offcanvas-header pb-0"&gt;
                               |    &lt;h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"&gt;Backdrop with Scrolling&lt;/h5&gt;
                               |    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -731,7 +731,7 @@ html(lang='en')
                               |  &lt;/div&gt;
                               |&lt;/div&gt;
                               |&lt;button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"&gt;Toggle Static Offcanvas&lt;/button&gt;
-                              |&lt;div class="offcanvas offcanvas-start" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel"&gt;
+                              |&lt;div class="offcanvas offcanvas-start" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" role="menu" aria-labelledby="staticBackdropLabel"&gt;
                               |  &lt;div class="offcanvas-header pb-0"&gt;
                               |    &lt;h5 class="offcanvas-title" id="staticBackdropLabel"&gt;Static Offcanvas&lt;/h5&gt;
                               |    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;

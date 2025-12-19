@@ -67,17 +67,19 @@
           </div>
           <div class="nav-right col-xxl-8 col-xl-6 col-md-7 col-8 pull-right right-header ms-auto">
             <ul class="nav-menus">
-              <form class="form-inline search-full col" action="#" method="get">
-                <div class="form-group w-100">
-                  <div class="Typeahead Typeahead--twitterUsers">
-                    <div class="searchBar">
-                      <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
-                      <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+              <li class="search-li"> 
+                <form class="form-inline search-full col" action="#" method="get">
+                  <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                      <div class="searchBar">
+                        <input id="searchQueryInputDesktop" type="text" name="searchQueryInputDesktop" placeholder="Type to Search" value="">
+                        <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                      </div>
+                      <div class="Typeahead-menu"></div>
                     </div>
-                    <div class="Typeahead-menu"></div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </li>
               <li class="language-nav">
                 <div class="translate_wrapper">
                   <div class="current_lang">
@@ -148,7 +150,9 @@
                         <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
                       </div>
                     </li>
-                    <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    <li>       
+                      <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -255,7 +259,7 @@
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#search"></use>
                   </svg></span></li>
-              <div class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
+              <li class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
                 <div class="searchBar">
                   <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
                   <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
@@ -264,7 +268,7 @@
                     </svg>
                   </button>
                 </div>
-              </div>
+              </li>
               <li class="fullscreen-body">                       <span>
                   <svg id="maximize-screen">
                     <use href="../assets/svg/icon-sprite.svg#full-screen"></use>
@@ -1249,7 +1253,7 @@
                                     </div>
                                     <div class="dropdown icon-dropdown">
                                       <button class="btn dropdown-toggle" id="appointmentDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="appointmentDropdown"><a class="dropdown-item" href="#">Completed</a><a class="dropdown-item" href="#">Reschedule</a><a class="dropdown-item" href="#">Repeat</a></div>
+                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="appointmentDropdown" role="menu"><a class="dropdown-item" href="#">Completed</a><a class="dropdown-item" href="#">Reschedule</a><a class="dropdown-item" href="#">Repeat</a></div>
                                     </div>
                                   </li>
                                   <li class="d-flex align-items-center"><span class="l-line-secondary"></span>
@@ -1263,7 +1267,7 @@
                                     </div>
                                     <div class="dropdown icon-dropdown">
                                       <button class="btn dropdown-toggle" id="getherInfoDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="getherInfoDropdown"><a class="dropdown-item" href="#">Completed</a><a class="dropdown-item" href="#">Reschedule</a><a class="dropdown-item" href="#">Repeat</a></div>
+                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="getherInfoDropdown" role="menu"><a class="dropdown-item" href="#">Completed</a><a class="dropdown-item" href="#">Reschedule</a><a class="dropdown-item" href="#">Repeat</a></div>
                                     </div>
                                   </li>
                                   <li class="d-flex align-items-center"><span class="l-line-success"></span>
@@ -1277,7 +1281,7 @@
                                     </div>
                                     <div class="dropdown icon-dropdown">
                                       <button class="btn dropdown-toggle" id="developmentDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="developmentDropdown"><a class="dropdown-item" href="#">Completed</a><a class="dropdown-item" href="#">Reschedule</a><a class="dropdown-item" href="#">Repeat</a></div>
+                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="developmentDropdown" role="menu"><a class="dropdown-item" href="#">Completed</a><a class="dropdown-item" href="#">Reschedule</a><a class="dropdown-item" href="#">Repeat</a></div>
                                     </div>
                                   </li>
                                   <li class="d-flex align-items-center"><span class="l-line-warning"></span>
@@ -1291,7 +1295,7 @@
                                     </div>
                                     <div class="dropdown icon-dropdown">
                                       <button class="btn dropdown-toggle" id="projectTermination" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="projectTermination"><a class="dropdown-item" href="#">Completed</a><a class="dropdown-item" href="#">Reschedule</a><a class="dropdown-item" href="#">Repeat</a></div>
+                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="projectTermination" role="menu"><a class="dropdown-item" href="#">Completed</a><a class="dropdown-item" href="#">Reschedule</a><a class="dropdown-item" href="#">Repeat</a></div>
                                     </div>
                                   </li>
                                 </ul>
@@ -1883,7 +1887,7 @@
                                   <div class="card-header-right-icon">
                                     <div class="dropdown icon-dropdown">
                                       <button class="btn dropdown-toggle" id="pendingProject" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="pendingProject"><a class="dropdown-item" href="#">View Project</a><a class="dropdown-item" href="#">Add Members</a><a class="dropdown-item" href="#">Update Status</a></div>
+                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="pendingProject" role="menu"><a class="dropdown-item" href="#">View Project</a><a class="dropdown-item" href="#">Add Members</a><a class="dropdown-item" href="#">Update Status</a></div>
                                     </div>
                                   </div>
                                 </div>
@@ -2004,7 +2008,7 @@
                                   <div class="card-header-right-icon">
                                     <div class="dropdown icon-dropdown">
                                       <button class="btn dropdown-toggle" id="progressProject" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="progressProject"><a class="dropdown-item" href="#">View Project</a><a class="dropdown-item" href="#">Add Members</a><a class="dropdown-item" href="#">Update Status</a></div>
+                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="progressProject" role="menu"><a class="dropdown-item" href="#">View Project</a><a class="dropdown-item" href="#">Add Members</a><a class="dropdown-item" href="#">Update Status</a></div>
                                     </div>
                                   </div>
                                 </div>
@@ -2124,7 +2128,7 @@
                                   <div class="card-header-right-icon">
                                     <div class="dropdown icon-dropdown">
                                       <button class="btn dropdown-toggle" id="completedProject" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="completedProject"><a class="dropdown-item" href="#">View Project</a><a class="dropdown-item" href="#">Add Members</a><a class="dropdown-item" href="#">Update Status</a></div>
+                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="completedProject" role="menu"><a class="dropdown-item" href="#">View Project</a><a class="dropdown-item" href="#">Add Members</a><a class="dropdown-item" href="#">Update Status</a></div>
                                     </div>
                                   </div>
                                 </div>

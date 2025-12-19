@@ -305,40 +305,6 @@ body {
 
 		// online course dashboard  css end
 
-		.page-wrapper {
-			&.material-type {
-				&.compact-wrapper {
-					.page-header {
-						&.close_icon {
-							.header-wrapper {
-								border-bottom: 1px solid $dark-card-border;
-							}
-						}
-					}
-				}
-			}
-
-			&.advance-layout {
-				.page-header {
-					background: $dark-card-background;
-				}
-
-				.page-body-wrapper {
-					.sidebar-wrapper {
-						border-bottom: 1px solid $dark-card-border;
-					}
-				}
-
-				.card {
-					border-color: $dark-card-border;
-				}
-			}
-
-			&.only-body {
-				background: $dark-body-background;
-			}
-		}
-
 		.f-light {
 			color: $dark-all-font-color;
 		}
@@ -466,14 +432,6 @@ body {
 				.page-header {
 					.header-wrapper {
 						border: 1px solid $dark-border-color;
-					}
-				}
-
-				&.only-body {
-					.page-header {
-						.header-wrapper {
-							border: unset;
-						}
 					}
 				}
 			}
@@ -700,36 +658,6 @@ body {
 
 		// tooltip css end
 		.page-wrapper {
-			&.only-body {
-				.page-body-wrapper {
-					.page-title {
-						>.row {
-							.col-6 {
-								&:first-child {
-									h6 {
-										color: rgba($dark-all-font-color, 0.5);
-									}
-								}
-							}
-						}
-					}
-				}
-
-				.page-header {
-					.header-wrapper {
-						.search-full {
-							.form-group {
-								.Typeahead {
-									.u-posRelative {
-										background-color: $dark-card-background;
-									}
-								}
-							}
-
-						}
-					}
-				}
-			}
 
 			.page-header {
 				.header-wrapper {
@@ -1168,26 +1096,6 @@ body {
 				}
 			}
 
-			&.modern-type {
-
-				.page-body-wrapper {
-					&.default-menu {
-						background-color: $dark-body-background;
-
-						.page-title {
-							background-color: transparent;
-							border: none;
-						}
-					}
-
-					.page-body {
-						.page-title {
-							background-color: unset;
-						}
-					}
-				}
-			}
-
 			.sidebar-main-title {
 				p {
 					color: $dark-all-font-color;
@@ -1323,228 +1231,6 @@ body {
 				}
 			}
 
-			&.compact-sidebar {
-				.page-body-wrapper {
-					div {
-						&.sidebar-wrapper {
-							>div {
-								background: $dark-card-background;
-							}
-
-							.sidebar-main {
-								.sidebar-links {
-									li {
-										.sidebar-title {
-											border-bottom: 1px solid $dark-card-border;
-										}
-
-										a {
-											span {
-												color: $dark-all-font-color;
-											}
-
-											svg {
-												stroke: $dark-all-font-color;
-											}
-										}
-
-										.sidebar-submenu {
-											background-color: $dark-card-background;
-
-											li {
-												a {
-													border-bottom: 1px solid $dark-card-border;
-												}
-											}
-										}
-									}
-
-									.simplebar-wrapper {
-										.simplebar-mask {
-											.simplebar-content-wrapper {
-												.simplebar-content {
-													>li {
-														.sidebar-link {
-															&.active {
-																background-color: rgba($primary-color, 0.2);
-
-																span {
-																	color: var(--theme-default);
-																}
-
-																svg {
-																	color: var(--theme-default);
-																	stroke: var(--theme-default);
-																}
-															}
-														}
-
-														.sidebar-submenu {
-															li {
-																a {
-																	color: $dark-all-font-color;
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-
-									.sidebar-list {
-										ul.sidebar-submenu {
-											li {
-												a {
-													span {
-														color: $dark-all-font-color;
-													}
-
-													&.active {
-														color: var(--theme-default);
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-
-					.according-menu {
-						i {
-							color: $dark-all-font-color;
-						}
-					}
-				}
-			}
-
-			&.compact-small {
-				.page-header {
-					&.close_icon {
-						.header-wrapper {
-							@media (min-width:576px) {
-								border-bottom: 1px solid $dark-card-border;
-							}
-						}
-					}
-				}
-
-				.page-body-wrapper {
-					.page-body {
-						.page-title {
-							@media (min-width:576px) {
-								border-top: 1px solid $dark-card-border;
-							}
-						}
-					}
-				}
-
-				&.material-icon {
-					.page-header {
-						box-shadow: unset;
-					}
-
-					.page-body-wrapper {
-						.page-body {
-							.page-title {
-								@media (min-width:576px) {
-									border-top: 0;
-								}
-							}
-						}
-					}
-				}
-			}
-
-			&.material-type {
-				.page-header {
-					.header-wrapper {
-						border-radius: 15px 15px 0 0;
-					}
-				}
-			}
-
-			// material icon css
-			&.material-icon {
-				.page-header {
-					.header-wrapper {
-						background-color: $transparent-color;
-
-						.nav-right {
-
-							.language-nav {
-								.more_lang {
-									color: $white;
-								}
-							}
-
-							.onhover-show-div {
-								color: $white;
-							}
-
-							.flip-card {
-								.flip-card-inner {
-									.back {
-										.flip-back-content {
-											input {
-												border: 1px solid $dark-border-color;
-												background: $dark-body-background;
-												color: $white;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-
-					.header-logo-wrapper {
-						background-color: $transparent-color;
-					}
-				}
-
-				.page-body-wrapper {
-					.page-body {
-						background-color: $transparent-color;
-					}
-
-				}
-			}
-
-			&.advance-layout {
-				background-color: $dark-body-background;
-
-				.page-header {
-					.header-wrapper {
-						background: $transparent-color;
-
-						.header-logo-wrapper {
-							background: $transparent-color;
-						}
-					}
-				}
-
-				.page-body-wrapper {
-					background: $transparent-color;
-
-					.page-body {
-						background: $transparent-color;
-					}
-				}
-			}
-
-			&.material-icon {
-				.page-body-wrapper {
-					.page-title {
-						background-color: transparent;
-						box-shadow: none;
-						border: none;
-					}
-				}
-			}
-
 			.page-header {
 				.header-wrapper {
 					.search-full {
@@ -1552,30 +1238,6 @@ body {
 
 						input {
 							color: $dark-all-font-color;
-						}
-					}
-				}
-			}
-		}
-
-		@media only screen and (min-width: 768px) {
-			.page-wrapper {
-				&.material-icon {
-					.page-header {
-						.header-wrapper {
-							.nav-right {
-								ul {
-									li {
-										.profile-dropdown {
-											li {
-												svg {
-													stroke: $white;
-												}
-											}
-										}
-									}
-								}
-							}
 						}
 					}
 				}
@@ -5021,20 +4683,10 @@ body {
 			}
 
 			@media only screen and (max-width: 575.98px) {
-				&.compact-sidebar {
-					.page-header {
-						.header-wrapper {
-							.toggle-sidebar {
-								border-right: 1px solid $light-all-font-color;
-							}
-						}
-					}
-				}
 
 				.page-wrapper {
 
-					&.compact-wrapper,
-					&.compact-sidebar {
+					&.compact-wrapper {
 						.page-header {
 							.header-wrapper {
 								.toggle-sidebar {
@@ -6275,17 +5927,6 @@ body {
 		@media only screen and (max-width: 991.98px) {
 			.page-wrapper.compact-wrapper .page-header .header-wrapper .toggle-sidebar {
 				border-right: 1px solid $dark-card-border;
-			}
-		}
-
-
-		@media only screen and (max-width: 767.98px) {
-			.page-wrapper {
-				&.material-icon {
-					.page-header {
-						background-color: $dark-card-background;
-					}
-				}
 			}
 		}
 
@@ -8365,6 +8006,9 @@ body {
 				background-color: $dark-body-background;
 				border-color: $dark-card-border;
 				color: $dark-all-font-color;
+				&::placeholder{
+					color: #fff9;
+				}
 			}
 		}
 
@@ -10162,12 +9806,6 @@ body {
 					background-color: $transparent-color;
 					box-shadow: 4px 11px 25px $dark-card-inbox;
 				}
-
-				&.modern-type {
-					.page-body-wrapper {
-						background-color: $dark-body-background;
-					}
-				}
 			}
 		}
 		.seller-cards {
@@ -10188,260 +9826,6 @@ body {
 			.searchBar {
 				#searchQueryInput{
 					background: $dark-body-background;
-				}
-			}
-		}
-	}
-
-	&.dark-sidebar {
-		.toggle-sidebar {
-			svg {
-				stroke: var(--theme-default);
-			}
-		}
-
-		.page-wrapper {
-			.sidebar-main-title {
-				p {
-					color: $dark-all-font-color;
-				}
-			}
-
-			&.compact-wrapper {
-				.page-body-wrapper {
-					div.sidebar-wrapper {
-						background-color: $dark-card-background;
-
-						.sidebar-main {
-							.sidebar-links {
-								li {
-									a {
-										span {
-											color: $dark-all-font-color;
-										}
-
-										svg {
-											stroke: $dark-all-font-color !important;
-										}
-									}
-								}
-
-								.simplebar-wrapper {
-									.simplebar-mask {
-										.simplebar-content-wrapper {
-											.simplebar-content {
-												>li {
-													.sidebar-link {
-														&.active {
-															background-color: rgba($primary-color, 0.2);
-
-															svg {
-																color: var(--theme-default);
-																stroke: var(--theme-default);
-															}
-														}
-													}
-
-													.sidebar-submenu {
-														li {
-															a {
-																color: $dark-all-font-color;
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-
-								.sidebar-list {
-									ul.sidebar-submenu {
-										li {
-											a {
-												span {
-													color: $dark-all-font-color;
-												}
-
-												&.active {
-													color: var(--theme-default);
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-
-					.according-menu {
-						i {
-							color: $dark-all-font-color;
-						}
-					}
-				}
-			}
-
-			&.horizontal-wrapper {
-				.page-body-wrapper {
-					.sidebar-wrapper {
-						background: $dark-card-background;
-
-						.sidebar-main {
-							background-color: $dark-card-background;
-
-							.sidebar-links {
-								.simplebar-wrapper {
-									.simplebar-mask {
-										.simplebar-content-wrapper {
-											.simplebar-content {
-												>li {
-													>a {
-														color: $dark-all-font-color;
-
-														svg {
-															&.stroke-icon {
-																stroke: rgba($dark-all-font-color, 0.6);
-															}
-
-															&.fill-icon {
-																fill: rgba($dark-all-font-color, 0.6);
-															}
-														}
-													}
-
-													.sidebar-submenu {
-														background: $dark-card-background;
-
-														li {
-															a {
-																color: $dark-all-font-color;
-
-																&.active,
-																&:hover {
-																	color: var(--theme-default);
-																}
-															}
-
-															.sidebar-submenu {
-																background: $dark-card-background;
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-
-							}
-
-							.left-arrow,
-							.right-arrow {
-								background-color: $dark-card-background;
-								color: $dark-all-font-color;
-							}
-						}
-					}
-				}
-			}
-
-			&.compact-sidebar {
-				.page-body-wrapper {
-					div {
-						&.sidebar-wrapper {
-							>div {
-								background: $dark-card-background;
-							}
-
-							.sidebar-main {
-								.sidebar-links {
-									li {
-
-										.sidebar-title {
-											border-bottom: 1px solid $dark-card-border;
-										}
-
-										a {
-											span {
-												color: $dark-all-font-color;
-											}
-
-											svg {
-												stroke: $dark-all-font-color;
-											}
-										}
-
-										.sidebar-submenu {
-											background-color: $dark-card-background;
-
-											li {
-												a {
-													border-bottom: 1px solid $dark-card-border;
-												}
-											}
-										}
-									}
-
-									.simplebar-wrapper {
-										.simplebar-mask {
-											.simplebar-content-wrapper {
-												.simplebar-content {
-													>li {
-
-														.sidebar-link {
-															&.active {
-																background-color: rgba($primary-color, 0.2);
-
-																span {
-																	color: var(--theme-default);
-																}
-
-																svg {
-																	color: var(--theme-default);
-																	stroke: var(--theme-default);
-																}
-															}
-														}
-
-														.sidebar-submenu {
-															li {
-																a {
-																	color: $dark-all-font-color;
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-
-									.sidebar-list {
-										ul.sidebar-submenu {
-											li {
-												a {
-													span {
-														color: $dark-all-font-color;
-													}
-
-													&.active {
-														color: var(--theme-default);
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-
-					.according-menu {
-						i {
-							color: $dark-all-font-color;
-						}
-					}
 				}
 			}
 		}

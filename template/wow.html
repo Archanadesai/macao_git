@@ -67,17 +67,19 @@
           </div>
           <div class="nav-right col-xxl-8 col-xl-6 col-md-7 col-8 pull-right right-header ms-auto">
             <ul class="nav-menus">
-              <form class="form-inline search-full col" action="#" method="get">
-                <div class="form-group w-100">
-                  <div class="Typeahead Typeahead--twitterUsers">
-                    <div class="searchBar">
-                      <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
-                      <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+              <li class="search-li"> 
+                <form class="form-inline search-full col" action="#" method="get">
+                  <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                      <div class="searchBar">
+                        <input id="searchQueryInputDesktop" type="text" name="searchQueryInputDesktop" placeholder="Type to Search" value="">
+                        <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                      </div>
+                      <div class="Typeahead-menu"></div>
                     </div>
-                    <div class="Typeahead-menu"></div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </li>
               <li class="language-nav">
                 <div class="translate_wrapper">
                   <div class="current_lang">
@@ -148,7 +150,9 @@
                         <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
                       </div>
                     </li>
-                    <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    <li>       
+                      <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -255,7 +259,7 @@
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#search"></use>
                   </svg></span></li>
-              <div class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
+              <li class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
                 <div class="searchBar">
                   <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
                   <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
@@ -264,7 +268,7 @@
                     </svg>
                   </button>
                 </div>
-              </div>
+              </li>
               <li class="fullscreen-body">                       <span>
                   <svg id="maximize-screen">
                     <use href="../assets/svg/icon-sprite.svg#full-screen"></use>
@@ -1208,7 +1212,7 @@
                   </div>
                   <div class="card-body pt-0">
                     <div>
-                      <div class="line">&lt; script src="js/wow.min.js" &gt; &lt; /script &gt; <br />&lt; script &gt; <br /><code>  WOW.init();</code><br />&lt; /script &gt;</div>
+                      <div class="line">&lt; script src="js/wow.min.js" &gt; &lt; /script &gt; &lt; script &gt; <code>  WOW.init();</code>&lt; /script &gt;</div>
                     </div>
                   </div>
                 </div>
@@ -1220,7 +1224,7 @@
                   <div class="card-body pt-0">
                     <h6 class="text-muted">Add the CSS class .wow to a HTML element: it will be invisible until the user scrolls to reveal it.</h6>
                     <div>
-                      <div class="line">&lt; div class="wow" &gt; <br /><code>Content to Reveal Here</code><br />&lt; /div &gt;</div>
+                      <div class="line">&lt; div class="wow" &gt; <code>Content to Reveal Here</code>&lt; /div &gt;</div>
                     </div>
                   </div>
                 </div>
@@ -1231,7 +1235,7 @@
                   </div>
                   <div class="card-body pt-0">
                     <div>
-                      <div class="line">&lt; div class="wow bounceInUp" &gt; <br /><code>Content to Reveal Here</code><br />&lt; /div &gt;</div>
+                      <div class="line">&lt; div class="wow bounceInUp" &gt; <code>Content to Reveal Here</code>&lt; /div &gt;</div>
                     </div>
                   </div>
                 </div>
@@ -1243,7 +1247,7 @@
                     <div>
                       <div class="line">
                         <p><strong>data-wow-duration: </strong>Change the animation duration<br><strong>data-wow-delay: </strong>Delay before the animation starts<br><strong>data-wow-offset: </strong>Distance to start the animation (related to the browser bottom)<br><strong>data-wow-iteration: </strong>Number of times the animation is repeated<br></p>
-                        <pre class="mb-0">&lt;section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"&gt;<br /> &lt;/section&gt;<br /> &lt;section class="wow slideInRight" data-wow-offset="10" data-wow-iteration="10"&gt;<br /> &lt;/section&gt;</pre>
+                        <pre class="mb-0">&lt;section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"&gt; &lt;/section&gt; &lt;section class="wow slideInRight" data-wow-offset="10" data-wow-iteration="10"&gt; &lt;/section&gt;</pre>
                       </div>
                     </div>
                   </div>
@@ -1260,7 +1264,7 @@
                         <p><strong>offset: </strong>Define the distance between the bottom of browser viewport and the top of hidden box.<br>When the user scrolls and reach this distance the hidden box is revealed.</p>
                         <p><strong>mobile: </strong>Turn on/off wow.js on mobile devices.</p>
                         <p><strong>live: </strong>consatantly check for new WOW elements on the page.</p>
-                        <pre class="mb-0">wow = new WOW(<br /> {<br /> boxClass: 'wow', // default<br /> animateClass: 'animated', // default<br /> offset: 0, // default<br /> mobile: true, // default<br /> live: true // default<br /> }<br /> )<br /> wow.init();                    </pre>
+                        <pre class="mb-0">wow = new WOW( { boxClass: 'wow', // default animateClass: 'animated', // default offset: 0, // default mobile: true, // default live: true // default } ) wow.init();                    </pre>
                         <!-- Page Body Ends                   -->
                         <!-- Container-fluid Ends-->
                       </div>

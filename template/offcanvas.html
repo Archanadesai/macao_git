@@ -66,17 +66,19 @@
           </div>
           <div class="nav-right col-xxl-8 col-xl-6 col-md-7 col-8 pull-right right-header ms-auto">
             <ul class="nav-menus">
-              <form class="form-inline search-full col" action="#" method="get">
-                <div class="form-group w-100">
-                  <div class="Typeahead Typeahead--twitterUsers">
-                    <div class="searchBar">
-                      <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
-                      <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+              <li class="search-li"> 
+                <form class="form-inline search-full col" action="#" method="get">
+                  <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                      <div class="searchBar">
+                        <input id="searchQueryInputDesktop" type="text" name="searchQueryInputDesktop" placeholder="Type to Search" value="">
+                        <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                      </div>
+                      <div class="Typeahead-menu"></div>
                     </div>
-                    <div class="Typeahead-menu"></div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </li>
               <li class="language-nav">
                 <div class="translate_wrapper">
                   <div class="current_lang">
@@ -147,7 +149,9 @@
                         <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
                       </div>
                     </li>
-                    <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    <li>       
+                      <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -254,7 +258,7 @@
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#search"></use>
                   </svg></span></li>
-              <div class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
+              <li class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
                 <div class="searchBar">
                   <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
                   <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
@@ -263,7 +267,7 @@
                     </svg>
                   </button>
                 </div>
-              </div>
+              </li>
               <li class="fullscreen-body">                       <span>
                   <svg id="maximize-screen">
                     <use href="../assets/svg/icon-sprite.svg#full-screen"></use>
@@ -1053,7 +1057,7 @@
                   </div>
                   <div class="card-body common-flex common-offcanvas pt-0">
                     <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Button with data-bs-target</button><a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Link with href</a>
-                    <div class="offcanvas offcanvas-start" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas offcanvas-start" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel" role="menu">
                       <div class="offcanvas-header pb-0">
                         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Main Offcanvas Title</h5>
                         <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1081,7 +1085,7 @@
                       <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#initial-offcanvas" title="Copy"><i class="icofont icofont-copy-alt"></i></button>
                       <pre class="custom-scrollbar"><code class="language-html" id="initial-offcanvas">&lt;button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"&gt;Button with data-bs-target&lt;/button&gt;
 &lt;a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"&gt;Link with href&lt;/a&gt;
-&lt;div class="offcanvas offcanvas-start" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel"&gt;
+&lt;div class="offcanvas offcanvas-start" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel" role="menu&gt;
  &lt;div class="offcanvas-header pb-0"&gt;
    &lt;h5 class="offcanvas-title" id="offcanvasExampleLabel"&gt;Main Offcanvas Title&lt;/h5&gt;
    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -1127,7 +1131,7 @@
                   </div>
                   <div class="card-body common-flex common-offcanvas pt-0">
                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Top Offcanvas</button>
-                    <div class="offcanvas offcanvas-top" id="offcanvasTop" tabindex="-1" aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas offcanvas-top" id="offcanvasTop" tabindex="-1" role="menu" aria-labelledby="offcanvasTopLabel">
                       <div class="offcanvas-header pb-0">
                         <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas Top</h5>
                         <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1178,7 +1182,7 @@
                       </div>
                     </div>
                     <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Right Offcanvas</button>
-                    <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" role="menu" aria-labelledby="offcanvasRightLabel">
                       <div class="offcanvas-header pb-0">
                         <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas End</h5>
                         <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1225,7 +1229,7 @@
                       </div>
                     </div>
                     <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Bottom Offcanvas</button>
-                    <div class="offcanvas offcanvas-bottom" id="offcanvasBottom" tabindex="-1" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas offcanvas-bottom" id="offcanvasBottom" tabindex="-1" role="menu" aria-labelledby="offcanvasBottomLabel">
                       <div class="offcanvas-header pb-0">
                         <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas Bottom</h5>
                         <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1276,7 +1280,7 @@
                       </div>
                     </div>
                     <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Left Offcanvas</button>
-                    <div class="offcanvas offcanvas-start" id="offcanvasLeft" tabindex="-1" aria-labelledby="offcanvasLeftLabel">
+                    <div class="offcanvas offcanvas-start" id="offcanvasLeft" tabindex="-1" role="menu" aria-labelledby="offcanvasLeftLabel">
                       <div class="offcanvas-header pb-0">
                         <h5 class="offcanvas-title" id="offcanvasLeftLabel">Offcanvas Start</h5>
                         <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1325,7 +1329,7 @@
                     <div class="code-box-copy">
                       <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#offcanvas-direction" title="Copy"><i class="icofont icofont-copy-alt"></i></button>
                       <pre><code class="language-html" id="offcanvas-direction">&lt;button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"&gt;Top Offcanvas&lt;/button&gt;
-&lt;div class="offcanvas offcanvas-top" id="offcanvasTop" tabindex="-1" aria-labelledby="offcanvasTopLabel"&gt;
+&lt;div class="offcanvas offcanvas-top" id="offcanvasTop" tabindex="-1" aria-labelledby="offcanvasTopLabel" role="menu"&gt;
  &lt;div class="offcanvas-header pb-0"&gt;
    &lt;h5 class="offcanvas-title" id="offcanvasTopLabel"&gt;Offcanvas Top&lt;/h5&gt;
    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -1376,7 +1380,7 @@
  &lt;/div&gt;
 &lt;/div&gt;
 &lt;button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"&gt;Right Offcanvas&lt;/button&gt;
-&lt;div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" aria-labelledby="offcanvasRightLabel"&gt;
+&lt;div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" role="menu" aria-labelledby="offcanvasRightLabel"&gt;
  &lt;div class="offcanvas-header pb-0"&gt;
    &lt;h5 class="offcanvas-title" id="offcanvasRightLabel"&gt;Offcanvas End&lt;/h5&gt;
    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -1423,7 +1427,7 @@
  &lt;/div&gt;
 &lt;/div&gt;
 &lt;button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"&gt;Bottom Offcanvas&lt;/button&gt;
-&lt;div class="offcanvas offcanvas-bottom" id="offcanvasBottom" tabindex="-1" aria-labelledby="offcanvasBottomLabel"&gt;
+&lt;div class="offcanvas offcanvas-bottom" id="offcanvasBottom" tabindex="-1" role="menu" aria-labelledby="offcanvasBottomLabel"&gt;
  &lt;div class="offcanvas-header pb-0"&gt;
    &lt;h5 class="offcanvas-title" id="offcanvasBottomLabel"&gt;Offcanvas Bottom&lt;/h5&gt;
    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -1474,7 +1478,7 @@
  &lt;/div&gt;
 &lt;/div&gt;
 &lt;button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft"&gt;Left Offcanvas&lt;/button&gt;
-&lt;div class="offcanvas offcanvas-start" id="offcanvasLeft" tabindex="-1" aria-labelledby="offcanvasLeftLabel"&gt;
+&lt;div class="offcanvas offcanvas-start" id="offcanvasLeft" tabindex="-1" role="menu" aria-labelledby="offcanvasLeftLabel"&gt;
  &lt;div class="offcanvas-header pb-0"&gt;
    &lt;h5 class="offcanvas-title" id="offcanvasLeftLabel"&gt;Offcanvas Start&lt;/h5&gt;
    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -1542,7 +1546,7 @@
                   </div>
                   <div class="card-body common-flex common-offcanvas pt-0">    
                     <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable Body Scrolling</button>
-                    <div class="offcanvas offcanvas-start" id="offcanvasScrolling" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas offcanvas-start" id="offcanvasScrolling" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" role="menu" aria-labelledby="offcanvasScrollingLabel">
                       <div class="offcanvas-header pb-0">
                         <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas Body Scrolling</h5>
                         <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1591,7 +1595,7 @@
                       </div>
                     </div>
                     <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable Both Scrolling &amp; Backdrop</button>
-                    <div class="offcanvas offcanvas-start" id="offcanvasWithBothOptions" data-bs-scroll="true" tabindex="-1" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas offcanvas-start" id="offcanvasWithBothOptions" data-bs-scroll="true" tabindex="-1" role="menu" aria-labelledby="offcanvasWithBothOptionsLabel">
                       <div class="offcanvas-header pb-0">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with Scrolling</h5>
                         <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1640,7 +1644,7 @@
                       </div>
                     </div>
                     <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">Toggle Static Offcanvas</button>
-                    <div class="offcanvas offcanvas-start" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas offcanvas-start" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" role="menu" aria-labelledby="staticBackdropLabel">
                       <div class="offcanvas-header pb-0">
                         <h5 class="offcanvas-title" id="staticBackdropLabel">Static Offcanvas</h5>
                         <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1691,7 +1695,7 @@
                     <div class="code-box-copy">
                       <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#offcanvas-variation" title="Copy"><i class="icofont icofont-copy-alt"></i></button>
                       <pre><code class="language-html" id="offcanvas-variation">&lt;button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"&gt;Enable Body Scrolling&lt;/button&gt;
-&lt;div class="offcanvas offcanvas-start" id="offcanvasScrolling" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" aria-labelledby="offcanvasScrollingLabel"&gt;
+&lt;div class="offcanvas offcanvas-start" id="offcanvasScrolling" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" role="menu" aria-labelledby="offcanvasScrollingLabel"&gt;
  &lt;div class="offcanvas-header pb-0"&gt;
    &lt;h5 class="offcanvas-title" id="offcanvasScrollingLabel"&gt;Offcanvas Body Scrolling&lt;/h5&gt;
    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -1740,7 +1744,7 @@
  &lt;/div&gt;
 &lt;/div&gt;
 &lt;button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"&gt;Enable Both Scrolling &amp; Backdrop&lt;/button&gt;
-&lt;div class="offcanvas offcanvas-start" id="offcanvasWithBothOptions" data-bs-scroll="true" tabindex="-1" aria-labelledby="offcanvasWithBothOptionsLabel"&gt;
+&lt;div class="offcanvas offcanvas-start" id="offcanvasWithBothOptions" data-bs-scroll="true" tabindex="-1" role="menu" aria-labelledby="offcanvasWithBothOptionsLabel"&gt;
  &lt;div class="offcanvas-header pb-0"&gt;
    &lt;h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"&gt;Backdrop with Scrolling&lt;/h5&gt;
    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;
@@ -1789,7 +1793,7 @@
  &lt;/div&gt;
 &lt;/div&gt;
 &lt;button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"&gt;Toggle Static Offcanvas&lt;/button&gt;
-&lt;div class="offcanvas offcanvas-start" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" aria-labelledby="staticBackdropLabel"&gt;
+&lt;div class="offcanvas offcanvas-start" id="staticBackdrop" data-bs-backdrop="static" tabindex="-1" role="menu" aria-labelledby="staticBackdropLabel"&gt;
  &lt;div class="offcanvas-header pb-0"&gt;
    &lt;h5 class="offcanvas-title" id="staticBackdropLabel"&gt;Static Offcanvas&lt;/h5&gt;
    &lt;button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"&gt;&lt;/button&gt;

@@ -71,17 +71,19 @@
           </div>
           <div class="nav-right col-xxl-8 col-xl-6 col-md-7 col-8 pull-right right-header ms-auto">
             <ul class="nav-menus">
-              <form class="form-inline search-full col" action="#" method="get">
-                <div class="form-group w-100">
-                  <div class="Typeahead Typeahead--twitterUsers">
-                    <div class="searchBar">
-                      <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
-                      <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+              <li class="search-li"> 
+                <form class="form-inline search-full col" action="#" method="get">
+                  <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                      <div class="searchBar">
+                        <input id="searchQueryInputDesktop" type="text" name="searchQueryInputDesktop" placeholder="Type to Search" value="">
+                        <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                      </div>
+                      <div class="Typeahead-menu"></div>
                     </div>
-                    <div class="Typeahead-menu"></div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </li>
               <li class="language-nav">
                 <div class="translate_wrapper">
                   <div class="current_lang">
@@ -152,7 +154,9 @@
                         <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
                       </div>
                     </li>
-                    <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    <li>       
+                      <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -259,7 +263,7 @@
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#search"></use>
                   </svg></span></li>
-              <div class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
+              <li class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
                 <div class="searchBar">
                   <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
                   <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
@@ -268,7 +272,7 @@
                     </svg>
                   </button>
                 </div>
-              </div>
+              </li>
               <li class="fullscreen-body">                       <span>
                   <svg id="maximize-screen">
                     <use href="../assets/svg/icon-sprite.svg#full-screen"></use>
@@ -1093,7 +1097,7 @@
                           <div class="card-header-right-icon">
                             <div class="dropdown icon-dropdown">
                               <button class="btn dropdown-toggle" id="shipmentTracking" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="shipmentTracking"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months</a></div>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="shipmentTracking" role="menu"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months</a></div>
                             </div>
                           </div>
                         </div>
@@ -1149,7 +1153,7 @@
                           <div class="card-header-right-icon">
                             <div class="dropdown icon-dropdown">
                               <button class="btn dropdown-toggle" id="treadingProduct" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="treadingProduct"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months </a></div>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="treadingProduct" role="menu"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months </a></div>
                             </div>
                           </div>
                         </div>
@@ -1166,8 +1170,8 @@
                           <h5>Recent Transactions</h5>
                           <div class="card-header-right-icon">
                             <div class="dropdown icon-dropdown dropzone">
-                              <button class="btn dropdown-toggle" id="subscribeButton" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="subscribeButton"><a class="dropdown-item" href="#!">Today</a><a class="dropdown-item" href="#!">Maximum</a><a class="dropdown-item" href="#!">Today</a><a class="dropdown-item" href="#!">30 Days</a><a class="dropdown-item" href="#!">Yesterday </a><a class="dropdown-item" href="#!">Last month</a></div>
+                              <button class="btn dropdown-toggle" id="subscribeButton1" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="subscribeButton1" role="menu"><a class="dropdown-item" href="#!">Today</a><a class="dropdown-item" href="#!">Maximum</a><a class="dropdown-item" href="#!">Today</a><a class="dropdown-item" href="#!">30 Days</a><a class="dropdown-item" href="#!">Yesterday </a><a class="dropdown-item" href="#!">Last month</a></div>
                             </div>
                           </div>
                         </div>
@@ -1360,8 +1364,8 @@
                           <h5 class="m-0">Activities</h5>
                           <div class="card-header-right-icon">
                             <div class="dropdown icon-dropdown dropzone">
-                              <button class="btn dropdown-toggle" id="subscribeButton" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="subscribeButton"><a class="dropdown-item" href="#!">Today</a><a class="dropdown-item" href="#!">Maximum</a><a class="dropdown-item" href="#!">Today</a><a class="dropdown-item" href="#!">30 Days</a><a class="dropdown-item" href="#!">Yesterday </a><a class="dropdown-item" href="#!">Last month </a></div>
+                              <button class="btn dropdown-toggle" id="subscribeButton2" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="subscribeButton2" role="menu"><a class="dropdown-item" href="#!">Today</a><a class="dropdown-item" href="#!">Maximum</a><a class="dropdown-item" href="#!">Today</a><a class="dropdown-item" href="#!">30 Days</a><a class="dropdown-item" href="#!">Yesterday </a><a class="dropdown-item" href="#!">Last month </a></div>
                             </div>
                           </div>
                         </div>
@@ -1406,21 +1410,21 @@
                             <div> <img class="img-fluid" src="/assets/images/user/1.jpg" alt="">
                               <div class="review-content"> <a href="user-profile.html"> 
                                   <h5 class="txt-primary f-w-600">Mary Jades</h5></a><span>Web Designer</span></div><span class="d-flex gap-1 justify-content-center"><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i></span>
-                              <p>"Exceeded my expectations with outstanding quality. Fast delivery and great support!"</p><span class="txt-secondary f-w-600">( 10th Feb, 2024 )</span>
+                              <p>"Exceeded my expectations with outstanding quality. Fast delivery and great support!"</p><span class="txt-secondary f-w-600">( 10th Feb, 2025 )</span>
                             </div>
                           </div>
                           <div class="review">
                             <div> <img class="img-fluid" src="../assets/images/user/3.png" alt="">
                               <div class="review-content"> <a href="user-profile.html">
                                   <h5 class="txt-primary f-w-600">Anna Proas</h5></a><span>Graphics Designer</span></div><span class="d-flex gap-1 justify-content-center"><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-regular fa-star font-warning"></i></span>
-                              <p>"A versatile product that fits perfectly into my daily routine. Absolutely worth buying!"</p><span class="txt-secondary f-w-600">( 05th May, 2024 )</span>
+                              <p>"A versatile product that fits perfectly into my daily routine. Absolutely worth buying!"</p><span class="txt-secondary f-w-600">( 05th May, 2025 )</span>
                             </div>
                           </div>
                           <div class="review">
                             <div> <img class="img-fluid" src="../assets/images/user/6.jpg" alt="">
                               <div class="review-content"> <a href="user-profile.html">
                                   <h5 class="txt-primary f-w-600">Rachel Green</h5></a><span>Web Developer</span></div><span class="d-flex gap-1 justify-content-center"><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-solid fa-star font-warning"></i><i class="fa-regular fa-star font-warning"></i></span>
-                              <p>"Great value and stylish quality! Exactly what I needed—plus, super quick response."</p><span class="txt-secondary f-w-600">( 23th Aug, 2024 )</span>
+                              <p>"Great value and stylish quality! Exactly what I needed—plus, super quick response."</p><span class="txt-secondary f-w-600">( 23th Aug, 2025 )</span>
                             </div>
                           </div>
                         </div>
@@ -1437,7 +1441,7 @@
                       <div class="card-header-right-icon">
                         <div class="dropdown icon-dropdown">
                           <button class="btn dropdown-toggle" id="stockReport" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icon-more-alt"></i></button>
-                          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="stockReport"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months</a></div>
+                          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="stockReport" role="menu"><a class="dropdown-item" href="#!">This Month</a><a class="dropdown-item" href="#!">Previous Month</a><a class="dropdown-item" href="#!">Last 3 Months</a><a class="dropdown-item" href="#!">Last 6 Months</a></div>
                         </div>
                       </div>
                     </div>

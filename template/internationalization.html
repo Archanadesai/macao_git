@@ -65,17 +65,19 @@
           </div>
           <div class="nav-right col-xxl-8 col-xl-6 col-md-7 col-8 pull-right right-header ms-auto">
             <ul class="nav-menus">
-              <form class="form-inline search-full col" action="#" method="get">
-                <div class="form-group w-100">
-                  <div class="Typeahead Typeahead--twitterUsers">
-                    <div class="searchBar">
-                      <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
-                      <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+              <li class="search-li"> 
+                <form class="form-inline search-full col" action="#" method="get">
+                  <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                      <div class="searchBar">
+                        <input id="searchQueryInputDesktop" type="text" name="searchQueryInputDesktop" placeholder="Type to Search" value="">
+                        <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                      </div>
+                      <div class="Typeahead-menu"></div>
                     </div>
-                    <div class="Typeahead-menu"></div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </li>
               <li class="language-nav">
                 <div class="translate_wrapper">
                   <div class="current_lang">
@@ -146,7 +148,9 @@
                         <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
                       </div>
                     </li>
-                    <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    <li>       
+                      <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -253,7 +257,7 @@
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#search"></use>
                   </svg></span></li>
-              <div class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
+              <li class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
                 <div class="searchBar">
                   <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
                   <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
@@ -262,7 +266,7 @@
                     </svg>
                   </button>
                 </div>
-              </div>
+              </li>
               <li class="fullscreen-body">                       <span>
                   <svg id="maximize-screen">
                     <use href="../assets/svg/icon-sprite.svg#full-screen"></use>
@@ -1101,7 +1105,7 @@
                     <div class="language">
                       <p>Add a  <b>language-picker </b>plugin js</p>
                       <p> <b>HTML Code</b></p>
-                      <pre class="mb-0 custom-scrollbar"> &lt;div class="site"&gt;<br />  &lt;div class="site-bd"&gt;<br />    &lt;div class="wrapper"&gt;<br />      &lt;div class="card"&gt;<br />        &lt;div class="card-header"&gt;<br />          &lt;h5 class="hdg hdg_main js-languagePageHdg"&gt;Internationalization&lt;/h5&gt;<br />        &lt;/div&gt;<br />        &lt;div class="main" role="main"&gt;<br />          &lt;select class="langChoice js-languageSelect"&gt;<br />            &lt;option val="0"&gt;English&lt;/option&gt;<br />            &lt;option val="1"&gt;German&lt;/option&gt;<br />            &lt;option val="2"&gt;Russian&lt;/option&gt;<br />            &lt;option val="3"&gt;Arabic&lt;/option&gt;<br />          &lt;/select&gt;<br />        &lt;/div&gt;<br />        &lt;div class="card-body row"&gt;<br />          &lt;div class="col-lg-6"&gt;<br />            &lt;h5 class="hdg hdg_main js-languagePageHdg"&gt;Static Sub Nav&lt;/h5&gt;<br />            &lt;div class="masthead" role="banner"&gt;<br />              &lt;ul class="icon-lists border navs-icon hList hList_loose masthead-nav js-languageList"&gt;<br />                &lt;li&gt;<br />                  &lt;a href="#"&gt;&lt;span&gt; Base&lt;/span&gt;&lt;/a&gt;<br />                &lt;/li&gt;<br />                &lt;li&gt;<br />                  &lt;a href="#"&gt;&lt;span&gt; Advance&lt;/span&gt;&lt;/a&gt;<br />                  &lt;ul class="hList hList_loose masthead-nav js-languageList"&gt;<br />                    &lt;li class="ps-4"&gt;&lt;a href="#"&gt;&lt;span&gt;Scrollable&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li class="ps-4"&gt;&lt;a href="#"&gt;&lt;span&gt;Tree View&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li class="ps-4"&gt;&lt;a href="#"&gt;&lt;span&gt;Rating&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br />                  &lt;/ul&gt;<br />                &lt;/li&gt;<br />                &lt;li&gt;<br />                  &lt;a href="#"&gt;&lt;span data-mlr-text&gt; Forms&lt;/span&gt;&lt;/a&gt;<br />                &lt;/li&gt;<br />                &lt;li&gt;<br />                  &lt;a href="#"&gt;&lt;span data-mlr-text&gt; Tables&lt;/span&gt;&lt;/a&gt;<br />                &lt;/li&gt;<br />              &lt;/ul&gt;<br />            &lt;/div&gt;<br />          &lt;/div&gt;<br />        &lt;/div&gt;<br />      &lt;/div&gt;<br />    &lt;/div&gt;<br />  &lt;/div&gt;<br /> &lt;/div&gt;</pre>
+                      <pre class="mb-0 custom-scrollbar"> &lt;div class="site"&gt;  &lt;div class="site-bd"&gt;    &lt;div class="wrapper"&gt;      &lt;div class="card"&gt;        &lt;div class="card-header"&gt;          &lt;h5 class="hdg hdg_main js-languagePageHdg"&gt;Internationalization&lt;/h5&gt;        &lt;/div&gt;        &lt;div class="main" role="main"&gt;          &lt;select class="langChoice js-languageSelect"&gt;            &lt;option val="0"&gt;English&lt;/option&gt;            &lt;option val="1"&gt;German&lt;/option&gt;            &lt;option val="2"&gt;Russian&lt;/option&gt;            &lt;option val="3"&gt;Arabic&lt;/option&gt;          &lt;/select&gt;        &lt;/div&gt;        &lt;div class="card-body row"&gt;          &lt;div class="col-lg-6"&gt;            &lt;h5 class="hdg hdg_main js-languagePageHdg"&gt;Static Sub Nav&lt;/h5&gt;            &lt;div class="masthead" role="banner"&gt;              &lt;ul class="icon-lists border navs-icon hList hList_loose masthead-nav js-languageList"&gt;                &lt;li&gt;                  &lt;a href="#"&gt;&lt;span&gt; Base&lt;/span&gt;&lt;/a&gt;                &lt;/li&gt;                &lt;li&gt;                  &lt;a href="#"&gt;&lt;span&gt; Advance&lt;/span&gt;&lt;/a&gt;                  &lt;ul class="hList hList_loose masthead-nav js-languageList"&gt;                    &lt;li class="ps-4"&gt;&lt;a href="#"&gt;&lt;span&gt;Scrollable&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;                    &lt;li class="ps-4"&gt;&lt;a href="#"&gt;&lt;span&gt;Tree View&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;                    &lt;li class="ps-4"&gt;&lt;a href="#"&gt;&lt;span&gt;Rating&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;                  &lt;/ul&gt;                &lt;/li&gt;                &lt;li&gt;                  &lt;a href="#"&gt;&lt;span data-mlr-text&gt; Forms&lt;/span&gt;&lt;/a&gt;                &lt;/li&gt;                &lt;li&gt;                  &lt;a href="#"&gt;&lt;span data-mlr-text&gt; Tables&lt;/span&gt;&lt;/a&gt;                &lt;/li&gt;              &lt;/ul&gt;            &lt;/div&gt;          &lt;/div&gt;        &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt; &lt;/div&gt;</pre>
                     </div>
                   </div>
                 </div>

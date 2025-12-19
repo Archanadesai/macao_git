@@ -66,17 +66,19 @@
           </div>
           <div class="nav-right col-xxl-8 col-xl-6 col-md-7 col-8 pull-right right-header ms-auto">
             <ul class="nav-menus">
-              <form class="form-inline search-full col" action="#" method="get">
-                <div class="form-group w-100">
-                  <div class="Typeahead Typeahead--twitterUsers">
-                    <div class="searchBar">
-                      <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
-                      <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+              <li class="search-li"> 
+                <form class="form-inline search-full col" action="#" method="get">
+                  <div class="form-group w-100">
+                    <div class="Typeahead Typeahead--twitterUsers">
+                      <div class="searchBar">
+                        <input id="searchQueryInputDesktop" type="text" name="searchQueryInputDesktop" placeholder="Type to Search" value="">
+                        <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                      </div>
+                      <div class="Typeahead-menu"></div>
                     </div>
-                    <div class="Typeahead-menu"></div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </li>
               <li class="language-nav">
                 <div class="translate_wrapper">
                   <div class="current_lang">
@@ -147,7 +149,9 @@
                         <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
                       </div>
                     </li>
-                    <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    <li>       
+                      <div class="text-center m-2"><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Proceed to checkout </a></div>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -254,7 +258,7 @@
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#search"></use>
                   </svg></span></li>
-              <div class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
+              <li class="left-header col-xxl-3 col-xl-5 col-lg-4 col-md-4 col-sm-3">
                 <div class="searchBar">
                   <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Type to Search" value="">
                   <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
@@ -263,7 +267,7 @@
                     </svg>
                   </button>
                 </div>
-              </div>
+              </li>
               <li class="fullscreen-body">                       <span>
                   <svg id="maximize-screen">
                     <use href="../assets/svg/icon-sprite.svg#full-screen"></use>
@@ -1628,7 +1632,7 @@
                   <div class="card-body common-flex pt-0">
                     <button class="btn btn-outline-secondary-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreen">Fullscreen Modal</button>
                     <!-- Full Screen Modal-->
-                    <div class="modal fade" id="exampleModalfullscreen" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModalfullscreen" tabindex="-1" aria-labelledby="fullScreenModalLabel" role="menu" aria-hidden="true">
                       <div class="modal-dialog modal-fullscreen">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -1707,7 +1711,7 @@
                     </div>
                     <button class="btn btn-outline-info-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreensm">Fullscreen Below sm</button>
                     <!-- Full screen below sm-->
-                    <div class="modal fade" id="exampleModalfullscreensm" tabindex="-1" aria-labelledby="smModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModalfullscreensm" tabindex="-1" aria-labelledby="smModalLabel" role="menu" aria-hidden="true">
                       <div class="modal-dialog modal-fullscreen-sm-down">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -1761,7 +1765,7 @@
                     </div>
                     <button class="btn btn-outline-success-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreen-md">Fullscreen Below md</button>
                     <!-- Full screen below md-->
-                    <div class="modal fade" id="exampleModalfullscreen-md" tabindex="-1" aria-labelledby="mdModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModalfullscreen-md" tabindex="-1" aria-labelledby="mdModalLabel" role="menu" aria-hidden="true">
                       <div class="modal-dialog modal-fullscreen-md-down">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -1815,7 +1819,7 @@
                     </div>
                     <button class="btn btn-outline-warning-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreen-lg">Fullscreen Below lg</button>
                     <!-- Full screen below lg-->
-                    <div class="modal fade" id="exampleModalfullscreen-lg" tabindex="-1" aria-labelledby="lgModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModalfullscreen-lg" tabindex="-1" aria-labelledby="lgModalLabel" role="menu" aria-hidden="true">
                       <div class="modal-dialog modal-fullscreen-lg-down">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -1869,7 +1873,7 @@
                     </div>
                     <button class="btn btn-outline-primary-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreen-xl">Fullscreen Below xl</button>
                     <!-- Full screen below xl-->
-                    <div class="modal fade" id="exampleModalfullscreen-xl" tabindex="-1" aria-labelledby="xlModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModalfullscreen-xl" tabindex="-1" aria-labelledby="xlModalLabel" role="menu" aria-hidden="true">
                       <div class="modal-dialog modal-fullscreen-xl-down">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -1923,7 +1927,7 @@
                     </div>
                     <button class="btn btn-outline-danger-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreen-xxl">Fullscreen Below xxl</button>
                     <!-- Full screen below xxl-->
-                    <div class="modal fade" id="exampleModalfullscreen-xxl" tabindex="-1" aria-labelledby="xxlModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModalfullscreen-xxl" tabindex="-1" aria-labelledby="xxlModalLabel" role="menu" aria-hidden="true">
                       <div class="modal-dialog modal-fullscreen-xxl-down">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -1979,7 +1983,7 @@
                       <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#common-modal" title="Copy"><i class="icofont icofont-copy-alt"></i></button>
                       <pre class="custom-scrollbar"><code class="language-html" id="common-modal">&lt;button class="btn btn-outline-secondary-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreen"&gt;Fullscreen Modal&lt;/button&gt;
 &lt;!--Full Screen Modal--&gt;
-&lt;div class="modal fade" id="exampleModalfullscreen" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true"&gt;
+&lt;div class="modal fade" id="exampleModalfullscreen" tabindex="-1" aria-labelledby="fullScreenModalLabel" role="menu" aria-hidden="true"&gt;
  &lt;div class="modal-dialog modal-fullscreen"&gt;
    &lt;div class="modal-content"&gt;
      &lt;div class="modal-header"&gt;
@@ -2057,7 +2061,7 @@
 &lt;/div&gt;
 &lt;button class="btn btn-outline-info-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreensm"&gt;Fullscreen Below sm&lt;/button&gt;
 &lt;!--Full screen below sm--&gt;
-&lt;div class="modal fade" id="exampleModalfullscreensm" tabindex="-1" aria-labelledby="smModalLabel" aria-hidden="true"&gt;
+&lt;div class="modal fade" id="exampleModalfullscreensm" tabindex="-1" aria-labelledby="smModalLabel"  role="menu" aria-hidden="true"&gt;
  &lt;div class="modal-dialog modal-fullscreen-sm-down"&gt;
    &lt;div class="modal-content"&gt;
      &lt;div class="modal-header"&gt;
@@ -2111,7 +2115,7 @@
 &lt;/div&gt;
 &lt;button class="btn btn-outline-success-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreen-md"&gt;Fullscreen Below md&lt;/button&gt;
 &lt;!--Full screen below md--&gt;
-&lt;div class="modal fade" id="exampleModalfullscreen-md" tabindex="-1" aria-labelledby="mdModalLabel" aria-hidden="true"&gt;
+&lt;div class="modal fade" id="exampleModalfullscreen-md" tabindex="-1" aria-labelledby="mdModalLabel" role="menu" aria-hidden="true"&gt;
  &lt;div class="modal-dialog modal-fullscreen-md-down"&gt;
    &lt;div class="modal-content"&gt;
      &lt;div class="modal-header"&gt;
@@ -2165,7 +2169,7 @@
 &lt;/div&gt;
 &lt;button class="btn btn-outline-warning-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreen-lg"&gt;Fullscreen Below lg&lt;/button&gt;
 &lt;!--Full screen below lg--&gt;
-&lt;div class="modal fade" id="exampleModalfullscreen-lg" tabindex="-1" aria-labelledby="lgModalLabel" aria-hidden="true"&gt;
+&lt;div class="modal fade" id="exampleModalfullscreen-lg" tabindex="-1" aria-labelledby="lgModalLabel" role="menu" aria-hidden="true"&gt;
  &lt;div class="modal-dialog modal-fullscreen-lg-down"&gt;
    &lt;div class="modal-content"&gt;
      &lt;div class="modal-header"&gt;
@@ -2219,7 +2223,7 @@
 &lt;/div&gt;
 &lt;button class="btn btn-outline-primary-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreen-xl"&gt;Fullscreen Below xl&lt;/button&gt;
 &lt;!--Full screen below xl--&gt;
-&lt;div class="modal fade" id="exampleModalfullscreen-xl" tabindex="-1" aria-labelledby="xlModalLabel" aria-hidden="true"&gt;
+&lt;div class="modal fade" id="exampleModalfullscreen-xl" tabindex="-1" aria-labelledby="xlModalLabel" role="menu" aria-hidden="true"&gt;
  &lt;div class="modal-dialog modal-fullscreen-xl-down"&gt;
    &lt;div class="modal-content"&gt;
      &lt;div class="modal-header"&gt;
@@ -2273,7 +2277,7 @@
 &lt;/div&gt;
 &lt;button class="btn btn-outline-danger-2x" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalfullscreen-xxl"&gt;Fullscreen Below xxl&lt;/button&gt;
 &lt;!--Full screen below xxl--&gt;
-&lt;div class="modal fade" id="exampleModalfullscreen-xxl" tabindex="-1" aria-labelledby="xxlModalLabel" aria-hidden="true"&gt;
+&lt;div class="modal fade" id="exampleModalfullscreen-xxl" tabindex="-1" aria-labelledby="xxlModalLabel" role="menu" aria-hidden="true"&gt;
  &lt;div class="modal-dialog modal-fullscreen-xxl-down"&gt;
    &lt;div class="modal-content"&gt;
      &lt;div class="modal-header"&gt;
@@ -2406,7 +2410,7 @@
                     </div>
                   </div>
                   <div class="card-body pt-0"> 
-                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggle" tabindex="-1">
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggle" role="menu" tabindex="-1">
                       <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                           <div class="modal-body">
@@ -2424,7 +2428,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggle2" tabindex="-1">
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggle2" role="menu" tabindex="-1">
                       <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                           <div class="modal-body">
@@ -2442,7 +2446,7 @@
                     </div><a class="btn btn-dark" data-bs-toggle="modal" href="#exampleModalToggle" role="button" data-bs-dismiss="modal">Open First Modal</a>
                     <div class="code-box-copy">
                       <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#togal-between-modal" title="Copy"><i class="icofont icofont-copy-alt"></i></button>
-                      <pre class="custom-scrollbar"><code class="language-html" id="togal-between-modal">&lt;div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggle" tabindex="-1"&gt;
+                      <pre class="custom-scrollbar"><code class="language-html" id="togal-between-modal">&lt;div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggle" role="menu" tabindex="-1"&gt;
  &lt;div class="modal-dialog modal-dialog-centered"&gt;
    &lt;div class="modal-content"&gt;
      &lt;div class="modal-body"&gt;
@@ -2460,7 +2464,7 @@
    &lt;/div&gt;
  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggle2" tabindex="-1"&gt;
+&lt;div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggle2" role="menu" tabindex="-1"&gt;
  &lt;div class="modal-dialog modal-dialog-centered"&gt;
    &lt;div class="modal-content"&gt;
      &lt;div class="modal-body"&gt;
@@ -2500,7 +2504,7 @@
                   <div class="card-body pt-0"> 
                     <button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Static Backdrop Modal</button>
                     <!-- Modal-->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" role="menu" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-body"> 
@@ -2520,7 +2524,7 @@
                       <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#static-backdrop-modal" title="Copy"><i class="icofont icofont-copy-alt"></i></button>
                       <pre class="custom-scrollbar"><code class="language-html" id="static-backdrop-modal">&lt;button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"&gt;Static Backdrop Modal&lt;/button&gt;
 &lt;!--Modal--&gt;
-&lt;div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true"&gt;
+&lt;div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" role="menu" aria-hidden="true"&gt;
  &lt;div class="modal-dialog"&gt;
    &lt;div class="modal-content"&gt;
      &lt;div class="modal-body"&gt; 
