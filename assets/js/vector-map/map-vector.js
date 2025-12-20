@@ -11,7 +11,7 @@
       hoverColor: !1,
       regionStyle: {
         initial: {
-          fill: "#7366ff",
+          fill: "#e16349",
         },
       },
       backgroundColor: "transparent",
@@ -21,7 +21,7 @@
         backgroundColor: "transparent",
         regionStyle: {
           initial: {
-            fill: "#ff9f40",
+            fill: "#ffc107",
           },
         },
       }),
@@ -39,7 +39,7 @@
         backgroundColor: "transparent",
         regionStyle: {
           initial: {
-            fill: "#a26cf8",
+            fill: "#000000",
           },
         },
       }),
@@ -57,7 +57,7 @@
         backgroundColor: "transparent",
         regionStyle: {
           initial: {
-            fill: "#65c15c",
+            fill: "#4caf50",
           },
         },
       }),
@@ -66,7 +66,7 @@
         backgroundColor: "transparent",
         regionStyle: {
           initial: {
-            fill: "#fc564a",
+            fill: "#d32f2f",
           },
         },
       }),
@@ -75,7 +75,7 @@
         backgroundColor: "transparent",
         regionStyle: {
           initial: {
-            fill: "#3f475a",
+            fill: "#1e1e1e",
           },
         },
       });

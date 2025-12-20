@@ -45,7 +45,7 @@ html(lang='en')
                             .card-header
                               h5.mb-0
                                 button.btn.btn-link(data-bs-toggle='collapse', data-bs-target='#collapseicon', aria-expanded='true', aria-controls='collapseicon') Filter
-                            #collapseicon.collapse.show(aria-labelledby='collapseicon', data-bs-parent='#accordion')
+                            #collapseicon.collapse.show(aria-labelledby='collapseicon', role="menu" data-bs-parent='#accordion')
                               .card-body.filter-cards-view.animate-chk
                                 .job-filter.mb-2
                                   .faq-form
@@ -92,7 +92,7 @@ html(lang='en')
                             .card-header
                               h5.mb-0
                                 button.btn.btn-link(data-bs-toggle='collapse', data-bs-target='#collapseicon1', aria-expanded='true', aria-controls='collapseicon1') Location
-                            #collapseicon1.collapse.show(aria-labelledby='collapseicon1', data-bs-parent='#accordion')
+                            #collapseicon1.collapse.show(aria-labelledby='collapseicon1', role="menu" data-bs-parent='#accordion')
                               .card-body.animate-chk
                                 .location-checkbox
                                   label.d-block(for='chk-ani6')
@@ -113,7 +113,7 @@ html(lang='en')
                             .card-header
                               h5.mb-0
                                 button.btn.btn-link(data-bs-toggle='collapse', data-bs-target='#collapseicon2', aria-expanded='true', aria-controls='collapseicon2') Job Title
-                            #collapseicon2.collapse.show(data-bs-parent='#accordion', aria-labelledby='collapseicon2')
+                            #collapseicon2.collapse.show(data-bs-parent='#accordion', role="menu" aria-labelledby='collapseicon2')
                               .card-body.animate-chk
                                 .form-check
                                   input#chk-ani11.checkbox_animated(type='checkbox', data-original-title='', title='')
@@ -146,7 +146,7 @@ html(lang='en')
                             .card-header
                               h5.mb-0
                                 button.btn.btn-link(data-bs-toggle='collapse', data-bs-target='#collapseicon3', aria-expanded='true', aria-controls='collapseicon3') Industry
-                            #collapseicon3.collapse.show(data-bs-parent='#accordion', aria-labelledby='collapseicon3')
+                            #collapseicon3.collapse.show(data-bs-parent='#accordion', role="menu" aria-labelledby='collapseicon3')
                               .card-body.animate-chk
                                 .form-check
                                   input#chk-ani16.checkbox_animated(type='checkbox', data-original-title='', title='')
@@ -179,7 +179,7 @@ html(lang='en')
                             .card-header
                               h5.mb-0
                                 button.btn.btn-link.collapsed(data-bs-toggle='collapse', data-bs-target='#collapseicon4', aria-expanded='false', aria-controls='collapseicon4') Specific Skills
-                            #collapseicon4.collapse(data-bs-parent='#accordion', aria-labelledby='collapseicon4')
+                            #collapseicon4.collapse(data-bs-parent='#accordion', role="menu" aria-labelledby='collapseicon4')
                               .card-body.animate-chk
                                 .form-check
                                   input#chk-ani21.checkbox_animated(type='checkbox', data-original-title='', title='')
