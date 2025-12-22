@@ -1473,6 +1473,100 @@ table.dataTable thead > tr > td.dt-orderable-asc:hover,
 table.dataTable thead > tr > td.dt-orderable-desc:hover {
   outline: unset;
 }
+// Todo list
+.crm-todo-list {
+  li {
+    cursor: pointer;
+    border-bottom: 1px solid var(--chart-dashed-border);
+    padding: 12px 0;
+    gap: 16px;
+
+    @media (max-width: 1560px) and (min-width: 1400px) {
+      gap: 12px;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: unset;
+      padding-bottom: 0;
+    }
+
+    span {
+      $line-name:
+        primary, secondary, success, danger, info, light, dark, warning;
+      $line-color:
+        $primary-color, $secondary-color, $success-color, $danger-color,
+        $info-color, $light-color, $dark-color, $warning-color;
+
+      @each $var in $line-name {
+        $i: index($line-name, $var);
+
+        &.l-line-#{$var} {
+          height: 48px;
+          width: 3px;
+          border-radius: 4px;
+          background: nth($background-color, $i);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    p {
+      @media (max-width: 1880px) {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 200px;
+      }
+
+      @media (max-width: 1723px) and (min-width: 1519px) {
+        max-width: 158px;
+      }
+
+      @media (max-width: 1518px) and (min-width: 1400px) {
+        max-width: 130px;
+      }
+
+      @media (max-width: 843px) and (min-width: 768px) {
+        max-width: 200px;
+      }
+
+      @media (max-width: 368px) {
+        max-width: 145px;
+      }
+    }
+
+    .form-check {
+      .form-check-input {
+        border-color: rgba($badge-light-color, 0.8);
+
+        &:focus {
+          box-shadow: unset;
+        }
+      }
+    }
+
+    span {
+      color: rgba($badge-light-color, 0.8);
+    }
+
+    .flex-grow-1 {
+      a {
+        color: var(--body-font-color);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+        display: block;
+      }
+    }
+  }
+}
 /**=====================
     4.3 Update CSS Ends
 ==========================**/

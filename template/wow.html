@@ -1247,7 +1247,10 @@
                     <div>
                       <div class="line">
                         <p><strong>data-wow-duration: </strong>Change the animation duration<br><strong>data-wow-delay: </strong>Delay before the animation starts<br><strong>data-wow-offset: </strong>Distance to start the animation (related to the browser bottom)<br><strong>data-wow-iteration: </strong>Number of times the animation is repeated<br></p>
-                        <pre class="mb-0">&lt;section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"&gt; &lt;/section&gt; &lt;section class="wow slideInRight" data-wow-offset="10" data-wow-iteration="10"&gt; &lt;/section&gt;</pre>
+                        <pre class="mb-0">&lt;section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"&gt;  
+ &lt;/section&gt; 
+ &lt;section class="wow slideInRight" data-wow-offset="10" data-wow-iteration="10"&gt;
+ &lt;/section&gt;</pre>
                       </div>
                     </div>
                   </div>
@@ -1264,7 +1267,16 @@
                         <p><strong>offset: </strong>Define the distance between the bottom of browser viewport and the top of hidden box.<br>When the user scrolls and reach this distance the hidden box is revealed.</p>
                         <p><strong>mobile: </strong>Turn on/off wow.js on mobile devices.</p>
                         <p><strong>live: </strong>consatantly check for new WOW elements on the page.</p>
-                        <pre class="mb-0">wow = new WOW( { boxClass: 'wow', // default animateClass: 'animated', // default offset: 0, // default mobile: true, // default live: true // default } ) wow.init();                    </pre>
+                        <pre class="mb-0">wow = new WOW( 
+ { 
+ boxClass: 'wow', // default 
+ animateClass: 'animated', // default 
+ offset: 0, // default 
+ mobile: true, // default
+  live: true // default 
+   } 
+  ) 
+  wow.init();                    </pre>
                         <!-- Page Body Ends                   -->
                         <!-- Container-fluid Ends-->
                       </div>

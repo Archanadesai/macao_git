@@ -203,6 +203,9 @@
             right: unset;
             left: 20px;
           }
+          &::after{
+            font-size: 10px;
+          }
         }
 
         .swiper-button-prev {
@@ -211,6 +214,9 @@
           [dir="rtl"] & {
             right: unset;
             left: calc(55px + (60 - 55) * ((100vw - 320px) / (1920 - 320)));
+          }
+          &::after{
+            font-size: 10px;
           }
         }
       }
@@ -461,7 +467,16 @@
     }
   }
 }
-
+.arrow-round {
+  .swiper-button-prev {
+    left: unset;
+    right: 70px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    border-radius: 30px;
+  }
+}
 /**=====================
   5.5 Search CSS Ends
 ==========================**/
