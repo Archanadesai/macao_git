@@ -156,9 +156,11 @@
     $(".md-sidebar .md-sidebar-aside ").toggleClass("open");
   });
 
-  $(".loader-wrapper").fadeOut("slow", function () {
+ setTimeout(function () {
+  $(".loader-wrapper").fadeOut(1000, function () {
     $(this).remove();
   });
+}, 1000);
 
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 600) {
