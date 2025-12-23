@@ -130,6 +130,7 @@
  */
 :root {
   --theme-default: #e16350;
+  --primary-color: 225, 99, 80;
   --theme-secondary: #000000;
   --light-background: rgba(242, 243, 247, 0.7);
   --body-font-color: #212121;
@@ -45760,7 +45761,7 @@ table.table-bordered thead tr th p {
   margin-bottom: 0;
 }
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li.sidebar-list:hover > a:hover {
-  background-color: rgba(225, 99, 73, 0.07);
+  background-color: rgba(var(--primary-color), 0.07);
   transition: all 0.3s ease;
 }
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li:hover .sidebar-link:not(.active):hover svg {
@@ -52308,11 +52309,11 @@ html[dir=rtl] .dtfh-floatingparent-foot > div {
 }
 .setting-sidebar .color-layout[data-attr=color-3] div,
 .layout-sidebar .color-layout[data-attr=color-3] div {
-  background-color: #d64dcf;
+  background-color: #184b65;
 }
 .setting-sidebar .color-layout[data-attr=color-4] div,
 .layout-sidebar .color-layout[data-attr=color-4] div {
-  background-color: #4c2fbf;
+  background-color: #2a8f9e;
 }
 .setting-sidebar .color-layout[data-attr=color-5] div,
 .layout-sidebar .color-layout[data-attr=color-5] div {

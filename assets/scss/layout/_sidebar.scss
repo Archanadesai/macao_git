@@ -2037,7 +2037,7 @@
                           &:hover {
                             >a {
                               &:hover {
-                                background-color: rgba($primary-color, 0.07);
+                                background-color: rgba(var(--primary-color), 0.07);
                                 transition: all 0.3s ease;
                               }
                             }
