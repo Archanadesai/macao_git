@@ -473,7 +473,7 @@ $(function () {
         grid: {
           borderWidth: 0,
         },
-        colors: [MacaoAdminConfig.primary, "#ffb829", "#a927f9", "#65c15c", MacaoAdminConfig.secondary, "#838383", "#ffb829"],
+        colors: [MacaoAdminConfig.primary, "#ffb829", "#a927f9", "#65c15c", MacaoAdminConfig.secondary, "#000000", "#ffb829"],
       });
     }
   }
@@ -668,7 +668,7 @@ $(function () {
         show: true,
       },
     },
-    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#838383", "#6c757d", MacaoAdminConfig.secondary],
+    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#000000", "#6c757d", MacaoAdminConfig.secondary],
   });
   $.plot("#default-pie-legend-flot-chart", data, {
     series: {
@@ -679,7 +679,7 @@ $(function () {
     legend: {
       show: false,
     },
-    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#838383", "#6c757d", MacaoAdminConfig.secondary],
+    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#000000", "#6c757d", MacaoAdminConfig.secondary],
   });
   $.plot("#hidden-label-radius-flot-chart", data, {
     series: {
@@ -696,7 +696,7 @@ $(function () {
     legend: {
       show: false,
     },
-    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#838383", "#6c757d", MacaoAdminConfig.secondary],
+    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#000000", "#6c757d", MacaoAdminConfig.secondary],
   });
   $.plot("#default-pie-flot-chart-hover", data, {
     series: {
@@ -708,7 +708,7 @@ $(function () {
       hoverable: true,
       clickable: true,
     },
-    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#838383", "#6c757d", MacaoAdminConfig.secondary],
+    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#000000", "#6c757d", MacaoAdminConfig.secondary],
   });
   $.plot("#custom-label1pie", data, {
     series: {
@@ -727,7 +727,7 @@ $(function () {
     legend: {
       show: false,
     },
-    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#838383", "#6c757d", MacaoAdminConfig.secondary],
+    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#000000", "#6c757d", MacaoAdminConfig.secondary],
   });
   $.plot("#label-radius-flot-chart", data, {
     series: {
@@ -746,7 +746,7 @@ $(function () {
     legend: {
       show: false,
     },
-    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#838383", "#6c757d", MacaoAdminConfig.secondary],
+    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#000000", "#6c757d", MacaoAdminConfig.secondary],
   });
   $.plot("#title-pie-flot-chart", data, {
     series: {
@@ -770,7 +770,7 @@ $(function () {
     legend: {
       show: false,
     },
-    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#838383", "#6c757d", MacaoAdminConfig.secondary],
+    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#000000", "#6c757d", MacaoAdminConfig.secondary],
   });
   $.plot("#dount-hole-flot-chart", data, {
     series: {
@@ -779,6 +779,6 @@ $(function () {
         show: true,
       },
     },
-    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#838383", "#6c757d", MacaoAdminConfig.secondary],
+    colors: [MacaoAdminConfig.primary, "#65c15c", "#ffb829", "#a927f9", "#000000", "#6c757d", MacaoAdminConfig.secondary],
   });
 });

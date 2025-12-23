@@ -146,7 +146,7 @@
           14: { offset: 0.4 },
           15: { offset: 0.5 },
         },
-        colors: ["#838383", MacaoAdminConfig.primary, MacaoAdminConfig.secondary, "#65c15c", "#a927f9", "#ffb829", "#838383", MacaoAdminConfig.primary, "#ffb829", "#65c15c", MacaoAdminConfig.primary, MacaoAdminConfig.secondary, "#65c15c", MacaoAdminConfig.primary, "#a927f9", "#ffb829", MacaoAdminConfig.primary, MacaoAdminConfig.primary, "#a927f9", MacaoAdminConfig.secondary, MacaoAdminConfig.primary, "#65c15c"],
+        colors: ["#000000", MacaoAdminConfig.primary, MacaoAdminConfig.secondary, "#65c15c", "#a927f9", "#ffb829", "#000000", MacaoAdminConfig.primary, "#ffb829", "#65c15c", MacaoAdminConfig.primary, MacaoAdminConfig.secondary, "#65c15c", MacaoAdminConfig.primary, "#a927f9", "#ffb829", MacaoAdminConfig.primary, MacaoAdminConfig.primary, "#a927f9", MacaoAdminConfig.secondary, MacaoAdminConfig.primary, "#65c15c"],
       };
       var chart = new google.visualization.PieChart(document.getElementById("pie-chart4"));
       chart.draw(data, options);

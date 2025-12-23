@@ -244,10 +244,10 @@
         top: 4px;
         width: 12px;
         height: 12px;
-        background: $primary-color;
+        background: var(--theme-default);
         border: 2px solid $white;
         border-radius: 50%;
-        box-shadow: 0 0 0 2px $primary-color;
+        box-shadow: 0 0 0 2px var(--theme-default);
         [dir="rtl"] & {
           right: -2px;
           left: unset;

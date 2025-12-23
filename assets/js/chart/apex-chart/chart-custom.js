@@ -2304,7 +2304,7 @@ var options9 = {
       },
     },
   ],
-  colors: ["#838383", "#ffb829", MacaoAdminConfig.primary, "#65c15c", "#a927f9"],
+  colors: ["#000000", "#ffb829", MacaoAdminConfig.primary, "#65c15c", "#a927f9"],
 };
 
 var chart9 = new ApexCharts(document.querySelector("#donutchart"), options9);

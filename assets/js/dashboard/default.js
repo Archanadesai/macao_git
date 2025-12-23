@@ -288,7 +288,7 @@ var attendance_option = {
     hover: { size: 6 },
   },
   dataLabels: {
-    enabled: false
+    enabled: false,
   },
 
   xaxis: {
@@ -319,7 +319,7 @@ var attendance_option = {
     ],
   },
 
-  colors: ["#E65A50"], // Line color (Red for the gradient fill)
+  colors: [MacaoAdminConfig.primary], // Line color (Red for the gradient fill)
 };
 
  var attendance_option = new ApexCharts(document.querySelector("#monthlyChart"), attendance_option);

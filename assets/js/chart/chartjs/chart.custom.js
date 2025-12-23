@@ -211,8 +211,8 @@
     },
     {
       value: 50,
-      color: "#ea2087",
-      highlight: "#ea2087",
+      color: "#DDA853",
+      highlight: "#DDA853",
       label: "Secondary",
     },
     {

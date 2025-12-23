@@ -161,13 +161,11 @@
        toolbar: { show: false },
        foreColor: "#777",
      },
-
-     // --- BAR SERIES (gradient columns) ---
      series: [
        {
          name: "Sales",
          type: "bar",
-         data: [12, 10, 15, 13, 11, 12, 16], // adjust to your data
+         data: [12, 10, 15, 13, 11, 12, 16],
        },
        {
          name: "Trend",
