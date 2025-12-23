@@ -11,47 +11,44 @@
   background-color: $white;
   z-index: 11;
   top: 0;
-/* From Uiverse.io by andrew-manzyk */ 
-.loader {
-  width: 48px;
-  height: 48px;
-  margin: auto;
-  position: relative;
-  &::after{
-     content: '';
-  width: 100%;
-  height: 100%;
-  border:2px solid $primary-color;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 4px;
-  animation: jump7456 0.5s linear infinite;
+  .loader {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: $primary-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 4px;
+      animation: jump7456 0.5s linear infinite;
+    }
+    &::before {
+      content: "";
+      width: 48px;
+      height: 5px;
+      background: #f0808050;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      border-radius: 50%;
+      animation: shadow324 0.5s linear infinite;
+    }
   }
-  &::before{
-    content: '';
-  width: 48px;
-  height: 5px;
-  background: #f0808050;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  border-radius: 50%;
-  animation: shadow324 0.5s linear infinite;
+
+  .loader .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
   }
-}
-
-.loader .text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  position: absolute;
-}
-
-
 }
 @keyframes jump7456 {
   15% {
@@ -63,7 +60,7 @@
   }
 
   50% {
-    transform: translateY(18px) scale(1, .9) rotate(45deg);
+    transform: translateY(18px) scale(1, 0.9) rotate(45deg);
     border-bottom-right-radius: 40px;
   }
 
@@ -77,9 +74,8 @@
 }
 
 @keyframes shadow324 {
-
   0%,
-    100% {
+  100% {
     transform: scale(1, 1);
   }
 

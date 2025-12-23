@@ -160,13 +160,9 @@
               }
               &.asset-icon {
                 display: flex;
-                justify-content: center;
-                gap: 4px;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                align-items: center;
+                gap: 6px;
+                white-space: nowrap;        
               }
             }
           }

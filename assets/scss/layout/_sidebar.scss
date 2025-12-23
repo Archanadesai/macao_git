@@ -1484,6 +1484,15 @@
           >ul{
             gap: 9px;
           }
+          .nav-menus{
+            > li.search-li{
+              background: transparent;
+              padding: 0;
+              margin: 0;
+              width: auto;
+              height: auto;
+            }
+          }
         }
       }
     }
@@ -1584,6 +1593,7 @@
             }
             >li{
               position: relative;
+              cursor: pointer;
               &.search-li{
                 background: transparent;
                 padding: 0;

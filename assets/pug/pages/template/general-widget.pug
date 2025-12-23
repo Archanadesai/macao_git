@@ -68,12 +68,10 @@ html(lang='en')
                         p Running Orders
                         span 501
                       .customer-card.bg-light-secondary 
-                        svg.stroke-icon.stroke-secondary
-                          use(href='../assets/svg/icon-sprite.svg#stroke-home')
+                        i.stroke-secondary(data-feather="truck")
                     .balance1 
                       p.txt-secondary 10%
-                        svg.stroke-icon.stroke-secondary
-                          use(href='../assets/svg/icon-sprite.svg#up-arrow')
+                        i.stroke-secondary(data-feather="truck")
                       span | This month
               .col-xl-3.col-lg-6.col-md-6.col-sm-6.box-col-6
                 .card.bg-light-success.widget-card
@@ -83,8 +81,7 @@ html(lang='en')
                         p Total Profit
                         span $8.546
                       .customer-card.bg-light-success 
-                        svg.stroke-icon.stroke-success
-                          use(href='../assets/svg/icon-sprite.svg#stroke-home') 
+                        i.stroke-success(data-feather="dollar-sign")
                     .balance1 
                       p.txt-success 10%
                         svg.stroke-icon.stroke-success
@@ -98,8 +95,7 @@ html(lang='en')
                         p Order Completed
                         span 1400
                       .customer-card.bg-light-warning 
-                        svg.stroke-icon.stroke-warning
-                          use(href='../assets/svg/icon-sprite.svg#stroke-home')
+                        i.stroke-warning(data-feather="check-circle")
                     .balance1 
                       p.txt-warning 10%
                         svg.stroke-icon.stroke-warning
@@ -124,13 +120,13 @@ html(lang='en')
                   .card-body.p-0 
                     .d-flex 
                       .me-3
-                        span.assets-card.bg-light-primary.txt-primary
-                          i.fa-solid.fa-briefcase  
+                        span.assets-card.bg-light-secondary.txt-secondary
+                          i(data-feather="users") 
                       .assets-detail 
-                        p.text-muted.mb-1 Total Assets
-                        h5.mb-2 596
+                        p.text-muted.mb-1 Total Customers
+                        h5.mb-2 764
                         p.text-muted.mb-1.asset-icon
-                          span.text-success 0.25%
+                          span.text-success 0.30%
                           i(data-feather="arrow-down" class="text-success") 
                           | This month            
               .col-xl-3.col-lg-6.col-md-6.col-sm-6.box-col-6 
@@ -138,7 +134,7 @@ html(lang='en')
                   .card-body.p-0 
                     .d-flex 
                       .me-3
-                        span.assets-card.bg-light-secondary.txt-secondary
+                        span.assets-card.bg-light-success.txt-success
                           i.fa-solid.fa-coins    
                       .assets-detail 
                         p.text-muted.mb-1 Total Value
@@ -152,7 +148,7 @@ html(lang='en')
                   .card-body.p-0 
                     .d-flex 
                       .me-3
-                        span.assets-card.bg-light-success.txt-success
+                        span.assets-card.bg-light-warning.txt-warning
                           i.fa-solid.fa-cart-shopping  
                       .assets-detail 
                         p.text-muted.mb-1 Total Sales

@@ -1167,6 +1167,15 @@ body {
 									}
 								}
 							}
+							.sidebar-list{
+								i{
+									&.fa-solid{
+										&.fa-thumbtack{
+											border:4px solid $dark-card-background;
+										}
+									}
+								}
+							}
 						}
 					}
 
