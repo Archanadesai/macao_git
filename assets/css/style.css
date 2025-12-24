@@ -150,7 +150,7 @@
   --course-bg: #f7f7f7;
   --balance-profile-bg: #e0dfef;
   --view-grid-bg: #ecf3fa80;
-  --view-border-marker: #cfcdfc;
+  --view-border-marker: #fce2cd;
   --light-slate: #f5f6f9;
   --product-shadow: 0px 1px 0px rgba(82, 82, 108, 0.15);
   --light-shade-primary: rgba(245, 244, 255);
@@ -9714,6 +9714,7 @@ button.button-primary:hover {
   border: 1px solid rgba(82, 82, 108, 0.3);
   width: 50%;
   color: #59667a;
+  border-radius: 12px;
 }
 .default-dashboard div.dt-container .dt-layout-row .dt-layout-cell tr td,
 .dashboard-2 div.dt-container .dt-layout-row .dt-layout-cell tr td,
@@ -22631,6 +22632,9 @@ p.data-attributes svg {
   height: 24px;
   fill: var(--theme-default);
 }
+.dashboard-2 .card.custom-card {
+  background-image: url(/assets/images/bg.png);
+}
 .dashboard-2 .card.custom-card .assets-card {
   width: 48px;
   height: 48px;
@@ -31868,7 +31872,6 @@ footer {
   position: relative;
   background-position: bottom;
   background-size: cover;
-  background-image: url(../images/landing/home-bg.jpg);
   background-color: #1b1c21;
 }
 .landing-home .sub-title {
@@ -32156,7 +32159,7 @@ footer {
   color: #fff;
 }
 .landing-page .sticky-header header {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.411);
   box-shadow: none;
   z-index: 100;
   left: 0;
@@ -43184,10 +43187,11 @@ table.table-bordered thead tr th p {
   padding: 0 56px 0 24px;
 }
 .left-header .searchBar #searchQuerySubmit {
-  width: 56px;
+  width: 44px;
   height: 44px;
   position: absolute;
   background: none;
+  top: -2px;
   border: none;
   outline: none;
 }
@@ -44396,7 +44400,9 @@ table.table-bordered thead tr th p {
 .page-wrapper .page-header .header-wrapper .search-full input {
   width: 100%;
   height: 60px;
-  padding-left: 50px;
+  padding-left: 58px;
+  border-radius: 38px;
+  border: 1px solid #c3c3c3;
 }
 .page-wrapper .page-header .header-wrapper .search-full input:focus {
   outline: none !important;
@@ -44425,12 +44431,12 @@ table.table-bordered thead tr th p {
 @media (max-width: 575px) {
   .page-wrapper .page-header .header-wrapper .search-full .form-group:before {
     top: 17px !important;
-    left: 10px !important;
+    left: 20px !important;
   }
 }
 [dir=rtl] .page-wrapper .page-header .header-wrapper .search-full .form-group:before {
   left: unset;
-  right: 30px;
+  right: 20px;
 }
 .page-wrapper .page-header .header-wrapper .nav-right {
   justify-content: flex-end;
@@ -45761,7 +45767,7 @@ table.table-bordered thead tr th p {
   margin-bottom: 0;
 }
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li.sidebar-list:hover > a:hover {
-  background-color: rgba(var(--primary-color), 0.07);
+  background-color: #f4c8bf;
   transition: all 0.3s ease;
 }
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li:hover .sidebar-link:not(.active):hover svg {
@@ -45887,7 +45893,7 @@ table.table-bordered thead tr th p {
   transition: all 0.5s ease;
   position: relative;
   margin-bottom: 10px;
-  background-color: #f4c8bf;
+  background-color: rgba(var(--primary-color), 0.07);
 }
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content > li .sidebar-link.active::after {
   opacity: 1;
@@ -61328,7 +61334,7 @@ body[class*=dark-] .for-light {
     display: block;
   }
   .page-wrapper .page-header .header-wrapper .search-full input {
-    padding-left: 30px;
+    padding-left: 45px;
     line-height: 40px;
   }
   .page-wrapper .page-header .header-wrapper .search-full .form-group::before {
@@ -61336,8 +61342,8 @@ body[class*=dark-] .for-light {
     left: 12px;
   }
   .page-wrapper .page-header .header-wrapper .search-full .form-group .close-search {
-    top: 18px;
-    right: 0;
+    top: 20px;
+    right: 16px;
     width: 18px;
     height: 18px;
   }

@@ -1118,7 +1118,6 @@
   position: relative;
   background-position: bottom;
   background-size: cover;
-  background-image: url(../images/landing/home-bg.jpg);
   background-color: #1b1c21;
 
   .sub-title {
@@ -1436,7 +1435,7 @@ $landing-color : var(--theme-default);
 
   .sticky-header {
     header {
-      background: transparent;
+      background: rgba(0, 0, 0, 0.411);
       box-shadow: none;
       z-index: 100;
       left: 0;
