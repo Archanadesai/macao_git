@@ -33954,15 +33954,25 @@ ul.dot-group li {
   padding: 0 calc(12px + 183 * (100vw - 320px) / 1600);
 }
 
-.application-box {
+.application-layout .landing-title {
+  margin-top: 0;
+}
+.application-layout .landing-title h2 {
+  background: linear-gradient(90.89deg, rgba(225, 99, 73, 0.5) 3.96%, #E16349 99.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.application-layout .application-box {
   display: block;
 }
-.application-box .app-image {
+.application-layout .application-box .app-image {
   padding: 20px;
   background: rgba(225, 99, 73, 0.1);
   border-radius: 12px;
 }
-.application-box .app-image a img {
+.application-layout .application-box .app-image a img {
   box-shadow: 82px 28px 136px 0 rgba(var(--black), 0.15);
   border-radius: 10px;
   height: calc(100% - 69px);
@@ -33971,7 +33981,7 @@ ul.dot-group li {
   transition: transform 0.4s ease;
   width: 100%;
 }
-.application-box .app-detail {
+.application-layout .application-box .app-detail {
   background-color: #e16349;
   border-radius: 10px;
   padding: 12px 34px;
@@ -33981,7 +33991,7 @@ ul.dot-group li {
   margin-inline: auto;
   transition: transform 0.4s ease;
 }
-.application-box .app-detail::after, .application-box .app-detail::before {
+.application-layout .application-box .app-detail::after, .application-layout .application-box .app-detail::before {
   content: "";
   position: absolute;
   top: -23px;
@@ -33991,18 +34001,18 @@ ul.dot-group li {
   left: 29px;
   z-index: 1;
 }
-.application-box .app-detail::after {
+.application-layout .application-box .app-detail::after {
   right: 29px;
   left: unset;
 }
-.application-box .app-detail h3 {
+.application-layout .application-box .app-detail h3 {
   text-align: center;
   font-size: calc(14px + 4 * (100vw - 320px) / 1600);
   font-weight: 700;
   color: #fff;
   position: relative;
 }
-.application-box .app-detail h3::before, .application-box .app-detail h3::after {
+.application-layout .application-box .app-detail h3::before, .application-layout .application-box .app-detail h3::after {
   content: "";
   position: absolute;
   top: -19px;
@@ -34013,16 +34023,26 @@ ul.dot-group li {
   border: 3px solid #fff;
   border-radius: 100%;
 }
-.application-box .app-detail h3::after {
+.application-layout .application-box .app-detail h3::after {
   right: -49px;
   left: unset;
 }
-.application-box .app-detail a.btn {
+.application-layout .application-box .app-detail a.btn {
   padding: 0;
 }
 
 .features-layout {
   background-color: rgba(255, 170, 153, 0.1019607843);
+}
+.features-layout .landing-title {
+  margin-top: 0;
+}
+.features-layout .landing-title h2 {
+  background: linear-gradient(90.89deg, rgba(225, 99, 73, 0.5) 3.96%, #E16349 99.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 .features-layout .feature-wrapper {
   background-color: #fff;
@@ -34074,6 +34094,16 @@ ul.dot-group li {
   border-radius: 10px;
 }
 
+.support-layout .landing-title {
+  margin-top: 0;
+}
+.support-layout .landing-title h2 {
+  background: linear-gradient(90.89deg, rgba(225, 99, 73, 0.5) 3.96%, #E16349 99.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 .support-layout .support-title h5 {
   font-family: "Caveat", cursive;
   font-size: calc(22px + 17 * (100vw - 300px) / 1620);
@@ -34175,6 +34205,32 @@ ul.dot-group li {
   }
 }
 
+@media (max-width: 991px) {
+  .landing-page .landing-header ul.landing-menu {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    display: block;
+    width: 300px;
+    height: 100vh;
+    z-index: 1;
+    background-color: #fff;
+    transition: all 0.5s ease;
+  }
+  .landing-page .landing-header ul.landing-menu li.nav-item a.nav-link {
+    color: #404040;
+    padding: 10px 20px;
+  }
+  .landing-page .landing-header ul.landing-menu li.nav-item.menu-back {
+    display: block;
+  }
+  .landing-page .landing-header ul.landing-menu.open {
+    right: 0;
+  }
+  .landing-page .landing-header .buy-block .toggle-menu {
+    display: block;
+  }
+}
 /**=====================
     3.39 Landing CSS Ends
 ==========================**/

@@ -3605,86 +3605,109 @@ ul.dot-group {
 .custom-container{
     padding: 0 calc(12px + (195 - 12) * ((100vw - 320px) / (1920 - 320)));
 }
-.application-box {
-  display: block;
-  .app-image{
-    padding: 20px;
-    background: rgba(225, 99, 73, 0.1);
-    border-radius: 12px;
-    a{
-      img {
-        box-shadow: 82px 28px 136px 0 rgba(var(--black), 0.15);
-        border-radius: 10px;
-        height: calc(100% - 69px);
-        z-index: 1;
-        position: relative;
-        transition: transform 0.4s ease;
-        width: 100%;
-      }
+.application-layout{
+  .landing-title{
+    margin-top: 0;
+    h2{
+      background: linear-gradient(90.89deg, rgba(225, 99, 73, 0.5) 3.96%, #E16349 99.67%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
     }
   }
+  .application-box {
+    display: block;
+    .app-image{
+      padding: 20px;
+      background: rgba(225, 99, 73, 0.1);
+      border-radius: 12px;
+      a{
+        img {
+          box-shadow: 82px 28px 136px 0 rgba(var(--black), 0.15);
+          border-radius: 10px;
+          height: calc(100% - 69px);
+          z-index: 1;
+          position: relative;
+          transition: transform 0.4s ease;
+          width: 100%;
+        }
+      }
+    }
 
-  .app-detail{
-    background-color: $primary-color;
-    border-radius: 10px;
-    padding: 12px 34px;
-    width: calc(100% - 246px);
-    margin-top: 23px;
-    position: relative;
-    margin-inline: auto;
-    transition: transform 0.4s ease;
-
-    &::after,
-    &::before {
-      content: "";
-      position: absolute;
-      top: -23px;
-      height: 20px;
-      border-left: 2px solid $primary-color;
+    .app-detail{
       background-color: $primary-color;
-      left: 29px;
-      z-index: 1;
-    }
-
-    &::after {
-      right: 29px;
-      left: unset;
-    }
-
-    h3 {
-      text-align: center;
-      font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
-      font-weight: 700;
-      color: $white;
+      border-radius: 10px;
+      padding: 12px 34px;
+      width: calc(100% - 246px);
+      margin-top: 23px;
       position: relative;
+      margin-inline: auto;
+      transition: transform 0.4s ease;
 
-      &::before,
-      &::after {
+      &::after,
+      &::before {
         content: "";
         position: absolute;
-        top: -19px;
-        left: -48px;
-        width: 12px;
-        height: 12px;
+        top: -23px;
+        height: 20px;
+        border-left: 2px solid $primary-color;
         background-color: $primary-color;
-        border: 3px solid #fff;
-        border-radius: 100%;
+        left: 29px;
+        z-index: 1;
       }
 
       &::after {
-            right: -49px;
-    left: unset;
+        right: 29px;
+        left: unset;
       }
-    }
-    a{
-      &.btn{
-        padding: 0;
+
+      h3 {
+        text-align: center;
+        font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 700;
+        color: $white;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: -19px;
+          left: -48px;
+          width: 12px;
+          height: 12px;
+          background-color: $primary-color;
+          border: 3px solid #fff;
+          border-radius: 100%;
+        }
+
+        &::after {
+              right: -49px;
+      left: unset;
+        }
+      }
+      a{
+        &.btn{
+          padding: 0;
+        }
       }
     }
   }
 }
+
 .features-layout{
   background-color: #ffaa991a;
+  .landing-title{
+    margin-top: 0;
+    h2{
+      background: linear-gradient(90.89deg, rgba(225, 99, 73, 0.5) 3.96%, #E16349 99.67%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+  }
   .feature-wrapper{
     background-color: $white;
     border-radius: 10px;
@@ -3738,6 +3761,16 @@ ul.dot-group {
   }
 }
 .support-layout{
+  .landing-title{
+    margin-top: 0;
+    h2{
+      background: linear-gradient(90.89deg, rgba(225, 99, 73, 0.5) 3.96%, #E16349 99.67%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+  }
   .support-title{
     h5{
       font-family: "Caveat", cursive;
@@ -3841,6 +3874,46 @@ ul.dot-group {
         }
       }
     }
+}
+@media (max-width: 991px) {
+  .landing-page{
+    .landing-header{
+      ul{
+        &.landing-menu{
+          position: fixed;
+          top: 0;
+          right: -320px;
+          display: block;
+          width: 300px;
+          height: 100vh;
+          z-index: 1;
+          background-color: $white;
+          transition: all 0.5s ease;
+          li{
+            &.nav-item{
+              a{
+                &.nav-link{
+                  color: $theme-body-font-color;
+                  padding: 10px 20px;
+                }
+              }
+              &.menu-back{
+                display: block;
+              }
+            }
+          }
+          &.open{
+            right: 0;
+          }
+        }
+      }
+      .buy-block{
+        .toggle-menu{
+          display: block;
+        }
+      }
+    }
+  }
 }
 /**=====================
     3.39 Landing CSS Ends

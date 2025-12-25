@@ -59,4 +59,10 @@
     var tets = $(this).parent().parent().parent().parent().addClass("d-none");
     console.log(tets);
   });
+   $(".toggle-menu").on("click", function () {
+     $(".landing-menu").toggleClass("open");
+   });
+   $(".menu-back").on("click", function () {
+     $(".landing-menu").toggleClass("open");
+   });  
 })(jQuery);
