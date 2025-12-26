@@ -31964,7 +31964,7 @@ footer {
   position: relative;
   background-position: bottom;
   background-size: cover;
-  background-image: url(/assets/images/landing/home-bg.jpg);
+  background-image: url(../images/landing/home-bg.jpg);
   height: 100vh;
 }
 .landing-home .sub-title {
