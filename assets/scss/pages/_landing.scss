@@ -1115,7 +1115,7 @@
       }
     }
     .nav-link {
-      color: #ffffff;
+      color: $white;
       font-size: 16px;
       font-weight: 500;
       text-decoration: none;
@@ -1166,7 +1166,7 @@
     }
   }
   &.sticky {
-    background-color: $theme-body-font-color;
+    background-color: $black;
     transition: all 0.5s ease-in-out;
   }
 }
@@ -1220,7 +1220,7 @@
       font-size: calc(25px + (60 - 25) * ((100vw - 300px) / (1920 - 300)));
 
       span {
-        background: linear-gradient(90deg, #ffb905 20.35%, #6aebad 50%), linear-gradient(0deg, #ffffff, #ffffff);
+        background: linear-gradient(33deg, #fdfdfd 20.35%, #e16349 50%), linear-gradient(79deg, #ffffff, #fd0a0a);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -1262,7 +1262,7 @@
       .animate-img {
         .right-img {
           position: absolute;
-          z-index: -1;
+          z-index: 0;
           right: -13%;
           top: -14%;
           animation: up-down 5s infinite;
@@ -1271,10 +1271,10 @@
           }
         }
         .left-img {
-          left: -19%;
-          position: absolute;
-          top: 76%;
-          z-index: -1;
+              left: -19%;
+    box-shadow: 0px 0px 10px #f8f8f8;
+    position: absolute;
+    top: 84%;
           animation: up-down 5s infinite;
           img {
             height: 148px;
