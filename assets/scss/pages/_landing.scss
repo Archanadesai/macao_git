@@ -1554,6 +1554,7 @@
           transform: scale(1);
           transition: transform 0.3s ease;
           opacity: 0.6;
+          padding: 0 35px;
           img {
             margin-top: 50px;
             border-top-left-radius: 10px;
@@ -1584,12 +1585,20 @@
             }
           }
         }
+        .banner2{
+          margin-top: 95px !important;
+        }
         .slick-current {
           + .slick-active {
             transform: scale(1.5);
             opacity: 1;
             z-index: 2;
             position: relative;
+            div{
+              .banner2{
+              margin-top: 50px !important;
+            }
+            }
           }
         }
       }

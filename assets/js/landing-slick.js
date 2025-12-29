@@ -65,13 +65,9 @@
 //   });
 // })(jQuery);
 (function ($) {
-  // $(document).ready(function(){
-  //   $('.your-class').slick({
-  //   });
-  // });
   $(".hero-image").slick({
     centerMode: false,
-    centerPadding: "60px",
+    centerPadding: "120px",
     autoplay: true,
     autoplaySpeed: 2000,
     slidesToShow: 3,

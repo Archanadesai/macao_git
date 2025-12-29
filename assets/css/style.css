@@ -32193,6 +32193,7 @@ footer {
   transform: scale(1);
   transition: transform 0.3s ease;
   opacity: 0.6;
+  padding: 0 35px;
 }
 .landing-home .landing-flex .content-home .hero-image .slick-slide img {
   margin-top: 50px;
@@ -32227,11 +32228,17 @@ footer {
     padding-top: 45px;
   }
 }
+.landing-home .landing-flex .content-home .hero-image .banner2 {
+  margin-top: 95px !important;
+}
 .landing-home .landing-flex .content-home .hero-image .slick-current + .slick-active {
   transform: scale(1.5);
   opacity: 1;
   z-index: 2;
   position: relative;
+}
+.landing-home .landing-flex .content-home .hero-image .slick-current + .slick-active div .banner2 {
+  margin-top: 50px !important;
 }
 
 .build-section {
