@@ -68,7 +68,7 @@
   $(".hero-image").slick({
     centerMode: false,
     centerPadding: "120px",
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     slidesToShow: 3,
     dots: false,

@@ -12,3 +12,4 @@
   };
   wow_init.init();
 })(jQuery);
+

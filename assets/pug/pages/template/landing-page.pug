@@ -67,15 +67,15 @@ html(lang='en')
     section.landing-home
       .banner-inner.position-relative
         .tech-icon.one.w-25.h-25
-          img(src="../assets/images/landing/slider/bg-element.png")
+          img(src="../assets/images/landing/slider/bg-element.png" alt="element")
         .tech-icon.two.w-25.h-25
-          img(src="../assets/images/landing/slider/Star-Element.png")
+          img(src="../assets/images/landing/slider/Star-Element.png" alt="element")
         .tech-icon.three.w-25.h-25
-          img(src="../assets/images/landing/slider/round.png")
+          img(src="../assets/images/landing/slider/round.png" alt="element")
         .tech-icon.four.w-25.h-25
-          img(src="../assets/images/landing/slider/bg-element.png")
+          img(src="../assets/images/landing/slider/bg-element.png" alt="element")
         .tech-icon.five.w-25.h-25
-          img(src="../assets/images/landing/slider/blur-star.png")          
+          img(src="../assets/images/landing/slider/blur-star.png" alt="element")          
       .container-fluid.p-0
         .landing-flex 
           .content-home
@@ -88,11 +88,15 @@ html(lang='en')
               .main-buttons 
                 a.btn.btn-primary.wow.fadeInUp(href="index.html" target="_blank") View Demo
                 a.btn.btn-secondary.wow.fadeInUp(href="" target="_blank") Documentation
-            .hero-image 
-              img.img-fluid.banner2(src="../assets/images/landing/layout/banner3.jpg")
-              img.img-fluid.banner2(src="../assets/images/landing/layout/banner2.jpg")
-              img.img-fluid.banner2(src="../assets/images/landing/layout/banner1.jpg")
-              img.img-fluid.banner2(src="../assets/images/landing/layout/banner2.jpg")
+            .hero-image
+              div.sliders.slider-1 
+                img.img-fluid.banner2(src="../assets/images/landing/layout/banner3.jpg" alt="banner")
+              div.sliders.slider-2 
+                img.img-fluid.banner2(src="../assets/images/landing/layout/banner2.jpg" alt="banner")
+              div.sliders.slider-3 
+                img.img-fluid.banner2(src="../assets/images/landing/layout/banner1.jpg" alt="banner")
+              div.sliders.slider-4 
+                img.img-fluid.banner2(src="../assets/images/landing/layout/banner2.jpg" alt="banner")
     section.section-space.creative-layout
       .custom-container 
         .row 
@@ -102,7 +106,7 @@ html(lang='en')
               h3 02+
               p.description-title We comes up with most creative and useful main general purpose dashboard template
         .row.g-4
-          .col-md-6 
+          .col-md-6.wow.fadeIn(data-wow-delay="0.1s") 
             .layout-box
               .layout-btn 
                 .macao-demo-img 
@@ -115,7 +119,7 @@ html(lang='en')
                 .demo-img
                     a(href="index.html")
                       img(src="../assets/images/landing/ecommerce-app.jpg", class="img-fluid" alt="") 
-          .col-md-6 
+          .col-md-6.wow.fadeIn(data-wow-delay="0.2s") 
             .layout-box
               .layout-btn 
                 .macao-demo-img 
@@ -194,63 +198,63 @@ html(lang='en')
           //-       p Riho provide unlimited main color option.other colors can change easily using sass variables   
           .col-sm-12.frameworks
             ul.frameworks-list
-              li
+              li.wowfadeIn(data-wow-delay="0.1s")
                 div 
                   img(src="../assets/images/landing/icon/html/bootstrap.png", alt="") 
                 h5.mb-0.f-w-600 Bootstrap 5
-              li
+              li.wowfadeIn(data-wow-delay="0.2s")
                 div 
                   img(src="../assets/images/landing/icon/html/sass.png", alt="") 
                 h5.mb-0.f-w-600 SCSS
-              li
+              li.wowfadeIn(data-wow-delay="0.3s")
                 div 
                   img(src="../assets/images/landing/icon/html/pug.png", alt="") 
                 h5.mb-0.f-w-600 PUG
-              li
+              li.wow.fadeIn(data-wow-delay="0.4s")
                 div 
                   img(src="../assets/images/landing/icon/html/npm.png", alt="") 
                 h5.mb-0.f-w-600 NPM
-              li
+              li.wow.fadeIn(data-wow-delay="0.5s")
                 div 
                   img(src="../assets/images/landing/icon/html/vite.png", alt="") 
                 h5.mb-0.f-w-600 Vite
-              li
+              li.wow.fadeIn(data-wow-delay="0.6s")
                 div 
                   img(src="../assets/images/landing/icon/html/forms.png", alt="") 
                 h5.mb-0.f-w-600 Form
-              li
+              li.wow.fadeIn(data-wow-delay="0.7s")
                 div 
                   img(src="../assets/images/landing/icon/angular/6.png", alt="") 
                 h5.mb-0.f-w-600 Apex chart
-              li
+              li.wow.fadeIn(data-wow-delay="0.8s")
                 div 
                   img(src="../assets/images/landing/icon/angular/7.png", alt="") 
                 h5.mb-0.f-w-600 Chart.js
-              li
+              li.wow.fadeIn(data-wow-delay="0.9s")
                 div 
                   img(src="../assets/images/landing/icon/angular/8.png", alt="") 
                 h5.mb-0.f-w-600 Chartist
-              li
+              li.wow.fadeIn(data-wow-delay="1.0s")
                 div 
                   img(src="../assets/images/landing/icon/html/apps.png", alt="") 
                 h5.mb-0.f-w-600 Apps
-              li
+              li.wow.fadeIn(data-wow-delay="1.1s")
                 div 
                   img(src="../assets/images/landing/icon/angular/10.png", alt="") 
                 h5.mb-0.f-w-600 Gallery
-              li
+              li.wow.fadeIn(data-wow-delay="1.2s")
                 div 
                   img(src="../assets/images/landing/icon/html/iconset.png", alt="") 
                 h5.mb-0.f-w-600 Icons
-              li
+              li.wow.fadeIn(data-wow-delay="1.3s")
                 div 
                   img(src="../assets/images/landing/icon/html/layout.png", alt="") 
                 h5.mb-0.f-w-600 Layout
-              li
+              li.wow.fadeIn(data-wow-delay="1.4s")
                 div 
                   img(src="../assets/images/landing/icon/html/uikits.png", alt="") 
                 h5.mb-0.f-w-600 Ui kits
-              li
+              li.wow.fadeIn(data-wow-delay="1.5s")
                 div 
                   img(src="../assets/images/landing/icon/html/table.png", alt="") 
                 h5.mb-0.f-w-600 17+ Apps                              
@@ -264,7 +268,7 @@ html(lang='en')
               p.description-title We comes up with most creative and useful main general purpose dashboard template            
         .row.g-4 
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="0.1s")
               .app-image 
                 a(href="social-app.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -274,7 +278,7 @@ html(lang='en')
                   span.circle-2
                   h3 social app
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="0.2s")
               .app-image 
                 a(href="knowledgebase.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -284,7 +288,7 @@ html(lang='en')
                   span.circle-2
                   h3 Knowledgebase
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="0.3s")
               .app-image 
                 a(href="support-ticket.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -294,7 +298,7 @@ html(lang='en')
                   span.circle-2
                   h3 Support Ticket
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="0.4s")
               .app-image 
                 a(href="mail-box.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -304,7 +308,7 @@ html(lang='en')
                   span.circle-2
                   h3 Email Application              
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="0.5s")
               .app-image 
                 a(href="to-do.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -314,7 +318,7 @@ html(lang='en')
                   span.circle-2
                   h3 To-Do    
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="0.6s")
               .app-image 
                 a(href="job-cards-view.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -324,7 +328,7 @@ html(lang='en')
                   span.circle-2
                   h3 Job Search
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="0.7s")
               .app-image 
                 a(href="product-grid.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -334,7 +338,7 @@ html(lang='en')
                   span.circle-2
                   h3 E-Commerce
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="0.8s")
               .app-image 
                 a(href="kanban.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -344,7 +348,7 @@ html(lang='en')
                   span.circle-2
                   h3 Kanban
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="0.9s")
               .app-image 
                 a(href="file-manager.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -354,7 +358,7 @@ html(lang='en')
                   span.circle-2
                   h3 File Manager
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="1.0s")
               .app-image 
                 a(href="project-list.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -364,7 +368,7 @@ html(lang='en')
                   span.circle-2
                   h3 Project
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="1.1s")
               .app-image 
                 a(href="contacts.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -374,7 +378,7 @@ html(lang='en')
                   span.circle-2
                   h3 Contacts
           .col-xl-4.col-md-6 
-            .application-box
+            .application-box.wow.fadeIn(data-wow-delay="1.2s")
               .app-image 
                 a(href="private-chat.html" target="_blank")
                   img(src="../assets/images/landing/layout-images/rome.jpg", alt="social-app")
@@ -393,84 +397,84 @@ html(lang='en')
               p.description-title We comes up with most creative and useful main general purpose dashboard template
         .row.g-5 
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="0.1s")
               .icon
                 img(src="../assets/images/landing/feature-icon/bootstrap.png", alt="")
               .content
                 h5 Bootstrap 5
                 p Its design aims to produce mobile-friendly responsive front-end web development.
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="0.2s")
               .icon
                 img(src="../assets/images/landing/feature-icon/sass.png", alt="")
               .content
                 h5 SCSS
                 p The comprehensive CSS facilitates easy development and functionality using variables, selectors, and nesting
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="0.3s") 
               .icon
                 img(src="../assets/images/landing/feature-icon/pug.png", alt="")
               .content
                 h5 Pug
                 p Pug.js empowers dynamic data generation and flexible HTML coding, enhancing overall efficiency
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="0.4s") 
               .icon
                 img(src="../assets/images/landing/feature-icon/npm.png", alt="")
               .content
                 h5 NPM
                 p Access Node.js source code or a pre-built installer for your platform, initiating development right away.
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="0.5s") 
               .icon
                 img(src="../assets/images/landing/feature-icon/bootstrap.png", alt="")
               .content
                 h5 Vite
                 p For streamlined form access and adjustment, the fields and labels are logically organized.
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="0.6s") 
               .icon
                 img(src="../assets/images/landing/feature-icon/forms.png", alt="")
               .content
                 h5 Forms
                 p For streamlined form access and adjustment, the fields and labels are logically organized.
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="0.7s") 
               .icon
                 img(src="../assets/images/landing/feature-icon/chart.png", alt="")
               .content
                 h5 Chartist
                 p provides designers and developers the opportunity to create charts with cross-browser compatibility.
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="0.8s") 
               .icon
                 img(src="../assets/images/landing/feature-icon/layout.png", alt="")
               .content
                 h5 Layout
                 p Ones that effortlessly adapt to varied screen sizes and responsive layouts for your business.
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="0.9s") 
               .icon
                 img(src="../assets/images/landing/feature-icon/apps.png", alt="")
               .content
                 h5 Apps
                 p Aid you in constructing highly user-friendly, dynamic websites and apps with innovative designs.                                    
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="1.0s") 
               .icon
                 img(src="../assets/images/landing/feature-icon/gallery.png", alt="")
               .content
                 h5 Gallery
                 p Settings allow animated thumbnails. Zoom and Fullscreen options are available.
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="1.1s") 
               .icon
                 img(src="../assets/images/landing/feature-icon/icon.png", alt="")
               .content
                 h5 Icons
                 p We offer a selection of 4 & 5 unique icon styles, including popular sets like Font Awesome and Feather icons.
           .col-xl-3.col-lg-4.col-sm-6 
-            .frame-box 
+            .frame-box.wow.fadeIn(data-wow-delay="1.2s") 
               .icon
                 img(src="../assets/images/landing/feature-icon/ui-kit.png", alt="")
               .content
@@ -485,19 +489,19 @@ html(lang='en')
               h2 Premium Support
               p.description-title We comes up with most creative and useful main general purpose dashboard template
         .row.support-wrapper 
-          .col-lg-5
+          .col-lg-5.wow.fadeIn
             .support-title.text-start 
               h5.font-primary.mb-2 Our License
               h2 we give it as we think that excellent support is needed
               p.mx-0 Check our reviews for fast and accurate support to ensure support. we offer premium assistance around-the-clock for any bugs you encounter. and we’ll do best to help you out with any future updates for free.
               a.btn.btn-primary.support-btn(href="https://support.pixelstrap.com/" target="_blank") Support
-          .col-lg-7
+          .col-lg-7.wow.fadeIn
             img.support-img(src="../assets/images/landing/support.png", alt="") 
     section.section-space.landing-footer 
       .custom-container
         .row.p-0.m-0
           .col-12 
-            .footer-content 
+            .footer-content.fadeInUp.wow 
               img(src="../assets/images/logo/logo.png", alt="")
               h2 The Macao theme trusted by thousands of developers worldwide.
               ul.star-rate
